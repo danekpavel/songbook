@@ -1,0 +1,6874 @@
+<songbook>
+<settings>
+  <language>en</language>
+  <chorusLabel>Ref</chorusLabel>
+  <tocTitle>Obsah</tocTitle>
+  <sansFont>Calibri</sansFont>
+  <!--
+  <entities>
+    <entity>
+      <name>myEntity</name>
+      <value>1234</value>
+    </entity>
+  </entities>
+  -->
+</settings>
+
+<song>
+  <header>
+    <name>Bludný Holanďan</name>
+    <author>Karel Kryl</author>
+    <album>Maškary</album>
+    <year>1970</year>
+  </header>
+
+<verse>
+<line>Pod branou 
+<chord root="A" type="m"/>vítězů, co nikdy 
+<chord root="E"/>nevyhráli,
+</line>
+<line>bez zlatých řetězů a zvonů 
+<chord root="A" type="m"/>z katedrály,
+<chord root="E"/>
+</line>
+<line>zelení 
+<chord root="A" type="m"/>molodci z romance 
+<chord root="D" type="m"/>iluzorní,
+</line>
+<line>po matce 
+<chord root="A" type="m"/>sirotci, po otci 
+<chord root="E"/>bezprizorní,
+</line>
+<line>hrajeme 
+<chord root="A" type="m"/>v karty.
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+ <line>Růžový kavalír uprostřed paviánů </line>
+   <line>zahodil bandalír i šavli z porcelánu, </line>
+   <line>svět civí na zátku, zatímco setmělo se, </line>
+   <line>pasy jsou v pořádku a whisky na podnose </line>
+   <line>s tyčinkou na rty. </line>
+</verse>
+
+<chorus>
+<line>Hrajeme 
+<chord root="E"/>hbitě o trojité 
+<chord root="A" type="m"/>es:
+</line>
+<line>tvar hadího 
+<chord root="D" type="m"/>hřbetu či gotických 
+<chord root="A" type="m"/>sošek,
+</line>
+<line>flinty jsou 
+<chord root="D" type="m"/>v žitě a na hlavních 
+<chord root="A" type="m"/>rez,
+</line>
+<line>a 
+<chord root="D" type="m"/>svoboda je tu, vždyť 
+<chord root="A" type="m"/>bijem se o šek &ndash; toť 
+<chord root="E"/>zvyk!
+</line>
+</chorus>
+
+<verse>
+  <line>Dva centy životů a slunce sbohem dává, </line>
+  <line>hledáme jistotu, které se nedostává, </line>
+  <line>na hrdle znamení obojku otrokova, </line>
+  <line>lezeme shrbení, zaliti do olova </line>
+  <line>jakési víry. </line>
+</verse>
+
+<verse>
+  <line>Paměť je v bankrotu a z domu nevychází, </line>
+  <line>čest stojí u plotu a kamením se hází, </line>
+  <line>cit s hlavou hovězí vybírá popelnice, </line>
+  <line>a pravda? Vítězí &ndash; slepá jak řeholnice, </line>
+  <line>oděna v díry. </line>
+</verse>
+
+<chorus>
+  <line>Rezavé ráno a mlha jak med, </line>
+  <line>tak podivně sladko jak z chrlení krve, </line>
+  <line>čteš, co je psáno, až k písmenu zet, </line>
+  <line>už nekřičíš &quoteCzechOpen;matko!&quoteCzechClose;, je ticho jak prve, jen
+  <chord root="A" type="m"/><chord root="A" type="m6"/>vzlyk!
+  </line>
+</chorus>
+</song>
+
+
+
+<song>
+  <header>
+    <name>One of My Turns</name>
+    <author>Pink Floyd</author>
+    <album>The Wall</album>
+    <year>1973</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Day after day, 
+<chord root="E" type="m"/>love turns gray
+</line>
+<line>like the 
+<chord root="F"/>skin of a dying 
+<chord root="C"/>man.
+</line>
+<line>
+<chord root="C"/>And night after night, we pre
+<chord root="E" type="m"/>tend it's all right
+</line>
+<line>but 
+<chord root="D" type="m"/>I have grown older and
+</line>
+<line>you have grown colder and</line>
+<line>nothing is very much 
+<chord root="G" type="7"/>fun anymore.
+</line>
+</verse>
+
+<verse>
+<line>And I can feel one of my turns coming on.</line>
+<line>I feel cold as a razor blade,</line>
+<line>tight as a tourniquet,</line>
+<line>dry as a funeral drum.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="Eb"/>Run to the 
+<chord root="Bb"/>bedroom,
+</line>
+<line>in the 
+<chord root="Eb"/>suitcase on the 
+<chord root="Bb"/>left
+</line>
+<line>you'll 
+<chord root="C" type="7"/>find my 
+<chord root="D" type="m"/>favourite axe.
+<chord root="A" type="m"/>
+<chord root="D" type="m"/>
+<chord root="A" type="m"/>
+</line>
+</verse>
+
+
+<verse>
+<line>Don't look so frightened,</line>
+<line>this is just a passing phase,</line>
+<line>one of my bad days.</line>
+</verse>
+
+<verse>
+<line>Would you like to watch T.V.?</line>
+<line>Or get between the sheets?</line>
+<line>Or contemplate the silent freeway?</line>
+<line>Would you like something to eat?</line>
+</verse>
+
+<verse>
+<line>Would you like to learn to fly?  Would you?</line>
+<line>Would you like to see me try?</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="Eb"/>
+<chord root="Bb"/>
+<chord root="Eb"/>
+<chord root="Bb"/>
+<chord root="D" type="m"/>
+<chord root="Eb"/>
+<chord root="Bb"/>
+<chord root="Eb"/>
+<chord root="Bb"/>
+<chord root="D" type="m"/>
+<chord root="A" type="m7"/>
+<chord root="D" type="m7"/>
+<chord root="C"/>
+</line>
+</verse>
+
+<verse>
+<line>Would you like to call the cops?</line>
+<line>Do you think it's time I stopped?</line>
+<line>
+<chord root="G" type="m9"/>Why are you running away?
+</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>V ulicích je déšť</name>
+    <authors>
+      <author>Randy Newman</author>
+      <author>Pavel Kácha</author>
+      <author>ASPM</author>
+    </authors>
+  </header>
+
+<verse>
+<line>V ulicích je 
+<chord root="F"/>déšť
+<chord root="F" type="7" bass="Eb"/>
+</line>
+<line>a do mraků se 
+<chord root="Bb" type="6"/>nevrátí,
+<chord root="Bb" type="m6"/>
+</line>
+<line>ta voda tu chce 
+<chord root="F"/>zůstati
+<chord root="D" type="m7"/>
+</line>
+<line>a nemá žádný 
+<chord root="G" type="7"/>spěch.
+<chord root="C" type="7"/>
+<chord root="F" optional="yes"/>
+<chord root="F" type="7" bass="Eb" optional="yes"/>
+</line>
+</verse>
+
+<verse>
+<line>V ulicích je déšť</line>
+<line>a město bude hladinou</line>
+<line>a lodi po ní poplynou</line>
+<line>a marně hledat břeh.</line>
+</verse>
+
+<verse>
+<line>V ulicích je déšť,</line>
+<line>prší i v tomhle podkroví,</line>
+<line>jsme jak vzdálené ostrovy,</line>
+<line>skály, co už se nesejdou.</line>
+<line>V ulicích je déšť&hellip;</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="Bb"/>Vím, jsem jen směšnej 
+<chord root="C" type="7"/>chlap,
+</line>
+<line>
+<chord root="A" type="m7"/>nepřizná
+<chord root="D" type="7sus4"/><chord root="D" type="7"/>vám,
+</line>
+<line>
+<chord root="G" type="m7"/>že bych si 
+<chord root="C" type="7sus4"/><chord root="C" type="7"/>přál tě tu 
+<chord root="F"/>mít,
+<chord root="Eb" bass="F"/>
+</line>
+<line>
+<chord root="Bb"/>v ulicích je 
+<chord root="C" type="7"/>déšť
+</line>
+<line>
+<chord root="A" type="m7"/>a já jsem s ním 
+<chord root="D" type="7sus4"/><chord root="D" type="7"/>sám,
+</line>
+<line>
+<chord root="G" type="m7"/>už dýl než 
+<chord root="C" type="7sus4"/><chord root="C" type="7"/>měl bych snad 
+<chord root="F"/>být.
+<chord root="C" type="7"/>
+</line>
+</chorus>
+
+<chorus/>
+
+<verse>
+<line>V ulicích je déšť</line>
+<line>a já poslouchám to šumění,</line>
+<line>divnej tón zvenčí, co se nemění,</line>
+<line>už by měl.</line>
+</verse>
+
+<verse>
+<line>V ulicích je déšť,</line>
+<line>ty litry vody jsou už zbytečný,</line>
+<line>tys byla teplo a dny slunečný,</line>
+<line>ty jsem chtěl.</line>
+</verse>
+
+<verse>
+<line>V ulicích je déšť&hellip;</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Dáma s čápem</name>
+    <author>Sto zvířat</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Až budu končit, až budu mít za pár,
+</line>
+<line>
+<chord root="D" type="m"/>postavím si past a do ní chytím čápa,
+</line>
+<line>už se 
+<chord root="A" type="m"/>vidím, jak ho 
+<chord root="Bb"/>krmím cukrem a 
+<chord root="D" type="m"/>skořicí,
+</line>
+<line>jak 
+<chord root="A" type="m"/>pomalu 
+<chord root="Bb"/>nabírám diamanty 
+<chord root="D" type="m"/>na lžíci
+</line>
+<line>a dávám mu je 
+<chord root="Bb"/>s chlebem a ze stropu tma 
+<chord root="D" type="m"/>kape,
+</line>
+<line>chci být stará 
+<chord root="G" type="m"/>dáma, 
+<chord root="A" type="m"/>která žije 
+<chord root="D" type="m"/>s čápem.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="G" type="m"/>Při naší svatbě budu 
+<chord root="A" type="m"/>stát,
+</line>
+<line>vedle mě čáp a lidi 
+<chord root="Bb"/>kolem,
+</line>
+<line>a celá 
+<chord root="G" type="m"/>obloha se bude opí
+<chord root="A" type="m"/>rat
+</line>
+<line>o moje francouzský 
+<chord root="D" type="m"/>hole.
+</line>
+</chorus>
+
+<chorus/>
+
+<verse>
+ <line>Až bude po všem, doufám, že to chápeš,</line>
+ <line>chci být stará dáma, která žije s čápem, </line>
+<line>už se vidím, jak se oba oblíknem do peří </line>
+<line>a jak můj čáp v rodinným stříbru večeří, </line>
+<line>a potom pijem likér a všude voní parfém, </line>
+<line>chci bejt stará  dáma,  která žije  s čápem.</line>
+</verse>
+ 
+<chorus/>
+
+<chorus/>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Někdy se jdu opít</name>
+    <author>ASPM</author>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="7"/>Pokaždý, když se jdu opít, 
+<chord root="A" type="7"/>tak moje milá 
+<chord root="E" type="7"/>naříká,
+</line>
+<line>
+<chord root="A" type="7"/>pokaždý, když se jdu opít, 
+<chord root="C"/>tak i moje manželka naří
+<chord root="E" type="7"/>ká 
+<chord root="F#" type="m"/>
+<chord root="G#" type="m"/>
+<chord root="G" type="m"/>
+</line>
+<line>
+<chord root="F#" type="m"/>a myslí si, že je šťastnej ten blázen, 
+<chord root="C" type="7"/>
+<chord root="H" type="7"/>kterej si pití 
+<chord root="E" type="7"/>odříká.
+<chord root="A"/>
+<chord root="E"/>
+<chord root="H" type="7"/>
+</line>
+</verse>
+
+<verse>
+<line>Někdy se jdu opít, jen ty víš, že piju každej den,</line>
+<line>někdy se jdu opít, ty víš, že piju každej den,</line>
+<line>já znám jednu krásnou báseň, a ta je napsaná na dně džbánku jen.</line>
+</verse>
+
+<verse>
+<line>Ale když se pane bože ráno vracím domů nadranej jednou za rok, tak se mi svět v pořádku bejt zdá,</line>
+<line>když se pak ráno vracím domů, tak se mi svět v pořádku bejt zdá</line>
+<line>a lidi se maj rádi a zima není vůbec zlá.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Víla</name>
+    <author>Robert Křesťan &ampersand; Druhá tráva</author>
+    <album>Starodávný svět</album>
+    <year>1994</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Jde po skosený 
+<chord root="F"/>trá
+<chord root="C"/>vě a jde tak, jak se to 
+<chord root="F"/>pí
+<chord root="C"/>še:
+</line>
+<line>s větrem 
+<chord root="D" type="m"/>v zádech, s kytkou 
+<chord root="G" type="m"/>v hla
+<chord root="D" type="m"/>vě, 
+<chord root="A"/>
+<chord root="D" type="m"/>důstojně a 
+<chord root="G" type="m"/>ti
+<chord root="D" type="m"/>še,
+</line>
+<line>a z polí 
+<chord root="C"/>slítají se 
+<chord root="F"/>ptá
+<chord root="C"/>ci a 
+<chord root="G"/>každej z nich jí 
+<chord root="C"/>vě
+<chord root="G"/>ří
+</line>
+<line>a 
+<chord root="F"/>ona se pak 
+<chord root="Bb"/>vra
+<chord root="F"/>cí a má 
+<chord root="C"/>v rukou jejich 
+<chord root="F"/>pe
+<chord root="C"/>ří.
+</line>
+</verse>
+
+<verse>
+ <line>Je to můj člověk s hlavou v kříži, umírající v horku, </line>
+   <line>můj plakát na refýži i má socha u New Yorku, </line>
+   <line>je to můj voják beze jména, i ten parník v ústí Něvy, </line>
+   <line>je to jediná má žena, jenže ta, která to neví. </line>
+</verse>
+
+<verse>
+<line>Místo 
+<chord root="A" type="m"/>k ní však mířím 
+<chord root="D" type="m"/>ně
+<chord root="A" type="m"/>kam, kde je ten, co se tak 
+<chord root="D" type="m"/>vzte
+<chord root="A" type="m"/>ká,
+</line>
+<line>že ta 
+<chord root="Bb"/>hrůza, kterou 
+<chord root="Eb"/>če
+<chord root="Bb"/>kám, není 
+<chord root="F"/>ta, která mě 
+<chord root="Bb"/>če
+<chord root="F"/>ká
+</line>
+</verse>
+
+<verse>
+ <line>Ten můj pocit nemá hranic, ta má víra bez rezervy, </line>
+   <line>že už nezmůžu se na nic, ani na pevný nervy, </line>
+   <line>natož na nějakou vílu, a že už nevím, o co kráčí, </line>
+   <line>třeba nemám sílu, a třeba mi to stačí. </line>
+</verse>
+ 
+</song>
+
+
+<song>
+  <header>
+    <name>Paranoid Eyes</name>
+    <author>Pink Floyd</author>
+    <album>The Final Cut</album>
+    <year>1983</year>
+  </header>
+
+<verse>
+<line>
+<chord root="G"/>Button your lip and 
+<chord root="C"/>don't let shield 
+<chord root="G"/>slip,
+</line>
+<line>take a fresh grip on your 
+<chord root="C"/>bullet-proof 
+<chord root="G"/>mask,
+</line>
+<line>
+<chord root="C"/>and if they try to break down your disguise with their 
+<chord root="G"/>questions,
+<chord root="D"/>
+<chord root="C"/>
+</line>
+<line>you can 
+<chord root="G"/>hide, 
+<chord root="D"/>hide, 
+<chord root="C"/>hide, 
+<chord root="G" bass="B"/>
+<chord root="A" type="m"/>
+</line>
+<line>behind paranoid 
+<chord root="G"/>eyes.
+</line>
+</verse>
+
+<verse>
+<line>You put on our brave face and slip over the road for a jar,</line>
+<line>fixing your grin as you casually lean on the bar,</line>
+<line>laughing too loud at the rest of the world</line>
+<line>with the boys in the crowd,</line>
+<line>you hide, hide, hide,</line>
+<line>behind petrified eyes.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="G"/>
+<chord root="E" type="m"/>
+<chord root="D"/>
+<chord root="A" type="m"/>
+<chord root="G"/>
+</line>
+</verse>
+
+<verse>
+<line>You believed in their stories of fame, fortune and glory,</line>
+<line>now you're lost in a haze of alchohol soft middle age,</line>
+<line>the pie in the sky turned out to be miles too high,</line>
+<line>and you hide, hide, hide,</line>
+<line>behind brown and mild eyes.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>The Final Cut</name>
+    <author>Pink Floyd</author>
+    <album>The Final Cut</album>
+    <year>1983</year>
+  </header>
+ 
+<verse>
+<line>
+<chord root="F"/>Through the fish eyed lens of tear stained 
+<chord root="C"/>eyes
+</line>
+<line>I can 
+<chord root="Bb"/>barely define the shape of this moment in 
+<chord root="F"/>time.
+</line>
+<line>And 
+<chord root="F"/>far from flying high in clear blue ski
+<chord root="C"/>es
+</line>
+<line>I'm 
+<chord root="Bb"/>spiraling down, to the hole in the ground where I 
+<chord root="F"/>hide.
+<chord root="G"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="Bb"/>If you negotiate the 
+<chord root="F"/>minefield in the drive,
+</line>
+<line>
+<chord root="Bb"/>and beat the dogs, and cheat the cold 
+<chord root="F"/>electronic eyes,
+</line>
+<line>
+<chord root="Bb"/>and if you 
+<chord root="C"/>make it past the 
+<chord root="D" type="m"/>shotguns in the hall,
+</line>
+<line>
+<chord root="G" type="m7"/>dial the combination, open the priesthole
+</line>
+<line>And if I'm in, I'll 
+<chord root="C"/>tell you&hellip; 
+<chord root="F"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>There's a kid who had a big halluci
+<chord root="F"/>nation,
+</line>
+<line>
+<chord root="A" type="m"/>making love to girls in maga
+<chord root="C"/>zines,
+</line>
+<line>he 
+<chord root="Bb"/>wonders if you're sleeping with your 
+<chord root="D" type="m"/>new found faith&hellip;
+</line>
+<line>
+<chord root="G" type="m7"/>could anybody love him?
+</line>
+<line>Or 
+<chord root="C"/>is it just a crazy 
+<chord root="F"/>dream?
+</line>
+</verse>
+
+<verse><line>
+<chord root="C"/>
+<chord root="Bb"/>
+<chord root="F"/>
+</line></verse>
+
+<verse>
+<line>And if I show you my dark side,</line>
+<line>will you still hold me tonight?</line>
+<line>And if I open my heart to you,</line>
+<line>show you my weak side,</line>
+<line>what would you do?</line>
+</verse>
+
+<verse>
+<line>Would you sell your story to Rolling Stone?</line>
+<line>Would you take the children away, and leave me alone?</line>
+<line>And smile in reassurance as you whisper down the phone,</line>
+<line>would you send me packing?</line>
+<line>Or would you take me home?</line>
+</verse>
+
+<verse><line>
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="A" type="m"/>
+<chord root="C"/>
+<chord root="Bb"/>
+<chord root="D" type="m"/>
+<chord root="G" type="m7"/>
+<chord root="F"/>
+</line></verse>
+
+<verse>
+<line>Thought I oughta bare my naked feelings,</line>
+<line>thought I oughta tear the curtain down,</line>
+<line>I held the blade in trembling hands,</line>
+<line>prepared to make it but&hellip;</line>
+<line>just then the phone rang.</line>
+<line>I never had the nerve to make The Final Cut</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Nejlíp jim bylo</name>
+    <author>Mňága a Žďorp</author>
+    <album>Nejlíp jim bylo</album>
+    <year>1995</year>
+  </header>
+
+<verse>
+<line>Nejlíp jim 
+<chord root="C"/>bylo,
+<chord root="F" type="maj7"/>
+</line>
+<line>
+<chord root="C"/>když 
+<chord root="F" type="maj7"/>nevěděli, co 
+<chord root="C"/>dělají,
+<chord root="F" type="maj7"/>
+<chord root="C"/>
+<chord root="F" type="maj7"/>
+</line>
+<line>jenom se 
+<chord root="G"/>potkali
+</line>
+<line>
+<chord root="F"/>a neznělo to 
+<chord root="C"/>špatně.
+<chord root="F" type="maj7"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Tak se snažili </line>
+<line>a opravdu si užívali, </line>
+<line>jenom existovali </line>
+<line>a čas běžel skvěle. </line>
+</verse>
+ 
+<chorus>
+<line>
+<chord root="F"/>Nechám si projít 
+<chord root="C"/>hlavou,
+</line>
+<line>
+<chord root="G"/>kam všechny věci 
+<chord root="A" type="m"/>plavou,
+</line>
+<line>
+<chord root="F"/>jestli je všechno jen 
+<chord root="C"/>dech,
+</line>
+<line>
+<chord root="G"/>tak jako kdysi v noci
+</line>
+<line>
+<chord root="A" type="m"/>spolu potmě na scho
+<chord root="C"/>dech.
+<chord root="F" type="maj7"/>
+</line>
+</chorus>
+ 
+<verse>
+<line>Pak se ztratili </line>
+<line>a chvílema se neviděli, </line>
+<line>jenom si telefonovali </line>
+<line>a byli na tom bledě. </line>
+</verse>
+ 
+<verse>
+<line>A když se vrátili, </line>
+<line>už dávno nehořeli, </line>
+<line>jenom dál usínali, </line>
+<line>chvíli spolu &ndash; chvíli vedle sebe.</line>
+</verse>
+ 
+<chorus/>
+ 
+<chorus>
+<line>Nechej si projít hlavou&hellip;</line>
+</chorus>
+</song>
+
+
+<song>
+  <header>
+    <name>Nagasaki Hirošima</name>
+    <author>Mňága a Žďorp</author>
+    <album>Chceš mě? Chci Tě!</album>
+    <year>1999</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Tramvají 
+<chord root="G"/>dvojkou 
+<chord root="F"/>jezdíval jsem 
+<chord root="G"/>do Žide
+<chord root="C"/>nic,
+<chord root="G"/>
+<chord root="F"/>
+<chord root="G"/>
+</line>
+<line>
+<chord root="C"/>z tak velký 
+<chord root="G"/>lásky 
+<chord root="F"/>většinou 
+<chord root="G"/>nezbyde 
+<chord root="A" type="m"/>nic,
+</line>
+<line>
+<chord root="F"/>z takový 
+<chord root="C"/>lásky 
+<chord root="F"/>jsou kruhy 
+<chord root="C"/>pod oči
+<chord root="G"/>ma
+</line>
+<line>a dvě 
+<chord root="C"/>spálený 
+<chord root="G"/>srdce &ndash; 
+<chord root="F"/>Nagasaki 
+<chord root="G"/>Hiroši
+<chord root="C"/>ma.
+<chord root="G"/>
+<chord root="F"/>
+<chord root="G"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Jsou jistý věci, co bych tesal do kamene, </line>
+<line>tam, kde je láska, tam je všechno dovolené,</line>
+<line>a tam, kde není, tam mě to nezajímá, </line>
+<line>jó dvě spálený srdce &ndash; Nagasaki Hirošima.</line>
+</verse>
+
+<verse>
+<line>Já nejsem svatej, ani ty nejsi svatá, </line>
+<line>ale jablka z ráje bejvala jedovatá, </line>
+<line>jenže hezky jsi hřála, když mi někdy bylo zima, </line>
+<line>jó dvě spálený srdce &ndash; Nagasaki Hirošima. </line>
+</verse>
+ 
+<verse>
+<line>Tramvají dvojkou jezdíval jsem do Židenic, </line>
+<line>z tak velký lásky většinou nezbyde nic, </line>
+<line>z takový lásky jsou kruhy pod očima, </line>
+<line>a dvě spálený srdce &ndash; Nagasaki Hirošima, </line>
+<line>a dvě spálený srdce &ndash; Nagasaki Hirošima, </line>
+<line>a dvě spálený srdce &ndash; Nagasaki Hirošima, </line>
+<line>a dvě spálený srdce &ndash; Nagasaki Hirošima. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Made in Valmez</name>
+    <author>Mňága a Žďorp</author>
+    <album>Made in Valmez</album>
+    <year>1991</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A"/>Jako je sama skála, 
+<chord root="D"/>tak jsem sám i 
+<chord root="E"/>já,
+</line>
+   <line>jako je prázdná duha, tak jsem prázdný i já, </line>
+   <line>jako je zrádná voda, tak zradím i já. </line>
+</verse>
+ 
+<chorus>
+<line>
+<chord root="A"/>Zkouším se prokopat ven &ndash; zkouší se prokopat ven,
+</line>
+<line>
+<chord root="D"/>zkouším se prokopat ven &ndash; 
+<chord root="E"/>zkouší se prokopat ven.
+</line>
+</chorus>
+
+<verse>
+ <line>O půl třetí na náměstí </line>
+   <line>ve Valašském Meziříčí, </line>
+   <line>jdu, co noha nohu mine, </line>
+   <line>a každý sám sobě jsme stínem. </line>
+</verse>
+ 
+<verse>
+ <line>Nic mi není, přitom melu z posledního, </line>
+   <line>těžko říct o tom něco konkrétního, </line>
+   <line>stejná slova, kolem stejný tváře, </line>
+   <line>a každý sám sobě jsme lhářem a já už zase&hellip; </line>
+</verse>
+ 
+<chorus/>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Stříhali dohola malého chlapečka</name>
+    <authors>
+      <author>Josef Kainar</author>
+      <author>Vladimír Mišík</author>
+    </authors>
+  </header>
+
+<verse>
+<line>
+<chord root="G"/>Stříhali dohola malé
+<chord root="C"/>ho chlapečka,
+</line>
+<line>
+<chord root="A" type="m"/>kadeře padaly k ze
+<chord root="D"/>mi a zmíraly,
+</line>
+<line>
+<chord root="G"/>kadeře padaly 
+<chord root="C"/>jak růže do hrobu,
+</line>
+<line>
+<chord root="D"/>železná židle se 
+<chord root="A" type="m"/>otáčela.
+<chord root="E" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>Šedaví pánové v zrcadlech kolem stěn </line>
+<line>jenom se dívali, jenom se dívali, </line>
+<line>že už je chlapeček chycen a obelstěn </line>
+<line>v té bílé zástěře kolem krku. </line>
+</verse>
+ 
+<verse>
+<line>Jeden z nich, kulhavý učitel na čelo, </line>
+<line>zasmál se nahlas a všichni se pohnuli, </line>
+<line>zasmál se nahlas a ono to zaznělo </line>
+<line>jako kus masa když pleskne o zem. </line>
+</verse>
+ 
+<verse>
+<line>
+<chord root="C"/>
+<chord root="A" type="m7"/>
+<chord root="D"/>
+<chord root="G"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Učeň se dívá na malého chlapečka, </line>
+<line>jak malé zvíře se dívává na jiné, </line>
+<line>ještě ne chytit a rváti si z cizího, </line>
+<line>a už přeci&hellip; </line>
+</verse>
+ 
+<verse>
+<line>Ráno si staví svou růžovou bandasku </line>
+<line>na malá kamínka, na Vincka chcípáčka,</line>
+<line>a proto učňovy všelijaké myšlenky </line>
+<line>jsou vždycky stranou a trochu vlažné. </line>
+</verse>
+ 
+<verse>
+<line>Toužení svědící jak uhry pod mýdlem, </line>
+<line>toužení svědící po malé šatnářce, </line>
+<line>sedává v kavárně pod svými kabáty </line>
+<line>jako pod mladými oběšenci. </line>
+</verse>
+ 
+<verse>
+<line>Stříhali dohola malého chlapečka, </line>
+<line>dívat se na sebe, nesmět se pohnouti, </line>
+<line>nesmět se pohnouti na židli z železa, </line>
+<line>už mu to začlo&hellip; </line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Sladké je žít</name>
+    <author>Vladimír Mišík</author>
+  </header>
+
+<verse>
+<line>Šel jsem si sednout k řece a koukal, jak vlny jdou,</line>
+<line>šel jsem si sednout k řece a koukal, jak vlny jdou,</line>
+<line>a potom jsem tam skočil, byl jsem hned pod vodou. </line>
+</verse>
+
+<verse>
+<line>Vyplul jsem a začal vzlykat, vyplul jsem a spustil křik,</line>
+<line>vyplul jsem a začal vzlykat, vyplul jsem a spustil křik, </line>
+<line>kdyby voda nebyla tak chladná, byl bych už nebožtík. </line>
+</verse>
+
+<verse>
+<line>Jel jsem šestnáct pater a koukal Bohu do oken, </line>
+<line>jel jsem šestnáct pater a koukal Bohu do oken, </line>
+<line>myslel jsem na svý děvče a dlouho váhal se skokem.</line>
+</verse>
+
+<verse>
+<line>Stál jsem tam a začal vzlykat, stál jsem a spustil křik, </line>
+<line>stál jsem tam a začal vzlykat, stál jsem a spustil křik, </line>
+<line>kdybych nebyl tak vysoko, byl bych už nebožtík. </line>
+</verse>
+
+<verse>
+<line>Tak asi budu žít dále, nezbýva, než abych žil, </line>
+<line>tak asi budu žít dále, nezbýva, než abych žil, </line>
+<line>pro lásku bych třeba umřel, ale pro život jsem se narodil. </line>
+</verse>
+
+<verse>
+<line>Můžete mě vidět vzlykat, slyšet mě jak spustím křik, </line>
+<line>můžete mě vidět vzlykat, slyšet mě jak spustím křik, </line>
+<line>má milá třeba se vztekni, nebude ze mě nebožtík.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Špejchar blues</name>
+    <author>Vladimír Mišík</author>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="7"/>Noc už končí 
+<chord root="A" type="7"/>a nad Špejcharem 
+<chord root="E" type="7"/>svítá
+</line>
+<line>
+<chord root="A" type="7"/>a mně začíná bejt zas do zpě
+<chord root="E" type="7"/>vu,
+</line>
+<line>
+<chord root="C" type="9"/>to je ta pravá chvíle
+</line>
+<line>
+<chord root="F#" type="m7b5"/>pro moje 
+<chord root="H" type="7alt"/>ranní 
+<chord root="E" type="7"/>blues.
+<chord root="H" type="7"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Vypil jsem víc, než mý nohy snesou, </line>
+<line>ale hlavu pořád jasnou mám, </line>
+<line>ruce se trochu třesou </line>
+<line>jak tolik jinejch rán. </line>
+</verse>
+ 
+<verse>
+<line>Jo, až se budu ranní mlhou vracet, </line>
+<line>na cestu si načnu další lahvový, </line>
+<line>uvidím bílý myši </line>
+<line>a možná i klobouk ve křoví. </line>
+</verse>
+ 
+<verse>
+<line>Já vám věřím, že sem dávno měl bejt jinej, </line>
+<line>za ty prachy měl jsem si koupit vůz, </line>
+<line>já radši zpívám </line>
+<line>svoje ranní Špejchar blues. </line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Co jsem si vzal</name>
+    <author>Vladimír Mišík</author>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Káva, cigareta po ránu, 
+</line>
+<line>
+<chord root="F"/>na duši temná 
+<chord root="C"/>skica,
+</line>
+<line>
+<chord root="C"/>ty pryč někde v mlžném oparu,
+</line>
+<line>
+<chord root="F"/>za oknem 
+<chord root="G"/>slunce &ndash; praporek 
+<chord root="C"/>ticha.
+</line>
+</verse>
+
+<verse>
+<line>Káva, cigareta po ránu,</line>
+<line>dým ke stropu vzkvétá, </line>
+<line>po noci milostného rozmaru, </line>
+<line>co jsem si vzal, mohu si nechat. </line>
+</verse>
+
+<verse>
+<line>Panák, cigareta po ránu,</line>
+<line>v žaludku vzplanul oheň, </line>
+<line>oči se protáčí dozadu, </line>
+<line>na stěně rtěnkou rozmáchlé sbohem. </line>
+</verse>
+
+<verse>
+<line>Panák, cigareta po ránu, </line>
+<line>budík do prázdna tiká, </line>
+<line>po noci milostného rozmaru, </line>
+<line>co jsem si vzal, mohu si nechat, </line>
+<line>co jsem si vzal, mohu si nechat, </line>
+<line>co jsem si vzal, mohu si nechat. </line>
+</verse>
+
+<verse>
+<line>
+<chord root="D" type="m7"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="A" type="7"/>
+<chord root="F"/>
+<chord root="G"/>
+<chord root="C"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Káva, cigareta po ránu,</line>
+<line>dým ke stropu vzkvétá, </line>
+<line>po noci milostného rozmaru, </line>
+<line>co jsem si vzal, mohu si nechat, </line>
+<line>co jsem si vzal, mohu si nechat, </line>
+<line>co jsem si vzal, mohu si nechat, </line>
+<line>co jsem si vzal, mohu si nechat. </line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Obelisk</name>
+    <author>Vladimír Mišík</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="sus2"/>Milovali se, jen když se 
+<chord root="E" type="m7"/>měli rádi,
+</line>
+<line>
+<chord root="A" type="sus2"/>kávu pili, když jim bylo 
+<chord root="E" type="m7"/>černo,
+</line>
+<line>
+<chord root="A" type="sus2"/>neptali se, kdo je druhá &ndash; 
+<chord root="E" type="m7"/>druhý,
+</line>
+<line>
+<chord root="A" type="sus2"/>platili dluhy bez antických 
+<chord root="E" type="m7"/>gest.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="E" type="m"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Utopili se a šli pak spolu domů </line>
+<line>koupili si Tuttiho, medvídka s duší v plyši,</line>
+<line>a také několik osobních nepřátel,</line>
+<line>jenže pak nevěděli, pro pána co s nimi.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="E" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>Náruživostem svým rozorali meze,</line>
+<line>v parku hudba hrála, ona plakala,</line>
+<line>šetřili si, podívat se chtěli do Pompejí </line>
+<line>dříve než nějací piloti z pitomých rozkazů.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="E" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>Kvetly jim růže a tvářičky na mrazu,</line>
+<line>naplňovali údivem cukřenky, svět a sebe,</line>
+<line>byli nezaručení, ale též neodvysílaní,</line>
+<line>léčili kočku, která spolkla nit.</line>
+
+<line>Uprostřed té niti světlo odejít,</line>
+<line>umřeli v horoucím a přesvědčivém stisku,</line>
+<line>toto je pravda, pravda, samá pravda, </line>
+<line>KONEC OBELISKU. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Jednohubky</name>
+    <author>Vladimír Mišík</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A"/>Narezlá 
+<chord root="E"/>hudba vodovodní 
+<chord root="F#" type="m"/>trubky
+</line>
+<line>
+<chord root="D"/>tvou hlavu 
+<chord root="F#" type="m"/>zlehka napl
+<chord root="B" type="m"/>ní,
+<chord root="E"/>
+</line>
+<line>
+<chord root="A"/>až přijdeš 
+<chord root="E"/>jednou na jedno
+<chord root="F#" type="m"/>hubky,
+</line>
+<line>
+<chord root="D"/>po kterých i můj 
+<chord root="F#" type="m"/>kocour zavr
+<chord root="B" type="m"/>ní.
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+<line>Můžem se mít trochu rádi </line>
+<line>a po tý kráse jen tak snít, </line>
+<line>až přijdeš jednou na jednohubky, </line>
+<line>naplníme štěstím celý byt. </line>
+</verse>
+ 
+<verse>
+<line>Tak tu sedím, hodiny letí, </line>
+<line>domovník vrata zamyká, </line>
+<line>můj šarm &ndash; hromádka smetí, </line>
+<line>o patro níž kohoutek zavzlyká. </line>
+</verse>
+ 
+<verse>
+<line>Tak tu sedím, hodiny letí, </line>
+<line>prostřený stůl, jen si brát </line>
+<line>zhrzená touha, svátek světí, </line>
+<line>co dělat &ndash; jak se nedat zmást. </line>
+</verse>
+ 
+<verse>
+<line>Až příště půjdeš na jednohubky, </line>
+<line>nedej na to, co o mně říkají, </line>
+<line>jsou to jen řeči závistivý tetky, </line>
+<line>nedej na to, oslice jen hýkají. </line>
+</verse>
+ 
+<verse>
+<line>Až příště půjdeš na jednohubky, </line>
+<line>po kterých i můj kocour zavrní, </line>
+<line>nedej na to, co ti o mně řekli, </line>
+<line>nenalezneš utrápený stvoření. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Variace na renesanční téma</name>
+    <authors>
+      <author>Václav Hrabě</author>
+      <author>Vladimír Mišík</author>
+    </authors>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Láska je jako 
+<chord root="F"/>večernice 
+<chord root="G"/>plující černou 
+<chord root="A" type="m"/>oblohou,
+</line>
+<line>zavřete dveře 
+<chord root="F"/>na petlice, 
+<chord root="G"/>zhasněte v domě všechny 
+<chord root="A" type="m"/>svíce
+</line>
+<line>a opevněte svoje 
+<chord root="F"/>těla, 
+<chord root="G"/>vy, kterým srdce 
+<chord root="A" type="m"/>zkameněla.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C"/>
+<chord root="G" bass="B"/>
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="D"/>
+<chord root="D"/>
+<chord root="D" type="m"/>
+<chord root="E" type="m7"/>
+<chord root="A" type="m(6/7)"/>
+</line>
+</verse>
+
+<verse> 
+<line>Láska je jako krásná loď, která ztratila kapitána, </line>
+<line>námořníkům se třesou ruce a bojí se, co bude zrána, </line>
+<line>láska je jako bolest z probuzení a horké ruce hvězd, </line>
+<line>které ti oknem do vězení květiny sypou ze svatebních cest, </line>
+<line>které ti oknem do vězení květiny sypou ze svatebních cest. </line>
+</verse>
+
+<verse>
+<line>
+<chord root="C"/>
+<chord root="G" bass="B"/>
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="D"/>
+<chord root="D"/>
+<chord root="D" type="m"/>
+<chord root="E" type="m7"/>
+<chord root="A" type="m(6/7)"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Láska je jako večernice plující černou oblohou, </line>
+<line>náš život hoří jako svíce a mrtví milovat nemohou, </line>
+<line>náš život hoří jako svíce a mrtví milovat nemohou&hellip; </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Honky Tonky Blues</name>
+    <authors>
+      <author>Jiří Suchý</author>
+      <author>Jiří Šlitr</author>
+    </authors>
+  </header>
+
+<verse>
+<line>
+<chord root="F"/>Každý ráno na piáno hraje Jack, hraje Jack,
+</line>
+<line>
+<chord root="Bb" type="7"/>každý ráno na piáno 
+<chord root="F"/>hraje Jack, hraje Jack,
+</line>
+<line>
+<chord root="C" type="7"/>honky tonk, 
+<chord root="Bb" type="7"/>honky tonk, 
+<chord root="F"/>honky 
+<chord root="Bb" type="7"/>tonky 
+<chord root="F"/>blues.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="7"/>Nikomu v domě 
+<chord root="D" type="m"/>nevadí, 
+<chord root="A" type="7"/>že to piáno 
+<chord root="D" type="m"/>neladí,
+</line>
+<line>
+<chord root="G"/>když hraje Jack, 
+<chord root="G" type="dim"/>jak už jsem řek, svý 
+<chord root="G" type="7"/>honky tonky 
+<chord root="C" type="7"/>blues.
+</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Moje malá válka</name>
+    <author>Jaromír Nohavica</author>
+    <album>Osmá barva duhy</album>
+    <year>1989</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Do klopy 
+<chord root="B" type="m7b5"/>jsem si vetkl 
+<chord root="E" type="7"/>rekrutské 
+<chord root="A" type="m"/>třepetálky
+</line>
+<line>a odchá<chord root="B" type="m7b5"/>zím dnes večer 
+<chord root="C" type="maj7"/>do svojí 
+<chord root="B" type="7"/>malé 
+<chord root="Bb" type="maj7"/>války,
+</line>
+<line>
+<chord root="F" type="maj7"/>ne, není 
+<chord root="E" type="7"/>vyhlášena pa
+<chord root="A" type="m"/>tentem císař
+<chord root="F" type="maj7"/>pána,
+</line>
+<line>
+<chord root="C" type="maj7"/>jen ustou
+<chord root="B" type="m7"/>pit už nelze, 
+<chord root="D" type="m7"/>jen ustou
+<chord root="E" type="7"/>pit už nelze,
+</line>
+<line>
+<chord root="A" type="m"/>jen ustou
+<chord root="F"/>pit už nelze, 
+<chord root="E" type="7"/>když padne první rá
+<chord root="A" type="m"/>na.
+</line>
+</verse>
+
+<verse>
+ <line>Tamboři mého srdce do oslích kůží bijí </line>
+   <line>a ve mně šikují se korouhve kompanií, </line>
+   <line>já, pacifista lásky a věčný mírotvorce, </line>
+   <line>kreslím teď lebku s hnáty, kreslím teď lebku s hnáty, </line>
+   <line>kreslím teď lebku s hnáty pastelkou na praporce. </line>
+</verse>
+
+<verse>
+ <line>Velice moc se bojím, držte mi, prosím, palce, </line>
+   <line>poteče hodně krve v té mojí malé válce, </line>
+   <line>vzpomeňte na mě v dobrém, až přijdou zprávy z fronty, </line>
+   <line>já prostě odcházím jen, já prostě odcházím jen, </line>
+   <line>já prostě odcházím jen bránit své horizonty. </line>
+</verse>
+
+<verse>
+ <line>Bránit svůj kousek země, čtvrt čtverečního metru, </line>
+   <line>víc místa nezabírám v botách, čapce a svetru, </line>
+   <line>berou mi moje, moje, a proto dneska večer </line>
+   <line>jdu do své malé války, jdu do své malé války, </line>
+   <line>jdu do své malé války, jdu proti mečům s mečem. </line>
+</verse>
+ 
+</song>
+
+
+<song>
+  <header>
+    <name>Jarní kurýr</name>
+    <author>Miki Ryvola</author>
+    <year>1967</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Dunění kopyt 
+<chord root="F"/>večer slýchá
+<chord root="C"/>vám,
+</line>
+<line>údolím jarní 
+<chord root="E" type="m"/>kurýr jede 
+<chord root="E"/>k nám,
+</line>
+<line>v peře<chord root="A" type="m"/>jích řeka 
+<chord root="G"/>zvoní a 
+<chord root="F"/>jarem vítr 
+<chord root="E" type="7"/>voní,
+</line>
+<line>přijí<chord root="A" type="m"/>ždí jarní 
+<chord root="G"/>kurýr, 
+<chord root="F"/>do
+<chord root="E" type="7"/>bře ho 
+<chord root="A" type="m"/>znám.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="A" type="m"/>Ví, celej 
+<chord root="G"/>kraj to ví,
+</line>
+<line>
+<chord root="F"/>veze nám 
+<chord root="G"/>jaro 
+<chord root="F"/>v brašně 
+<chord root="E" type="7"/>sedlo
+<chord root="A" type="m"/>vý.
+</line>
+</chorus>
+ 
+<verse>
+ <line>Zase jdou krajem vánky voňavý, </line>
+   <line>vobouvám svoje boty toulavý, </line>
+   <line>dobře ví moje milá: i kdyby víla byla, </line>
+   <line>tyhle toulavý boty nezastaví. </line>
+</verse>
+
+<chorus>
+   <line>Mám boty toulavý, </line>
+   <line>ty ani kouzlem nezastaví. </line>
+</chorus>
+
+<verse>
+ <line>Musím jít, mraky táhnou nad hlavou, </line>
+   <line>musím jít stopou bílou toulavou, </line>
+   <line>neplakej, že se ztratím, do roka se vrátím, </line>
+   <line>prošlapám cestu domů jarní travou, </line>
+</verse>
+<chorus>
+   <line>Víš, ty to dobře víš, </line>
+   <line>ty moje boty nezastavíš. </line>
+</chorus>
+</song>
+
+<song>
+  <header>
+    <name>Nebeská brána</name>
+    <authors>
+      <author>Bob Dylan</author>
+      <author>Petr Kalandra</author>
+    </authors>
+  </header>
+
+<verse>
+<line>
+<chord root="G"/>Tak mámo, 
+<chord root="D"/>sundej kytku 
+<chord root="A" type="m7"/>z kabátu,
+</line>
+<line>
+<chord root="G"/>za chvíli 
+<chord root="D"/>mi bude 
+<chord root="C"/>k ničemu.
+</line>
+<line>
+<chord root="G"/>Můj kabát 
+<chord root="D"/>a kudlu vem 
+<chord root="A" type="m7"/>pro tátu,
+</line>
+<line>
+<chord root="G"/>já už stojím 
+<chord root="D"/>před bránou 
+<chord root="C"/>s klíčem.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="G"/>Cejtim, jak 
+<chord root="D"/>klepu na nebeskou 
+<chord root="A" type="m7"/>bránu,
+</line>
+<line>
+<chord root="G"/>cejtim, jak 
+<chord root="D"/>klepu na nebeskou 
+<chord root="C"/>bránu,
+</line>
+<line>
+<chord root="G"/>cejtim, jak 
+<chord root="D"/>klepu na nebeskou 
+<chord root="A" type="m7"/>bránu.
+</line>
+</chorus>
+
+<verse>
+<line>Tak mámo zahrab moje pistole,</line>
+<line>ať už z nich nikdy nikdo nemůže střílet.</line>
+<line>Ještě se sejdem za sto let,</line>
+<line>až se vydáš na poslední výlet.</line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Neberu s sebou milý tváře,</line>
+<line>žijte spolu, co se do vás vejde.</line>
+<line>Až popíšem všechny diáře,</line>
+<line>všichni se tam za tou bránou sejdem.</line>
+</verse>
+
+<chorus>
+<line>Všichni jednou zaklepem na nebeskou bránu&hellip;</line>
+</chorus>
+</song>
+
+
+<song>
+  <header>
+    <name>Mávátka</name>
+    <author>Jaromír Nohavica</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Už dvacet devět roků chodím po světě
+</line>
+<line>
+<chord root="D" type="m"/>a ten 
+<chord root="G"/>svět furt a 
+<chord root="C"/>furt se stejně 
+<chord root="E"/>točí.
+</line>
+<line>
+<chord root="A" type="m"/>Já budu klidně smát se, budu veselý, 
+<chord root="E"/>jenom mi vydloubněte 
+<chord root="A" type="m"/>oči. 
+<chord root="E"/>
+</line>
+   <line>Neviděl bych vypasené páprdy, </line>
+   <line>tisíce let a stále titíž. </line>
+   <line>Když něco prohnilého v státě zasmrdí, </line>
+   <line>říkají: &quoteCzechOpen;Ty snad něco cítíš?&quoteCzechClose;</line>
+
+<line>
+<chord root="D" type="m"/>Říkají mi
+<chord root="G"/>
+<chord root="C"/>dobráci 
+<chord root="E"/>v Rudém právu:
+</line>
+<line>
+<chord root="D" type="m"/>&quoteCzechOpen;Není tak 
+<chord root="G"/>zle, 
+<chord root="C"/>jen chlapče 
+<chord root="E"/>zvedni hlavu!&quoteCzechClose;
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="A" type="m"/>Dejte mi do ruky 
+<chord root="D" type="m"/>mávátko a 
+<chord root="A" type="m"/>řekněte, 
+<chord root="E"/>jak volat 
+<chord root="A" type="m"/>&quoteCzechOpen;Sláva!&quoteCzechClose;,
+<chord root="E"/>
+</line>
+<line>
+<chord root="A" type="m"/>já už si najdu ten 
+<chord root="D" type="m"/>správný směr a budu 
+<chord root="A" type="m"/>mávat, 
+<chord root="E"/>mávat, 
+<chord root="A" type="m"/>mávat.
+</line>
+</chorus>
+
+<verse>
+ <line>Můj soused odvedle je farář v kostele, </line>
+   <line>moc príma kluk, jenže často hledí k nebi. </line>
+   <line>Já jaksi nemám v nebi žádné přátele </line>
+   <line>a bůh, ten pro mě nikdy nebyl. </line>
+   <line>Čtu jenom básně těch, kteří už zemřeli </line>
+   <line>a ten svět furt a furt se stejně točí. </line>
+   <line>Já budu klidně smát se, budu veselý, </line>
+   <line>jenom mi vydloubněte oči. </line>
+   <line>Říkají mi dobráci u koryta: </line>
+   <line>&quoteCzechOpen;Není tak zle, jen doba je složitá!&quoteCzechClose;</line>
+</verse>
+
+<chorus/> 
+
+<verse>
+ <line>Okresní inspektor Vlček má vilu, dům a byt, </line>
+   <line>takové nic, a jak si krásně žije. </line>
+   <line>Já musel sedm roků bez koupelny žít, </line>
+   <line>proto ať žije anarchie. </line>
+   <line>Když tátu vyhodili, máma brečela, </line>
+   <line>že nedokázal převléct vlastní kabát, </line>
+   <line>to já mám někde na dně duše docela, </line>
+   <line>třeste se, trůny knížat, hrabat. </line>
+   <line>Říkají mi dobráci za koryty: </line>
+   <line>&quoteCzechOpen;Není tak zle, ovšem musíte pochopiti&hellip;&quoteCzechClose;, já zpívám: </line>
+</verse>
+
+<chorus/> 
+ 
+</song>
+
+
+<song>
+  <header>
+    <name>Aceton blues</name>
+    <author>ASPM</author>
+  </header>
+
+<verse>
+<line>Jo zase přišly složenky a moje holka chtěla nový šaty, a tak mi zbylo z vejplaty jenom 16,20 na aceton,</line>
+<line>tak jsem naložil tašku s lahví acetonu na nosič svý Jáwy a vyrazil jsem Žitnou ulicí k dálnici,</line>
+<line>jo tak to je aceton blues, jenom tak jak já ho mám v palici.</line>
+</verse>
+
+<verse>
+<line>Zrovna cejtim, jak aceton vytejká z rozbitý lahve dolu na horký vejfuky,</line>
+<line>a tak vyhazuju střepy a večeři do koše a vytírám si tašku svou plátěnou čepicí,</line>
+<line>jo to je aceton blues, to je malér v Žitný ulici.</line>
+</verse>
+
+<verse>
+<line>Rozjel jsem se, píchnul o střep a udělal jsem si vejron v některym ze svejch četnejch zápěstí,</line>
+<line>pak jsem si vypůjčil na pivo a na vlak a přijel jsem domů ve čtvrtek, anebo možná až ve středu,</line>
+<line>jo tak to je aceton blues, jenom tak jak já ho dovedu.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Jantarová země</name>
+    <author>Žalman</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Do splašenejch 
+<chord root="C"/>koní už zase lovci 
+<chord root="A" type="m"/>střílí,
+</line>
+<line>ulicí je 
+<chord root="C"/>ženou dolů k ohra
+<chord root="E" type="m"/>dám
+</line>
+<line>zítra jako 
+<chord root="D" type="m"/>vloni, hra je pro ně 
+<chord root="A" type="m"/>dohraná,
+</line>
+<line>bujný hlavy 
+<chord root="D" type="m"/>skloní někam do trá
+<chord root="A" type="m"/>vy.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="D" type="m"/>Krá, až si kabát 
+<chord root="A" type="m"/>změní,
+</line>
+<line>
+<chord root="D" type="m"/>krá, bílé vrány odle
+<chord root="A" type="m"/>tí,
+</line>
+<line>
+<chord root="D" type="m"/>krá, v jantarový 
+<chord root="A" type="m"/>zemi,
+</line>
+<line>přista<chord root="F"/>nou v jiném stole
+<chord root="E" type="m"/>tí.
+</line>
+</chorus>
+<verse>
+ <line>Zamčený jsou stáje, kat už hřívy stříhá, </line>
+   <line>lovčí král je v kapli postý korunován, </line>
+   <line>sníh pomalu taje, těla stromů se probouzí, </line>
+   <line>v jantarový zemi bude zas co pít. </line>
+</verse>
+
+<chorus/>
+</song>
+
+<song>
+  <header>
+    <name>Věřím v nás</name>
+    <author>ASPM</author>
+  </header>
+
+<multicols>
+<verse>
+<line>
+<chord root="D"/>Hej, ptej se, jak se mám
+</line>
+<line>a kdo z nás bolest zná</line>
+<line>a jestli jsem tě 
+<chord root="G"/>správně 
+<chord root="D"/>vzal.
+</line>
+<line>Jen se na ně podívej,</line>
+<line>jak si přejou, abych 
+<chord root="C"/>šel,
+</line>
+<line>abych 
+<chord root="G"/>zmizel do pekel,
+</line>
+<line>protože 
+<chord root="D"/>věřím v nás.
+</line>
+</verse>
+
+<verse>
+<line>Táhni, odkud jsi sem vlít,</line>
+<line>ty nám ji nesmíš vzít,</line>
+<line>ty jsi jinej, než my chcem.</line>
+<line>Já se jistě nezměním,</line>
+<line>jsem od svejch dveří tisíc mil,</line>
+<line>najednou je necítím,</line>
+<line>protože věřím v nás.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="C"/>Věřím v nás 
+<chord root="G"/>na houpačce úsměvů a 
+<chord root="D"/>pláčů,
+</line>
+<line>
+<chord root="C"/>věřím v nás 
+<chord root="G"/>i v to, že umíš 
+<chord root="D"/>lítat,
+</line>
+<line>
+<chord root="C"/>věřím v nás 
+<chord root="G"/>i následující 
+<chord root="D"/>ráno.
+</line>
+<line>
+<chord root="G"/>Všechno zlý je 
+<chord root="A"/>pryč, co bolí,
+</line>
+<line>
+<chord root="G"/>když se noc 
+<chord root="A"/>ztrácí a jasní,
+</line>
+<line>
+<chord root="G"/>a já ji 
+<chord root="A"/>cejtím ve svým srdci dál.
+</line>
+</chorus>
+
+<verse>
+<line>Hej, nech mě tam, kde jsem</line>
+<line>a já pootočím Zem,</line>
+<line>dáváš mi víc než můžu snést.</line>
+<line>Ať si říkají, co chtěj,</line>
+<line>naděj nebo beznaděj,</line>
+<line>vpád moře do pouští</line>
+<line>a já tě opouštím.</line>
+</verse>
+
+<chorus>
+<line>Věřím v nás jako v žízeň na letních toulkách,</line>
+<line>věřím v nás, i když jsme každej jenom část,</line>
+<line>věřím v nás, i když se bílá mění v&nbsp;černou.</line>
+<line>Všechno zlý je pryč, co bolí,</line>
+<line>když se noc ztrácí a jasní,</line>
+<line>a já ji cejtím ve svým srdci dál.</line>
+</chorus>
+
+<columnbreak/>
+<verse>
+<line>Nech mě dozpívat můj part</line>
+<line>díků sekund, snů a kvart,</line>
+<line>vzdor plánům, který se mnou maj.</line>
+<line>Žádnou hořkost necítím,</line>
+<line>kluzký silnice se nebojím,</line>
+<line>vím, že zůstanu,</line>
+<line>protože věřím v nás.</line>
+</verse>
+</multicols>
+</song>
+
+
+<song>
+  <header>
+    <name>Trochu v hlavě mám</name>
+    <author>ASPM</author>
+  </header>
+
+<verse>
+<line>
+<chord root="E"/>Trochu 
+<chord root="F#" type="m"/>v hlavě mám,
+<chord root="B" type="7"/>
+</line>
+<line>chodím 
+<chord root="F#" type="m"/>sem a tam,
+<chord root="B" type="7"/>
+</line>
+<line>blou
+<chord root="E"/>mám, 
+<chord root="E" type="6"/>cou
+<chord root="E"/>rám.
+<chord root="E" type="6"/>
+</line>
+</verse>
+
+<verse>
+<line>Chodím po Zlíně,</line>
+<line>páchnu po víně,</line>
+<line>bloumám líně.</line>
+</verse>
+
+<chorus>
+<line>Pane 
+<chord root="E"/>strážníku, 
+</line>
+<line>vždyť ta 
+<chord root="E" type="7"/>trocha povyku,
+</line>
+<line>to nic není, to nic 
+<chord root="A"/>neznamená,
+</line>
+<line>to já 
+<chord root="A" type="m"/>mívám ve zvyku.
+</line>
+</chorus>
+
+<verse>
+<line>Vždyť sám Alláh ví,</line>
+<line>že svět bez láhví</line>
+<line>je zlý, prázdný&hellip;</line>
+</verse>
+
+</song>
+
+<song>
+  <header>
+    <name>Ostrov pokladů</name>
+    <author>Karel Kryl</author>
+    <album>Monology</album>
+    <year>1992</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="G"/>
+<chord root="C"/>
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="G"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C"/>Jsem zřejmě 
+<chord root="A" type="m"/>na hlavu, když 
+<chord root="F"/>o pocty se 
+<chord root="G"/>nervu,
+</line>
+<line>
+<chord root="C"/>když s proudem 
+<chord root="A" type="m"/>neplavu a 
+<chord root="F"/>raději pro Mi
+<chord root="G"/>nervu
+</line>
+<line>přepřahám 
+<chord root="C"/>Pegasy, 
+<chord root="A" type="m"/><chord root="F"/>
+<chord root="G"/>přepřahám 
+<chord root="C"/>Pegasy
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="G"/>
+<chord root="C" type="7" optional="yes"/>
+</line>
+</verse>
+
+<verse> 
+ <line>Jsem zřejmě na mozek, když hledám před vzlétnutím </line>
+   <line>k přistání podvozek a do vztyku se nutím </line>
+   <line>s rizikem pro vlasy, s rizikem pro vlasy. </line>
+</verse>
+
+<chorus>
+<line>
+<chord root="F"/>Když místo po Hradu sám chodím po ulici, 
+</line>
+<line>
+<chord root="C"/>když smím a nekradu, 
+<chord root="D" type="7"/>jsem zřejmě 
+<chord root="G"/>na palici,
+</line>
+<line>
+<chord root="C"/>já zůstal 
+<chord root="A" type="m"/>pozadu, 
+<chord root="F"/>hniju si 
+<chord root="G"/>na vesnici 
+<chord root="C"/>rád.
+<chord root="A" type="m"/>
+<chord root="F"/>
+<chord root="G"/>
+</line>
+</chorus>
+
+<verse>
+ <line>Jsem zřejmě na lebku, když nechci nové bohy </line>
+   <line>či pestrou nálepku a preferuji nohy </line>
+   <line>k pohybu po zemi, k pohybu po zemi. </line>
+</verse>
+
+<verse>
+ <line>Jsem zřejmě na bednu, když nevím, kolik za to, </line>
+   <line>když strachem neblednu a píšu pro Erató, </line>
+   <line>byť zase v podzemí, byť zase v podzemí. </line>
+</verse>
+
+<chorus>
+<line>Spláchl jsem dozadu výhodnou investici: </line>
+   <line>lépe žít o hladu, než zdobit šibenici! </line>
+   <line>Svůj ostrov pokladů v domečku na vesnici, </line>
+   <line>svůj ostrov pokladů v domečku na hranici, </line>
+   <line>svůj ostrov pokladů v exilu za hranicí mám&hellip;  </line>
+</chorus>
+</song>
+
+<song>
+  <header>
+    <name>Znamení doby</name>
+    <author>Karel Kryl</author>
+    <album>Bratříčku, zavírej vrátka</album>
+    <year>1969</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A"/>
+<chord root="D"/>
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D"/>Před okny 
+<chord root="A"/>sloup &ndash; 
+<chord root="D"/>znamení 
+<chord root="A"/>moru,
+</line>
+<line>
+<chord root="F#" type="m"/>předpověď 
+<chord root="A"/>provazů a divných 
+<chord root="E"/>mravů,
+</line>
+<line>klesáme 
+<chord root="A"/>hlo
+<chord root="A" type="7"/>ub se strachem 
+<chord root="D"/>tvorů
+</line>
+<line>
+<chord root="F#" type="m"/>před ranou do vazu, 
+<chord root="C#" type="m"/>před zlobou 
+<chord root="F#" type="m"/>davu.
+<chord root="E"/>
+</line>
+</verse>
+ 
+<verse>
+ <line>Na stěně mříž &ndash; znamení doby, </line>
+   <line>děsím se obrázků, děsím se šachu, </line>
+   <line>zbyl jenom kříž, zůstaly skoby </line>
+   <line>a myšlenka na lásku v zajetí strachu. </line>
+</verse>
+
+<verse>
+<line>
+<chord root="E"/>Zástupy lidí jdou pozpátku vpřed, 
+<chord root="F#" type="m"/>tak jako raci,
+</line>
+<line>
+<chord root="E"/>zbabělost &ndash; hostii každý si pozvedá, 
+<chord root="F#" type="m"/>pálí ho dlaň,
+</line>
+<line>
+<chord root="E"/>mnozí se stydí, že stavěli svět, 
+<chord root="F#" type="m"/>některý zvrací,
+</line>
+<line>
+<chord root="E"/>dávaje bestii 
+<chord root="F#" type="m"/>ze svého oběda 
+<chord root="C#" type="m"/>povinnou daň.
+</line>
+</verse>
+
+<verse>
+ <line>K výkazu ztrát připište sebe, </line>
+   <line>že jste jen couvali mlčky a kvapně, </line>
+   <line>zato když brát chtěli vám nebe, </line>
+   <line>že jste jim kývali, Bože, tak trapně! </line>
+</verse>
+
+<verse>
+ <line>Přes čelo stín &ndash; znamení studu, </line>
+   <line>znamení malého lidského strachu, </line>
+   <line>na pití blín, k zábavě nudu, </line>
+   <line>k důvěře podlého a nasypat hrachu! </line>
+</verse>
+
+</song>
+
+<song>
+  <header>
+    <name>Far From Me</name>
+    <author>Nick Cave &ampersand; the Bad Seeds</author>
+    <album>The Boatman's Call</album>
+    <year>1997</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>For you dear, i was 
+<chord root="D" type="m"/>born,
+</line>
+<line>
+<chord root="C"/>for you I was raised 
+<chord root="D" type="m"/>up,
+</line>
+<line>
+<chord root="C"/>for you I've lived and for 
+<chord root="D" type="m"/>you I will die,
+</line>
+<line>for you I'm dying 
+<chord root="C"/>now.
+<chord root="D" type="m"/>
+</line>
+<line>
+<chord root="F"/>You were my mad little 
+<chord root="G"/>lover
+</line>
+<line>in a 
+<chord root="F"/>world where everybody fucks every
+<chord root="G"/>body else over.
+</line>
+<line>You who are so 
+<chord root="D" type="m"/>far from me,
+<chord root="G"/>
+</line>
+<line>
+<chord root="D" type="m"/>far from me,
+<chord root="G"/>
+</line>
+<line>
+<chord root="D" type="m"/>so far from me,
+<chord root="G"/>
+</line>
+<line>
+<chord root="E" type="m"/>way across some 
+<chord root="F"/>cold neurotic 
+<chord root="G"/>sea,
+</line>
+<line>
+<chord root="C"/>far from me
+<chord root="D" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>I would talk to you of all matter of things,</line>
+<line>with a smile you would reply,</line>
+<line>then the sun would leave your pretty face</line>
+<line>and you'd retreat from the front of your eyes.</line>
+<line>I keep hearing that you're doing best</line>
+<line>and I hope your heart beats happy in your infant breast.</line>
+<line>You are so far from me,</line>
+<line>far from me, </line>
+<line>far from me.</line>
+</verse>
+
+<verse>
+<line>There is no knowledge but I know it,</line>
+<line>there's nothing to learn from that vacant voice</line>
+<line>that sails to me across the line</line>
+<line>from the ridiculous to the sublime.</line>
+<line>It's good to hear you're doing so well</line>
+<line>but really can't you find somebody else that you can ring and tell?</line>
+<line>Did you ever care for me?</line>
+<line>Were you ever there for me?</line>
+<line>So far from me.</line>
+</verse>
+
+<verse>
+<line>You told me you'd stick by me</line>
+<line>through the thick and through the thin,</line>
+<line>those were your very words,</line>
+<line>my fair-weather friend.</line>
+<line>You were my brave-hearted lover,</line>
+<line>at the first taste of trouble went running back to mother,</line>
+<line>so far from me,</line>
+<line>far from me,</line>
+<line>suspended in your bleak and fishless sea,</line>
+<line>far from me,</line>
+<line>far from me.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Žalm 71.</name>
+    <author>Karel Kryl</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Tři černí mravenci topí se v slze 
+<chord root="E" type="7"/>srny,
+</line>
+<line>nápisy na věnci a na koruně tr<chord root="A" type="m"/>ny,
+</line>
+<line>padáme pod tíží a snažíme se 
+<chord root="E" type="7"/>dolézt,
+</line>
+<line>vlekouce na kříži svou samotu a bolest.</line>
+</verse>
+
+<chorus>
+<line>Nebe je 
+<chord root="D" type="m"/>růžové, po cestě 
+<chord root="A" type="m"/>křížové
+</line>
+<line>snad konečně 
+<chord root="G"/>spočinem jak pšenice 
+<chord root="A" type="m"/>v klásku,
+</line>
+<line>spočinem 
+<chord root="D" type="m"/>bez hněvu, přirostli 
+<chord root="A" type="m"/>ke dřevu,
+</line>
+<line>vždyť nejtěžším 
+<chord root="G"/>zločinem 
+<chord root="E"/>je hlásati 
+<chord root="A" type="m"/>lásku.
+<chord root="E" type="7"/>
+</line>
+</chorus>
+
+<verse>
+ <line>Vezem se v kočáře, ve kterém přežijeme, </line>
+   <line>s obrazem mocnáře, kterého milujeme, </line>
+   <line>plačíce pro mladost jsme staří, bohudíky, </line>
+   <line>řvem Ódu na radost, že nejsme mučedníky. </line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Dozněla Devátá a končí komedie, </line>
+   <line>namísto Piláta svět si dnes ruce myje, </line>
+   <line>sám kříž si zhotoví a sám si hřeby ková </line>
+   <line>a král je křížový, hraje se Osudová. </line>
+</verse>
+
+<chorus/>
+</song>
+
+
+<song>
+  <header>
+    <name>The Gunner's Dream</name>
+    <author>Pink Floyd</author>
+    <album>The Final Cut</album>
+    <year>1983</year>
+  </header>
+
+<verse>
+<line>
+<chord root="G"/>
+<chord root="G" type="+"/>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="E" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="G"/>Floating down 
+<chord root="G" type="+"/>through the clouds,
+</line>
+<line>
+<chord root="E" type="m" bass="G"/>memories come rushing 
+<chord root="C"/>up to meet me now.
+</line>
+<line>In the 
+<chord root="G"/>space between the heavens and in the 
+<chord root="D"/>corner of some foreign field
+</line>
+<line>
+<chord root="C"/>I had a 
+<chord root="G"/>dream,
+<chord root="E" type="m"/>
+<chord root="C"/>
+</line>
+<line>I had a 
+<chord root="G"/>dream.
+</line>
+</verse>
+
+<verse>
+<line>Goodbye Max, goodbye Ma,</line>
+<line>after this service when you're walking slowly to the car</line>
+<line>and the silver in her hair shines in the cold November air,</line>
+<line>
+<chord root="E" type="m"/>you hear the tolling bell and 
+<chord root="C" type="maj7"/>touch the silk in 
+<chord root="D" bass="C"/>your lapel.
+<chord root="C"/>
+</line>
+<line>And 
+<chord root="G"/>as the tear drops rise to meet the 
+<chord root="D"/>comfort of the band,
+<chord root="E" type="m"/>
+</line>
+<line>
+<chord root="C"/>you take her frail 
+<chord root="D"/>hand and hold on to the dream.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="G"/>
+<chord root="G" type="+"/>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="E" type="m"/>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="D" bass="C"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="G"/>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="E" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>A place to stay, enough to eat,</line>
+<line>Somewhere old heroes shuffle safely down the street.</line>
+<line>Where you can speak out loud about your doubts and fears,</line>
+<line>And what's more no-one ever disappears,</line>
+<line>You never hear their standard issue kicking in your door.</line>
+<line>You can relax on both sides of the tracks,</line>
+<line>and mani<chord root="E" type="m"/>acs don't blow holes in 
+<chord root="C"/>bandsmen by re
+<chord root="D" type="7" bass="C"/>mote control,
+</line>
+<line>and 
+<chord root="G"/>everyone has recourse to the 
+<chord root="D"/>law,
+</line>
+<line>and 
+<chord root="C"/>no-one kills the children any
+<chord root="G"/>more,
+<chord root="E" type="m"/>
+</line>
+<line>
+<chord root="C"/>no-one kills the children any
+<chord root="G"/>more.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C"/>Night after 
+<chord root="D"/>night, going 
+<chord root="G"/>round and 
+<chord root="D"/>round my 
+<chord root="E" type="m"/>brain,
+<chord root="D"/>
+</line>
+<line>his 
+<chord root="C"/>dream is 
+<chord root="D"/>driving me in
+<chord root="G"/>sane.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="G"/>In the corner of some foreign field, the 
+<chord root="D"/>gunner sleeps tonight,
+</line>
+<line>
+<chord root="E" type="m"/>what's done is done.
+<chord root="C"/>
+<chord root="D" bass="C"/>
+</line>
+<line>We 
+<chord root="G"/>cannot just write off his final 
+<chord root="D"/>scene,
+</line>
+<line>
+<chord root="C"/>take heed of his 
+<chord root="G"/>dream,
+<chord root="E" type="m"/>
+<chord root="C"/>take 
+<chord root="E" type="m"/>heed.
+</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>High Hopes</name>
+    <author>Pink Floyd</author>
+    <album>The Division Bell</album>
+    <year>1994</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C" type="m"/>Beyond the ho
+<chord root="Eb"/>rizon of the 
+<chord root="F" type="m"/>place we lived when 
+<chord root="G"/>we were young,
+</line>
+<line>
+<chord root="C" type="m"/>In a world of 
+<chord root="Eb"/>magnets and mira
+<chord root="G"/>cles.
+</line>
+<line>Our thoughts strayed constantly and with out boundary,</line>
+<line>the ringing of the division bell had begun.</line>
+</verse>
+
+<verse>
+<line>Along the 
+<chord root="Bb"/>long road and 
+<chord root="G" type="7"/>on down the causeway,
+</line>
+<line>
+<chord root="Ab"/>do they still 
+<chord root="Bb"/>meet there by the 
+<chord root="G" type="7"/>cut.
+</line>
+</verse>
+
+
+<verse>
+<line>There was a ragged band who followed in our footsteps</line>
+<line>running before times took our dreams away,</line>
+<line>leaving the myriad small creatures trying to tie us to the ground</line>
+<line>to a life consumed by slow decay.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="Ab"/>The grass was 
+<chord root="C" type="m"/>greener,
+<chord root="G" type="m"/>
+<chord root="Ab"/>
+</line>
+<line>
+<chord root="Bb"/>the light was 
+<chord root="C" type="m"/>brighter,
+<chord root="Eb"/>
+<chord root="F" type="m"/>
+</line>
+<line>
+<chord root="Ab"/>with friends sur
+<chord root="C" type="m"/>rounded,
+<chord root="G" type="m"/>
+<chord root="Ab"/>
+</line>
+<line>
+<chord root="Ab"/>the nights of 
+<chord root="C" type="m"/>wonder.
+<chord root="Eb"/>
+<chord root="F" type="m"/>
+</line>
+</chorus>
+
+
+<verse>
+<line>Looking beyond the embers of bridges glowing behind us</line>
+<line>to a glimpse of how green it was on the other side.</line>
+<line>Steps taken forwards but sleepwalking back again</line>
+<line>dragged by the force of some sleeping tide.</line>
+</verse>
+
+<verse>
+<line>At a higher altitude with flag unfurled</line>
+<line>we reached the dizzy heights of that dreamed of world.</line>
+</verse>
+
+<verse>
+<line>Encumbered forever by desire and ambition,</line>
+<line>there's a hunger still unsatisfied.</line>
+<line>Our weary eyes still stray to the horizon</line>
+<line>though down this road I've been so many times.</line>
+</verse>
+
+<chorus>
+<line>The grass was greener,</line>
+<line>the light was brighter,</line>
+<line>the taste was sweeter,</line>
+<line>the nights of wonder,</line>
+<line>with friends surrounded,</line>
+<line>the dawn mist glowing,</line>
+<line>the water flowing,</line>
+<line>the endless river,</line>
+<line>forever and ever&hellip;</line>
+</chorus>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Je veux</name>
+    <author>Zaz</author>
+    <album>Zaz</album>
+    <year>2010</year>
+  </header>
+
+<verse>
+<line>
+<chord root="D" type="m"/><chord root="Bb"/><chord root="C"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D" type="m"/>Donnez moi une suite au Ritz, je n'en veux 
+<chord root="C"/>pas,
+</line>
+<line>des bijoux de chez Chanel, je n'en veux 
+<chord root="Bb"/>pas,
+</line>
+<line>donnez moi une limousine, j'en ferais 
+<chord root="A"/>quoi?
+</line>
+</verse>
+
+<verse>
+<line>Offrez moi du personnel, j'en ferais quoi?</line>
+<line>Un manoir a Neufchatel, ce n'est pas pour moi,</line>
+<line>offrez moi la Tour Eiffel, j'en ferais quoi?</line>
+</verse>
+
+<chorus>
+<line>Je Veux d'l'amour, d'la joie, de la bonne humeur, </line>
+<line>ce n'est pas votre argent qui f'ra mon bonheur, </line>
+<line>moi j'veux crever la main sur le coeur. </line>
+<line>Allons ensemble découvrir ma liberté, </line>
+<line>oubliez donc tous vos clichés, </line>
+<line>bienvenue dans ma réalité.</line>
+</chorus>
+
+<verse>
+<line>
+<chord root="D" type="m"/><chord root="Bb"/><chord root="C"/>
+</line>
+</verse>
+
+<verse>
+<line>J'en ai marre d'vos bonnes manières, c'est trop pour moi,</line>
+<line>moi je mange avec les mains et j'suis comme ça,</line>
+<line>j'parle fort et je suis franche, excusez moi!</line>
+</verse>
+
+<verse>
+<line>Finie l'hypocrisie moi j'me casse de là,</line>
+<line>j'en ai marre des langues de bois,</line>
+<line>regardez moi, toute manière j'vous en veux pas et j'suis comme ça.</line>
+</verse>
+
+<chorus/>
+</song>
+
+
+<song>
+  <header>
+    <name>Stagger Lee</name>
+    <author>Nick Cave &ampersand; the Bad Seeds</author>
+    <album>Murder Ballads</album>
+    <year>1996</year>
+  </header>
+
+<verse>
+<line>It was 
+<chord root="D" type="m"/>back in '32 when times were hard,
+</line>
+<line>he had a Colt .45 and a deck of cards, 
+<chord root="A" type="m"/>Stagger Lee.
+</line>
+</verse>
+
+<verse>
+<line>He wore rat-drawn shoes and an old stetson hat,</line>
+<line>had a '28 Ford, had payments on that, Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>His woman threw him out in the ice and snow</line>
+<line>and she told him, &quoteEnglishOpen;Never ever come back no more, Stagger Lee.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>So he walked through the rain and he walked through the mud</line>
+<line>till he came to a place called The Bucket Of Blood, Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>He said &quoteEnglishOpen;Mr Motherfucker, you know who I am,&quoteEnglishClose;</line>
+<line>and the barkeep said, &quoteEnglishOpen;No, and I don't give a good goddamn,&quoteEnglishClose; to Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>He said, &quoteEnglishOpen;Well bartender, it's plain to see</line>
+<line>I'm that bad motherfucker called Stagger Lee, Mr. Stagger Lee.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>Well, the barkeep said, &quoteEnglishOpen;Yeah, I've heard your name down the way</line>
+<line>and I kick motherfucking asses like you every day, Mr. Stagger Lee.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>Well those were the last words that the barkeep said</line>
+<line>'cause Stag put four holes in his motherfucking head.</line>
+</verse>
+
+<verse>
+<line>Just then in came a broad called Nellie Brown</line>
+<line>known to make more money than any bitch in town.</line>
+</verse>
+
+<verse>
+<line>She struts across the bar, hitching up her skirt,</line>
+<line>over to Stagger Lee, she's starting to flirt with Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>She saw the barkeep, said, &quoteEnglishOpen;O God, he can't be dead!&quoteEnglishClose;</line>
+<line>Stag said, &quoteEnglishOpen;Well, just count the holes in the motherfucker's head.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>She said, &quoteEnglishOpen;You ain't look like you scored in quite a time,</line>
+<line>why not come to my pad? It won't cost you a dime, Mr. Stagger Lee.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>&quoteEnglishOpen;But there's something that I have to say before you begin:</line>
+<line>You'll have to be gone before my man Billy Dilly comes in, Mr. Stagger Lee.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>&quoteEnglishOpen;I'll stay here till Billy comes in, till time comes to pass</line>
+<line>and furthermore I'll fuck Billy in his motherfucking ass,&quoteEnglishClose; Said Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>&quoteEnglishOpen;I'm a bad motherfucker, don't you know</line>
+<line>and I'll crawl over fifty good pussies just to get one fat boy's asshole,&quoteEnglishClose; said Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>Just then Billy Dilly rolls in and he says, &quoteEnglishOpen;You must be</line>
+<line>that bad motherfucker called Stagger Lee.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>&quoteEnglishOpen;Yeah, I'm Stagger Lee and you better get down on your knees</line>
+<line>and suck my dick, because If you don't you're gonna be dead,&quoteEnglishClose; said Stagger Lee.</line>
+</verse>
+
+<verse>
+<line>Well, Billy Dilly dropped down and slobbered on his head</line>
+<line>and Stag filled him full of lead&hellip;</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Crossroads</name>
+    <authors>
+      <author>Robert Johnson</author>
+      <author>Cream</author>
+    </authors>
+    <album>Wheels of Fire</album>
+    <year>1968</year>
+  </header>
+
+<verse>
+<line>I went down to the crossroads, fell down on my knees.</line>
+<line>down to the crossroads, fell down on my knees,</line>
+<line>asked the Lord above for mercy, &quoteEnglishOpen;Save me if you please.&quoteEnglishClose;</line>
+</verse>
+
+<verse>
+<line>I went down to the crossroads, tried to flag a ride,</line>
+<line>down to the crossroads, tried to flag a ride,</line>
+<line>nobody seemed to know me, everybody passed me by.</line>
+</verse>
+
+<verse>
+<line>Well I'm going down to Rosedale, take my rider by my side,</line>
+<line>going down to Rosedale, take my rider by my side.</line>
+<line>you can still barrelhouse, baby, on the riverside.</line>
+</verse>
+
+<verse>
+<line>Going down to Rosedale, take my rider by my side,</line>
+<line>going down to Rosedale, take my rider by my side,</line>
+<line>you can still barrelhouse, baby, on the riverside.</line>
+</verse>
+
+<verse>
+<line>You can run, you can run, tell my friend-boy, Willie Brown,</line>
+<line>run, you can run, tell my friend-boy, Willie Brown,</line>
+<line>that I'm staying at the crossroads, believe I'm sinking down.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Dvacet</name>
+    <author>Karel Kryl</author>
+    <album>Tekuté písky</album>
+    <year>1990</year>
+  </header>
+
+<verse>
+<line>Ztichly 
+<chord root="A" type="m"/>louky i 
+<chord root="G"/>bor, mrtvé 
+<chord root="A" type="m"/>vrcholy 
+<chord root="G"/>hor,
+</line>
+<line>padl 
+<chord root="A" type="m"/>žal na ve
+<chord root="G"/>čer srpno
+<chord root="A" type="m"/>vý,
+</line>
+<line>v prachu 
+<chord root="D" type="m"/>dvaceti 
+<chord root="G"/>let zmizel 
+<chord root="D" type="m"/>oheň i 
+<chord root="G"/>led, 
+</line>
+<line>zbyly 
+<chord root="D" type="m"/>jen caro
+<chord root="G"/>vy proslo
+<chord root="E"/>vy,
+</line>
+<line>
+<chord root="A" type="m"/>z větví rezavých 
+<chord root="F"/>lesů 
+<chord root="E"/>hřmí ticho děsu,
+</line>
+<line>
+<chord root="A" type="m"/>slepí a hluší dál kulmují uši
+</line>
+<line>králi 
+<chord root="G"/>Mi
+<chord root="E"/>daso
+<chord root="A" type="m"/>vi.
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+ <line>Krví značena je dlažba u Dunaje, </line>
+   <line>hroby padlých jsou bezejmenné, </line>
+   <line>heslo o vítězství cizím peřím se skví, </line>
+   <line>dávno krev vsákla do kamene, </line>
+   <line>barva rubínu z žezla v záhnědu zrezla, </line>
+   <line>zavřeni v kleci jsme otroky věcí, </line>
+   <line>nikdo nevzpomene. </line>
+</verse>
+
+<verse>
+ <line>Nad zemi prodanou větry až přivanou </line>
+   <line>oblaka zelená z žíravin, </line>
+   <line>vlasy tvé havraní uchopím do dlaní, </line>
+   <line>z prstenu zaplane vltavín, </line>
+   <line>snítka nachových plodů rozčeří vodu, </line>
+   <line>navzdory posté zas na břehu vzroste </line>
+   <line>rudý trs jeřabin&hellip; </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Marnivá sestřenice</name>
+    <authors>
+      <author>Jiří Suchý</author>
+      <author>Jiří Šlitr</author>
+    </authors>
+    <year>1960</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C#"/>Měla vlasy samou loknu, jé-
+<chord root="G#" type="7"/>je-je,
+</line>
+<line>ráno přistoupila k oknu, jé-<chord root="C#"/>je-je,
+</line>
+<line>vlasy samou 
+<chord root="C#" type="7"/>loknu měla 
+<chord root="F#"/>a na nic víc 
+<chord root="F#" type="m"/>nemyslela,
+</line>
+<line>
+<chord root="C#"/>a na nic víc 
+<chord root="A#" type="7"/>nemyslela, 
+<chord root="D#" type="7"/>jé
+<chord root="G#" type="7"/>jé
+<chord root="C#"/>jé.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D"/>Nutno ještě podotknouti, jé-
+<chord root="A" type="7"/>je-je,
+</line>
+<line>že si vlasy kulmou kroutí, jé-<chord root="D"/>je-je,
+</line>
+<line>a nesuší si 
+<chord root="D" type="7"/>vlasy fénem, 
+<chord root="G"/>nýbrž jen tak 
+<chord root="G" type="m"/>nad plamenem,
+</line>
+<line>
+<chord root="D"/>nýbrž jen tak 
+<chord root="B" type="7"/>nad plamenem, 
+<chord root="E" type="7"/>jé
+<chord root="A" type="7"/>jé
+<chord root="D"/>jé.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D#"/>Jednou vlasy sežehla si, jé-
+<chord root="A#" type="7"/>je-je,
+</line>
+<line>tím pádem je konec krásy, jé-<chord root="D#"/>je-je,
+</line>
+<line>a když přistoupí 
+<chord root="D#" type="7"/>ráno k oknu, 
+<chord root="G#"/>nemá vlasy 
+<chord root="G#" type="m"/>samou loknu,
+</line>
+<line>
+<chord root="D#"/>nemá vlasy 
+<chord root="C" type="7"/>samou loknu, 
+<chord root="F" type="7"/>jé
+<chord root="A#" type="7"/>jé
+<chord root="D#"/>jé.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="E"/>O vlasy už nestará se, jé-
+<chord root="B" type="7"/>je-je,
+</line>
+<line>a diví se světa kráse, jé-<chord root="E"/>je-je,
+</line>
+<line>a vidí plno 
+<chord root="E" type="7"/>jinejch věci, 
+<chord root="A"/>a to za to 
+<chord root="A" type="m"/>stojí přeci,
+</line>
+<line>
+<chord root="E"/>a to za to 
+<chord root="C#" type="7"/>stojí přeci, 
+<chord root="F#" type="7"/>jé
+<chord root="B" type="7"/>jé
+<chord root="E"/>jé.
+</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Klementajn</name>
+    <authors>
+      <author>Jiří Suchý</author>
+      <author>Jiří Šlitr</author>
+    </authors>
+    <album>Jonáš a tingl-tangl</album>
+    <year>1962</year>
+  </header>
+
+<verse>
+<line>Byla 
+<chord root="Eb"/>krásná, byla 
+<chord root="C" type="m"/>milá, byla 
+<chord root="G" type="m"/>chytrá, zkrátka 
+<chord root="Bb" type="7"/>fajn,
+</line>
+<line>na za<chord root="Ab"/>hrádce něco 
+<chord root="Eb"/><chord root="C" type="m"/>ryla, říka
+<chord root="F" type="m"/>li jí 
+<chord root="Bb" type="7"/>Klemen
+<chord root="Eb"/>tajn.
+</line>
+</verse>
+
+<verse>
+<line>Kolik má prej nápadníků, o tom nemá nikdo šajn,</line>
+<line>podávaj si u ní kliku, každej by chtěl Klementajn.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="B" type="7"/>Jednou 
+<chord root="E"/>ráno přišel 
+<chord root="C#" type="m"/>jeden, napůl 
+<chord root="G#" type="m"/>Ábel a napůl 
+<chord root="B" type="7"/>Kain,
+</line>
+<line>napůl 
+<chord root="A"/>peklo a napůl 
+<chord root="E"/><chord root="C#" type="m"/>eden, začal 
+<chord root="F#" type="m"/>svádět 
+<chord root="B" type="7"/>Klemen
+<chord root="E"/>tajn.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C" type="7"/>Tělo 
+<chord root="F"/>rovný měl jak 
+<chord root="D" type="m"/>lajna, nejrov
+<chord root="A" type="m"/>nější ze všech 
+<chord root="C" type="7"/>lajn,
+</line>
+<line>a tak 
+<chord root="Bb"/>vznikla láska 
+<chord root="F"/><chord root="D" type="m"/>tajná mezi 
+<chord root="G" type="m"/>ním a 
+<chord root="C" type="7"/>Klemen
+<chord root="F"/>tajn.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C#" type="7"/>Jenomže když je 
+<chord root="F#"/>radost, přijde 
+<chord root="D#" type="m"/>smutek a zmizí 
+<chord root="A#" type="m"/>vše, co bylo 
+<chord root="C#" type="7"/>fajn,
+</line>
+<line>její 
+<chord root="B"/>darling od ní 
+<chord root="F#"/><chord root="D#" type="m"/>utek a zbyla 
+<chord root="G#" type="m"/>sama 
+<chord root="C#" type="7"/>Klemen
+<chord root="F#"/>tajn.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D" type="7"/>Jednou 
+<chord root="G"/>přišel pozdrav 
+<chord root="E" type="m"/>z Vídně: &quoteCzechOpen;Junge 
+<chord root="B" type="m"/>Frauen, alter 
+<chord root="D" type="7"/>Wein,&quoteCzechClose;
+</line>
+<line>jinak 
+<chord root="C"/>se mám celkem 
+<chord root="G"/><chord root="E" type="m"/>bídně, žij si 
+<chord root="A" type="m"/>blaze 
+<chord root="D" type="7"/>Klemen
+<chord root="G"/>tajn.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D#" type="7"/>Do du
+<chord root="G#"/>še jí padla 
+<chord root="F" type="m"/>tíseň, tak se 
+<chord root="C" type="m"/>vrhla na ko
+<chord root="D#" type="7"/>kajn, 
+</line>
+<line>a tím 
+<chord root="C#"/>končí nejen 
+<chord root="G#"/>píseň, ale <chord root="F" type="m"/>
+<chord root="A#" type="m"/>taky 
+<chord root="D#" type="7"/>Klemen
+<chord root="G#"/>tajn.
+</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Possible Pasts</name>
+    <author>Pink Floyd</author>
+    <album>The Final Cut</album>
+    <year>1983</year>
+  </header>
+
+<verse>
+<line>They 
+<chord root="G"/>flutter behind you your possible 
+<chord root="A" type="m"/>pasts,
+</line>
+<line>some 
+<chord root="C"/>brighteyed and crazy, some 
+<chord root="D"/>frightened and 
+<chord root="G"/>lost.
+</line>
+<line>A 
+<chord root="G"/>warning to anyone still in com
+<chord root="A" type="m"/>mand
+</line>
+<line>
+<chord root="C"/>of their possible 
+<chord root="D"/>future, to take 
+<chord root="G"/>care.
+</line>
+<line>In 
+<chord root="G"/>derelict sidings the poppies en
+<chord root="A" type="m"/>twine
+</line>
+<line>with 
+<chord root="C"/>cattle trucks lying in 
+<chord root="D"/>wait for the next 
+<chord root="G"/>time.
+</line>
+<line>
+<chord root="E" type="m"/>Do you remember me, how we used to be,
+</line>
+<line>do you think we should be 
+<chord root="D"/>closer?
+</line>
+</verse>
+
+<verse>
+<line>She stood in the doorway, the ghost of a smile,</line>
+<line>haunting her face like a cheap hotel sign.</line>
+<line>Her cold eyes imploring the men in their macs</line>
+<line>for the gold in their bags or the knives in their backs.</line>
+<line>Stepping up boldly one put out his hand,</line>
+<line>he said, &quoteEnglishOpen;I was just a child then, now I'm only a man.&quoteEnglishClose;</line>
+<line>Do you remember me,  how we used to be,</line>
+<line>do you think we should be closer?</line>
+</verse>
+
+<verse>
+<line>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="E" type="m"/>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="D"/>
+<chord root="C" type="maj9"/>
+</line>
+</verse>
+
+<verse>
+<line>By the cold and religious we were taken in hand,</line>
+<line>shown how to feel good and told to feel bad.</line>
+<line>Strung out behind us the banners and flags</line>
+<line>of our possible pasts lie in tatters and rags.</line>
+<line>Do you remember me, how we used to be,</line>
+<line>do you think we should be closer?</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Nobody Home</name>
+    <author>Pink Floyd</author>
+    <album>The Wall</album>
+    <year>1973</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="C" type="+"/>
+<chord root="C"/>
+<chord root="D" type="7"/>
+<chord root="F"/>
+<chord root="F" type="m"/>
+</line>
+</verse>
+
+<verse>
+<line>I've got a 
+<chord root="C"/>little black book with my poems in,
+</line>
+<line>got a 
+<chord root="E"/>bag with a toothbrush and a comb in
+</line>
+<line>when 
+<chord root="F"/>I'm a good dog they sometimes throw me a 
+<chord root="C"/>bone in.
+<chord root="F"/>
+</line>
+<line>I've got e<chord root="C"/>lastic bands keeping my shoes on,
+</line>
+<line>got those 
+<chord root="E"/>swollen hand 
+<chord root="E" type="7"/>blues,
+</line>
+<line>I got 
+<chord root="F"/>thirteen channels of shit on the TV to 
+<chord root="C"/>choose from.
+</line>
+<line>I got electric light 
+<chord root="C" type="7"/>and I got second sight,
+</line>
+<line>I got a<chord root="F"/>mazing 
+<chord root="F" type="m"/>powers of obser
+<chord root="C"/>vation
+<chord root="E" type="7"/>
+<chord root="A" type="m"/>
+<chord root="D" type="7"/>
+<chord root="G"/>
+</line>
+<line>and that is how I 
+<chord root="E" type="7"/>know:
+</line>
+<line>
+<chord root="A" type="m"/>when I try to get through 
+<chord root="C" type="6"/>on telephone to you
+<chord root="C"/>
+<chord root="D"/>
+</line>
+<line>
+<chord root="F" type="m6"/>there'll be nobody 
+<chord root="C"/>home.
+<chord root="F"/>
+<chord root="C"/>
+</line>
+</verse>
+
+<verse>
+    <line>I've got the obligatory Hendrix perm</line>
+    <line>and the inevitable pinhole burns,</line>
+    <line>all down the front of my favourite satin shirt.</line>
+    <line>I've got nicotine stains on my fingers,</line>
+    <line>I got a silver spoon on a chain,</line>
+    <line>got a grand piano to prop up my mortal remains.</line>
+    <line>I've got wild staring eyes</line>
+    <line>and I've got a strong urge to fly</line>
+    <line>but I've got nowhere to fly to. </line>
+    <line>Ooooh babe, when I pick up the phone</line>
+    <line>there's still nobody home.</line>
+</verse>
+
+<verse>
+<line>I've got a pair of Gohill's boots</line>
+<line>but I got fading roots&hellip;</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Moon River</name>
+    <authors>
+      <author>Johnny Mercer</author>
+      <author>Henry Mancini</author>
+    </authors>
+    <year>1961</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Moon 
+<chord root="A" type="m"/>river, 
+<chord root="F" type="maj7"/>wider than a 
+<chord root="C"/>mile,
+</line>
+<line>I'm 
+<chord root="F" type="maj7"/>crossing you in 
+<chord root="C"/>style some 
+<chord root="B" type="m7b5"/>day.
+<chord root="E" type="7"/>
+</line>
+</verse>
+<verse>
+<line>You 
+<chord root="A" type="m"/>dream 
+<chord root="C" type="7" bass="G"/>maker,
+</line>
+<line>you 
+<chord root="F"/>heart
+<chord root="F" type="m"/>breaker,
+</line>
+<line>wher<chord root="A" type="m7"/>ever you're 
+<chord root="D" type="7"/>going
+</line>
+<line>I'm 
+<chord root="D" type="m7"/>going your 
+<chord root="G" type="7"/>way.
+</line>
+</verse>
+
+<verse>
+<line>Two drifters off to see the world,</line>
+<line>there's such a lot of world to see.</line>
+</verse>
+
+<verse>
+<line>We're 
+<chord root="A" type="m"/>af
+<chord root="A" type="m7" bass="G"/>ter the 
+<chord root="D" type="7" bass="F#"/>same rainbow's 
+<chord root="C"/>end
+</line>
+<line>
+<chord root="F"/>waiting round the 
+<chord root="C"/>bend
+</line>
+<line>my 
+<chord root="F"/>Huckleberry 
+<chord root="C"/>friend
+</line>
+<line>
+<chord root="A" type="m"/>Moon 
+<chord root="D" type="m7"/>River 
+<chord root="G" type="7"/>and 
+<chord root="C"/>me.
+</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Cukrářská bossa-nova</name>
+    <author>Jaromír Nohavica</author>
+  </header>
+
+<verse>
+<line>Můj 
+<chord root="C" type="maj7"/>přítel 
+<chord root="C#" type="dim"/>snídá sedm 
+<chord root="D" type="m7"/>kremrolí
+<chord root="G" type="7"/>
+</line>
+<line>a když je 
+<chord root="C" type="maj7"/>spořádá, dá si 
+<chord root="C#" type="dim"/>repete, 
+<chord root="D" type="m7"/>cukrlátko.
+<chord root="G" type="7"/>
+</line>
+<line>On totiž 
+<chord root="C" type="maj7"/>říká: 
+<chord root="C#" type="dim"/>Dobré lidi zuby 
+<chord root="D" type="m7"/>nebolí
+<chord root="G" type="7"/>
+</line>
+<line>a je to 
+<chord root="C" type="maj7"/>paráda, chodit 
+<chord root="C#" type="dim"/>po světě a 
+<chord root="D" type="m7"/>mít, 
+<chord root="G" type="7"/>mít v ústech 
+<chord root="C" type="maj7"/>sladko. 
+<chord root="C#" type="dim"/>
+<chord root="D" type="m7"/>
+<chord root="G" type="7"/>
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="C" type="maj7"/>Sláva, 
+<chord root="C#" type="dim"/>cukr a 
+<chord root="D" type="m7"/>káva a půl litru 
+<chord root="G" type="7"/>becherovky 
+</line>
+<line>
+<chord root="C" type="maj7"/>hurá, hurá, hu
+<chord root="C#" type="dim"/>rá, půjč mi 
+<chord root="D" type="m7"/>bůra, útrata dnes 
+<chord root="G" type="7"/>dělá čtyři stovky, 
+</line>
+<line>všechny 
+<chord root="C" type="maj7"/>cukrářky z celé 
+<chord root="C#" type="dim"/>republiky na něho 
+<chord root="D" type="m7"/>dělají slaďounké 
+<chord root="G" type="7"/>cukrbliky
+</line>
+<line>a on jim 
+<chord root="E" type="m7"/>za odměnu zpívá 
+<chord root="A" type="7"/>zas a znovu 
+<chord root="D" type="m7"/>tuhletu, 
+<chord root="G" type="7"/>cukrářskou bossa-no
+<chord root="C" type="maj7"/>vu. 
+<chord root="C#" type="dim"/>
+<chord root="D" type="m7"/>
+<chord root="G" type="7"/>
+</line>
+</chorus>
+
+<verse>
+<line>Můj přítel Karel pije šťávu z bezinek, </line>
+  <line>říká, že nad ni není, 
+   že je famózní, glukózní, monstrózní, ať si taky dám. </line>
+   <line>Koukej, jak mu roste oblast budoucích maminek </line>
+   <line>a já mám podezření,že se zakulatí jako míč 
+   a až ho někdo kopne, odkutálí se mi pryč 
+   a já zůstanu sám, úplně sám. </line>
+</verse>
+
+<chorus/>
+
+<verse>
+ <line>Můj přítel Karel Plíhal už na špičky si nevidí, </line>
+   <line>postava fortelná se mu zvětšuje, 
+   výměra tři ary. </line>
+   <line>On ale říká, že glycidy jsou pro lidi, </line>
+   <line>je prý v něm kotelna, ta cukry spaluje, 
+   někdo se zkáruje, někdo se zfetuje 
+   a on jí bonpari. </line>
+</verse>
+
+<chorus/>
+</song>
+
+
+<song>
+  <header>
+    <name>Čarodějova píseň</name>
+    <author>Vlasta Redl</author>
+  </header>
+
+<multicols>
+<verse>
+<line>
+<chord root="D" type="add9"/>Leží a spí tam
+</line>
+<line>
+<chord root="B" type="m7"/>slabounká, 
+<chord root="C"/>tichá
+</line>
+<line>
+<chord root="Bb"/>a já ji mám 
+<chord root="C"/>vzít a 
+<chord root="D"/>nést.
+</line>
+</verse>
+
+<verse>
+<line>Koberci květů </line>
+<line>někam do jiných světů, </line>
+<line>jen pryč z těchto měst a hvězd. </line>
+</verse>
+
+<verse>
+<line>Kde 
+<chord root="E" type="m"/>zas bude tančit a 
+<chord root="B" type="m"/>na zlou si 
+<chord root="C"/>hrát,
+</line>
+<line>
+<chord root="D"/>od smíchu uplaka
+<chord root="C"/>ná.
+</line>
+<line>A kde 
+<chord root="E" type="m"/>vlasy si nechá
+</line>
+<line>zas 
+<chord root="B" type="m"/>divoce 
+<chord root="C"/>vlát
+</line>
+<line>
+<chord root="D"/>do větru, 
+<chord root="D" type="9"/>co po ní
+</line>
+<line>
+<chord root="G"/>vůně pak 
+<chord root="C"/>uklidí 
+<chord root="G"/><chord root="F"/><chord root="Eb"/>rád.
+</line>
+</verse>
+
+<verse>
+<line>Leží a spí tam </line>
+<line>a já nepospíchám </line>
+<line>říct jí </line>
+<line>vypršel čas. </line>
+</verse>
+ 
+<verse>
+<line>Čas slibů a chyb, </line>
+<line>jak bych chránil ji líp, </line>
+<line>kdybych věděl, že potká mě zas. </line>
+</verse>
+<columnbreak/>
+
+<verse>
+<line>Teď už jen její tíhu </line>
+<line>smím na sebe brát </line>
+<line>a doufat, že zláme mi vaz. </line>
+<line>Abych se nemohl vrátit </line>
+<line>a na věky lhát, </line>
+<line>že jsem nenašel, nepoznal </line>
+<line>nic víc než jen její hlas. </line>
+</verse>
+
+<verse>
+<line>Leží a spí tam </line>
+<line>a já prším a svítám </line>
+<line>a davy jdou skrze nás. </line>
+</verse>
+
+<verse>
+<line>A s očima do ó </line>
+<line>celá člověčí ZOO </line>
+<line>zdráhá se přijmout ten vzkaz. </line>
+</verse>
+
+<verse>
+<line>Že se loučí a vrací se </line>
+<line>do jiných let </line>
+<line>a do jiných koloběhů. </line>
+<line>A až se poslední plamínek </line>
+<line>promění v led, </line>
+<line>vytrysknou gejzíry sluncí </line>
+<line>až za onen svět. </line>
+</verse>
+
+<verse>
+<line>Leží a spí tam </line>
+<line>a já nepospíchám </line>
+<line>říct jí </line>
+<line>vypršel čas. </line>
+</verse>
+</multicols>
+</song>
+
+<!--
+<song>
+  <header>
+    <name>Easy Money</name>
+    <author>Nick Cave &ampersand; the Bad Seeds</author>
+    <album>The Lyre of Orpheus</album>
+    <year>2004</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="m"/>It's difficult it's 
+<chord root="E" type="m" bass="D"/>very tough
+<chord root="E" type="m" bass="C"/><chord root="E" type="m" bass="B"/>
+</line>
+<line>
+<chord root="E" type="m"/>I said to the man who'd been 
+<chord root="E" type="m" bass="D"/>sleeping rough
+<chord root="E" type="m" bass="C"/>
+</line>
+<line>to sit <chord root="E" type="m" bass="B"/>within the 
+<chord root="A" type="m"/>fragrant breeze
+</line>
+<line>
+<chord root="C"/>all among the nodding trees
+</line>
+<line>
+<chord root="D"/>that hang heavy with the 
+<chord root="E" type="m"/><chord root="E" type="m" bass="D"/><chord root="E" type="m" bass="C"/><chord root="E" type="m" bass="B"/>stuff.
+</line>
+</verse>
+
+<verse>
+<line>He threw his arms around my neck,          </line>
+<line>he brushed the tear from my cheek         </line>
+<line>and held my soft white hand,                       </line>
+<line>he was an understanding man                       </line>
+<line>and he did not even barely hardly speak.               </line>
+</verse>
+
+<verse>
+<line>Easy 
+<chord root="D"/>money,
+<chord root="D"/><chord root="D" bass="C"/><chord root="D" bass="B"/><chord root="D" bass="A"/>
+</line>
+<line>
+rain it down on the wife and the kids,<chord root="C"/>
+</line>
+<line>
+rain it down on the house where we live,<chord root="D"/>
+</line>
+<line>
+rain until you got nothing left to give<chord root="E" type="m"/>
+</line>
+<line>and 
+<chord root="C"/>rain that ever-lo
+<chord root="D"/>ving stuff down on 
+<chord root="E" type="m"/><chord root="E" type="m" bass="D"/><chord root="E" type="m" bass="C"/><chord root="E" type="m" bass="B"/>me.
+</line>
+</verse>
+
+<verse>
+<line>All the things for which my heart yearns  </line>
+<line>gives joy in diminishing returns,          </line>
+<line>he kissed me on the mouth,                 </line>
+<line>his hands they headed south                       </line>
+<line>and my cheek it burned.                            </line>
+</verse>
+
+<verse>
+<line>Money, man, it is a bitch,                 </line>
+<line>the poor, they spoil it for the rich              </line>
+<line>with my face pressed in the clover                </line>
+<line>I wondered when this would be over                </line>
+<line>and at home we are all so guilty-sad.             </line>
+</verse>
+
+
+<verse>
+<line>Easy money,                                        </line>
+<line>pour it down on the open drain,                    </line>
+<line>pour it all through my veins,                      </line>
+<line>pour it down, yeah, let it rain                   </line>
+<line>and pour that ever-loving stuff down on me.        </line>
+</verse>
+
+<verse>
+<line>Now, I'm sitting pretty down on the bank,  </line>
+<line>life shuffles past at a low interest rate </line>
+<line>in the money-coloured meadows                     </line>
+<line>and all the interesting shadows                   </line>
+<line>they leap up, then dissipate.                      </line>
+</verse>
+
+<verse>
+<line>Easy money,                                        </line>
+<line>easy money,                                        </line>
+<line>easy money,                                        </line>
+<line>rain it down on the wife and the kids,             </line>
+<line>rain it down on the house where we live,           </line>
+<line>rain until you got nothing left to give           </line>
+<line>and rain that ever-loving stuff down on me.        </line>
+</verse>
+
+<verse>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+<line>(Easy money)                                      </line>
+</verse>
+
+
+</song>
+-->
+
+<song>
+  <header>
+    <name>Montér blues</name>
+    <author>Vlasta Redl</author>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Taky jsem hrával tyhle 
+<chord root="D" type="7"/>výškové práce, 
+</line>
+<line>
+<chord root="C"/>to není 
+<chord root="E" type="7"/>žádná ope
+<chord root="A" type="m"/>ra.
+<chord root="E" type="7"/>
+</line>
+<line>
+<chord root="A" type="m"/>Celý den viset 
+<chord root="D"/>jak na oprátce, 
+</line>
+<line>
+<chord root="C"/>tak voní chleba monté
+<chord root="E" type="7"/>ra.
+</line>
+</verse>
+
+<chorus>
+<line>
+Montuju <chord root="F"/>potrubí, 
+<chord root="F" bass="E"/>mosty a 
+<chord root="D" type="m"/>přehrady,
+<chord root="G"/>
+</line>
+<line>
+málokdy <chord root="C"/>upadám 
+<chord root="C" bass="B"/>do téhle 
+<chord root="C" bass="Bb"/>nálady,
+<chord root="A" type="7"/>
+</line>
+<line>
+když nepo<chord root="D" type="m"/>máhá 
+<chord root="F" type="m"/>vodka ani 
+<chord root="G" type="7"/>džus.
+</line>
+</chorus>
+
+<verse>
+<line>Jsem velký hříšník, proto mě měla tolik ráda, </line>
+<line>a zestárla dřív, než dospěla, </line>
+<line>a tak nejvýš, jak umím, vážu si padák, </line>
+<line>i kolem křížů kostela. </line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Řek' jsem jí: holka, všechno ti vydrží tak dlouho, </line>
+<line>jak dlouho to k tobě putuje, </line>
+<line>ale to, co je navždy, to nepřijde nikdy, </line>
+<line>protože prostě to tu je. </line>
+</verse>
+ 
+<chorus/>
+
+<verse>
+<line>Tak dobře, dobře, dobře, dej to sem, já zahraju blues. </line>
+<line>Nedělej na mě ty psí oči, já znám tu Stairway do nebe, </line>
+<line>mě už dnes těžko přeochočíš, tohle fakt není pro tebe. </line>
+</verse>
+
+<chorus>
+<line>Znám taky blues, pána, co se toulá světem sám, </line>
+<line>blues čtyř stěn, žen, prázdna, které objímám, </line>
+<line>blues, které dávno už musím umět hrát. </line>
+</chorus>
+
+<verse>
+<line>Když zavřu oči, vidím zas holky z první řady </line>
+<line>a kolem nich místní šumaře, </line>
+<line>od sloupu k sloupu jim natahuju struny </line>
+<line>na krásné modré kytaře. </line>
+</verse>
+
+<chorus>
+<line>Montuju potrubí&hellip; </line>
+<line>když nepomáhá vodka ani džus&hellip; </line>
+</chorus>
+
+</song>
+
+
+<song>
+  <header>
+    <name>O Children</name>
+    <author>Nick Cave &ampersand; the Bad Seeds</author>
+    <album>The Lyre of Orpheus</album>
+    <year>2004</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="A" type="m"/>
+<chord root="G"/>
+<chord root="D"/>
+</line>
+</verse>
+
+<verse>
+  <line><chord root="E" type="m"/>Pass me that lovely little gun,</line>
+  <line><chord root="C"/>my dear my darling one,</line>
+  <line><chord root="A" type="m"/>the cleaners are coming one by one,</line>
+  <line><chord root="G"/>you don't even 
+    <chord root="D"/>wanna let them 
+    <chord root="E" type="m"/>start.</line>
+</verse>
+
+<multicols number="2">
+<verse>
+  <line>They're knocking now upon your door,</line>
+  <line>they measure the room they know the score,</line>
+  <line>they're mopping up the butcher's floor</line>
+  <line>of your broken little hearts.</line>
+</verse>
+
+<verse>
+  <line>O children</line>
+</verse>
+
+<verse>
+  <line>Forgive us now for what we've done,</line>
+  <line>it started out as a bit of fun,</line>
+  <line>here take these before we run away,</line>
+  <line>the keys to the gulag.</line>
+</verse>
+
+<chorus>
+<line>O 
+<chord root="C" type="maj7"/>children,
+</line>
+<line>
+<chord root="G"/>lift up your voi
+<chord root="D"/>ce, lift up your 
+<chord root="E" type="m"/>voice.
+</line>
+<line>
+<chord root="C" type="maj7"/>Children,
+</line>
+<line>
+<chord root="G"/>re
+<chord root="D"/>joice, re
+<chord root="E" type="m"/>joice.
+</line>
+</chorus>
+
+<verse>
+  <line>Here comes Frank and poor old Jim,</line>
+  <line>they're gathering round with all my friends,</line>
+  <line>we're older now, the light is dim</line>
+  <line>and you're only just beginning.</line>
+</verse>
+
+<verse>
+  <line>O children</line>
+</verse>
+
+<verse>
+  <line>We have the answer to all your fears,</line>
+  <line>it's short, it's simple, it's crystal clear,</line>
+  <line>it's round about, it's somewhere here</line>
+  <line>lost amongst our winnings.</line>
+</verse>
+
+<chorus/>
+
+<verse>
+  <line>The cleaners have done their job on you,</line>
+  <line>they're hip to it man they're in the groove,</line>
+  <line>they've hosed you down, you're good as new,</line>
+  <line>they're lining up to inspect you.</line>
+</verse>
+
+<verse>
+  <line>O children</line>
+</verse>
+<columnbreak/>
+
+<verse>
+  <line>Poor old Jim's white as a ghost,</line>
+  <line>he's found the answer that was lost,</line>
+  <line>we're all weeping now weeping because</line>
+  <line>there ain't nothing we can do to protect you.</line>
+</verse>
+
+<chorus/>
+
+<verse>
+  <line>Hey little train we're jumping on</line>
+  <line>the train that goes to the kingdom,</line>
+  <line>we're happy ma we're having fun</line>
+  <line>and the train ain't even left the station.</line>
+</verse>
+
+<verse>
+  <line>Hey little train wait for me,</line>
+  <line>I once was blind but now I see,</line>
+  <line>have you left a seat for me, </line>
+  <line>is that such a stretch of imagination?</line>
+</verse>
+
+<verse>
+  <line>Hey little train wait for me,</line>
+  <line>I was held in chains but now I'm free,</line>
+  <line>I'm hanging in there don't you see</line>
+  <line>in this process of elimination.</line>
+</verse>
+
+<verse>
+  <line>Hey little train we're jumping on</line>
+  <line>the train that goes to the kingdom,</line>
+  <line>we're happy ma we're having fun</line>
+  <line>and it's beyond my wildest expectation.</line>
+</verse>
+
+<verse>
+  <line>Hey little train we're jumping on</line>
+  <line>the train that goes to the kingdom,</line>
+  <line>we're happy ma we're having fun</line>
+  <line>and the train ain't even left the station&hellip;</line>
+</verse>
+</multicols>
+</song>
+
+
+<song>
+  <header>
+    <name>Love Street</name>
+    <author>The Doors</author>
+    <album>Waiting for the Sun</album>
+    <year>1968</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="G"/>
+<chord root="G" type="m"/>
+<chord root="F"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>She lives on 
+<chord root="G"/>love street,
+</line>
+<line>
+<chord root="G" type="m"/>lingers long on 
+<chord root="F"/>love street.
+</line>
+<line>She has a house and garden,</line>
+<line>I would like to see what happens.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="B" type="m"/>
+<chord root="A"/>
+<chord root="A" type="m"/>
+<chord root="G"/>
+</line>
+</verse>
+
+<verse>
+<line>She has robes and she has monkeys</line>
+<line>lazy diamonds, studded flunkies,</line>
+<line>
+<chord root="G" type="m"/>she has 
+<chord root="A" type="m"/>wisdom and 
+<chord root="Bb"/>knows what to 
+<chord root="F" type="maj7"/>do,
+</line>
+<line>
+<chord root="G" type="m"/>she has 
+<chord root="F" type="maj7"/>me and 
+<chord root="Bb" type="6"/>she has 
+<chord root="A" type="7"/>you.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="B" type="m"/>
+<chord root="A"/>
+<chord root="A" type="m"/>
+<chord root="G"/>
+</line>
+</verse>
+
+
+<verse>
+<line>
+<chord root="A" type="m"/>She has 
+<chord root="B" type="m"/>wisdom and 
+<chord root="C"/>knows what to 
+<chord root="G" type="maj7"/>do,
+</line>
+<line>
+<chord root="A" type="m7"/>she has 
+<chord root="G" type="maj7"/>me and 
+<chord root="C" type="6"/>she 
+<chord root="G"/>has 
+<chord root="A" type="m"/>you.
+</line>
+</verse>
+
+<verse>
+<line>I see you live on Love Street,</line>
+<line>there's a store where the creatures meet.</line>
+<line>I wonder what they do in there,</line>
+<line>summer Sunday and a year.</line>
+<line>I guess I like it fine so far&hellip;</line>
+</verse>
+
+<verse>
+<line>
+<chord root="B" type="m"/>She lives on 
+<chord root="A"/>love street,
+</line>
+<line>
+<chord root="A" type="m"/>lingers long on 
+<chord root="G"/>love street,
+</line>
+<line>she has a house and garden,</line>
+<line>I would like to see what happens.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Starej pán</name>
+    <author>Petr Skoumal</author>
+  </header>
+
+<verse>
+<line>
+<chord root="Eb"/>Starej pán sedí a 
+<chord root="G" type="7"/>poslouchá jazz
+</line>
+<line>a 
+<chord root="Bb" type="m6"/>zdá se mu, jako by to 
+<chord root="C" type="7"/>bylo 
+<chord root="F" type="m"/>dnes,
+</line>
+<line>
+<chord root="Ab" type="m6"/>jako by zase u 
+<chord root="Eb" />baru stál
+</line>
+<line>a 
+<chord root="C" type="m" bass="A"/>na pódiu 
+<chord root="Ab" type="maj7"/>Django 
+<chord root="G" type="7"/>hrál.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="Eb"/>Starej pán sedí a 
+<chord root="G" type="7"/>poslouchá jazz
+</line>
+<line>a 
+<chord root="Bb" type="m6"/>zdá se mu, jako by to 
+<chord root="C" type="7"/>bylo 
+<chord root="F" type="m"/>dnes,
+</line>
+<line>
+<chord root="Ab" type="m6"/>starej pán sedí a 
+<chord root="Eb"/>poslouchá 
+<chord root="C" type="7"/>jazz
+</line>
+<line>a 
+<chord root="F" type="7"/>na desce se 
+<chord root="Bb" type="7"/>točí 
+<chord root="Eb"/>pes.
+</line>
+</chorus>
+
+<verse>
+<line>Jó, 
+<chord root="G" type="7"/>ráno si vzal čistý 
+<chord root="C" type="m"/>ponožky
+</line>
+<line>a 
+<chord root="G" type="7"/>zajel si do Paříže bez 
+<chord root="C" type="m"/>doložky,
+</line>
+<line>
+<chord root="G" type="7"/>jezdilo se z Wilsonova 
+<chord root="C" type="m"/>nádraží
+</line>
+<line>a 
+<chord root="Ab" type="m6"/>neměli jsme v kufru žádný 
+<chord root="Bb" type="7"/>závaží, jé.
+</line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Jó, to tenkrát ještě žila naštěstí </line>
+<line>ta slečna z Fügnerova náměstí, </line>
+<line>v sobotu kupoval jí pralinky </line>
+<line>a komunisti byli takhle malinký, jé. </line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Vlaky byly čistý a dochvilný </line>
+<line>a názory a strany rozdílný, </line>
+<line>jenže za starejma časy spadla opona, </line>
+<line>teď máme mírnej pokrok v mezích zákona, jé. </line>
+</verse>
+
+<chorus>
+<line>Tak sedí u starýho přístroje </line>
+<line>a místo whisky láhev Prazdroje, </line>
+<line>starej pán sedí a poslouchá jazz </line>
+<line>a na desce se točí pes. </line>
+</chorus>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Blues na cestu poslední</name>
+    <author>Jiří Suchý</author>
+    <year>1958</year>
+  </header>
+
+<verse><line><chord root="C"/></line></verse>
+
+<verse>
+<line>Černej nebožtíku, máš to ale kliku,</line>
+<line>za chvíli do temný hlíny budeš zakopán,</line>
+<line>černej nebožtíku, máš to ale kliku,</line>
+<line>za chvíli do temný hlíny budeš zakopán,</line>
+<line>nás jsi nechal v bídě, sám se vezeš jako pán.</line>
+</verse>
+
+<verse>
+<line>Jen kopyta koní hrany tobě zvoní,</line>
+<line>málo lidí dnes pro tebe slzy polyká,</line>
+<line>jen kopyta koní hrany tobě zvoní,</line>
+<line>málo lidí dnes pro tebe slzy polyká,</line>
+<line>je to smutnej funus, chybí ti tu muzika.</line>
+</verse>
+
+<verse>
+<line>Kam ti pozůstalí, kam ti vlastně dali</line>
+<line>věnce, kytky, pentle, svíce, marně se tě ptám,</line>
+<line>kam ti pozůstalí, kam ti vlastně dali</line>
+<line>věnce, kytky, pentle, svíce, marně se tě ptám,</line>
+<line>proč je rakev holá, to ty asi nevíš sám.</line>
+</verse>
+
+<verse>
+<line>Černej nebožtíku, když nemáš na muziku,</line>
+<line>poslechni mou radu trochu nevšední,</line>
+<line>černej nebožtíku, když nemáš na muziku,</line>
+<line>poslechni mou radu trochu nevšední,</line>
+<line>zazpívej si sám blues na cestu poslední.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Noc</name>
+    <author>Robert Křesťan</author>
+    <album>Pohlednice</album>
+    <year>1997</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="m"/>Ozvěna od svatého 
+<chord root="A" type="m7"/>Pavla
+</line>
+<line>
+<chord root="H" type="7"/>zalétla i k nám do poko
+<chord root="E" type="m"/>je,
+</line>
+<line>z příšeří jsi na mě mávla </line>
+<line>s úsměvem lorda Fauntleroye. </line>
+<line>Zpod toho prastarého gesta </line>
+<line>ti ve tváři vykvetl sad </line>
+<line>a po střechách věčného města </line>
+<line>kráčela noc jako aristokrat.</line>
+</verse>
+
+<verse>
+<line>V podkroví starého domu </line>
+<line>s blaženou nevinností,</line>
+<line>palčivou chuť kardamomu </line>
+<line>chutnali jsme si do sytosti.</line>
+<line>Až dvojhlasem zavřískly žestě </line>
+<line>a v nesvatém slunci Hirošimy </line>
+<line>smíření ve svatém městě </line>
+<line>jsme nakonec dospěli i my. </line>
+</verse>
+
+<verse>
+<line>Ráno jsi vypila kávu </line>
+<line>a odešla dřív než jsem vstal,</line>
+<line>ani jsem nezdvihl hlavu, </line>
+<line>ani jsem nezamával. </line>
+<line>To jen zvoníci zmámili mě </line>
+<line>prvními tóny Velikonoc,</line>
+<line>to nás jen v hotelu v Římě </line>
+<line>na pár chvil spojila noc.</line>
+</verse>
+</song>
+
+
+<!--
+<song>
+  <header>
+    <name>Picture of My Life</name>
+    <author>Jamiroquai</author>
+    <album>A Funk Odyssey</album>
+    <year>2001</year>
+  </header>
+
+<verse><line><chord root="A" type="m7/9"/><chord root="A" type="m6/9"/></line></verse>
+
+<verse>
+<line>
+<chord root="A" type="m7/9"/>I never had a 
+<chord root="Ab" type="dim"/>dream that 
+<chord root="D" type="m7/9"/>I could follow 
+<chord root="F" type="dim"/>through,
+</line>
+<line>only 
+<chord root="D" type="m7/9"/>tears left to 
+<chord root="G" type="7"/>stain, dry my 
+<chord root="D" type="m7"/>eyes once a
+<chord root="Ab" type="dim"/>gain.
+</line>
+<line>
+<chord root="A" type="m7/9"/>I don't know who I 
+<chord root="Ab" type="dim"/>am, 
+<chord root="D" type="m7/9"/>or what I'm gonna 
+<chord root="F" type="dim"/>do,
+</line>
+<line>been so  
+<chord root="D" type="m7/9"/>long I've been 
+<chord root="G" type="7"/>hopelessly con
+<chord root="E" type="7"/>fused.
+</line>
+</verse>
+
+<chorus>
+<line>This can never really 
+<chord root="D" type="m7/9"/><chord root="G" type="7"/>end, 
+</line>
+<line>it's infinitely 
+<chord root="C" type="maj9"/><chord root="F#" type="7b9"/>sad,
+</line>
+<line>can someone tell me 
+<chord root="F" type="maj"/>when 
+<chord root="E" type="7"/>
+</line>
+<line>something good became so 
+<chord root="A" type="m7/9"/><chord root="F#" type="7b9 (A7)"/>bad?
+</line>
+<line>So if you have a 
+<chord root="D" type="m7/9"/><chord root="G" type="7"/>cure,  
+</line>
+<line>to me would you please 
+<chord root="C" type="maj9"/><chord root="F#" type="7b9"/>send
+</line>
+<line>a picture of my 
+<chord root="F" type="maj"/>life 
+</line>
+<line>with a letter telling 
+<chord root="E" type="7"/>how
+</line>
+<line>it should really be in<chord root="A" type="m7/9"/>stead.
+</line>
+</chorus>
+ 
+<verse>
+<line>The precipice is there </line>
+<line>but will I ever dare </line>
+<line>throw myself in the sky, so at last I can die. </line>
+<line>See I've become a man </line>
+<line>who holds nothing too dear, </line>
+<line>who will mind if I just disappear? </line>
+</verse>
+
+<chorus/>
+</song>
+-->
+
+<song>
+  <header>
+    <name>Byla vojna</name>
+    <author>Čechomor</author>
+  </header>
+
+<verse>
+<line>
+<chord root="D"/>Byla vojna, byla, 
+<chord root="G"/>byla pa
+<chord root="D"/>táli
+<chord root="A"/>ja.
+</line>
+<line>Byla vojna, byla, byla patálija.</line>
+<line>
+<chord root="G"/>Peklo na 
+<chord root="A"/>Mora
+<chord root="H" type="m"/>vě, 
+<chord root="G"/>krvi po 
+<chord root="D"/>kole
+<chord root="A"/>na.
+</line>
+<line>
+<chord root="G"/>Peklo na 
+<chord root="A"/>Mora
+<chord root="H" type="m"/>vě, 
+<chord root="G"/>krvi po 
+<chord root="A"/>kole
+<chord root="D"/>na.
+</line>
+</verse>
+
+<verse>
+<line>V tej krvi ležali, tak jak dřevo v háji. </line>
+<line>V tej krvi ležali, tak jak dřevo v háji. </line>
+<line>Na Slavkovském poli, zabití šohaji. </line>
+<line>Na Slavkovském poli, zabití šohaji. </line>
+</verse>
+ 
+<verse>
+<line>Ach škoda přeškoda, tej krvi červenej. </line>
+<line>Ach škoda přeškoda, tej krvi červenej. </line>
+<line>Co sa rozlévala, do trávy zelenej. </line>
+<line>Co sa rozlévala, do trávy zelenej. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Rozeznávám</name>
+    <authors>
+      <author>Michal Horáček</author>
+      <author>Petr Hapka</author>
+    </authors>
+    <album>V penziónu Svět</album>
+    <year>1988</year>
+  </header>
+
+<verse>
+<line>
+<chord root="D" type="m7"/>Máš tucty 
+<chord root="G" type="7"/>známých, ale 
+<chord root="C"/>kdo tě zná?
+</line>
+<line>Máš 
+<chord root="D" type="m7"/>vlastní píseň, 
+<chord root="G" type="7"/>kdo však ví, jak 
+<chord root="C"/>zní?
+</line>
+<line>
+<chord root="D" type="m7"/>Máš 
+<chord root="G" type="7"/>pocit, že jsi zaku
+<chord root="A" type="m"/>tálená,
+</line>
+<line>jak 
+<chord root="D" type="m7"/>drobná mince 
+<chord root="F"/>pod rohožkou 
+<chord root="G"/>dní.
+</line>
+</verse>
+
+<chorus>
+<line>Já však 
+<chord root="D" type="m7"/>rozeznávám, 
+<chord root="G" type="7"/>zvuk chůze, co se 
+<chord root="C"/>odráží
+</line>
+<line>od výloh hlučných 
+<chord root="D" type="m7"/>pasáží, 
+<chord root="G" type="7"/>tvou samotu, tvé záva
+<chord root="C"/>ží.
+</line>
+<line>Já vždy 
+<chord root="D" type="m7"/>rozeznávám 
+<chord root="G" type="7"/>tvé boky, když jdeš 
+<chord root="C"/>ulicí, 
+</line>
+<line>tvé vlasy mezi 
+<chord root="D" type="m7"/>pšenicí, 
+<chord root="G" type="7"/>tvou vůni mezi tisí
+<chord root="C"/>ci.
+</line>
+<line>Já vždy 
+<chord root="D" type="m7"/>rozeznávám, 
+<chord root="G" type="7"/>hravě rozeznávám.
+<chord root="D" type="m7"/>
+</line>
+</chorus>
+
+<verse>
+<line>Máš pravdu, ale kdo ti za ni dá?</line>
+<line>Máš hlavu plnou utajených snů.</line>
+<line>Máš podezření, že jsi vlastně zbytečná,</line>
+<line>jak malá piha skrytá pohledům.</line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>
+<chord root="G" type="m7"/>Máš svoje 
+<chord root="C" type="7"/>léta, právě 
+<chord root="F"/>jako já,
+</line>
+<line>máš 
+<chord root="G" type="m7"/>načase jít už 
+<chord root="C" type="7"/>vlastním barvám 
+<chord root="F"/>vstříc.
+</line>
+<line>
+<chord root="G" type="m7"/>Má lásko, 
+<chord root="C" type="7"/>nejsi, nejsi nevi
+<chord root="D" type="m"/>ditelná,
+</line>
+<line>já 
+<chord root="G" type="m7"/>věřím, že ti 
+<chord root="Bb"/>budu moci 
+<chord root="C"/>říct:
+</line>
+</verse>
+
+<chorus>
+<line>Já vždy 
+<chord root="G" type="m7"/>rozeznávám 
+<chord root="C" type="7"/>tvé boky, když jdeš 
+<chord root="F"/>ulicí, 
+</line>
+<line>tvé vlasy mezi 
+<chord root="G" type="m7"/>pšenicí, 
+<chord root="C" type="7"/>tvou vůni mezi tisí
+<chord root="F"/>ci.
+</line>
+<line>Já tě 
+<chord root="G" type="m7"/>rozeznávám, 
+<chord root="C" type="7"/>jak vlčí máky 
+<chord root="F"/>v osení, 
+</line>
+<line>jak ostrov mezi  
+<chord root="G" type="m7"/>dlážděním, 
+<chord root="C" type="7"/>tvá grácie se nemě
+<chord root="F"/>ní.
+</line>
+<line>Já tu 
+<chord root="G" type="m7"/>rozeznávám&hellip; 
+<chord root="C" type="7"/>
+<chord root="F"/>
+</line>
+</chorus>
+</song>
+
+<song>
+  <header>
+    <name>Somrkrálka blues</name>
+    <author>Nerez</author>
+  </header>
+
+<verse><line><chord root="C" type="maj7"/><chord root="D" type="m7"/><chord root="E" type="m7"/><chord root="D" type="m7"/></line></verse>
+
+<verse>
+<line>
+<chord root="C" type="maj7"/>Vlasy až na paty, 
+<chord root="H" type="7"/>třepivý záplaty, 
+</line>
+<line>
+<chord root="C" type="maj7"/>má řeči nahatý, 
+<chord root="A" type="7"/>somrkrálka blues,
+</line>
+<line>
+<chord root="D" type="m7"/>v kapse jako 
+<chord root="G"/>proprietu 
+<chord root="D" type="m7"/>jabko, jednu 
+<chord root="G"/>cigaretu,
+</line>
+<line>
+<chord root="C" type="maj7"/>vločky sbírá 
+<chord root="A" type="7"/>do baretu, 
+<chord root="D" type="m7"/>když má léto 
+<chord root="G"/>půst.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="C" type="maj7"/>Kantýny, čekárny, 
+<chord root="A" type="7"/>básničky na koleně,
+</line>
+<line>
+<chord root="D" type="m7"/>o paní 
+<chord root="G"/>z pekárny, 
+<chord root="D" type="m7"/>co má se 
+<chord root="G"/>čím dál stejně,
+</line>
+<line>
+<chord root="C" type="maj7"/>uprostřed pohádky 
+<chord root="A" type="7"/>nevíme, jak to bylo,
+</line>
+<line>
+<chord root="D" type="m7"/>cukrovkář 
+<chord root="E" type="m7"/>nedopil 
+<chord root="F" type="maj7"/>třetinkový 
+<chord root="G"/>pivo.<chord root="G" type="+"/>
+</line>
+</chorus>
+ 
+<verse>
+<line>Koflíkům od fíkusu, zastávkám autobusu </line>
+<line>v zeleným hubertusu zpívá somrblues, </line>
+<line>vlasy až na paty, třepivý záplaty, </line>
+<line>má řeči nahatý, ta somrkrálka blues.</line>
+</verse>
+ 
+<chorus/> 
+ 
+<verse><line>
+<chord root="C" type="maj7"/>
+<chord root="D" type="m7"/>
+<chord root="E" type="m7"/>
+<chord root="D" type="m7"/>
+</line></verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Si je perds</name>
+    <author>ZAZ</author>
+    <album>Recto verso</album>
+    <year>2013</year>
+  </header>
+
+<verse>
+<line>
+<chord root="H" type="m"/>J’me sens 
+<chord root="G" type=""/>brocante, 
+<chord root="A"/>j’suis la 
+<chord root="G"/><chord root="F#" type="m"/>méchante,
+</line>
+<line>
+<chord root="H" type="m"/>si mes en
+<chord root="G"/>fants m’invitent, 
+<chord root="A"/>je fais la 
+<chord root="G"/><chord root="F#" type="m"/>pas contente,
+</line>
+<line>
+<chord root="G"/>et quand ils me visitent, 
+<chord root="F#" type="m"/>je suis la transparente.
+</line>
+</verse>
+
+<verse>
+<line>J’me sens pâlotte, je me sanglote,</line>
+<line>mes enfants me nettoient, des inconnus me sortent,</line>
+<line>à croire quand je me vois, 
+<chord root="A"/>que je suis déjà morte.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="H" type="m"/>Si je perds la mémoire, faudrait pas s’inquiéter,
+</line>
+<line>
+<chord root="A"/>c’est qu’ma vie est au soir d’une triste journée,
+</line>
+<line>
+<chord root="E" type="m"/>si je perds la raison, faudrait pas s’en vouloir,
+</line>
+<line>
+<chord root="G"/>si c’est plus ma maison, 
+<chord root="F#" type="m"/>laissez-moi dans l’couloir.
+</line>
+<line>Si je perds les pédales, et si ça vous inquiète,</line>
+<line>si ça vous fait trop mal, je n’sais plus qui vous êtes,</line>
+<line>et si je perds la boule, n’ayez pas trop pitié,</line>
+<line>ma tête est une foule de visages oubliés.</line>
+</chorus>
+
+<verse>
+<line>J’me sens friperie, j’me fais momie,</line>
+<line>mes enfants me déplacent, comme un vieux manuscrit,</line>
+<line>et j’ai les feuilles qui cassent, et je suis mal écrit.</line>
+</verse>
+<verse>
+<line>J’me sens bizarre, j’me vis trop tard,</line>
+<line>si je repense aux instants, où j’ai fait sans savoir,</line>
+<line>la course avec le temps, sans me dire au revoir.</line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>
+<chord root="H" type="m"/>
+<chord root="A"/>
+<chord root="E" type="m"/>
+<chord root="G"/>
+<chord root="F#" type="m"/>
+</line>
+</verse>
+
+<chorus>
+<line>&hellip;</line>
+<line>et si je perds la tête, n’ayez pas trop pitié,</line>
+<line>bientôt je serai bête et vous aurez oublié.</line>
+</chorus>
+</song>
+
+
+<song>
+  <header>
+    <name>Všechno co chci</name>
+    <author>Vlasta Redl</author>
+    <year>1998</year>
+  </header>
+
+<verse>
+<line>Jsem tvoje 
+<chord root="D"/>malá
+<chord root="D" bass="F#"/>
+</line>
+<line>
+<chord root="G"/>nešťastná 
+<chord root="H" type="m"/>hvězda,
+<chord root="E" type="9"/>
+</line>
+<line>pluju si 
+<chord root="G" type="m"/>oblohou,
+</line>
+<line>ať 
+<chord root="C" type="6sus2"/>spíš
+</line>
+<line>nebo jsi 
+<chord root="D"/>na nohou.
+<chord root="A" type="7sus4"/><chord root="D"/>
+</line>
+</verse>
+
+<verse>
+<line>A tvoje štěstí,</line>
+<line>bláznivá, </line>
+<line>věř,</line>
+<line>mě uhasit nemohou.</line>
+</verse>
+ 
+<verse>
+<line>Jsem ten malý </line>
+<line>ohýnek v dálce,</line>
+<line>kde světlo pramení </line>
+<line>ze slz </line>
+<line>a trápení.</line>
+</verse>
+ 
+<verse>
+<line>A slyším </line>
+<line>na všechna jména </line>
+<line>tvých šťastných hvězd </line>
+<line>a znamení.</line>
+</verse>
+ 
+<chorus>
+<line>
+<chord root="D" type="sus2"/>Všechno co chci je tě 
+<chord root="D" bass="G"/>nenechat 
+<chord root="G" type="6/9" optional="yes"/>jít,
+</line>
+<line>
+<chord root="D" type="sus2"/>kam se ti 
+<chord root="E" type="m7"/>zlíbí,
+</line>
+<line>
+<chord root="D" type="sus2"/>všechno co chci je vzít ti 
+<chord root="D" bass="G"/>slunce a 
+<chord root="G" type="6/9" optional="yes"/>klid,
+</line>
+<line>cos mi 
+<chord root="H" type="m"/>slíbil.
+<chord root="H" type="sus2" bass="A"/>
+<chord root="H" type="m" bass="Ab"/>
+<chord root="H" type="m" bass="G"/>
+<chord root="G" type="m7"/>
+</line>
+</chorus>
+ 
+<verse>
+<line>Jsem tvoje malá </line>
+<line>nešťastná hvězda,</line>
+<line>pluju si po mořích </line>
+<line>a pohořích.</line>
+</verse>
+ 
+<verse>
+<line>A slyším </line>
+<line>v hlubinách,</line>
+<line>když o mně hovoříš.</line>
+</verse>
+ 
+<chorus/>
+ 
+<verse>
+<line>Jsem tvoje malá </line>
+<line>velryba, blázne,</line>
+<line>občas se vynořím. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Co když</name>
+    <author>Vlasta Redl</author>
+    <year>1998</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E"/>Ještě mě 
+<chord root="A"/>studí 
+<chord root="H"/>slzy 
+<chord root="E"/>na líci,
+</line>
+<line>co 
+<chord root="A"/>naposledy 
+<chord root="H" type="7"/>pro mě vypla
+<chord root="E"/>kala,
+</line>
+<line>než zas 
+<chord root="A"/>odešla 
+<chord root="H"/>kamsi 
+<chord root="E"/>za kýmsi,
+</line>
+<line>
+<chord root="A"/>nad kým prý se 
+<chord root="H" type="7"/>ještě slito
+<chord root="E"/>vala.
+</line>
+
+<line>To ale 
+<chord root="D"/>nade mnou Bůh se 
+<chord root="A" type="sus4"/><chord root="A"/>smiloval,
+<chord root="H"/>
+</line>
+<line>když mi 
+<chord root="E"/>nechal její slzy na ra
+<chord root="D"/>meni,
+</line>
+<line>teď můžu  
+<chord root="A"/>chodit 
+<chord root="H"/>řádně 
+<chord root="A"/>pový
+<chord root="H"/>šen
+</line>
+<line>
+<chord root="E"/>po světě, kde lásky pro mě 
+<chord root="D"/>není.
+</line>
+</verse>
+ 
+<verse> 
+<line>Jistě není, nebylo a nemá být,</line>
+<line>ani beznaděj a už vůbec ne bída.</line>
+<line>A srdce na dlaních netlučou a nevábí,</line>
+<line>jsou tak stejná až darmo to střídat.</line>
+<line>To asi obejmout vítr je skoro víc,</line>
+<line>vylézt do korun a nechat se houpat, </line>
+<line>v lese hladit kůru borovic, </line>
+<line>
+co když<chord root="A"/><chord root="H"/><chord root="C#" type="m"/><chord root="G#" type="m"/>&hellip; 
+je jen <chord root="A"/>hloupá.
+<chord root="H"/>
+<chord root="E"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Ještě mě budí ze sna obrázky,</line>
+<line>co na kůži mi nehty napínala,</line>
+<line>šrámy na tváři od něžné pomlázky,</line>
+<line>kterou mi hvězdy zhasínala.</line>
+<line>A slunce nemá důvod vycházet,</line>
+<line>tak se fláká kdesi za horama,</line>
+<line>a já po tmě šmátrám pod svícnem,</line>
+<line>co když&hellip;&nbsp; je taky sama&hellip; </line>
+</verse>
+ 
+<verse>
+<line>Tak už to dopij putovní příteli, </line>
+<line>popojedem dolinami,</line>
+<line>napříč obilím, kaktusy a svízeli,</line>
+<line>spávat na kopci slámy.</line>
+<line>Až kam nás dovedou tahací provázky,</line>
+<line>necháme otisk bosé nohy čaroděje,</line>
+<line>budeš mě učit zpívat bez lásky,</line>
+<line>co když&hellip;&nbsp; se směje&hellip; </line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Červený most</name>
+    <author>Záviš</author>
+    <album>Záviš, syn vojáka</album>
+    <year>2001</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A"/>Hledali mě 
+<chord root="C#"/>včera večer 
+<chord root="F#" type="m"/>fízli.
+</line>
+<line>
+<chord root="A"/>Hledali mě 
+<chord root="C#"/>včera večer 
+<chord root="F#" type="m"/>fízli,
+</line>
+<line>nena<chord root="D"/>šli, já nebyl doma, já byl 
+<chord root="E"/>na červeném mostě,
+</line>
+<line>
+<chord root="A"/>
+<chord root="D"/>a na něm jsem kouřil 
+<chord root="A"/>prostě.
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+<line>Hledali mě včera večer fízli.</line>
+<line>Hledali mě včera večer fízli,</line>
+<line>nenašli, já nebyl doma, já byl na červeném mostě,</line>
+<line>o zábradlí opřen prostě.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="A"/>Červený most 
+<chord root="C#"/>je 
+<chord root="F#" type="m"/>železniční most,
+<chord root="D"/>
+</line>
+<line>
+<chord root="A"/>víc vám k tomu 
+<chord root="E"/>nesdělím, už 
+<chord root="D"/>to je dost.
+</line>
+<line>
+<chord root="A"/>Červený most 
+<chord root="C#"/>je 
+<chord root="F#" type="m"/>železniční most,
+<chord root="D"/>
+</line>
+<line>
+<chord root="A"/>víc vám k tomu 
+<chord root="E"/>nesdělím, už 
+<chord root="A"/>to je dost.
+<chord root="E"/>
+</line>
+</chorus>
+
+<verse>
+<line>Nenašli mě včera večer fízli.</line>
+<line>Nenašli mě včera večer fízli,</line>
+<line>nemohli, já nebyl doma, já byl na červeném mostě,</line>
+<line>z něho dolů plival prostě.</line>
+</verse>
+
+<verse>
+<line>Nenašli mě včera večer fízli.</line>
+<line>Nenašli mě včera večer fízli,</line>
+<line>poněvadž já nebyl doma, já byl na červeném mostě,</line>
+<line>z něho dolů čuměl prostě.</line>
+</verse>
+
+<chorus>
+<line>Červený most je železniční most,</line>
+<line>víc vám k tomu nesdělím, už to je dost.</line>
+<line>Červený most je železniční most,</line>
+<line>víc vám k tomu nesdělím, už to je dost.</line>
+</chorus>
+
+<verse>
+<line>Až mě budou příště hledat fízli.</line>
+<line>Až mě budou příště hledat fízli,</line>
+<line>já budu na červeném mostě, vzplanou ve mně libé touhy,</line>
+<line>vždyť jsem přece člověk pouhý. </line>
+</verse>
+
+<verse>
+<line>Až mě budou příště hledat fízli.</line>
+<line>Až mě budou příště hledat fízli,</line>
+<line>Já budu na červeném mostě spokojeně onanovat,</line>
+<line>jak se zdravý muž má chovat. </line>
+</verse>
+
+<chorus>
+<line>Červený most je železniční most,</line>
+<line>víc vám k tomu nesdělím, už to je dost, to je dost, to je dost.</line>
+<line>Červený most je železniční most,</line>
+<line>víc nesdělím &ndash; žena, nůše, píseň, kost.</line>
+</chorus>
+</song>
+
+
+<song>
+  <header>
+    <name>Na jednu notečku</name>
+    <author>Karel Kryl</author>
+    <album>Jedůfky</album>
+    <year>1996</year>
+  </header>
+
+<verse>
+<line>Jdu k vodě 
+<chord root="A" type="m"/>líčit na jelce, mám Škvoreckého Zbabělce
+</line>
+<line>
+a chléb a buřty v kabelce s kořalou <chord root="D" type="m"/>sladkou. 
+</line>
+<line>
+když slunce <chord root="E"/>vstává v rumělce, zahlédnu metat kozelce 
+</line>
+<line>
+zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root="E"/>
+</line>
+</verse>
+   
+<verse>
+<line>Když v tváři rumem zruměním, tu spokojím se s domněním: </line>
+<line>'Kozelce ladí s uměním jak šroubek s matkou!' </line>
+<line>Zní z láhve nota za notou, kabela zeje prázdnotou </line>
+<line>a já mám půdu pod botou poněkud vratkou, </line>
+<line>pada<chord root="E"/>dadam pada<chord root="A" type="m"/><chord root="E"/><chord root="A" type="m"/>dam.</line>
+</verse>
+
+<verse>
+<line>Keď ide vlna za loďou, pijeme vodku s Voloďou </line>
+<line>a bratstvo našich nároďov sa takto tuží, </line>
+<line>Voloďa býval barónom, teraz je z neho agronóm, </line>
+<line>má salaš hore nad Hronom a záhon ruží. </line>
+</verse>
+
+<verse>
+<line>Keď spieva sláčik primáša a čašník fľašu prináša, </line>
+<line>môj zrak s víziou sobáša zvlhne mi plačom, </line>
+<line>keď vraví:'Koniec košiarom! Predáme ovce mäsiarom! </line>
+<line>Je lepšie dať sa k žandárom, ako byť bačom!', </line>
+<line>padadadam padadam. </line>
+</verse>
+
+<verse>
+<line>Když pluje loďka za loďkou, chutná mi voďka s Voloďkou, </line>
+<line>on rotným je, já piloťkou, bydlíme v tanku, </line>
+<line>když měsíc svítí na Něvu jak cibulička v nálevu, </line>
+<line>jdem v maskovacím oděvu udělat banku. </line>
+</verse>
+
+<verse>
+<line>Plá nocí šarlat uhlíků, zní tlukot ran a slavíků </line>
+<line>a v bance ani rublíku, to kvůli manku, </line>
+<line>tu vezmem zavděk nálevnou vypijem vodku nelevnou </line>
+<line>a půjdem nocí barevnou užíti spánku, </line>
+<line>padadadam padadam. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Ах не вините меня в том</name>
+    <sortingName>Ach ně vinitě meňa v tom</sortingName>
+    <author>Alexander Rosenbaum</author>
+  </header>
+
+<verse>
+<line>
+<chord root="D" type="m"/>Ах, не ви
+<chord root="G" type="m"/>ни
+<chord root="A" type="7"/>те меня 
+<chord root="D" type="m"/>в том,
+</line>
+<line>что опоз<chord root="G" type="m"/>дал 
+<chord root="C" type="7"/>чуть-
+<chord root="F"/>чуть,
+</line>
+<line>
+<chord root="D" type="7"/>гроздья ря
+<chord root="G" type="m"/>бины 
+<chord root="A" type="7"/>под ок
+<chord root="Bb"/>ном
+</line>
+<line>мне не да<chord root="G" type="m"/>ют ни
+<chord root="A" type="7"/>как ус
+<chord root="D" type="m"/>нуть.
+</line>
+</verse>
+
+<verse>
+<line>Как часто от себя бежим</line>
+<line>и долго маемся&hellip;</line>
+<line>за занавесочкою лжи</line>
+<line>что ж не раскаиваемся?</line>
+</verse>
+
+<verse>
+<line>Что ж не поверим, не простим,</line>
+<line>не подадим руки?</line>
+<line>может быть всё от глупости,</line>
+<line>но ведь не все мы дураки.	</line>
+</verse>
+
+<verse>
+<line>Гляньте, за птичками в раю</line>
+<line>вечная очередь&hellip;</line>
+<line>и я покорнейше стою</line>
+<line>вместе со всеми прочими.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Надпись на камне</name>
+    <sortingName>Nadpis na kamně</sortingName>
+    <author>Bulat Okudžava</author>
+    <year>1982</year>
+  </header>
+
+<verse>
+<line>Пус<chord root="C" type="m"/>кай моя лю
+<chord root="Bb" type="7"/>бовь, как мир, ста
+<chord root="Eb"/>ра, &ndash;
+</line>
+<line>лишь 
+<chord root="Ab"/>ей одной слу
+<chord root="Bb" type="7"/>жил и дове
+<chord root="Eb"/>рялся.
+<chord root="G" type="7"/>
+</line>
+<line>Я &ndash; 
+<chord root="C" type="m"/>дворянин с арбатского дво
+<chord root="F" type="m"/>ра,
+</line>
+<line>своим дво<chord root="Bb" type="7"/>ром введенный во дво
+<chord root="Eb"/>рянство.
+</line>
+<line>Я &ndash; 
+<chord root="C" type="m"/>дворянин с арбатского дво
+<chord root="F" type="m"/>ра,
+</line>
+<line>своим дво<chord root="C" type="m" bass="G"/>ром вве
+<chord root="G" type="7"/>денный во дво
+<chord root="C" type="m"/>рянство.
+</line>
+</verse>
+
+<verse>
+<line>За праведность и преданность двору</line>
+<line>пожалован я кровью голубою.</line>
+<line>Когда его не станет, я умру, </line>
+<line>пока он есть &ndash; я властен над судьбою. </line>
+</verse>
+
+<verse>
+<line>Молва за гробом чище серебра</line>
+<line>и вслед звучит музыкою прекрасной&hellip;</line>
+<line>Но не спеши, фортуна, будь добра, </line>
+<line>не выпускай моей руки несчастной. </line>
+</verse>
+
+<verse>
+<line>Не плачь, Мария, радуйся, живи,</line>
+<line>по-прежнему встречай гостей у входа.</line>
+<line>Арбатство, растворенное в крови, </line>
+<line>неистребимо, как сама природа. </line>
+</verse>
+
+<verse>
+<line>Когда кирка, бульдозер и топор</line>
+<line>сподобятся к Арбату подобраться</line>
+<line>и правнуки забудут слово &quoteCzechOpen;двор&quoteCzechClose;&nbsp;&ndash; </line>
+<line>согрей нас всех и собери, арбатство. </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>If</name>
+    <author>Pink Floyd</author>
+    <album>Atom Heart Mother</album>
+    <year>1970</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E"/>If I were a swan, I'd be 
+<chord root="D"/>gone.
+</line>
+<line>
+<chord root="E"/>If I were a train, I'd be 
+<chord root="D"/>late.
+</line>
+<line>And 
+<chord root="E"/>if I were a 
+<chord root="C#" type="7"/>good man, I'd 
+<chord root="F#"/>talk with you more 
+<chord root="B" type="7"/>often than I 
+<chord root="E"/>do.<chord root="B" type="7"/>
+</line>
+</verse>
+
+<verse>
+<line>If I were to sleep, I could dream.</line>
+<line>If I were afraid, I could hide.</line>
+<line>If I go insane, please don't put your wires in my brain.</line>
+</verse>
+
+<verse>
+<line>If I were the moon, I'd be cool.</line>
+<line>If I were a book, I would bend.</line>
+<line>If I were a good man, I'd understand the spaces between friends.</line>
+</verse>
+
+<verse>
+<line>If I were alone, I would cry.</line>
+<line>And if I were with you, I'd be home and dry.</line>
+<line>And if I go insane, will you still let me join in with the game?</line>
+</verse>
+
+<verse>
+<line>If I were a swan, I'd be gone.</line>
+<line>If I were a train, I'd be late again.</line>
+<line>If I were a good man, I'd talk with you more often than I do.</line>
+</verse>
+</song>
+
+<song>
+  <header>
+    <name>Krajina posedlá tmou</name>
+    <authors>
+      <author>Jiří Suchý</author>
+      <author>Jiří Šlitr</author>
+    </authors>
+  </header>
+
+<verse>
+<line>
+<chord root="A"/>Krajina 
+<chord root="D"/>posedlá 
+<chord root="A"/>tmou, (krajina 
+<chord root="D"/>posedlá 
+<chord root="A"/>tmou)
+</line>
+<line>vzpomínky 
+<chord root="D"/>do sedla 
+<chord root="A"/>zvou, (vzpomínky 
+<chord root="D"/>do sedla 
+<chord root="A"/>zvou)
+</line>
+<line>nutí mě vrátit se 
+<chord root="E" type="7"/>tam, (nutí mě vrátit se tam)
+</line>
+<line>kde budu navěky sám, (kde budu navěky sám)</line>
+<line>kde místo úsměvů 
+<chord root="A"/>tvých 
+<chord root="C#"/>čeká jen řada snů 
+<chord root="D"/>zlých,<chord root="D" type="m"/>
+</line>
+<line>a místo lásky nás 
+<chord root="A"/>dvou, (a místo 
+<chord root="D"/>lásky nás 
+<chord root="A"/>dvou)
+</line>
+<line>krajina 
+<chord root="E" type="7"/>posedlá 
+<chord root="A"/>tmou. (krajina 
+<chord root="D"/>posedlá 
+<chord root="A"/>tmou)
+</line>
+</verse>
+
+<verse>
+<line>Když západ v očích ti plál, (když západ v očích ti plál) </line>
+<line>s tebou jsem naposled stál, (s tebou jsem naposled stál) </line>
+<line>i když jsi čekala víc, (i když jsi čekala víc) </line>
+<line>přijel jsem tenkrát ti říct, (přijel jsem tenkrát ti říct) </line>
+<line>že mám tě na každej pád jedinou na světě rád, </line>
+<line>a pak jsem zase jel dál, (a pak jsem zase jel dál) </line>
+<line>když západ v očích mi plál. (když západ v očích mi plál) </line>
+</verse>
+<verse>
+<line>Proč jsem se vracel tak rád, (proč jsem se vracel tak rád) </line>
+<line>proč jsem měl touhu se smát, (proč jsem měl touhu se smát) </line>
+<line>když cestou řekli mi: Joe, (když cestou řekli mi: Joe) </line>
+<line>ta nikdy nebude tvou, (ta nikdy nebude tvou) </line>
+<line>že láska zmizí jak dým, to dneska proklatě vím, </line>
+<line>jedno však musím se ptát, (jedno však musím se ptát) </line>
+<line>proč jsem se vracel tak rád? (proč jsem se vracel tak rád?) </line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Černá kára</name>
+    <author>Josef Kainar</author>
+  </header>
+
+<verse>
+<line>Každej tu 
+<chord root="E" type="m"/>černou káru 
+<chord root="Bb" type="dim"/>svou si 
+<chord root="B" type="7"/>táhne 
+<chord root="E" type="m"/>sám.
+<chord root="C" type="9"/><chord root="B" type="7"/>
+</line>
+<line>Kdo může 
+<chord root="E" type="m"/>znát tu 
+<chord root="H" type="m" bass="F#"/>píseň, 
+<chord root="E" type="m" bass="G"/>co já 
+<chord root="Eb" type="dim" bass="A"/>v sobě 
+<chord root="G"/>mám, v sobě 
+<chord root="B" type="7"/>mám.
+</line>
+<line>Můžeš si 
+<chord root="E" type="m"/>půjčit 
+<chord root="H" type="m" bass="F#"/>klobouk, 
+<chord root="E" type="m" bass="G"/>nepůj
+<chord root="Eb" type="dim" bass="A"/>číš si 
+<chord root="G" type="7"/>nikdy cizí 
+<chord root="C" type="9"/>žal, cizí žal,
+</line>
+<line>cizíma 
+<chord root="E" type="m"/>ústy ještě 
+<chord root="C" type="7"/>nikdo 
+<chord root="B" type="9+"/>nezpí
+<chord root="E" type="m6/9"/>val
+<chord root="C" type="9"/>
+<chord root="B" type="7"/>
+<chord root="E" type="m6/9"/>
+<chord root="C" type="9"/>
+<chord root="B" type="7"/>
+</line>
+</verse>
+
+<verse>
+<line>Tu černou káru, tu mám stále na patách.</line>
+<line>On se z ní sype věčnej jemnej černej prach.</line>
+<line>Zastavit nesmím ani chvíli, ani chvíli zaživa,</line>
+<line>ta černá kára se můj život nazývá.</line>
+</verse>
+
+<verse>
+<line>Trošku tý lásky dej mi, věrný srdce mý.</line>
+<line>Věčně tu káru táhnout, to je šílený.</line>
+<line>Sevři mě jemně, ty jseš jediný, co na tý cestě mám,</line>
+<line>ať jako blues tě na svých ústech vyzpívám&hellip;</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Šaškové počmáraní</name>
+    <authors>
+      <author>Michal Horáček</author>
+      <author>Petr Hapka</author>
+    </authors>
+  </header>
+
+<multicols>
+<verse>
+<line>
+<chord root="C"/>Koukněte na toho 
+<chord root="H" type="7"/>fintila,
+</line>
+<line>
+<chord root="D" type="m"/>pod krkem žlutého 
+<chord root="G" type="7"/>motýla,
+</line>
+<line>
+<chord root="D" type="m"/>zelený klobouček 
+<chord root="G" type="7"/>do týla,
+</line>
+<line>
+<chord root="D" type="7"/>šoupne si 
+<chord root="G" type="7"/>na bílou 
+<chord root="C"/>pleš.
+<chord root="G"/>
+</line>
+</verse>
+ 
+<verse>
+<line>I když ten tralalák padá mi,</line>
+<line>hlavně že vyhrávám barvami,</line>
+<line>hlavně že vyhrávám barvami,</line>
+<line>zase jsem šťastnej jak veš. </line>
+</verse>
+ 
+<chorus>
+<line>Co po mně 
+<chord root="F"/>chceš, pravdu či 
+<chord root="F" type="m"/>lež,
+</line>
+<line>zkus ty dvě 
+<chord root="C"/>rozeznat, a pak se 
+<chord root="C" type="7"/>směj,
+</line>
+<line>barevný 
+<chord root="F"/>svět láme mi 
+<chord root="F" type="m"/>hřbet,
+</line>
+<line>
+<chord root="E" type="m7"/>přesto chci být 
+<chord root="A" type="m7"/>šašek 
+<chord root="D" type="m7"/>počmára
+<chord root="G" type="7"/>nej.
+</line>
+</chorus>
+ 
+<verse>
+<line>Ucho mu hryžou jak oplatku,</line>
+<line>s rozběhem kopou ho do zadku,</line>
+<line>tvrděj, že všechno je v pořádku,</line>
+<line>když mu daj mizernej plat. </line>
+</verse>
+ 
+<verse>
+<line>Když ale koukám se na lidi, </line>
+<line>všechno tak černě zas nevidím, </line>
+<line>všechno tak černě zas nevidím, </line>
+<line>ještě se dovedem smát. </line>
+</verse>
+ 
+<columnbreak/>
+<chorus>
+<line>Ne že se snad není co bát,</line>
+<line>úzkost má tlapy jak Cassius Clay,</line>
+<line>ten věčný strach na miskách vah,</line>
+<line>převážit chce šašek počmáranej. </line>
+</chorus>
+ 
+<verse>
+<line>Kampak chcem ve věku rozumu</line>
+<line>strkat prý své nosy na gumu, </line>
+<line>určitě od rumu z konzumu </line>
+<line>tak strašně červené jsou. </line>
+</verse>
+ 
+<verse>
+<line>Ptám se však tebe náš osude, </line>
+<line>co bude, až tady nebude, </line>
+<line>co bude, až tady nebude, </line>
+<line>dojemně pitomá show. </line>
+</verse>
+ 
+<chorus>
+<line>Bláhová show, šaškové jdou </line>
+<line>barevnou naději vytřískat z ní,</line>
+<line>hledáme brod uprostřed vod,</line>
+<line>my věční šaškové počmáraní. </line>
+</chorus>
+ 
+<verse>
+<line>Ptám se však tebe náš osude, </line>
+<line>co bude, až tady nebude,</line>
+<line>co bude, až tady nebude, </line>
+<line>dojemně pitomá show. </line>
+</verse>
+</multicols>
+</song>
+
+
+<song>
+  <header>
+    <name>Topol</name>
+    <author>Vlasta Redl</author>
+  </header>
+
+<verse>
+<line>
+<chord root="D"/>Stojí topol v širém 
+<chord root="G"/>po
+<chord root="D"/>lu,
+</line>
+<line>připo
+<chord root="A"/>mí
+<chord root="D"/>ná.
+</line>
+<line>
+<chord root="D"/>Že sme my dva byli 
+<chord root="G"/>spo
+<chord root="D"/>lu,
+</line>
+<line>moja 
+<chord root="G"/>mi
+<chord root="D"/>lá.
+</line>
+<line>
+<chord root="H" type="m"/>Že tam kdysi stromy stály,
+</line>
+<line>
+<chord root="E" type="m"/>než jich ludé 
+<chord root="A"/>vyrúbali.
+</line>
+<line>
+<chord root="D"/>Aby sa jim 
+<chord root="G"/>pšeni
+<chord root="D"/>čka
+</line>
+<line>
+<chord root="A"/>zrodi
+<chord root="D"/>la.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D"/>
+<chord root="A"/>
+<chord root="G"/>
+<chord root="E" type="m"/>
+<chord root="D"/>
+<chord root="A"/>
+<chord root="D"/>
+</line>
+</verse>
+
+<verse>
+ <line>Šumí pšenka v širém polu</line>
+ <line>jak dlúhý den.</line>
+ <line>Že sme my dva byli spolu</line>
+ <line>a nebudem.</line>
+ <line>Já tu pšenku půjdem kosit</line>
+ <line>a za tebe boha prosit.</line>
+ <line>Aby si sa třeba s iným</line>
+ <line>dobře měla.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Přijdu hned</name>
+    <author>Vlasta Redl</author>
+    <album>O kolo zpět</album>
+    <year>1997</year>
+  </header>
+
+<verse>
+<line>Tady je 
+<chord root="D"/>kruh, tady je 
+<chord root="A" bass="C#"/>dvůr, tady 
+<chord root="G"/>bydlí
+<chord root="E" type="m"/>
+</line>
+<line>moje 
+<chord root="H" type="m"/>pýcha a 
+<chord root="G"/>štěstí napo
+<chord root="A"/>sled,
+</line>
+<line>tady jsou 
+<chord root="G"/>knížky, tady 
+<chord root="H" type="m"/>svíce, tady 
+<chord root="E" type="m"/>hrnky, tady 
+<chord root="A"/>lžíce,
+</line>
+<line>kdybys šel 
+<chord root="D"/>pryč, tady je 
+<chord root="A"/>klíč, přijdu 
+<chord root="D"/>hned.
+</line>
+</verse>
+
+<verse>
+ <line>To vpravo je les, tohle je vřes a tudy sever,</line>
+ <line>téhle cesty už je konec nadohled,</line>
+ <line>tohle je Zlín a támhle blízko, to už je Melbourne, San Francisco,</line>
+ <line>sedni si sem, někde tu jsem, přijdu hned.</line>
+</verse>
+
+<verse>
+ <line>Támhleto je pták, to velké je mrak, tím se prší,</line>
+ <line>a tímhle přivoláš si slunce zase zpět,</line>
+ <line>tohle je výhled na Kokořín a tahle okna vedou k moři,</line>
+ <line>tady je gin, tady led, já přijdu hned.</line>
+</verse>
+
+<verse>
+ <line>Tohle je stůl, tohle čaj a tohle papír,</line>
+ <line>mávni tužkou a tvoji mrtví ožijí,</line>
+ <line>je to tak snadné, až to mrzí, že nejde chtít být tak drzý</line>
+ <line>a stvořit si svět jenom z vět a melodií.</line>
+</verse>
+
+<verse>
+ <line>&hellip;a tam právě jsem a snad se vrátím,</line>
+ <line>kdyby ne včas, nech jí tu vzkaz, že jsi tu byl.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Pole, tráva a činžáky</name>
+    <author>Květy</author>
+    <album>Bílé včely</album>
+    <year>2012</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>A zdá se mi, že hadi ovíjejí 
+<chord root="E" type="m"/>zem,
+</line>
+<line>
+<chord root="A" type="m7"/>měsíc bude ti v patách, 
+<chord root="E" type="m(7)"/>kameny hlídají cestu.
+</line>
+<line>V tak nízkém obilí není kde se skrýt,</line>
+<line>hoří&hellip;&nbsp; a kolem oken sune se dým.</line>
+</verse>
+
+<verse>
+<line>Ptám se paní v metru, kudy mám jít,</line>
+<line>říká, že Ježíš mě vidí, protože vidí všechny.</line>
+<line>Právě se vrací zpátky, o stanici dřív</line>
+<line>nechala ležet svůj batoh, přiletěla z USA.</line>
+</verse>
+
+<verse>
+<line>Pole tráva a činžáky jsou tady stejný,</line>
+<line>postavy Špejbla s Hurvínkem na lavici v přízemí.</line>
+</verse>
+
+<verse>
+<line>[: A zdává se mi o ní sen,</line>
+<line>zdává se mi, zdává se mi o ní sen :]</line>
+<line>(A jako duhová křída)</line>
+<line>Zdává se mi o ní sen,</line>
+<line>zdává se mi, že hadi ovíjejí zem.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Smíchov</name>
+    <author>Severní nástupiště</author>
+    <album>O krysách a vlcích</album>
+    <year>2018</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="m"/>Smíchov je zamračenej, přeplněný tramvaje,
+</line>
+<line>lidi 
+<chord root="F" type="*"/>koukaj na boty nebo na čůrky, co po sklech jedou.
+</line>
+<line>
+<chord root="E" type="m"/>Před nádražím vdechnou pizzu a nechaj okraje
+</line>
+<line>a 
+<chord root="F" type="*"/>na obloze nevidět nic jinýho než šedou.
+</line>
+</verse>
+
+<chorus>
+<line>Vono to 
+<chord root="G"/>schne a 
+<chord root="D"/>padá a 
+<chord root="E" type="m"/>v restauraci 
+<chord root="C"/>Oáza
+</line>
+<line>
+<chord root="G"/>z rádia 
+<chord root="H" type="7"/>dohrává 
+<chord root="E" type="m"/>páteční 
+<chord root="C"/>hitparáda
+</line>
+<line>
+<chord root="G"/>nádražní 
+<chord root="D"/>rozhlas ztich
+<chord root="E" type="m"/>nul a tebou 
+<chord root="C"/>projede,
+</line>
+<line>že vlak ze 
+<chord root="G"/>severního 
+<chord root="D"/>nástupiště 
+<chord root="E" type="m"/>odjíždí zas 
+<chord root="C"/>bez te
+<chord root="G"/>be.
+<chord root="D"/>
+<chord root="E" type="m"/>
+<chord root="C"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="E" type="m"/>
+<chord root="C"/>
+</line>
+</chorus>
+
+<verse>
+<line>Smíchovu zmrzl úsměv, vypliv vajgl do sněhový břečky,</line>
+<line>vzala ho žena bez domova a dala do krabičky.</line>
+<line>Vosum dní starej ježíš bloudí ránem novoroční kocoviny,</line>
+<line>nikdo nenabízí šumák, prej každej ze včerejška nese si dost svojí špíny.</line>
+</verse>
+
+<chorus>
+<line>Vono to mrzne a studí a v restaruaci Oáza</line>
+<line>klapnutí dalšího grogu ho svůdně budí (?),</line>
+<line>nádražní rozhlas ztichnul a tebou projede,</line>
+<line>že vlak ze severního nástupiště odjíždí zas bez tebe.</line>
+</chorus>
+
+<verse>
+<line>Smíchov se tiše culí, ví to, co je jen v náznacích vidět,</line>
+<line>že nacucaný pupeny na stromech se vmáčknout zpátky nedaj.</line>
+<line>Nikdo moc nevěří, maj pocit, že bylo to jenom kdysi dávno v kině,</line>
+<line>jak ptáci vrací se a do větví a na troleje sedaj.</line>
+</verse>
+
+<chorus>
+<line>Vono to voní a kvete a v restaruaci Oáza</line>
+<line>ti tělem něco novýho najednou tepe,</line>
+<line>dopíjíme pivo a nádražní rozhlas zapřede,</line>
+<line>že na severní nástupiště přijíždí vlak pro mě i pro tebe,</line>
+<line>pro mě i pro tebe.</line>
+</chorus>
+<chorus/>
+
+<verse>
+<line>F* = 033200</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>V pořádku</name>
+    <author>Vlasta Redl</author>
+  </header>
+
+<multicols>
+<verse>
+<line>Zase 
+<chord root="D"/>střílejí do lidí,
+</line>
+<line>naštěstí 
+<chord root="A"/>v cizích krajích,
+</line>
+<line>u nás 
+<chord root="A" type="sus4"/>všechno je v pořádku,
+</line>
+<line>chlapi 
+<chord root="A"/>v hospodě, děti si hrají.
+</line>
+<line>A tam 
+<chord root="E" type="m"/>rodina u stolu
+</line>
+<line>dostane úřední zprávu:</line>
+<line>Váš syn byl 
+<chord root="D"/>zastřelen,
+</line>
+<line>zaplaťte za popravu.</line>
+</verse>
+
+<columnbreak/>
+
+<verse>
+<line>Zas mám špatnou náladu,</line>
+<line>to asi z pití špatně mi tráví,</line>
+<line>už taky nejsem v pořádku</line>
+<line>a možná už se neuzdravím.</line>
+<line>Ale nejsem z toho nervózní,</line>
+<line>jedna jistota mi zbyla:</line>
+<line>Není písnička tak dlouhá,</line>
+<line>aby neskončila,</line>
+<line>není písnička tak dlouhá,</line>
+<line>aby neskončila,</line>
+<line>není písnička tak dlouhá&hellip;</line>
+</verse>
+</multicols>
+
+<chorus>
+<line>
+<chord root="G"/>Ale táto, zas jsem tě deset roků 
+<chord root="H" type="m"/>neviděl,
+</line>
+<line>já nechci 
+<chord root="E" type="m"/>motorku, co jsi mi slíbil za vysvěd
+<chord root="D"/>čení.
+</line>
+<line>Ale 
+<chord root="G"/>táto, jak to mám udělat, abych se 
+<chord root="H" type="m"/>nestyděl,
+</line>
+<line>
+<chord root="E" type="m"/>že jsem ještě naživu, že taky nejsem zastře
+<chord root="D"/>lený.
+</line>
+</chorus>
+
+<verse>
+<line>Zase střílejí do vzduchu</line>
+<line>a do špatných lidí.</line>
+<line>Tak všechno je v pořádku,</line>
+<line>když Pán Bůh to řídí.</line>
+<line>Všichni se sejdeme po smrti</line>
+<line>kolem velkýho piána</line>
+<line>a budem hrát samý veselý</line>
+<line>až do rána.</line>
+</verse>
+
+<chorus>
+<line>Jenže příteli, mně tohle dávno už nestačí,</line>
+<line>jak mám uvěřit, že tam nahoře bude všechno, jak to tady dole chceme?</line>
+<line>Jak mám uvěřit že budem všichni úplně jinačí,</line>
+<line>že se cestou do nebe samým štěstím pomátneme?</line>
+</chorus>
+
+<verse>
+<line>Zase žena mi vyčítá,</line>
+<line>že jsem málo doma,</line>
+<line>už dávno není to v pořádku,</line>
+<line>láska se nedá dělit dvěma.</line>
+<line>A naše rodina u stolu</line>
+<line>čeká úřední zprávu,</line>
+<line>ale střílet se nebude,</line>
+<line>ani šampaňským na oslavu.</line>
+</verse>
+
+<chorus>
+<line>Ale paní, jak mám žít bez otce a bez syna</line>
+<line>a bez ducha se motat, po hospodách čekat na zavření?</line>
+<line>Jak mám pořád jen dokola začínat, začínat, začínat,</line>
+<line>jak mám věřit, že se to vůbec někdy změní?</line>
+</chorus>
+</song>
+
+
+<song>
+  <header>
+    <name>Špitál u sv. Jakuba</name>
+    <authors>
+      <author>Zdeněk Rytíř</author>
+      <author>ASPM</author>
+      <author>traditional</author>
+    </authors>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="m"/>Vstoupil jsem 
+<chord root="H" type="7"/>do baru jako 
+<chord root="E" type="m"/>obvykle
+<chord root="H" type="7"/>
+</line>
+<line>
+<chord root="E" type="m"/>a na první 
+<chord root="H" type="7"/>pohled poznal jsem 
+<chord root="E" type="m"/>hned,
+<chord root="H" type="7"/>
+</line>
+<line>
+<chord root="E" type="m"/>že něco 
+<chord root="H" type="7"/>podivnýho visí tady 
+<chord root="E" type="m"/>v ovzduší 
+<chord root="H" type="7"/>
+</line>
+<line>jako když 
+<chord root="C" type="(maj)"/>ve whisky 
+<chord root="H" type="7"/>rozpouští se 
+<chord root="E" type="m"/>led.
+<chord root="H" type="7"/>
+<chord root="E" type="m"/>
+<chord root="H" type="7"/>
+</line>
+</verse>
+
+<verse>
+<line>Po mý levici stál Joe McQueeny </line>
+<line>a kalným zrakem prohlížel si nás,</line>
+<line>když dopil, všichni v baru naráz ztichli </line>
+<line>a ticho proříz jeho roztřesenej hlas.</line>
+</verse>
+ 
+<verse>
+<line>Jak vám příjdu do St. James Infirmary, </line>
+<line>uvidím hned ženu svou </line>
+<line>ležet přikrytou bílou plachtou, </line>
+<line>jak by se zdálo na pohled blaženou.</line>
+</verse>
+ 
+<verse>
+<line>Chyt jsem hned na chodbě doktora,</line>
+<line>povídá, že je to s ní fakt hodně zlý,</line>
+<line>a tak běžím zpátky, ale už jsem přišel pozdě,</line>
+<line>mrtvá leží na stole.</line>
+</verse>
+ 
+<verse>
+<line>Šestnáct černejch koní </line>
+<line>a jeden z nich má obtěžkanej hřbet,</line>
+<line>šestnáct žen jde za nima </line>
+<line>a jen jedna z nich už nevrátí se zpět.</line>
+</verse>
+ 
+<verse>
+<line>Až jednou umřu chci slyšet holky zpívat </line>
+<line>a nechci slyšet už vůbec žádnej pláč </line>
+<line>a jen jazzband ať Pánu Bohu poví,</line>
+<line>kdo k němu přichází a co jsem zač.</line>
+</verse>
+ 
+<verse>
+<line>Tak jste teda slyšeli celej můj příběh </line>
+<line>a nevím už, co dál bych měl říct vám, </line>
+<line>jen až se vás zeptaj, proč tolik piju,</line>
+<line>tak řekněte, že jsem v kartách prohrál vše, co mám, </line>
+<line>že v kartách jsem prohrál vše, co mám.</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Kolej Yesterday</name>
+    <authors>
+      <author>Pavel Šrut</author>
+      <author>Petr Skoumal</author>
+    </authors>
+    <album>Kolej Yesterday</album>
+    <year>1984</year>
+  </header>
+
+<verse>
+<line>To 
+<chord root="D" type="m"/>bejvávaly 
+<chord root="D" type="m9"/>na koleji 
+<chord root="D" type="m"/>časy,
+<chord root="D" type="m9"/>
+</line>
+<line>
+<chord root="D" type="m"/>už ráno 
+<chord root="Bb" type="maj9"/>začal večí
+<chord root="F"/>rek,
+</line>
+<line>
+<chord root="Eb" type="maj"/>někdo dal dvacet, někdo 
+<chord root="D" type="m"/>stovku 
+</line>
+<line>
+<chord root="Eb" type="maj"/>a stavěli jsme Eiffe
+<chord root="D" type="m"/>lovku 
+</line>
+<line>ze snů a 
+<chord root="Bb" type="maj"/>z peří, 
+<chord root="C"/>ze si
+<chord root="D" type="m"/>rek.
+</line>
+</verse>
+
+<verse>
+<line>To tenkrát ještě rostly holkám vlasy,</line>
+<line>to bylo před tím vejbuchem,</line>
+<line>a kdo měl žízeň, tak ji hasil,</line>
+<line>a kdo měl žízeň, tak ji hasil,</line>
+<line>vracel se 
+<chord root="Bb"/>s kytkou 
+<chord root="C"/>za u
+<chord root="F"/>chem.
+<chord root="A"/>
+</line>
+</verse>
+
+<chorus>
+<line>Prázdnou 
+u<chord root="D"/>licí na ko
+<chord root="G"/>lej, 
+</line>
+<line>jo, to je 
+<chord root="C"/>dávno, Yester
+<chord root="F"/>day, 
+</line>
+<line>Yesterday.
+<chord root="E" type="m"/>
+<chord root="A" type="7"/>
+<chord root="D" type="m"/>
+<chord root="D" type="m9"/>
+<chord root="D" type="m"/>
+<chord root="D" type="m9"/>
+</line>
+</chorus>
+
+<verse>
+<line>To bejvávalo na koleji snění,</line>
+<line>bramborák voněl v kuchyni,</line>
+<line>někdo dal dvacet, někdo pade,</line>
+<line>za to jsme měli, kamaráde,</line>
+<line>hned štěně píva ve skříni.</line>
+</verse>
+
+<verse>
+<line>Tenkrát, hochu, ještě ozáření</line>
+<line>hrozilo leda vod slunce</line>
+<line>a byly řeky po setmění,</line>
+<line>a byly řeky po setmění,</line>
+<line>kde jsi moh čekat na sumce.</line>
+</verse>
+
+<chorus>
+<line>A pak je hodit na olej,</line>
+<line>jo, to je dávno, Yesterday,</line>
+<line>Yesterday.</line>
+</chorus>
+
+<verse>
+<line>To bejvávaly na koleji časy,</line>
+<line>už ráno začal večírek,</line>
+<line>někdo dal dvacet, někdo stovku</line>
+<line>a někdo zbořil Eiffelovku</line>
+<line>ze snů a z peří, ze sirek.</line>
+</verse>
+
+<chorus>
+<line>A od tý doby na kolej</line>
+<line>patří už dávno Yesterday,</line>
+<line>Yesterday, oh  I believe in yesterday.</line>
+</chorus>
+</song>
+
+
+<song>
+  <header>
+    <name>Opět na výletě</name>
+    <author>Vlasta Redl</author>
+    <album>Na výletě</album>
+    <year>1990</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Říkali, 
+<chord root="D" type="m"/>
+<chord root="A" type="m"/>že už tě 
+<chord root="G"/>neuvidím,
+</line>
+<line>
+<chord root="A" type="m"/>a chtěli slyšet 
+<chord root="D" type="m"/>jména 
+<chord root="A" type="m"/>nějakých 
+<chord root="G"/>dalších lidí.
+</line>
+<line>
+<chord root="D" type="m"/>Ale já nikoho 
+<chord root="C"/>neznám, ani 
+<chord root="F"/>tebe milá,
+</line>
+<line>
+<chord root="D" type="m"/>vím jen, že jsi 
+<chord root="C"/>pryč, žes mě 
+<chord root="F"/>opustila
+</line>
+</verse>
+
+<verse>
+<line>Říkali, že to mám pustit z hlavy,</line>
+<line>a chodit víc ven, že mám jen jedno zdraví.</line>
+<line>Ale já nemám zájem o žádné uzdravení!</line>
+<line>
+<chord root="A" type="m"/>Říkali, 
+<chord root="D" type="m"/>
+<chord root="A" type="m"/>že čas 
+<chord root="G"/>všechno spraví&hellip;
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="A"/>Tak konečně 
+<chord root="D"/>mám zas aspoň 
+<chord root="E"/>po starostech,
+</line>
+<line>
+<chord root="A"/>co bude 
+<chord root="D"/>zítra a co 
+<chord root="E"/>potom a jak je to prosté.
+</line>
+<line>
+<chord root="H" type="m7"/>Zas můžu 
+<chord root="A"/>lhát a chodit si, 
+<chord root="D"/>kam chci domů,
+</line>
+<line>
+<chord root="H" type="m7"/>a do rána 
+<chord root="A"/>psát, o tom že 
+<chord root="D"/>není komu.
+</line>
+</chorus>
+
+<verse>
+<line>
+<chord root="F#" type="m"/>
+<chord root="A"/>
+<chord root="D"/>
+<chord root="E" type="(6)"/>
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="C"/>Hrajte mi 
+<chord root="F"/>blues, za to že 
+<chord root="G"/>se mnou byla,
+</line>
+<line>
+<chord root="C"/>za každou mou 
+<chord root="F"/>půlnoc, v které mě 
+<chord root="G"/>probudila,
+</line>
+<line>
+<chord root="D" type="m7"/>hrajte mi 
+<chord root="C"/>blues, že aspoň 
+<chord root="F"/>našli jsme se
+</line>
+<line>
+<chord root="D" type="m7"/>a že mám 
+<chord root="C"/>rozum, který 
+<chord root="F"/>všechno snese.
+</line>
+</chorus>
+
+<chorus>
+<line>Hrajte mi blues za moje skvělé plány,</line>
+<line>že už budu hodný a na prstě omotaný,</line>
+<line>hrajte mi blues, ať si s ním zacpu uši,</line>
+<line>ať neslyším ticho, co mi zbylo v duši.</line>
+</chorus>
+
+<verse>
+<line>
+<chord root="special" type="2&times;"/>
+<chord root="A"/>
+<chord root="D"/>
+<chord root="A"/>
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="H" type="m"/>Hrajte mi 
+<chord root="A"/>blues za tu, co 
+<chord root="D"/>o mě stála,
+</line>
+<line>
+<chord root="H" type="m"/>hrajte mi 
+<chord root="A"/>blues, i kdyby 
+<chord root="D"/>jenom lhala,
+</line>
+<line>
+<chord root="H" type="m"/>hrajte mi 
+<chord root="A"/>blues, že na tomhle 
+<chord root="D"/>krásném světě
+</line>
+<line>už se mi 
+<chord root="H" type="m"/>nechce být 
+<chord root="A"/>jinak, než jen 
+<chord root="D"/>na výletě&hellip;
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="D" type="m"/>
+<chord root="A" type="m"/>
+<chord root="G"/>
+</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Na jezeře zlatých ryb</name>
+    <author>Vlasta Redl</author>
+    <album>Na výletě</album>
+    <year>1990</year>
+  </header>
+
+<verse>
+<line>Už mi 
+<chord root="C"/>malý byl svět,
+</line>
+<line>tak jsem 
+<chord root="F" type="(maj7)"/>chtěl na výlet,
+</line>
+<line>doma jsem řek,</line>
+<line>že budu 
+<chord root="C"/>zpátky co nevidět.
+</line>
+</verse>
+
+<verse>
+<line>Byl jsem chytrý kluk,</line>
+<line>ale to už je nejspíš fuk,</line>
+<line>mám pocit, že</line>
+<line>stejně jsem, co se dalo splet.</line>
+</verse>
+
+<verse>
+<line>A ty jsi 
+<chord root="F"/>měla o mě strach,
+</line>
+<line>už když mi šlo 
+<chord root="Bb"/>nač jsem sáh,
+</line>
+<line>tak 
+<chord root="G" type="m"/>nač teď brát
+</line>
+<line>
+<chord root="C"/>jak žebrák 
+<chord root="F"/>na dluh rybí slib.
+</line>
+</verse>
+
+<verse>
+<line>Nemám víc si co přát,</line>
+<line>než že se dál budeš bát,</line>
+<line>že chytím i poslední</line>
+<line>ze zlatých ryb.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Na jezeře bez zlatých ryb</name>
+    <author>Vlasta Redl</author>
+    <album>Na výletě</album>
+    <year>1990</year>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Nehledám 
+<chord root="F"/>oheň, co 
+<chord root="C"/>nepálí,
+</line>
+<line>
+<chord root="F"/>víš mě sny o tobě 
+<chord root="A" type="m7"/>zahřejí,
+</line>
+<line>
+<chord root="F"/>jen když vedle mě 
+<chord root="D" type="m7"/>spíš 
+<chord root="F"/>
+<chord root="G"/>
+</line>
+</verse>
+
+<verse>
+<line>A nehlídám tvé kroky z povzdálí,</line>
+<line>usínám s nadějí,</line>
+<line>že se neztratíš.</line>
+</verse>
+
+<verse>
+<line>Nečekám zázraky na zemi,</line>
+<line>ne že bych pohádkám nevěřil,</line>
+<line>prostě nechci v nich hrát.</line>
+</verse>
+
+<verse>
+<line>A tak nespěchám, jdu krokem a zdá se mi,</line>
+<line>že žádné hodiny nezměří můj čas,</line>
+<line>co 
+<chord root="D" type="m7"/>s tebou 
+<chord root="G"/>zůstal 
+<chord root="F" type="maj7"/>stát. 
+</line>
+</verse>
+
+<verse>
+<line>So, you fish,</line>
+<line>no, another wish,</line>
+<line>game's over,</line>
+<line>rozumíš?</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D" type="m7"/>Proč vlastně měl bych po tobě 
+<chord root="A" type="m7"/>chtít
+</line>
+<line>další společná vítěz<chord root="F" type="maj7"/>ství,
+</line>
+<line>když můžu prohrát všechno 
+<chord root="D" type="m7"/>sám.
+<chord root="D" type="m7" bass="C"/>
+</line>
+</verse>
+
+</song>
+
+<song>
+  <header>
+    <name>Kolem a kolem</name>
+    <author>Vlasta Redl</author>
+    <album>Na výletě</album>
+    <year>1990</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E"/>Dlouhá je 
+<chord root="F#" type="m" bass="E"/>noc a nikdo na po
+<chord root="E"/>moc,
+</line>
+<line>jen milenci 
+<chord root="A" bass="E"/>na patro
+<chord root="B"/>lách.
+</line>
+<line>
+<chord root="E"/>Dlouhá je mi 
+<chord root="F#" type="m" bass="E"/>noc a kdybych 
+<chord root="H" type="7sus4"/>křičel o po
+<chord root="E"/>moc,
+</line>
+<line>nikoho 
+<chord root="A" bass="E"/>nepřivo
+<chord root="B" type="7sus4"/>lám.
+</line>
+<line>A ty 
+<chord root="F#" type="m"/>kroky to je 
+<chord root="B" type="7"/>vítr,
+<chord root="C#" type="7"/>
+</line>
+<line>déjà 
+<chord root="F#" type="m"/>vu, to jen 
+<chord root="E"/>výtah jel 
+<chord root="A" bass="E"/>o patro 
+<chord root="B" type="7"/>dál.
+</line>
+<line>
+<chord root="E"/>Špendlík 
+<chord root="F#" type="m" bass="E"/>ke jménu 
+<chord root="B"/>do sbírky 
+<chord root="C#" type="m" bass="B"/>měst,
+</line>
+<line>kde jsem 
+<chord root="F#" type="m"/>bůhví
+<chord root="B" type="7"/>proč jednou 
+<chord root="E"/>hrál.
+</line>
+</verse>
+
+<verse>
+<line>Dlouhá je mi noc a chtěl bych tak moc</line>
+<line>někam, kde někdo na mě čeká.</line>
+<line>Někam, kde jsem už byl, hle jak nízký mám cíl,</line>
+<line>ale cesta tak předaleká.</line>
+<line>A i lež bych už bral,</line>
+<line>že jsem na cestě dál, ale pravdy se nepolekám.</line>
+<line>Víš, než v nic, raděj uvěřit v lež,</line>
+<line>takže 
+<chord root="E"/>mů
+<chord root="F#" type="m"/>žeš 
+<chord root="E"/>lhát, 
+<chord root="E"/>
+<chord root="A" bass="E"/>
+<chord root="E"/> 
+<chord root="E"/>mů
+<chord root="A" bass="E"/>žeš 
+<chord root="E" type="(maj7)"/>lhát, 
+<chord root="B" bass="E"/>když 
+<chord root="E"/>chceš.
+</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>6&thinsp;&ampersand;&thinsp;90</name>
+    <author>Vlasta Redl</author>
+    <album>O kolo zpět</album>
+    <year>1997</year>
+  </header>
+
+<verse>
+<line>
+<chord root="A"/>Nemůžu uvěřit, 
+<chord root="D"/>bráško, 
+</line>
+<line>že na tě vůbec už nevzpomí<chord root="A"/>ná,
+</line>
+<line>kdesi nad drahou 
+<chord root="D"/>flaškou,
+</line>
+<line>když je nálada nepovin<chord root="A"/>ná
+</line>
+<line>málem jsem 
+<chord root="C#" type="m"/>nadělal z kytary 
+<chord root="D"/>dřívka,
+</line>
+<line>že se mi o tobě už 
+<chord root="E"/>nebude 
+<chord root="F#" type="m"/>zdát,
+</line>
+<line>chvilka 
+<chord root="A"/>zaváhání před vraty 
+<chord root="D"/>chlívka
+</line>
+<line>a je tu rok šesta<chord root="E"/>devade
+<chord root="F#" type="m"/>sát,
+</line>
+<line>a máme 
+<chord root="D"/>rok šesta
+<chord root="E"/>devade
+<chord root="A"/>sát.
+</line>
+</verse>
+
+<verse>
+<line>Fantys' vyplatil v Spartách</line>
+<line>a ani nebyla tak rozpačitá,</line>
+<line>vždyť co se na seně vyhraje v kartách,</line>
+<line>stejně se na zemi už nepočítá,</line>
+<line>cítím, jak na patách něco tě líže,</line>
+<line>něco, co ví, že tu budete stát,</line>
+<line>dokud se jeden z vás nepohne blíže,</line>
+<line>někam do roku šestadevadesát,</line>
+<line>aspoň do 
+<chord root="D"/>roku šesta
+<chord root="E"/>devade
+<chord root="F#"/>sát.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="special" type="2&times;"/>
+<chord root="F#"/>
+<chord root="G#" type="m"/>
+<chord root="B"/>
+<chord root="F#"/>
+</line>
+<line>
+<chord root="F#"/>
+<chord root="G#" type="m"/>
+<chord root="B"/>
+<chord root="C#"/>
+<chord root="D#" type="m"/>
+</line>
+<line>Dokud se 
+<chord root="F#"/>někdo z nás nepohne 
+<chord root="G#" type="m"/>blíže,
+</line>
+<line>někam do 
+<chord root="B"/>roku šesta
+<chord root="C#"/>devade
+<chord root="D"/>sát
+<chord root="E"/>
+</line>
+</verse>
+
+<verse>
+<line>Upřímně řečeno, láska,</line>
+<line>už dávno není to, co nedá mi spát,</line>
+<line>dva blázni v plynových maskách</line>
+<line>a všechno, co se nam nemůže stát,</line>
+<line>dokud mi tvoje srdce hoří jak svíce,</line>
+<line>takže i v tmách aspoň slova jdou psát,</line>
+<line>vážně netuším, co si přát více</line>
+<line>[: na konci roku šestadevadesát, :] </line>
+<line>na konci 
+<chord root="D"/>roku šesta
+<chord root="E"/>devade
+<chord root="F"/>sát.
+<chord root="G"/>
+<chord root="A"/>
+</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Příteli</name>
+    <author>Vlasta Redl</author>
+    <album>O kolo zpět</album>
+    <year>1997</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E"/>
+<chord root="E" type="4" bass="B"/>
+<chord root="E"/>
+<chord root="B"/>
+<chord root="A" optional="yes"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="E"/>Příteli 
+<chord root="E" type="4" bass="B"/>z dávných 
+<chord root="E"/>válek, 
+<chord root="B"/>píšu to 
+<chord root="E"/>psaní,
+<chord root="E" type="4" bass="B"/>
+<chord root="E"/>
+<chord root="B"/>
+</line>
+<line>
+<chord root="E"/>jak jsem 
+<chord root="E" type="4" bass="B"/>před lety 
+<chord root="E"/>slíbil 
+<chord root="B"/>na trnko
+<chord root="E"/>braní.
+<chord root="E" type="4" bass="B"/>
+<chord root="E"/>
+<chord root="B"/>
+</line>
+<line>Stále 
+<chord root="F#" type="m"/>mířím 
+<chord root="B"/>na jiho
+<chord root="E"/>západ,
+</line>
+<line>jsem už 
+<chord root="F#" type="m"/>za horama, 
+<chord root="B"/>za vodou, 
+<chord root="G"/>což rač 
+<chord root="A"/>chápat,
+</line>
+<line>můj 
+<chord root="E"/>rytíři 
+<chord root="E" type="4" bass="B"/>bez lázně a 
+<chord root="E"/>vany 
+<chord root="B"/>z hotelu 
+<chord root="E"/>Blaník.
+<chord root="E" type="4" bass="B"/>
+<chord root="E"/>
+<chord root="B"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Tady je zima už za námi a ledy tají,</line>
+<line>kdo zasil v prosinci banány, tomu už zrají.</line>
+<line>A ze všech koutů život zas vstává,</line>
+<line>všude pupeny, lupeny, květiny, tráva,</line>
+<line>na nebi kometa s vlečkou a Hanka se vdává.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="special" type="3&times;"/>&nbsp; 
+<chord root="E"/>
+<chord root="E" type="4" bass="B"/>
+<chord root="E"/>
+<chord root="B"/>
+</line>
+<line>
+<chord root="C#" type="m"/>&nbsp; 
+<chord root="A"/>
+<chord root="B"/>
+<chord root="C#" type="m"/>
+</line>
+<line>
+<chord root="C#" type="m" bass="G#"/>&nbsp; 
+<chord root="A"/>
+<chord root="B"/>
+<chord root="E"/>
+</line>
+<line>
+<chord root="special" type="2&times;"/>&nbsp; 
+<chord root="E"/>
+<chord root="E" type="4" bass="B"/>
+<chord root="E"/>
+<chord root="B"/>
+<chord root="A" optional="yes"/>
+</line>
+</verse>
+ 
+<verse>
+<line>Válka skončila, zdá se, a vojsko se vrací,</line>
+<line>i tažní ptáci a nástroje do restaurací.</line>
+<line>A všem to pípá v Motorolách,</line>
+<line>hlavně Jarmilám a Hynkům jaro volá.</line>
+<line>Je tu veselo, jak dřív jen o demonstracích.</line>
+</verse>
+
+<verse>
+<line><chord root="B"/></line>
+</verse>
+
+<verse>
+<line>Můj milý příteli kdesi tam, do časů pravých,</line>
+<line>posílám kousek Tvé písně a všichni Tě zdraví.</line>
+<line>Mrkací panenku, kuličku skleněnku,</line>
+<line>papuče, čelenku, neplatnou vstupenku,</line>
+<line>raketu, míček a kačenku na klíček. (ať jsi třeba trochu nemocný, jen když jsi pravý)</line>
+<line>
+<chord root="C#" type="m"/>A možná  
+<chord root="A"/>ještě víc  
+<chord root="B"/>dáme to 
+<chord root="C#" type="m"/>mu, 
+</line>
+<line>kdo si nás, 
+<chord root="A"/>kdo si nás  
+<chord root="B"/>vezme do 
+<chord root="E"/>mů. 
+</line>
+</verse>
+
+<verse><line>mezihra</line></verse> <!-- italic -->
+
+<verse>
+<line>Příteli z dávných válek, píšu to psaní,</line>
+<line>jak jsem před léty slíbil na trnkobraní&hellip;</line>
+</verse>
+</song>
+
+
+<song>
+  <header>
+    <name>Carpe diem</name>
+    <authors>
+      <author>Vlasta Redl</author>
+      <author>Ivo Viktorin</author>
+    </authors>
+    <album>Dohrála hudba</album>
+    <year>1989</year>
+  </header>
+
+<verse>
+<line>
+<chord root="special" type="[:"/>
+<chord root="C"/>
+<chord root="C" bass="E"/>
+<chord root="D" type="m"/>
+<chord root="C"/>
+<chord root="A" type="m"/>
+<chord root="F" type="maj7"/>
+<chord root="special" type=":]"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="A" type="m"/>Nadešel asi 
+<chord root="D" type="m7"/>poslední den, 
+</line>
+<line>podí<chord root="A" type="m"/>vej, celá planeta 
+<chord root="E" type="m"/>blázní.
+</line>
+<line>A já 
+<chord root="A" type="m"/>neuroním ani 
+<chord root="D" type="m7"/>slzu pro ni, 
+</line>
+<line>jenom 
+<chord root="G"/>zamknu dům.
+</line>
+</verse>
+
+<verse>
+<line>A půjdu po kolejích až na konečnou,</line>
+<line>hle jak mám krok vojensky rázný.</line>
+<line>A nezastavím ani na červenou,</line>
+<line>natruc předpisům.</line>
+</verse>
+ 
+<chorus>
+<line>
+<chord root="A" type="m"/>Tak tady mě 
+<chord root="G"/>máš,
+</line>
+<line>
+<chord root="A" type="m"/>dnes můžeš 
+<chord root="G"/>říkat klidně, co 
+<chord root="C"/>chceš,
+<chord root="C" bass="E"/>
+</line>
+<line>zbylo tak 
+<chord root="D" type="m"/>málo 
+<chord root="C"/>vět, 
+</line>
+<line>tak 
+<chord root="A" type="m"/>málo slov, co 
+<chord root="G"/>nelžou.
+</line>
+</chorus>
+
+<verse> 
+<line>Už si nebudeme hrát na román,</line>
+<line>setři růž, nikdo nás nenatáčí.</line>
+<line>Je poslední den a zbyla nám jen</line>
+<line>miska cukroví.</line>
+</verse>
+ 
+<verse>
+<line>Ať všechny hospody dnes doženou plán,</line>
+<line>ať svět z posledního pije a tančí.</line>
+<line>A já nebudu pít, nechám naplno znít</line>
+<line>v hlavě všechno, co mám.</line>
+</verse>
+ 
+<verse>
+<line>Žádný slib z těch, co jsem ti dal,</line>
+<line>nejde vyplnit a nejde vzít zpátky.</line>
+<line>Tak ať točí se svět, mladší o deset let</line>
+<line>na desce Jethro Tull.</line>
+</verse>
+ 
+<verse>
+<line>Ať platí aspoň dnes, co dřív jsem jen lhal,</line>
+<line>carpe diem, život je krátký.</line>
+<line>V tvých očích je klid a nemám chuť snít,</line>
+<line>co by bylo dál.</line>
+</verse>
+ 
+<chorus>
+<line>Tak tady mě máš,</line>
+<line>dnes můžeš říkat klidně, co chceš,</line>
+<line>zbylo tak málo vět,</line>
+<line>tak málo slov&hellip;</line>
+</chorus>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Palaces of Montezuma</name>
+    <authors>
+      <author>Nick Cave</author>
+      <author>Grinderman</author>
+    </authors>
+    <album>Idiot Prayer</album>
+    <year>2020</year>
+  </header>
+
+<verse>
+<line>
+<chord root="F"/>
+<chord root="A"/>
+<chord root="Bb"/>
+<chord root="C"/>
+<chord root="Bb"/>
+<chord root="F"/>
+<chord root="C"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="F"/>Psychedelic invocations,
+</line>
+<line>
+<chord root="F"/>Mata Hari 
+<chord root="Bb"/>at the station
+</line>
+<line>
+<chord root="C"/>I give to you,
+</line>
+<line>
+<chord root="Bb"/>a Java princess of Hindu birth,
+</line>
+<line>
+<chord root="F"/>a woman of flesh, a child of earth
+</line>
+<line>
+<chord root="C"/>I give to you.
+</line>
+</verse>
+
+<verse>
+<line>The hanging gardens of Babylon,</line>
+<line>Miles Davis, the black unicorn</line>
+<line>I give to you,</line>
+<line>the Palaces of Montezuma,</line>
+<line>the Gardens of Akbar's tomb</line>
+<line>I give to you.</line>
+</verse>
+
+<verse>
+<line>The spider Goddess and the Needle Boy,</line>
+<line>the slave-dwarves that they employ</line>
+<line>I give to you,</line>
+<line>a custard-coloured super-dream</line>
+<line>of Ali McGraw and Steve McQueen</line>
+<line>I give to you.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="Bb"/>C'mon 
+<chord root="F"/>baby, get me out of the 
+<chord root="C"/>cold
+</line>
+<line>and 
+<chord root="Bb"/>give me, give me, give me your 
+<chord root="F"/>precious love for 
+<chord root="C"/>me to hold.
+</line>
+</chorus>
+
+<chorus/>
+
+<verse>
+<line>The epic of Gilgamesh,</line>
+<line>a pretty little black A-line dress</line>
+<line>I'll buy it for you,</line>
+<line>the spinal cord of JFK,</line>
+<line>wrapped in Marilyn Monroe's negligee</line>
+<line>I give to you.</line>
+</verse>
+
+<verse>
+<line>I want nothing in return,</line>
+<line>just the softest little breathless word</line>
+<line>I ask of you,</line>
+<line>a word contained in a grain of sand</line>
+<line>can barely walk, can't even stand</line>
+<line>I ask of you.</line>
+</verse>
+
+<chorus/>
+<chorus/>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Man In The Moon</name>
+    <authors>
+      <author>Nick Cave</author>
+      <author>Grinderman</author>
+    </authors>
+    <album>Grinderman</album>
+    <year>2007</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="m"/>My daddy 
+<chord root="D"/>was 
+<chord root="B" type="m"/>astro
+<chord root="E" type="m"/>naut,
+</line>
+<line>
+<chord root="E" type="m"/>that's what 
+<chord root="D"/>I was 
+<chord root="B" type="m"/>often 
+<chord root="E" type="m"/>taught,
+</line>
+<line>
+<chord root="E" type="m"/>my daddy 
+<chord root="D"/>went a
+<chord root="B" type="m"/>way too 
+<chord root="C"/>soon,
+</line>
+<line>
+<chord root="E" type="m"/>now he's 
+<chord root="D"/>living 
+<chord root="B" type="m"/>on the 
+<chord root="E" type="m"/>moon.
+</line>
+</verse>
+
+<verse>
+<line>Hang on to me people, we're going down,</line>
+<line>down among the fishes in an absence of 
+<chord root="C"/>sound,
+</line>
+<line>the presence of distance and it's floating in 
+<chord root="C"/>time,
+</line>
+<line>it's lack and it's longing and it's not very kind.</line>
+</verse>
+
+<verse>
+<line>Sitting here scratching in this rented room,</line>
+<line>scratching and a-tapping to the man in the 
+<chord root="C"/>moon,
+</line>
+<line>'bout all the things that I've been 
+<chord root="C"/>told,
+</line>
+<line>my daddy was an astronaut.</line>
+</verse>
+
+</song>
+
+
+<song>
+  <header>
+    <name>The Ship Song</name>
+    <author>Nick Cave &ampersand; the Bad Seeds</author>
+    <album>The Good Son</album>
+    <year>1990</year>
+  </header>
+
+<chorus>
+<line><chord root="G"/>Come sail your <chord root="D"/>ships around me,</line>
+<line><chord root="C"/>and burn your <chord root="G"/>bridges <chord root="D"/>down,</line>
+<line><chord root="G"/>we make a little <chord root="D"/>history, baby,</line>
+<line><chord root="C"/>every time you <chord root="G"/>come a<chord root="D"/>round.</line>
+</chorus>
+
+<chorus>
+<line>Come loose your dogs upon me,</line>
+<line>and let your hair hang down,</line>
+<line>you are a little mystery to me</line>
+<line>every time you come around.</line>
+</chorus>
+
+<verse>
+<line><chord root="C"/>We talk about it <chord root="G"/>all night <chord root="D"/>long,</line>
+<line><chord root="C"/>we define our <chord root="G"/>moral <chord root="D"/>ground,</line>
+<line><chord root="E" type="m"/>but when I crawl in<chord root="G"/>to your arms,</line>
+<line><chord root="C"/>everything, it comes <chord root="G"/>tumbling <chord root="D"/>down.</line>
+</verse>
+
+<chorus>
+<line>Come sail your ships around me&hellip;</line>
+</chorus>
+
+<verse>
+<line>Your face has fallen sad now</line>
+<line>for you know the time is nigh,</line>
+<line>when I must remove your wings</line>
+<line>and you, you must try to fly.</line>
+</verse>
+
+<chorus>
+<line>Come sail your ships around me&hellip;</line>
+</chorus>
+
+<chorus>
+<line>Come loose your dogs upon me&hellip;</line>
+</chorus>
+
+<chorus>
+<line>Come sail your ships around me&hellip;</line>
+</chorus>
+
+</song>
+
+
+<song>
+  <header>
+    <name>Setkání s Puškinem</name>
+    <authors>
+      <author>Bulat Okudžava</author>
+      <author>Jaromír Nohavica</author>
+    </authors>
+    <album>V tom roce pitomém</album>
+    <year>1990</year>
+  </header>
+
+<verse>
+<line>
+<chord root="E" type="7"/>Co bylo, je 
+<chord root="A" type="m"/>pryč jednou 
+<chord root="E" type="7"/>provždy a stesky jsou 
+<chord root="A" type="m"/>k ničemu,
+</line>
+<line>
+každá epocha <chord root="C"/>má vlastní 
+<chord root="G"/>kulisy herce i 
+<chord root="A" type="m"/>kus
+</line>
+<line>
+<chord root="A" type="7"/>a líto mi 
+<chord root="D" type="m"/>je, že už 
+<chord root="G"/>nikdy se nesetkám 
+<chord root="A" type="m"/>s Puškinem,
+</line>
+<line>
+nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi 
+<chord root="A" type="m"/>hus.
+<chord root="E" type="7"/>
+</line>
+</verse>
+
+<verse>
+<line>Dnes už nechodíme jak zastara bosáci naboso,</line>
+<line>řvou motory aut, my z oken sčítáme galaxie,</line>
+<line>a líto mi je, že už po Moskvě nejezdí drožkáři</line>
+<line>a nebudou víc, nebudou a to líto mi je.</line>
+</verse>
+
+<verse>
+<line>Před tebou se skláním, má bezbřehá epocho poznání,</line>
+<line>a vzdávám ti hold, lidský rozume nad rozumem,</line>
+<line>a líto mi je, že jak dřív se i dnes bůžkům klaníme</line>
+<line>a na kolenou bijem hlavami o tvrdou zem.</line>
+</verse>
+
+<verse>
+<line>Podél našich cest dlouhé aleje vítězných praporů,</line>
+<line>náš boj za to stál, my máme vše, za co šli jsme se bít,</line>
+<line>a líto mi je, že se stavějí pomníky z mramoru</line>
+<line>a vyšší než my, vyšší než veškerá vítězství.</line>
+</verse>
+
+<verse>
+<line>Co bylo, je pryč, vyjdu ven na špacír, koukám, noc je tu,</line>
+<line>vtom z ničeho nic vedle arbatských vrat u vody</line>
+<line>stojí drožkář a kůň a pan Puškin jde po prázdném prospektu,</line>
+<line>já krk za to dám, zítra že se něco přihodí&hellip;</line>
+</verse>
+
+</song>
+<!--
+
+<song>
+  <header>
+    <name></name>
+    <author></author>
+    <album></album>
+    <year></year>
+  </header>
+
+<verse>
+<line>
+<chord root="C" type="7"/>
+<chord root="C" type="7"/>
+<chord root="C" type="7"/>
+</line>
+</verse>
+
+</song>
+
+-->
+</songbook>

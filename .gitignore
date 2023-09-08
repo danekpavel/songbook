@@ -1,0 +1,17 @@
+# Build generated files
+/build
+
+# VS Code settings
+/.vscode
+
+# LaTeX-related files
+/data/*.aux
+/data/*.log
+/data/*.out
+/data/*.toc
+
+# LaTeX documentation
+/doc/latex
+
+# Vim swap files
+*.swp

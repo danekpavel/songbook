@@ -1,0 +1,3346 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\setmainlanguage{czech}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}
+\setsansfont{Calibri}
+\usepackage[width=18cm, height=26.5cm, top=1.5cm]{geometry}
+\usepackage{multicol}
+\usepackage[unicode, hidelinks]{hyperref}
+\usepackage[titles]{tocloft}  % table of contents formatting
+\usepackage{titlesec}         % section formatting
+
+%%  Define labels
+%   chorus
+\newcommand{\choruslabel}{Ref}
+%   TOC
+\newcommand{\toctitle}{Obsah}
+
+% sections and below won't be numbered
+\setcounter{secnumdepth}{0}
+
+%%  An invisible rule used to unify the height and depth of chord text
+\newcommand{\chordstrutrule}{\vrule width0pt height0.9\baselineskip depth0.1\baselineskip}
+
+%%  Puts a chord in a hbox together with the height/depth setting vrule
+\newcommand{\chordsbox}[1]{\hbox{\chordstrutrule #1}}
+
+%%  Places a chord above lyrics
+\newcommand{\chordslyrics}[2]{\vbox{\chordsbox{#1}\hbox{#2}}}
+
+%%  Boxes for measuring chord/lyrics widths
+\newbox\chordhypbox
+\newbox\lyricshypbox
+
+%%  Places a chord(s) (#1) above lyrics (#2) ending with a hyphen (potentially with fills around) when necessary
+\newcommand{\chordslyricshyphen}[2]{%
+\setbox\chordhypbox=\chordsbox{#1}%
+\setbox\lyricshypbox=\hbox{#2}%
+\ifdim\wd\chordhypbox>\wd\lyricshypbox% chord is longer than lyrics
+  \setbox\lyricshypbox=\hbox{#2-}%
+  \ifdim\wd\chordhypbox>\wd\lyricshypbox% chord is longer than lyrics and hyphen
+\vbox{\copy\chordhypbox\hbox to\wd\chordhypbox{#2\hfill-\hfill}}%
+  \else\vbox{\copy\chordhypbox\hbox{#2-}}\fi%
+\else\chordslyrics{#1}{#2}\fi
+}
+
+%%  One line of lyrics, chords or both
+\newcommand{\sbline}[1]{\noindent #1\par}
+
+%%  Verse
+\renewcommand{\verse}[1]{#1\vskip\baselineskip}
+
+%%  Measure chorus indent
+\newlength\chorusindent
+\setbox\chordhypbox=\hbox{\choruslabel\hskip1em}
+\setlength{\chorusindent}{\wd\chordhypbox}
+
+%%  Chorus
+\newcommand{\chorus}[1]{{\leftskip=\chorusindent\parindent=-\chorusindent\indent\hbox to\chorusindent{\textit{\choruslabel}\hfill}#1\par\vskip\baselineskip}}
+
+%% Section title format
+\titleformat{\section}
+  {\normalfont\LARGE}{}{0em}{}[\vskip2pt{\hrule width\textwidth height.4pt}]
+
+%%  Starts a new song (#1) as a new section on a new page and puts song info below -- left (#2) and right (#3) justified parts
+\newcommand{\song}[3]{\newpage\pagestyle{plain}\phantomsection\section{#1}  % \phantomsection necessary for hyperref to work
+\vskip-3pt\noindent\textit{#2\hfill #3}\par\vskip2\baselineskip}
+
+%%  Prints a chord with horizontal space after it
+\newcommand{\chord}[1]{\textsf{#1}\hskip.4em}
+
+%% Prints sharp symbol (#)
+\newcommand\msharp{\raisebox{1pt}{$\sharp$}}
+
+%%  Table of contents formatting
+\renewcommand\cftsecfont{\normalfont}            % section (song) name font
+\renewcommand\cftsecpagefont{\normalfont}        % page number font
+\setlength\cftbeforesecskip{.2\baselineskip}     % vertical space between TOC entries
+
+%%  Suppress automatic table of contents section header
+\makeatletter
+\renewcommand\tableofcontents{%
+    \@starttoc{toc}%
+}
+\makeatother
+
+%%  Prints table of contents page
+\newcommand\tocpage{\section*{\toctitle}
+\begin{multicols*}{3}{
+\tableofcontents
+}\end{multicols*}}
+
+%%  Makes TOC items left justified even when they span multiple lines
+%   https://tex.stackexchange.com/questions/283730/left-align-toc-items-when-using-tableofcontents 
+\makeatletter
+\bgroup
+\advance\@flushglue by \@tocrmarg
+\xdef\@tocrmarg{\the\@flushglue}%
+\egroup
+\makeatother
+
+%% No hyphenation
+\hyphenpenalty=10000
+
+%%  Set spacing between multicols columns
+\setlength\columnsep{1cm}
+
+\pagestyle{empty}
+
+\begin{document}
+\raggedright
+
+\tocpage
+
+
+\song{6\thinspace \&\thinspace 90}{Vlasta Redl}{O kolo zpět (1997)}
+
+\verse{\sbline{\chordslyrics{\chord{A}}{Nemůžu uvěřit, }\chordslyrics{\chord{D}}{bráško, }}
+\sbline{že na tě vůbec už nevzpomí\chordslyrics{\chord{A}}{ná,}}
+\sbline{kdesi nad drahou \chordslyrics{\chord{D}}{flaškou,}}
+\sbline{když je nálada nepovin\chordslyrics{\chord{A}}{ná}}
+\sbline{málem jsem \chordslyrics{\chord{C\msharp m}}{nadělal z kytary }\chordslyrics{\chord{D}}{dřívka,}}
+\sbline{že se mi o tobě už \chordslyrics{\chord{E}}{nebude }\chordslyrics{\chord{F\msharp m}}{zdát,}}
+\sbline{chvilka \chordslyrics{\chord{A}}{zaváhání před vraty }\chordslyrics{\chord{D}}{chlívka}}
+\sbline{a je tu rok šesta\chordslyricshyphen{\chord{E}}{devade}\chordslyrics{\chord{F\msharp m}}{sát,}}
+\sbline{a máme \chordslyricshyphen{\chord{D}}{rok šesta}\chordslyricshyphen{\chord{E}}{devade}\chordslyrics{\chord{A}}{sát.}}
+}
+
+\verse{\sbline{Fantys' vyplatil v Spartách}
+\sbline{a ani nebyla tak rozpačitá,}
+\sbline{vždyť co se na seně vyhraje v kartách,}
+\sbline{stejně se na zemi už nepočítá,}
+\sbline{cítím, jak na patách něco tě líže,}
+\sbline{něco, co ví, že tu budete stát,}
+\sbline{dokud se jeden z vás nepohne blíže,}
+\sbline{někam do roku šestadevadesát,}
+\sbline{aspoň do \chordslyricshyphen{\chord{D}}{roku šesta}\chordslyricshyphen{\chord{E}}{devade}\chordslyrics{\chord{F\msharp }}{sát.}}
+}
+
+\verse{\sbline{\chord{2$\times$}\chord{F\msharp }\chord{G\msharp m}\chord{B}\chord{F\msharp }}
+\sbline{\chord{F\msharp }\chord{G\msharp m}\chord{B}\chord{C\msharp }\chord{D\msharp m}}
+\sbline{Dokud se \chordslyrics{\chord{F\msharp }}{někdo z nás nepohne }\chordslyrics{\chord{G\msharp m}}{blíže,}}
+\sbline{někam do \chordslyricshyphen{\chord{B}}{roku šesta}\chordslyricshyphen{\chord{C\msharp }}{devade}\chordslyrics{\chord{D}}{sát}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Upřímně řečeno, láska,}
+\sbline{už dávno není to, co nedá mi spát,}
+\sbline{dva blázni v plynových maskách}
+\sbline{a všechno, co se nam nemůže stát,}
+\sbline{dokud mi tvoje srdce hoří jak svíce,}
+\sbline{takže i v tmách aspoň slova jdou psát,}
+\sbline{vážně netuším, co si přát více}
+\sbline{[: na konci roku šestadevadesát, :] }
+\sbline{na konci \chordslyricshyphen{\chord{D}}{roku šesta}\chordslyricshyphen{\chord{E}}{devade}\chordslyrics{\chord{F}}{sát.}\chordslyrics{\chord{G}\chord{A}}{}}
+}
+
+
+
+\song{Aceton blues}{ASPM}{}
+
+\verse{\sbline{Jo zase přišly složenky a moje holka chtěla nový šaty, a tak mi zbylo z vejplaty jenom 16,20 na aceton,}
+\sbline{tak jsem naložil tašku s lahví acetonu na nosič svý Jáwy a vyrazil jsem Žitnou ulicí k dálnici,}
+\sbline{jo tak to je aceton blues, jenom tak jak já ho mám v palici.}
+}
+
+\verse{\sbline{Zrovna cejtim, jak aceton vytejká z rozbitý lahve dolu na horký vejfuky,}
+\sbline{a tak vyhazuju střepy a večeři do koše a vytírám si tašku svou plátěnou čepicí,}
+\sbline{jo to je aceton blues, to je malér v Žitný ulici.}
+}
+
+\verse{\sbline{Rozjel jsem se, píchnul o střep a udělal jsem si vejron v některym ze svejch četnejch zápěstí,}
+\sbline{pak jsem si vypůjčil na pivo a na vlak a přijel jsem domů ve čtvrtek, anebo možná až ve středu,}
+\sbline{jo tak to je aceton blues, jenom tak jak já ho dovedu.}
+}
+
+
+
+\song{Ах не вините меня в том}{Alexander Rosenbaum}{}
+
+\verse{\sbline{\chordslyricshyphen{\chord{Dm}}{Ах, не ви}\chordslyricshyphen{\chord{Gm}}{ни}\chordslyrics{\chord{A7}}{те меня }\chordslyrics{\chord{Dm}}{в том,}}
+\sbline{что опоз\chordslyrics{\chord{Gm}}{дал }\chordslyricshyphen{\chord{C7}}{чуть-}\chordslyrics{\chord{F}}{чуть,}}
+\sbline{\chordslyricshyphen{\chord{D7}}{гроздья ря}\chordslyrics{\chord{Gm}}{бины }\chordslyricshyphen{\chord{A7}}{под ок}\chordslyrics{\chord{B$\flat$}}{ном}}
+\sbline{мне не да\chordslyricshyphen{\chord{Gm}}{ют ни}\chordslyricshyphen{\chord{A7}}{как ус}\chordslyrics{\chord{Dm}}{нуть.}}
+}
+
+\verse{\sbline{Как часто от себя бежим}
+\sbline{и долго маемся\ldots }
+\sbline{за занавесочкою лжи}
+\sbline{что ж не раскаиваемся?}
+}
+
+\verse{\sbline{Что ж не поверим, не простим,}
+\sbline{не подадим руки?}
+\sbline{может быть всё от глупости,}
+\sbline{но ведь не все мы дураки.	}
+}
+
+\verse{\sbline{Гляньте, за птичками в раю}
+\sbline{вечная очередь\ldots }
+\sbline{и я покорнейше стою}
+\sbline{вместе со всеми прочими.}
+}
+
+
+
+\song{Bludný Holanďan}{Karel Kryl}{Maškary (1970)}
+
+\verse{\sbline{Pod branou \chordslyrics{\chord{Am}}{vítězů, co nikdy }\chordslyrics{\chord{E}}{nevyhráli,}}
+\sbline{bez zlatých řetězů a zvonů \chordslyrics{\chord{Am}}{z katedrály,}\chordslyrics{\chord{E}}{}}
+\sbline{zelení \chordslyrics{\chord{Am}}{molodci z romance }\chordslyrics{\chord{Dm}}{iluzorní,}}
+\sbline{po matce \chordslyrics{\chord{Am}}{sirotci, po otci }\chordslyrics{\chord{E}}{bezprizorní,}}
+\sbline{hrajeme \chordslyrics{\chord{Am}}{v karty.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Růžový kavalír uprostřed paviánů }
+\sbline{zahodil bandalír i šavli z porcelánu, }
+\sbline{svět civí na zátku, zatímco setmělo se, }
+\sbline{pasy jsou v pořádku a whisky na podnose }
+\sbline{s tyčinkou na rty. }
+}
+
+\chorus{\sbline{Hrajeme \chordslyrics{\chord{E}}{hbitě o trojité }\chordslyrics{\chord{Am}}{es:}}
+\sbline{tvar hadího \chordslyrics{\chord{Dm}}{hřbetu či gotických }\chordslyrics{\chord{Am}}{sošek,}}
+\sbline{flinty jsou \chordslyrics{\chord{Dm}}{v žitě a na hlavních }\chordslyrics{\chord{Am}}{rez,}}
+\sbline{a \chordslyrics{\chord{Dm}}{svoboda je tu, vždyť }\chordslyrics{\chord{Am}}{bijem se o šek -- toť }\chordslyrics{\chord{E}}{zvyk!}}
+}
+
+\verse{\sbline{Dva centy životů a slunce sbohem dává, }
+\sbline{hledáme jistotu, které se nedostává, }
+\sbline{na hrdle znamení obojku otrokova, }
+\sbline{lezeme shrbení, zaliti do olova }
+\sbline{jakési víry. }
+}
+
+\verse{\sbline{Paměť je v bankrotu a z domu nevychází, }
+\sbline{čest stojí u plotu a kamením se hází, }
+\sbline{cit s hlavou hovězí vybírá popelnice, }
+\sbline{a pravda? Vítězí -- slepá jak řeholnice, }
+\sbline{oděna v díry. }
+}
+
+\chorus{\sbline{Rezavé ráno a mlha jak med, }
+\sbline{tak podivně sladko jak z chrlení krve, }
+\sbline{čteš, co je psáno, až k písmenu zet, }
+\sbline{už nekřičíš \quotedblbase matko!\textquotedblleft , je ticho jak prve, jen  \chordslyrics{\chord{Am}\chord{Am6}}{vzlyk!  }}
+}
+
+
+
+\song{Blues na cestu poslední}{Jiří Suchý}{1958}
+
+\verse{\sbline{\chord{C}}
+}
+
+\verse{\sbline{Černej nebožtíku, máš to ale kliku,}
+\sbline{za chvíli do temný hlíny budeš zakopán,}
+\sbline{černej nebožtíku, máš to ale kliku,}
+\sbline{za chvíli do temný hlíny budeš zakopán,}
+\sbline{nás jsi nechal v bídě, sám se vezeš jako pán.}
+}
+
+\verse{\sbline{Jen kopyta koní hrany tobě zvoní,}
+\sbline{málo lidí dnes pro tebe slzy polyká,}
+\sbline{jen kopyta koní hrany tobě zvoní,}
+\sbline{málo lidí dnes pro tebe slzy polyká,}
+\sbline{je to smutnej funus, chybí ti tu muzika.}
+}
+
+\verse{\sbline{Kam ti pozůstalí, kam ti vlastně dali}
+\sbline{věnce, kytky, pentle, svíce, marně se tě ptám,}
+\sbline{kam ti pozůstalí, kam ti vlastně dali}
+\sbline{věnce, kytky, pentle, svíce, marně se tě ptám,}
+\sbline{proč je rakev holá, to ty asi nevíš sám.}
+}
+
+\verse{\sbline{Černej nebožtíku, když nemáš na muziku,}
+\sbline{poslechni mou radu trochu nevšední,}
+\sbline{černej nebožtíku, když nemáš na muziku,}
+\sbline{poslechni mou radu trochu nevšední,}
+\sbline{zazpívej si sám blues na cestu poslední.}
+}
+
+
+
+\song{Byla vojna}{Čechomor}{}
+
+\verse{\sbline{\chordslyrics{\chord{D}}{Byla vojna, byla, }\chordslyricshyphen{\chord{G}}{byla pa}\chordslyricshyphen{\chord{D}}{táli}\chordslyrics{\chord{A}}{ja.}}
+\sbline{Byla vojna, byla, byla patálija.}
+\sbline{\chordslyrics{\chord{G}}{Peklo na }\chordslyricshyphen{\chord{A}}{Mora}\chordslyrics{\chord{Hm}}{vě, }\chordslyrics{\chord{G}}{krvi po }\chordslyricshyphen{\chord{D}}{kole}\chordslyrics{\chord{A}}{na.}}
+\sbline{\chordslyrics{\chord{G}}{Peklo na }\chordslyricshyphen{\chord{A}}{Mora}\chordslyrics{\chord{Hm}}{vě, }\chordslyrics{\chord{G}}{krvi po }\chordslyricshyphen{\chord{A}}{kole}\chordslyrics{\chord{D}}{na.}}
+}
+
+\verse{\sbline{V tej krvi ležali, tak jak dřevo v háji. }
+\sbline{V tej krvi ležali, tak jak dřevo v háji. }
+\sbline{Na Slavkovském poli, zabití šohaji. }
+\sbline{Na Slavkovském poli, zabití šohaji. }
+}
+
+\verse{\sbline{Ach škoda přeškoda, tej krvi červenej. }
+\sbline{Ach škoda přeškoda, tej krvi červenej. }
+\sbline{Co sa rozlévala, do trávy zelenej. }
+\sbline{Co sa rozlévala, do trávy zelenej. }
+}
+
+
+
+\song{Carpe diem}{Vlasta Redl / Ivo Viktorin}{Dohrála hudba (1989)}
+
+\verse{\sbline{\chord{[:}\chord{C}\chord{C/E}\chord{Dm}\chord{C}\chord{Am}\chord{Fmaj7}\chord{:]}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Nadešel asi }\chordslyrics{\chord{Dm7}}{poslední den, }}
+\sbline{podí\chordslyrics{\chord{Am}}{vej, celá planeta }\chordslyrics{\chord{Em}}{blázní.}}
+\sbline{A já \chordslyrics{\chord{Am}}{neuroním ani }\chordslyrics{\chord{Dm7}}{slzu pro ni, }}
+\sbline{jenom \chordslyrics{\chord{G}}{zamknu dům.}}
+}
+
+\verse{\sbline{A půjdu po kolejích až na konečnou,}
+\sbline{hle jak mám krok vojensky rázný.}
+\sbline{A nezastavím ani na červenou,}
+\sbline{natruc předpisům.}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Am}}{Tak tady mě }\chordslyrics{\chord{G}}{máš,}}
+\sbline{\chordslyrics{\chord{Am}}{dnes můžeš }\chordslyrics{\chord{G}}{říkat klidně, co }\chordslyrics{\chord{C}}{chceš,}\chordslyrics{\chord{C/E}}{}}
+\sbline{zbylo tak \chordslyrics{\chord{Dm}}{málo }\chordslyrics{\chord{C}}{vět, }}
+\sbline{tak \chordslyrics{\chord{Am}}{málo slov, co }\chordslyrics{\chord{G}}{nelžou.}}
+}
+
+\verse{\sbline{Už si nebudeme hrát na román,}
+\sbline{setři růž, nikdo nás nenatáčí.}
+\sbline{Je poslední den a zbyla nám jen}
+\sbline{miska cukroví.}
+}
+
+\verse{\sbline{Ať všechny hospody dnes doženou plán,}
+\sbline{ať svět z posledního pije a tančí.}
+\sbline{A já nebudu pít, nechám naplno znít}
+\sbline{v hlavě všechno, co mám.}
+}
+
+\verse{\sbline{Žádný slib z těch, co jsem ti dal,}
+\sbline{nejde vyplnit a nejde vzít zpátky.}
+\sbline{Tak ať točí se svět, mladší o deset let}
+\sbline{na desce Jethro Tull.}
+}
+
+\verse{\sbline{Ať platí aspoň dnes, co dřív jsem jen lhal,}
+\sbline{carpe diem, život je krátký.}
+\sbline{V tvých očích je klid a nemám chuť snít,}
+\sbline{co by bylo dál.}
+}
+
+\chorus{\sbline{Tak tady mě máš,}
+\sbline{dnes můžeš říkat klidně, co chceš,}
+\sbline{zbylo tak málo vět,}
+\sbline{tak málo slov\ldots }
+}
+
+
+
+\song{Co jsem si vzal}{Vladimír Mišík}{}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Káva, cigareta po ránu, }}
+\sbline{\chordslyrics{\chord{F}}{na duši temná }\chordslyrics{\chord{C}}{skica,}}
+\sbline{\chordslyrics{\chord{C}}{ty pryč někde v mlžném oparu,}}
+\sbline{\chordslyrics{\chord{F}}{za oknem }\chordslyrics{\chord{G}}{slunce -- praporek }\chordslyrics{\chord{C}}{ticha.}}
+}
+
+\verse{\sbline{Káva, cigareta po ránu,}
+\sbline{dým ke stropu vzkvétá, }
+\sbline{po noci milostného rozmaru, }
+\sbline{co jsem si vzal, mohu si nechat. }
+}
+
+\verse{\sbline{Panák, cigareta po ránu,}
+\sbline{v žaludku vzplanul oheň, }
+\sbline{oči se protáčí dozadu, }
+\sbline{na stěně rtěnkou rozmáchlé sbohem. }
+}
+
+\verse{\sbline{Panák, cigareta po ránu, }
+\sbline{budík do prázdna tiká, }
+\sbline{po noci milostného rozmaru, }
+\sbline{co jsem si vzal, mohu si nechat, }
+\sbline{co jsem si vzal, mohu si nechat, }
+\sbline{co jsem si vzal, mohu si nechat. }
+}
+
+\verse{\sbline{\chord{Dm7}\chord{G}\chord{C}\chord{A7}\chord{F}\chord{G}\chord{C}}
+}
+
+\verse{\sbline{Káva, cigareta po ránu,}
+\sbline{dým ke stropu vzkvétá, }
+\sbline{po noci milostného rozmaru, }
+\sbline{co jsem si vzal, mohu si nechat, }
+\sbline{co jsem si vzal, mohu si nechat, }
+\sbline{co jsem si vzal, mohu si nechat, }
+\sbline{co jsem si vzal, mohu si nechat. }
+}
+
+
+
+\song{Co když}{Vlasta Redl}{1998}
+
+\verse{\sbline{\chordslyrics{\chord{E}}{Ještě mě }\chordslyrics{\chord{A}}{studí }\chordslyrics{\chord{H}}{slzy }\chordslyrics{\chord{E}}{na líci,}}
+\sbline{co \chordslyrics{\chord{A}}{naposledy }\chordslyricshyphen{\chord{H7}}{pro mě vypla}\chordslyrics{\chord{E}}{kala,}}
+\sbline{než zas \chordslyrics{\chord{A}}{odešla }\chordslyrics{\chord{H}}{kamsi }\chordslyrics{\chord{E}}{za kýmsi,}}
+\sbline{\chordslyrics{\chord{A}}{nad kým prý se }\chordslyricshyphen{\chord{H7}}{ještě slito}\chordslyrics{\chord{E}}{vala.}}
+\sbline{To ale \chordslyrics{\chord{D}}{nade mnou Bůh se }\chordslyrics{\chord{Asus4}\chord{A}}{smiloval,}\chordslyrics{\chord{H}}{}}
+\sbline{když mi \chordslyricshyphen{\chord{E}}{nechal její slzy na ra}\chordslyrics{\chord{D}}{meni,}}
+\sbline{teď můžu  \chordslyrics{\chord{A}}{chodit }\chordslyrics{\chord{H}}{řádně }\chordslyricshyphen{\chord{A}}{pový}\chordslyrics{\chord{H}}{šen}}
+\sbline{\chordslyrics{\chord{E}}{po světě, kde lásky pro mě }\chordslyrics{\chord{D}}{není.}}
+}
+
+\verse{\sbline{Jistě není, nebylo a nemá být,}
+\sbline{ani beznaděj a už vůbec ne bída.}
+\sbline{A srdce na dlaních netlučou a nevábí,}
+\sbline{jsou tak stejná až darmo to střídat.}
+\sbline{To asi obejmout vítr je skoro víc,}
+\sbline{vylézt do korun a nechat se houpat, }
+\sbline{v lese hladit kůru borovic, }
+\sbline{co když\chordslyrics{\chord{A}\chord{H}\chord{C\msharp m}\chord{G\msharp m}}{\ldots  je jen }\chordslyrics{\chord{A}}{hloupá.}\chordslyrics{\chord{H}\chord{E}}{}}
+}
+
+\verse{\sbline{Ještě mě budí ze sna obrázky,}
+\sbline{co na kůži mi nehty napínala,}
+\sbline{šrámy na tváři od něžné pomlázky,}
+\sbline{kterou mi hvězdy zhasínala.}
+\sbline{A slunce nemá důvod vycházet,}
+\sbline{tak se fláká kdesi za horama,}
+\sbline{a já po tmě šmátrám pod svícnem,}
+\sbline{co když\ldots ~ je taky sama\ldots  }
+}
+
+\verse{\sbline{Tak už to dopij putovní příteli, }
+\sbline{popojedem dolinami,}
+\sbline{napříč obilím, kaktusy a svízeli,}
+\sbline{spávat na kopci slámy.}
+\sbline{Až kam nás dovedou tahací provázky,}
+\sbline{necháme otisk bosé nohy čaroděje,}
+\sbline{budeš mě učit zpívat bez lásky,}
+\sbline{co když\ldots ~ se směje\ldots  }
+}
+
+
+
+\song{Crossroads}{Robert Johnson / Cream}{Wheels of Fire (1968)}
+
+\verse{\sbline{I went down to the crossroads, fell down on my knees.}
+\sbline{down to the crossroads, fell down on my knees,}
+\sbline{asked the Lord above for mercy, ``Save me if you please.''}
+}
+
+\verse{\sbline{I went down to the crossroads, tried to flag a ride,}
+\sbline{down to the crossroads, tried to flag a ride,}
+\sbline{nobody seemed to know me, everybody passed me by.}
+}
+
+\verse{\sbline{Well I'm going down to Rosedale, take my rider by my side,}
+\sbline{going down to Rosedale, take my rider by my side.}
+\sbline{you can still barrelhouse, baby, on the riverside.}
+}
+
+\verse{\sbline{Going down to Rosedale, take my rider by my side,}
+\sbline{going down to Rosedale, take my rider by my side,}
+\sbline{you can still barrelhouse, baby, on the riverside.}
+}
+
+\verse{\sbline{You can run, you can run, tell my friend-boy, Willie Brown,}
+\sbline{run, you can run, tell my friend-boy, Willie Brown,}
+\sbline{that I'm staying at the crossroads, believe I'm sinking down.}
+}
+
+
+
+\song{Cukrářská bossa-nova}{Jaromír Nohavica}{}
+
+\verse{\sbline{Můj \chordslyrics{\chord{Cmaj7}}{přítel }\chordslyrics{\chord{C\msharp dim}}{snídá sedm }\chordslyrics{\chord{Dm7}}{kremrolí}\chordslyrics{\chord{G7}}{}}
+\sbline{a když je \chordslyrics{\chord{Cmaj7}}{spořádá, dá si }\chordslyrics{\chord{C\msharp dim}}{repete, }\chordslyrics{\chord{Dm7}}{cukrlátko.}\chordslyrics{\chord{G7}}{}}
+\sbline{On totiž \chordslyrics{\chord{Cmaj7}}{říká: }\chordslyrics{\chord{C\msharp dim}}{Dobré lidi zuby }\chordslyrics{\chord{Dm7}}{nebolí}\chordslyrics{\chord{G7}}{}}
+\sbline{a je to \chordslyrics{\chord{Cmaj7}}{paráda, chodit }\chordslyrics{\chord{C\msharp dim}}{po světě a }\chordslyrics{\chord{Dm7}}{mít, }\chordslyrics{\chord{G7}}{mít v ústech }\chordslyrics{\chord{Cmaj7}}{sladko. }\chordslyrics{\chord{C\msharp dim}\chord{Dm7}\chord{G7}}{}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Cmaj7}}{Sláva, }\chordslyrics{\chord{C\msharp dim}}{cukr a }\chordslyrics{\chord{Dm7}}{káva a půl litru }\chordslyrics{\chord{G7}}{becherovky }}
+\sbline{\chordslyricshyphen{\chord{Cmaj7}}{hurá, hurá, hu}\chordslyrics{\chord{C\msharp dim}}{rá, půjč mi }\chordslyrics{\chord{Dm7}}{bůra, útrata dnes }\chordslyrics{\chord{G7}}{dělá čtyři stovky, }}
+\sbline{všechny \chordslyrics{\chord{Cmaj7}}{cukrářky z celé }\chordslyrics{\chord{C\msharp dim}}{republiky na něho }\chordslyrics{\chord{Dm7}}{dělají slaďounké }\chordslyrics{\chord{G7}}{cukrbliky}}
+\sbline{a on jim \chordslyrics{\chord{Em7}}{za odměnu zpívá }\chordslyrics{\chord{A7}}{zas a znovu }\chordslyrics{\chord{Dm7}}{tuhletu, }\chordslyricshyphen{\chord{G7}}{cukrářskou bossa-no}\chordslyrics{\chord{Cmaj7}}{vu. }\chordslyrics{\chord{C\msharp dim}\chord{Dm7}\chord{G7}}{}}
+}
+
+\verse{\sbline{Můj přítel Karel pije šťávu z bezinek, }
+\sbline{říká, že nad ni není,    že je famózní, glukózní, monstrózní, ať si taky dám. }
+\sbline{Koukej, jak mu roste oblast budoucích maminek }
+\sbline{a já mám podezření,že se zakulatí jako míč    a až ho někdo kopne, odkutálí se mi pryč    a já zůstanu sám, úplně sám. }
+}
+
+\chorus{}
+
+\verse{\sbline{Můj přítel Karel Plíhal už na špičky si nevidí, }
+\sbline{postava fortelná se mu zvětšuje,    výměra tři ary. }
+\sbline{On ale říká, že glycidy jsou pro lidi, }
+\sbline{je prý v něm kotelna, ta cukry spaluje,    někdo se zkáruje, někdo se zfetuje    a on jí bonpari. }
+}
+
+\chorus{}
+
+
+
+\song{Čarodějova píseň}{Vlasta Redl}{}
+
+\begin{multicols}{2}\raggedcolumns
+\verse{\sbline{\chordslyrics{\chord{Dadd9}}{Leží a spí tam}}
+\sbline{\chordslyrics{\chord{Bm7}}{slabounká, }\chordslyrics{\chord{C}}{tichá}}
+\sbline{\chordslyrics{\chord{B$\flat$}}{a já ji mám }\chordslyrics{\chord{C}}{vzít a }\chordslyrics{\chord{D}}{nést.}}
+}
+
+\verse{\sbline{Koberci květů }
+\sbline{někam do jiných světů, }
+\sbline{jen pryč z těchto měst a hvězd. }
+}
+
+\verse{\sbline{Kde \chordslyrics{\chord{Em}}{zas bude tančit a }\chordslyrics{\chord{Bm}}{na zlou si }\chordslyrics{\chord{C}}{hrát,}}
+\sbline{\chordslyricshyphen{\chord{D}}{od smíchu uplaka}\chordslyrics{\chord{C}}{ná.}}
+\sbline{A kde \chordslyrics{\chord{Em}}{vlasy si nechá}}
+\sbline{zas \chordslyrics{\chord{Bm}}{divoce }\chordslyrics{\chord{C}}{vlát}}
+\sbline{\chordslyrics{\chord{D}}{do větru, }\chordslyrics{\chord{D9}}{co po ní}}
+\sbline{\chordslyrics{\chord{G}}{vůně pak }\chordslyrics{\chord{C}}{uklidí }\chordslyrics{\chord{G}\chord{F}\chord{E$\flat$}}{rád.}}
+}
+
+\verse{\sbline{Leží a spí tam }
+\sbline{a já nepospíchám }
+\sbline{říct jí }
+\sbline{vypršel čas. }
+}
+
+\verse{\sbline{Čas slibů a chyb, }
+\sbline{jak bych chránil ji líp, }
+\sbline{kdybych věděl, že potká mě zas. }
+}
+
+\columnbreak
+\verse{\sbline{Teď už jen její tíhu }
+\sbline{smím na sebe brát }
+\sbline{a doufat, že zláme mi vaz. }
+\sbline{Abych se nemohl vrátit }
+\sbline{a na věky lhát, }
+\sbline{že jsem nenašel, nepoznal }
+\sbline{nic víc než jen její hlas. }
+}
+
+\verse{\sbline{Leží a spí tam }
+\sbline{a já prším a svítám }
+\sbline{a davy jdou skrze nás. }
+}
+
+\verse{\sbline{A s očima do ó }
+\sbline{celá člověčí ZOO }
+\sbline{zdráhá se přijmout ten vzkaz. }
+}
+
+\verse{\sbline{Že se loučí a vrací se }
+\sbline{do jiných let }
+\sbline{a do jiných koloběhů. }
+\sbline{A až se poslední plamínek }
+\sbline{promění v led, }
+\sbline{vytrysknou gejzíry sluncí }
+\sbline{až za onen svět. }
+}
+
+\verse{\sbline{Leží a spí tam }
+\sbline{a já nepospíchám }
+\sbline{říct jí }
+\sbline{vypršel čas. }
+}
+
+\end{multicols}
+
+
+\song{Černá kára}{Josef Kainar}{}
+
+\verse{\sbline{Každej tu \chordslyrics{\chord{Em}}{černou káru }\chordslyrics{\chord{B$\flat$dim}}{svou si }\chordslyrics{\chord{B7}}{táhne }\chordslyrics{\chord{Em}}{sám.}\chordslyrics{\chord{C9}\chord{B7}}{}}
+\sbline{Kdo může \chordslyrics{\chord{Em}}{znát tu }\chordslyrics{\chord{Hm/F\msharp }}{píseň, }\chordslyrics{\chord{Em/G}}{co já }\chordslyrics{\chord{E$\flat$dim/A}}{v sobě }\chordslyrics{\chord{G}}{mám, v sobě }\chordslyrics{\chord{B7}}{mám.}}
+\sbline{Můžeš si \chordslyrics{\chord{Em}}{půjčit }\chordslyrics{\chord{Hm/F\msharp }}{klobouk, }\chordslyricshyphen{\chord{Em/G}}{nepůj}\chordslyrics{\chord{E$\flat$dim/A}}{číš si }\chordslyrics{\chord{G7}}{nikdy cizí }\chordslyrics{\chord{C9}}{žal, cizí žal,}}
+\sbline{cizíma \chordslyrics{\chord{Em}}{ústy ještě }\chordslyrics{\chord{C7}}{nikdo }\chordslyricshyphen{\chord{B9+}}{nezpí}\chordslyrics{\chord{Em6/9}}{val}\chordslyrics{\chord{C9}\chord{B7}\chord{Em6/9}\chord{C9}\chord{B7}}{}}
+}
+
+\verse{\sbline{Tu černou káru, tu mám stále na patách.}
+\sbline{On se z ní sype věčnej jemnej černej prach.}
+\sbline{Zastavit nesmím ani chvíli, ani chvíli zaživa,}
+\sbline{ta černá kára se můj život nazývá.}
+}
+
+\verse{\sbline{Trošku tý lásky dej mi, věrný srdce mý.}
+\sbline{Věčně tu káru táhnout, to je šílený.}
+\sbline{Sevři mě jemně, ty jseš jediný, co na tý cestě mám,}
+\sbline{ať jako blues tě na svých ústech vyzpívám\ldots }
+}
+
+
+
+\song{Červený most}{Záviš}{Záviš, syn vojáka (2001)}
+
+\verse{\sbline{\chordslyrics{\chord{A}}{Hledali mě }\chordslyrics{\chord{C\msharp }}{včera večer }\chordslyrics{\chord{F\msharp m}}{fízli.}}
+\sbline{\chordslyrics{\chord{A}}{Hledali mě }\chordslyrics{\chord{C\msharp }}{včera večer }\chordslyrics{\chord{F\msharp m}}{fízli,}}
+\sbline{nena\chordslyrics{\chord{D}}{šli, já nebyl doma, já byl }\chordslyrics{\chord{E}}{na červeném mostě,}}
+\sbline{\chordslyrics{\chord{A}\chord{D}}{a na něm jsem kouřil }\chordslyrics{\chord{A}}{prostě.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Hledali mě včera večer fízli.}
+\sbline{Hledali mě včera večer fízli,}
+\sbline{nenašli, já nebyl doma, já byl na červeném mostě,}
+\sbline{o zábradlí opřen prostě.}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{A}}{Červený most }\chordslyrics{\chord{C\msharp }}{je }\chordslyrics{\chord{F\msharp m}}{železniční most,}\chordslyrics{\chord{D}}{}}
+\sbline{\chordslyrics{\chord{A}}{víc vám k tomu }\chordslyrics{\chord{E}}{nesdělím, už }\chordslyrics{\chord{D}}{to je dost.}}
+\sbline{\chordslyrics{\chord{A}}{Červený most }\chordslyrics{\chord{C\msharp }}{je }\chordslyrics{\chord{F\msharp m}}{železniční most,}\chordslyrics{\chord{D}}{}}
+\sbline{\chordslyrics{\chord{A}}{víc vám k tomu }\chordslyrics{\chord{E}}{nesdělím, už }\chordslyrics{\chord{A}}{to je dost.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Nenašli mě včera večer fízli.}
+\sbline{Nenašli mě včera večer fízli,}
+\sbline{nemohli, já nebyl doma, já byl na červeném mostě,}
+\sbline{z něho dolů plival prostě.}
+}
+
+\verse{\sbline{Nenašli mě včera večer fízli.}
+\sbline{Nenašli mě včera večer fízli,}
+\sbline{poněvadž já nebyl doma, já byl na červeném mostě,}
+\sbline{z něho dolů čuměl prostě.}
+}
+
+\chorus{\sbline{Červený most je železniční most,}
+\sbline{víc vám k tomu nesdělím, už to je dost.}
+\sbline{Červený most je železniční most,}
+\sbline{víc vám k tomu nesdělím, už to je dost.}
+}
+
+\verse{\sbline{Až mě budou příště hledat fízli.}
+\sbline{Až mě budou příště hledat fízli,}
+\sbline{já budu na červeném mostě, vzplanou ve mně libé touhy,}
+\sbline{vždyť jsem přece člověk pouhý. }
+}
+
+\verse{\sbline{Až mě budou příště hledat fízli.}
+\sbline{Až mě budou příště hledat fízli,}
+\sbline{Já budu na červeném mostě spokojeně onanovat,}
+\sbline{jak se zdravý muž má chovat. }
+}
+
+\chorus{\sbline{Červený most je železniční most,}
+\sbline{víc vám k tomu nesdělím, už to je dost, to je dost, to je dost.}
+\sbline{Červený most je železniční most,}
+\sbline{víc nesdělím -- žena, nůše, píseň, kost.}
+}
+
+
+
+\song{Dáma s čápem}{Sto zvířat}{}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Až budu končit, až budu mít za pár,}}
+\sbline{\chordslyrics{\chord{Dm}}{postavím si past a do ní chytím čápa,}}
+\sbline{už se \chordslyrics{\chord{Am}}{vidím, jak ho }\chordslyrics{\chord{B$\flat$}}{krmím cukrem a }\chordslyrics{\chord{Dm}}{skořicí,}}
+\sbline{jak \chordslyrics{\chord{Am}}{pomalu }\chordslyrics{\chord{B$\flat$}}{nabírám diamanty }\chordslyrics{\chord{Dm}}{na lžíci}}
+\sbline{a dávám mu je \chordslyrics{\chord{B$\flat$}}{s chlebem a ze stropu tma }\chordslyrics{\chord{Dm}}{kape,}}
+\sbline{chci být stará \chordslyrics{\chord{Gm}}{dáma, }\chordslyrics{\chord{Am}}{která žije }\chordslyrics{\chord{Dm}}{s čápem.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Gm}}{Při naší svatbě budu }\chordslyrics{\chord{Am}}{stát,}}
+\sbline{vedle mě čáp a lidi \chordslyrics{\chord{B$\flat$}}{kolem,}}
+\sbline{a celá \chordslyricshyphen{\chord{Gm}}{obloha se bude opí}\chordslyrics{\chord{Am}}{rat}}
+\sbline{o moje francouzský \chordslyrics{\chord{Dm}}{hole.}}
+}
+
+\chorus{}
+
+\verse{\sbline{Až bude po všem, doufám, že to chápeš,}
+\sbline{chci být stará dáma, která žije s čápem, }
+\sbline{už se vidím, jak se oba oblíknem do peří }
+\sbline{a jak můj čáp v rodinným stříbru večeří, }
+\sbline{a potom pijem likér a všude voní parfém, }
+\sbline{chci bejt stará  dáma,  která žije  s čápem.}
+}
+
+\chorus{}
+
+\chorus{}
+
+
+
+\song{Dvacet}{Karel Kryl}{Tekuté písky (1990)}
+
+\verse{\sbline{Ztichly \chordslyrics{\chord{Am}}{louky i }\chordslyrics{\chord{G}}{bor, mrtvé }\chordslyrics{\chord{Am}}{vrcholy }\chordslyrics{\chord{G}}{hor,}}
+\sbline{padl \chordslyricshyphen{\chord{Am}}{žal na ve}\chordslyricshyphen{\chord{G}}{čer srpno}\chordslyrics{\chord{Am}}{vý,}}
+\sbline{v prachu \chordslyrics{\chord{Dm}}{dvaceti }\chordslyrics{\chord{G}}{let zmizel }\chordslyrics{\chord{Dm}}{oheň i }\chordslyrics{\chord{G}}{led, }}
+\sbline{zbyly \chordslyricshyphen{\chord{Dm}}{jen caro}\chordslyricshyphen{\chord{G}}{vy proslo}\chordslyrics{\chord{E}}{vy,}}
+\sbline{\chordslyrics{\chord{Am}}{z větví rezavých }\chordslyrics{\chord{F}}{lesů }\chordslyrics{\chord{E}}{hřmí ticho děsu,}}
+\sbline{\chordslyrics{\chord{Am}}{slepí a hluší dál kulmují uši}}
+\sbline{králi \chordslyricshyphen{\chord{G}}{Mi}\chordslyricshyphen{\chord{E}}{daso}\chordslyrics{\chord{Am}}{vi.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Krví značena je dlažba u Dunaje, }
+\sbline{hroby padlých jsou bezejmenné, }
+\sbline{heslo o vítězství cizím peřím se skví, }
+\sbline{dávno krev vsákla do kamene, }
+\sbline{barva rubínu z žezla v záhnědu zrezla, }
+\sbline{zavřeni v kleci jsme otroky věcí, }
+\sbline{nikdo nevzpomene. }
+}
+
+\verse{\sbline{Nad zemi prodanou větry až přivanou }
+\sbline{oblaka zelená z žíravin, }
+\sbline{vlasy tvé havraní uchopím do dlaní, }
+\sbline{z prstenu zaplane vltavín, }
+\sbline{snítka nachových plodů rozčeří vodu, }
+\sbline{navzdory posté zas na břehu vzroste }
+\sbline{rudý trs jeřabin\ldots  }
+}
+
+
+
+\song{Far From Me}{Nick Cave \& the Bad Seeds}{The Boatman's Call (1997)}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{For you dear, i was }\chordslyrics{\chord{Dm}}{born,}}
+\sbline{\chordslyrics{\chord{C}}{for you I was raised }\chordslyrics{\chord{Dm}}{up,}}
+\sbline{\chordslyrics{\chord{C}}{for you I've lived and for }\chordslyrics{\chord{Dm}}{you I will die,}}
+\sbline{for you I'm dying \chordslyrics{\chord{C}}{now.}\chordslyrics{\chord{Dm}}{}}
+\sbline{\chordslyrics{\chord{F}}{You were my mad little }\chordslyrics{\chord{G}}{lover}}
+\sbline{in a \chordslyricshyphen{\chord{F}}{world where everybody fucks every}\chordslyrics{\chord{G}}{body else over.}}
+\sbline{You who are so \chordslyrics{\chord{Dm}}{far from me,}\chordslyrics{\chord{G}}{}}
+\sbline{\chordslyrics{\chord{Dm}}{far from me,}\chordslyrics{\chord{G}}{}}
+\sbline{\chordslyrics{\chord{Dm}}{so far from me,}\chordslyrics{\chord{G}}{}}
+\sbline{\chordslyrics{\chord{Em}}{way across some }\chordslyrics{\chord{F}}{cold neurotic }\chordslyrics{\chord{G}}{sea,}}
+\sbline{\chordslyrics{\chord{C}}{far from me}\chordslyrics{\chord{Dm}}{}}
+}
+
+\verse{\sbline{I would talk to you of all matter of things,}
+\sbline{with a smile you would reply,}
+\sbline{then the sun would leave your pretty face}
+\sbline{and you'd retreat from the front of your eyes.}
+\sbline{I keep hearing that you're doing best}
+\sbline{and I hope your heart beats happy in your infant breast.}
+\sbline{You are so far from me,}
+\sbline{far from me, }
+\sbline{far from me.}
+}
+
+\verse{\sbline{There is no knowledge but I know it,}
+\sbline{there's nothing to learn from that vacant voice}
+\sbline{that sails to me across the line}
+\sbline{from the ridiculous to the sublime.}
+\sbline{It's good to hear you're doing so well}
+\sbline{but really can't you find somebody else that you can ring and tell?}
+\sbline{Did you ever care for me?}
+\sbline{Were you ever there for me?}
+\sbline{So far from me.}
+}
+
+\verse{\sbline{You told me you'd stick by me}
+\sbline{through the thick and through the thin,}
+\sbline{those were your very words,}
+\sbline{my fair-weather friend.}
+\sbline{You were my brave-hearted lover,}
+\sbline{at the first taste of trouble went running back to mother,}
+\sbline{so far from me,}
+\sbline{far from me,}
+\sbline{suspended in your bleak and fishless sea,}
+\sbline{far from me,}
+\sbline{far from me.}
+}
+
+
+
+\song{High Hopes}{Pink Floyd}{The Division Bell (1994)}
+
+\verse{\sbline{\chordslyricshyphen{\chord{Cm}}{Beyond the ho}\chordslyrics{\chord{E$\flat$}}{rizon of the }\chordslyrics{\chord{Fm}}{place we lived when }\chordslyrics{\chord{G}}{we were young,}}
+\sbline{\chordslyrics{\chord{Cm}}{In a world of }\chordslyricshyphen{\chord{E$\flat$}}{magnets and mira}\chordslyrics{\chord{G}}{cles.}}
+\sbline{Our thoughts strayed constantly and with out boundary,}
+\sbline{the ringing of the division bell had begun.}
+}
+
+\verse{\sbline{Along the \chordslyrics{\chord{B$\flat$}}{long road and }\chordslyrics{\chord{G7}}{on down the causeway,}}
+\sbline{\chordslyrics{\chord{A$\flat$}}{do they still }\chordslyrics{\chord{B$\flat$}}{meet there by the }\chordslyrics{\chord{G7}}{cut.}}
+}
+
+\verse{\sbline{There was a ragged band who followed in our footsteps}
+\sbline{running before times took our dreams away,}
+\sbline{leaving the myriad small creatures trying to tie us to the ground}
+\sbline{to a life consumed by slow decay.}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{A$\flat$}}{The grass was }\chordslyrics{\chord{Cm}}{greener,}\chordslyrics{\chord{Gm}\chord{A$\flat$}}{}}
+\sbline{\chordslyrics{\chord{B$\flat$}}{the light was }\chordslyrics{\chord{Cm}}{brighter,}\chordslyrics{\chord{E$\flat$}\chord{Fm}}{}}
+\sbline{\chordslyricshyphen{\chord{A$\flat$}}{with friends sur}\chordslyrics{\chord{Cm}}{rounded,}\chordslyrics{\chord{Gm}\chord{A$\flat$}}{}}
+\sbline{\chordslyrics{\chord{A$\flat$}}{the nights of }\chordslyrics{\chord{Cm}}{wonder.}\chordslyrics{\chord{E$\flat$}\chord{Fm}}{}}
+}
+
+\verse{\sbline{Looking beyond the embers of bridges glowing behind us}
+\sbline{to a glimpse of how green it was on the other side.}
+\sbline{Steps taken forwards but sleepwalking back again}
+\sbline{dragged by the force of some sleeping tide.}
+}
+
+\verse{\sbline{At a higher altitude with flag unfurled}
+\sbline{we reached the dizzy heights of that dreamed of world.}
+}
+
+\verse{\sbline{Encumbered forever by desire and ambition,}
+\sbline{there's a hunger still unsatisfied.}
+\sbline{Our weary eyes still stray to the horizon}
+\sbline{though down this road I've been so many times.}
+}
+
+\chorus{\sbline{The grass was greener,}
+\sbline{the light was brighter,}
+\sbline{the taste was sweeter,}
+\sbline{the nights of wonder,}
+\sbline{with friends surrounded,}
+\sbline{the dawn mist glowing,}
+\sbline{the water flowing,}
+\sbline{the endless river,}
+\sbline{forever and ever\ldots }
+}
+
+
+
+\song{Honky Tonky Blues}{Jiří Suchý / Jiří Šlitr}{}
+
+\verse{\sbline{\chordslyrics{\chord{F}}{Každý ráno na piáno hraje Jack, hraje Jack,}}
+\sbline{\chordslyrics{\chord{B$\flat$7}}{každý ráno na piáno }\chordslyrics{\chord{F}}{hraje Jack, hraje Jack,}}
+\sbline{\chordslyrics{\chord{C7}}{honky tonk, }\chordslyrics{\chord{B$\flat$7}}{honky tonk, }\chordslyrics{\chord{F}}{honky }\chordslyrics{\chord{B$\flat$7}}{tonky }\chordslyrics{\chord{F}}{blues.}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{A7}}{Nikomu v domě }\chordslyrics{\chord{Dm}}{nevadí, }\chordslyrics{\chord{A7}}{že to piáno }\chordslyrics{\chord{Dm}}{neladí,}}
+\sbline{\chordslyrics{\chord{G}}{když hraje Jack, }\chordslyrics{\chord{Gdim}}{jak už jsem řek, svý }\chordslyrics{\chord{G7}}{honky tonky }\chordslyrics{\chord{C7}}{blues.}}
+}
+
+
+
+\song{If}{Pink Floyd}{Atom Heart Mother (1970)}
+
+\verse{\sbline{\chordslyrics{\chord{E}}{If I were a swan, I'd be }\chordslyrics{\chord{D}}{gone.}}
+\sbline{\chordslyrics{\chord{E}}{If I were a train, I'd be }\chordslyrics{\chord{D}}{late.}}
+\sbline{And \chordslyrics{\chord{E}}{if I were a }\chordslyrics{\chord{C\msharp 7}}{good man, I'd }\chordslyrics{\chord{F\msharp }}{talk with you more }\chordslyrics{\chord{B7}}{often than I }\chordslyrics{\chord{E}}{do.}\chordslyrics{\chord{B7}}{}}
+}
+
+\verse{\sbline{If I were to sleep, I could dream.}
+\sbline{If I were afraid, I could hide.}
+\sbline{If I go insane, please don't put your wires in my brain.}
+}
+
+\verse{\sbline{If I were the moon, I'd be cool.}
+\sbline{If I were a book, I would bend.}
+\sbline{If I were a good man, I'd understand the spaces between friends.}
+}
+
+\verse{\sbline{If I were alone, I would cry.}
+\sbline{And if I were with you, I'd be home and dry.}
+\sbline{And if I go insane, will you still let me join in with the game?}
+}
+
+\verse{\sbline{If I were a swan, I'd be gone.}
+\sbline{If I were a train, I'd be late again.}
+\sbline{If I were a good man, I'd talk with you more often than I do.}
+}
+
+
+
+\song{Jantarová země}{Žalman}{}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Do splašenejch }\chordslyrics{\chord{C}}{koní už zase lovci }\chordslyrics{\chord{Am}}{střílí,}}
+\sbline{ulicí je \chordslyricshyphen{\chord{C}}{ženou dolů k ohra}\chordslyrics{\chord{Em}}{dám}}
+\sbline{zítra jako \chordslyrics{\chord{Dm}}{vloni, hra je pro ně }\chordslyrics{\chord{Am}}{dohraná,}}
+\sbline{bujný hlavy \chordslyricshyphen{\chord{Dm}}{skloní někam do trá}\chordslyrics{\chord{Am}}{vy.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Dm}}{Krá, až si kabát }\chordslyrics{\chord{Am}}{změní,}}
+\sbline{\chordslyricshyphen{\chord{Dm}}{krá, bílé vrány odle}\chordslyrics{\chord{Am}}{tí,}}
+\sbline{\chordslyrics{\chord{Dm}}{krá, v jantarový }\chordslyrics{\chord{Am}}{zemi,}}
+\sbline{přista\chordslyricshyphen{\chord{F}}{nou v jiném stole}\chordslyrics{\chord{Em}}{tí.}}
+}
+
+\verse{\sbline{Zamčený jsou stáje, kat už hřívy stříhá, }
+\sbline{lovčí král je v kapli postý korunován, }
+\sbline{sníh pomalu taje, těla stromů se probouzí, }
+\sbline{v jantarový zemi bude zas co pít. }
+}
+
+\chorus{}
+
+
+
+\song{Jarní kurýr}{Miki Ryvola}{1967}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Dunění kopyt }\chordslyricshyphen{\chord{F}}{večer slýchá}\chordslyrics{\chord{C}}{vám,}}
+\sbline{údolím jarní \chordslyrics{\chord{Em}}{kurýr jede }\chordslyrics{\chord{E}}{k nám,}}
+\sbline{v peře\chordslyrics{\chord{Am}}{jích řeka }\chordslyrics{\chord{G}}{zvoní a }\chordslyrics{\chord{F}}{jarem vítr }\chordslyrics{\chord{E7}}{voní,}}
+\sbline{přijí\chordslyrics{\chord{Am}}{ždí jarní }\chordslyrics{\chord{G}}{kurýr, }\chordslyricshyphen{\chord{F}}{do}\chordslyrics{\chord{E7}}{bře ho }\chordslyrics{\chord{Am}}{znám.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Am}}{Ví, celej }\chordslyrics{\chord{G}}{kraj to ví,}}
+\sbline{\chordslyrics{\chord{F}}{veze nám }\chordslyrics{\chord{G}}{jaro }\chordslyrics{\chord{F}}{v brašně }\chordslyricshyphen{\chord{E7}}{sedlo}\chordslyrics{\chord{Am}}{vý.}}
+}
+
+\verse{\sbline{Zase jdou krajem vánky voňavý, }
+\sbline{vobouvám svoje boty toulavý, }
+\sbline{dobře ví moje milá: i kdyby víla byla, }
+\sbline{tyhle toulavý boty nezastaví. }
+}
+
+\chorus{\sbline{Mám boty toulavý, }
+\sbline{ty ani kouzlem nezastaví. }
+}
+
+\verse{\sbline{Musím jít, mraky táhnou nad hlavou, }
+\sbline{musím jít stopou bílou toulavou, }
+\sbline{neplakej, že se ztratím, do roka se vrátím, }
+\sbline{prošlapám cestu domů jarní travou, }
+}
+
+\chorus{\sbline{Víš, ty to dobře víš, }
+\sbline{ty moje boty nezastavíš. }
+}
+
+
+
+\song{Je veux}{Zaz}{Zaz (2010)}
+
+\verse{\sbline{\chord{Dm}\chord{B$\flat$}\chord{C}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Dm}}{Donnez moi une suite au Ritz, je n'en veux }\chordslyrics{\chord{C}}{pas,}}
+\sbline{des bijoux de chez Chanel, je n'en veux \chordslyrics{\chord{B$\flat$}}{pas,}}
+\sbline{donnez moi une limousine, j'en ferais \chordslyrics{\chord{A}}{quoi?}}
+}
+
+\verse{\sbline{Offrez moi du personnel, j'en ferais quoi?}
+\sbline{Un manoir a Neufchatel, ce n'est pas pour moi,}
+\sbline{offrez moi la Tour Eiffel, j'en ferais quoi?}
+}
+
+\chorus{\sbline{Je Veux d'l'amour, d'la joie, de la bonne humeur, }
+\sbline{ce n'est pas votre argent qui f'ra mon bonheur, }
+\sbline{moi j'veux crever la main sur le coeur. }
+\sbline{Allons ensemble découvrir ma liberté, }
+\sbline{oubliez donc tous vos clichés, }
+\sbline{bienvenue dans ma réalité.}
+}
+
+\verse{\sbline{\chord{Dm}\chord{B$\flat$}\chord{C}}
+}
+
+\verse{\sbline{J'en ai marre d'vos bonnes manières, c'est trop pour moi,}
+\sbline{moi je mange avec les mains et j'suis comme ça,}
+\sbline{j'parle fort et je suis franche, excusez moi!}
+}
+
+\verse{\sbline{Finie l'hypocrisie moi j'me casse de là,}
+\sbline{j'en ai marre des langues de bois,}
+\sbline{regardez moi, toute manière j'vous en veux pas et j'suis comme ça.}
+}
+
+\chorus{}
+
+
+
+\song{Jednohubky}{Vladimír Mišík}{}
+
+\verse{\sbline{\chordslyrics{\chord{A}}{Narezlá }\chordslyrics{\chord{E}}{hudba vodovodní }\chordslyrics{\chord{F\msharp m}}{trubky}}
+\sbline{\chordslyrics{\chord{D}}{tvou hlavu }\chordslyricshyphen{\chord{F\msharp m}}{zlehka napl}\chordslyrics{\chord{Bm}}{ní,}\chordslyrics{\chord{E}}{}}
+\sbline{\chordslyrics{\chord{A}}{až přijdeš }\chordslyricshyphen{\chord{E}}{jednou na jedno}\chordslyrics{\chord{F\msharp m}}{hubky,}}
+\sbline{\chordslyrics{\chord{D}}{po kterých i můj }\chordslyricshyphen{\chord{F\msharp m}}{kocour zavr}\chordslyrics{\chord{Bm}}{ní.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Můžem se mít trochu rádi }
+\sbline{a po tý kráse jen tak snít, }
+\sbline{až přijdeš jednou na jednohubky, }
+\sbline{naplníme štěstím celý byt. }
+}
+
+\verse{\sbline{Tak tu sedím, hodiny letí, }
+\sbline{domovník vrata zamyká, }
+\sbline{můj šarm -- hromádka smetí, }
+\sbline{o patro níž kohoutek zavzlyká. }
+}
+
+\verse{\sbline{Tak tu sedím, hodiny letí, }
+\sbline{prostřený stůl, jen si brát }
+\sbline{zhrzená touha, svátek světí, }
+\sbline{co dělat -- jak se nedat zmást. }
+}
+
+\verse{\sbline{Až příště půjdeš na jednohubky, }
+\sbline{nedej na to, co o mně říkají, }
+\sbline{jsou to jen řeči závistivý tetky, }
+\sbline{nedej na to, oslice jen hýkají. }
+}
+
+\verse{\sbline{Až příště půjdeš na jednohubky, }
+\sbline{po kterých i můj kocour zavrní, }
+\sbline{nedej na to, co ti o mně řekli, }
+\sbline{nenalezneš utrápený stvoření. }
+}
+
+
+
+\song{Klementajn}{Jiří Suchý / Jiří Šlitr}{Jonáš a tingl-tangl (1962)}
+
+\verse{\sbline{Byla \chordslyrics{\chord{E$\flat$}}{krásná, byla }\chordslyrics{\chord{Cm}}{milá, byla }\chordslyrics{\chord{Gm}}{chytrá, zkrátka }\chordslyrics{\chord{B$\flat$7}}{fajn,}}
+\sbline{na za\chordslyrics{\chord{A$\flat$}}{hrádce něco }\chordslyricshyphen{\chord{E$\flat$}\chord{Cm}}{ryla, říka}\chordslyrics{\chord{Fm}}{li jí }\chordslyricshyphen{\chord{B$\flat$7}}{Klemen}\chordslyrics{\chord{E$\flat$}}{tajn.}}
+}
+
+\verse{\sbline{Kolik má prej nápadníků, o tom nemá nikdo šajn,}
+\sbline{podávaj si u ní kliku, každej by chtěl Klementajn.}
+}
+
+\verse{\sbline{\chordslyrics{\chord{B7}}{Jednou }\chordslyrics{\chord{E}}{ráno přišel }\chordslyrics{\chord{C\msharp m}}{jeden, napůl }\chordslyrics{\chord{G\msharp m}}{Ábel a napůl }\chordslyrics{\chord{B7}}{Kain,}}
+\sbline{napůl \chordslyrics{\chord{A}}{peklo a napůl }\chordslyrics{\chord{E}\chord{C\msharp m}}{eden, začal }\chordslyrics{\chord{F\msharp m}}{svádět }\chordslyricshyphen{\chord{B7}}{Klemen}\chordslyrics{\chord{E}}{tajn.}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{C7}}{Tělo }\chordslyrics{\chord{F}}{rovný měl jak }\chordslyricshyphen{\chord{Dm}}{lajna, nejrov}\chordslyrics{\chord{Am}}{nější ze všech }\chordslyrics{\chord{C7}}{lajn,}}
+\sbline{a tak \chordslyrics{\chord{B$\flat$}}{vznikla láska }\chordslyrics{\chord{F}\chord{Dm}}{tajná mezi }\chordslyrics{\chord{Gm}}{ním a }\chordslyricshyphen{\chord{C7}}{Klemen}\chordslyrics{\chord{F}}{tajn.}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{C\msharp 7}}{Jenomže když je }\chordslyrics{\chord{F\msharp }}{radost, přijde }\chordslyrics{\chord{D\msharp m}}{smutek a zmizí }\chordslyrics{\chord{A\msharp m}}{vše, co bylo }\chordslyrics{\chord{C\msharp 7}}{fajn,}}
+\sbline{její \chordslyrics{\chord{B}}{darling od ní }\chordslyrics{\chord{F\msharp }\chord{D\msharp m}}{utek a zbyla }\chordslyrics{\chord{G\msharp m}}{sama }\chordslyricshyphen{\chord{C\msharp 7}}{Klemen}\chordslyrics{\chord{F\msharp }}{tajn.}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{D7}}{Jednou }\chordslyrics{\chord{G}}{přišel pozdrav }\chordslyrics{\chord{Em}}{z Vídně: \quotedblbase Junge }\chordslyrics{\chord{Bm}}{Frauen, alter }\chordslyrics{\chord{D7}}{Wein,\textquotedblleft }}
+\sbline{jinak \chordslyrics{\chord{C}}{se mám celkem }\chordslyrics{\chord{G}\chord{Em}}{bídně, žij si }\chordslyrics{\chord{Am}}{blaze }\chordslyricshyphen{\chord{D7}}{Klemen}\chordslyrics{\chord{G}}{tajn.}}
+}
+
+\verse{\sbline{\chordslyricshyphen{\chord{D\msharp 7}}{Do du}\chordslyrics{\chord{G\msharp }}{še jí padla }\chordslyrics{\chord{Fm}}{tíseň, tak se }\chordslyricshyphen{\chord{Cm}}{vrhla na ko}\chordslyrics{\chord{D\msharp 7}}{kajn, }}
+\sbline{a tím \chordslyrics{\chord{C\msharp }}{končí nejen }\chordslyrics{\chord{G\msharp }}{píseň, ale }\chordslyrics{\chord{Fm}\chord{A\msharp m}}{taky }\chordslyricshyphen{\chord{D\msharp 7}}{Klemen}\chordslyrics{\chord{G\msharp }}{tajn.}}
+}
+
+
+
+\song{Kolej Yesterday}{Pavel Šrut / Petr Skoumal}{Kolej Yesterday (1984)}
+
+\verse{\sbline{To \chordslyrics{\chord{Dm}}{bejvávaly }\chordslyrics{\chord{Dm9}}{na koleji }\chordslyrics{\chord{Dm}}{časy,}\chordslyrics{\chord{Dm9}}{}}
+\sbline{\chordslyrics{\chord{Dm}}{už ráno }\chordslyricshyphen{\chord{B$\flat$maj9}}{začal večí}\chordslyrics{\chord{F}}{rek,}}
+\sbline{\chordslyrics{\chord{E$\flat$maj}}{někdo dal dvacet, někdo }\chordslyrics{\chord{Dm}}{stovku }}
+\sbline{\chordslyricshyphen{\chord{E$\flat$maj}}{a stavěli jsme Eiffe}\chordslyrics{\chord{Dm}}{lovku }}
+\sbline{ze snů a \chordslyrics{\chord{B$\flat$maj}}{z peří, }\chordslyricshyphen{\chord{C}}{ze si}\chordslyrics{\chord{Dm}}{rek.}}
+}
+
+\verse{\sbline{To tenkrát ještě rostly holkám vlasy,}
+\sbline{to bylo před tím vejbuchem,}
+\sbline{a kdo měl žízeň, tak ji hasil,}
+\sbline{a kdo měl žízeň, tak ji hasil,}
+\sbline{vracel se \chordslyrics{\chord{B$\flat$}}{s kytkou }\chordslyricshyphen{\chord{C}}{za u}\chordslyrics{\chord{F}}{chem.}\chordslyrics{\chord{A}}{}}
+}
+
+\chorus{\sbline{Prázdnou u\chordslyricshyphen{\chord{D}}{licí na ko}\chordslyrics{\chord{G}}{lej, }}
+\sbline{jo, to je \chordslyricshyphen{\chord{C}}{dávno, Yester}\chordslyrics{\chord{F}}{day, }}
+\sbline{Yesterday.\chordslyrics{\chord{Em}\chord{A7}\chord{Dm}\chord{Dm9}\chord{Dm}\chord{Dm9}}{}}
+}
+
+\verse{\sbline{To bejvávalo na koleji snění,}
+\sbline{bramborák voněl v kuchyni,}
+\sbline{někdo dal dvacet, někdo pade,}
+\sbline{za to jsme měli, kamaráde,}
+\sbline{hned štěně píva ve skříni.}
+}
+
+\verse{\sbline{Tenkrát, hochu, ještě ozáření}
+\sbline{hrozilo leda vod slunce}
+\sbline{a byly řeky po setmění,}
+\sbline{a byly řeky po setmění,}
+\sbline{kde jsi moh čekat na sumce.}
+}
+
+\chorus{\sbline{A pak je hodit na olej,}
+\sbline{jo, to je dávno, Yesterday,}
+\sbline{Yesterday.}
+}
+
+\verse{\sbline{To bejvávaly na koleji časy,}
+\sbline{už ráno začal večírek,}
+\sbline{někdo dal dvacet, někdo stovku}
+\sbline{a někdo zbořil Eiffelovku}
+\sbline{ze snů a z peří, ze sirek.}
+}
+
+\chorus{\sbline{A od tý doby na kolej}
+\sbline{patří už dávno Yesterday,}
+\sbline{Yesterday, oh  I believe in yesterday.}
+}
+
+
+
+\song{Kolem a kolem}{Vlasta Redl}{Na výletě (1990)}
+
+\verse{\sbline{\chordslyrics{\chord{E}}{Dlouhá je }\chordslyricshyphen{\chord{F\msharp m/E}}{noc a nikdo na po}\chordslyrics{\chord{E}}{moc,}}
+\sbline{jen milenci \chordslyricshyphen{\chord{A/E}}{na patro}\chordslyrics{\chord{B}}{lách.}}
+\sbline{\chordslyrics{\chord{E}}{Dlouhá je mi }\chordslyrics{\chord{F\msharp m/E}}{noc a kdybych }\chordslyricshyphen{\chord{H7sus4}}{křičel o po}\chordslyrics{\chord{E}}{moc,}}
+\sbline{nikoho \chordslyricshyphen{\chord{A/E}}{nepřivo}\chordslyrics{\chord{B7sus4}}{lám.}}
+\sbline{A ty \chordslyrics{\chord{F\msharp m}}{kroky to je }\chordslyrics{\chord{B7}}{vítr,}\chordslyrics{\chord{C\msharp 7}}{}}
+\sbline{déjà \chordslyrics{\chord{F\msharp m}}{vu, to jen }\chordslyrics{\chord{E}}{výtah jel }\chordslyrics{\chord{A/E}}{o patro }\chordslyrics{\chord{B7}}{dál.}}
+\sbline{\chordslyrics{\chord{E}}{Špendlík }\chordslyrics{\chord{F\msharp m/E}}{ke jménu }\chordslyrics{\chord{B}}{do sbírky }\chordslyrics{\chord{C\msharp m/B}}{měst,}}
+\sbline{kde jsem \chordslyricshyphen{\chord{F\msharp m}}{bůhví}\chordslyrics{\chord{B7}}{proč jednou }\chordslyrics{\chord{E}}{hrál.}}
+}
+
+\verse{\sbline{Dlouhá je mi noc a chtěl bych tak moc}
+\sbline{někam, kde někdo na mě čeká.}
+\sbline{Někam, kde jsem už byl, hle jak nízký mám cíl,}
+\sbline{ale cesta tak předaleká.}
+\sbline{A i lež bych už bral,}
+\sbline{že jsem na cestě dál, ale pravdy se nepolekám.}
+\sbline{Víš, než v nic, raděj uvěřit v lež,}
+\sbline{takže \chordslyricshyphen{\chord{E}}{mů}\chordslyrics{\chord{F\msharp m}}{žeš }\chordslyrics{\chord{E}}{lhát, }\chordslyrics{\chord{E}\chord{A/E}\chord{E}}{ }\chordslyricshyphen{\chord{E}}{mů}\chordslyrics{\chord{A/E}}{žeš }\chordslyrics{\chord{E(maj7)}}{lhát, }\chordslyrics{\chord{B/E}}{když }\chordslyrics{\chord{E}}{chceš.}}
+}
+
+
+
+\song{Krajina posedlá tmou}{Jiří Suchý / Jiří Šlitr}{}
+
+\verse{\sbline{\chordslyrics{\chord{A}}{Krajina }\chordslyrics{\chord{D}}{posedlá }\chordslyrics{\chord{A}}{tmou, (krajina }\chordslyrics{\chord{D}}{posedlá }\chordslyrics{\chord{A}}{tmou)}}
+\sbline{vzpomínky \chordslyrics{\chord{D}}{do sedla }\chordslyrics{\chord{A}}{zvou, (vzpomínky }\chordslyrics{\chord{D}}{do sedla }\chordslyrics{\chord{A}}{zvou)}}
+\sbline{nutí mě vrátit se \chordslyrics{\chord{E7}}{tam, (nutí mě vrátit se tam)}}
+\sbline{kde budu navěky sám, (kde budu navěky sám)}
+\sbline{kde místo úsměvů \chordslyrics{\chord{A}}{tvých }\chordslyrics{\chord{C\msharp }}{čeká jen řada snů }\chordslyrics{\chord{D}}{zlých,}\chordslyrics{\chord{Dm}}{}}
+\sbline{a místo lásky nás \chordslyrics{\chord{A}}{dvou, (a místo }\chordslyrics{\chord{D}}{lásky nás }\chordslyrics{\chord{A}}{dvou)}}
+\sbline{krajina \chordslyrics{\chord{E7}}{posedlá }\chordslyrics{\chord{A}}{tmou. (krajina }\chordslyrics{\chord{D}}{posedlá }\chordslyrics{\chord{A}}{tmou)}}
+}
+
+\verse{\sbline{Když západ v očích ti plál, (když západ v očích ti plál) }
+\sbline{s tebou jsem naposled stál, (s tebou jsem naposled stál) }
+\sbline{i když jsi čekala víc, (i když jsi čekala víc) }
+\sbline{přijel jsem tenkrát ti říct, (přijel jsem tenkrát ti říct) }
+\sbline{že mám tě na každej pád jedinou na světě rád, }
+\sbline{a pak jsem zase jel dál, (a pak jsem zase jel dál) }
+\sbline{když západ v očích mi plál. (když západ v očích mi plál) }
+}
+
+\verse{\sbline{Proč jsem se vracel tak rád, (proč jsem se vracel tak rád) }
+\sbline{proč jsem měl touhu se smát, (proč jsem měl touhu se smát) }
+\sbline{když cestou řekli mi: Joe, (když cestou řekli mi: Joe) }
+\sbline{ta nikdy nebude tvou, (ta nikdy nebude tvou) }
+\sbline{že láska zmizí jak dým, to dneska proklatě vím, }
+\sbline{jedno však musím se ptát, (jedno však musím se ptát) }
+\sbline{proč jsem se vracel tak rád? (proč jsem se vracel tak rád?) }
+}
+
+
+
+\song{Love Street}{The Doors}{Waiting for the Sun (1968)}
+
+\verse{\sbline{\chord{Am}\chord{G}\chord{Gm}\chord{F}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{She lives on }\chordslyrics{\chord{G}}{love street,}}
+\sbline{\chordslyrics{\chord{Gm}}{lingers long on }\chordslyrics{\chord{F}}{love street.}}
+\sbline{She has a house and garden,}
+\sbline{I would like to see what happens.}
+}
+
+\verse{\sbline{\chord{Bm}\chord{A}\chord{Am}\chord{G}}
+}
+
+\verse{\sbline{She has robes and she has monkeys}
+\sbline{lazy diamonds, studded flunkies,}
+\sbline{\chordslyrics{\chord{Gm}}{she has }\chordslyrics{\chord{Am}}{wisdom and }\chordslyrics{\chord{B$\flat$}}{knows what to }\chordslyrics{\chord{Fmaj7}}{do,}}
+\sbline{\chordslyrics{\chord{Gm}}{she has }\chordslyrics{\chord{Fmaj7}}{me and }\chordslyrics{\chord{B$\flat$6}}{she has }\chordslyrics{\chord{A7}}{you.}}
+}
+
+\verse{\sbline{\chord{Bm}\chord{A}\chord{Am}\chord{G}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{She has }\chordslyrics{\chord{Bm}}{wisdom and }\chordslyrics{\chord{C}}{knows what to }\chordslyrics{\chord{Gmaj7}}{do,}}
+\sbline{\chordslyrics{\chord{Am7}}{she has }\chordslyrics{\chord{Gmaj7}}{me and }\chordslyrics{\chord{C6}}{she }\chordslyrics{\chord{G}}{has }\chordslyrics{\chord{Am}}{you.}}
+}
+
+\verse{\sbline{I see you live on Love Street,}
+\sbline{there's a store where the creatures meet.}
+\sbline{I wonder what they do in there,}
+\sbline{summer Sunday and a year.}
+\sbline{I guess I like it fine so far\ldots }
+}
+
+\verse{\sbline{\chordslyrics{\chord{Bm}}{She lives on }\chordslyrics{\chord{A}}{love street,}}
+\sbline{\chordslyrics{\chord{Am}}{lingers long on }\chordslyrics{\chord{G}}{love street,}}
+\sbline{she has a house and garden,}
+\sbline{I would like to see what happens.}
+}
+
+
+
+\song{Made in Valmez}{Mňága a Žďorp}{Made in Valmez (1991)}
+
+\verse{\sbline{\chordslyrics{\chord{A}}{Jako je sama skála, }\chordslyrics{\chord{D}}{tak jsem sám i }\chordslyrics{\chord{E}}{já,}}
+\sbline{jako je prázdná duha, tak jsem prázdný i já, }
+\sbline{jako je zrádná voda, tak zradím i já. }
+}
+
+\chorus{\sbline{\chordslyrics{\chord{A}}{Zkouším se prokopat ven -- zkouší se prokopat ven,}}
+\sbline{\chordslyrics{\chord{D}}{zkouším se prokopat ven -- }\chordslyrics{\chord{E}}{zkouší se prokopat ven.}}
+}
+
+\verse{\sbline{O půl třetí na náměstí }
+\sbline{ve Valašském Meziříčí, }
+\sbline{jdu, co noha nohu mine, }
+\sbline{a každý sám sobě jsme stínem. }
+}
+
+\verse{\sbline{Nic mi není, přitom melu z posledního, }
+\sbline{těžko říct o tom něco konkrétního, }
+\sbline{stejná slova, kolem stejný tváře, }
+\sbline{a každý sám sobě jsme lhářem a já už zase\ldots  }
+}
+
+\chorus{}
+
+
+
+\song{Man In The Moon}{Nick Cave / Grinderman}{Grinderman (2007)}
+
+\verse{\sbline{\chordslyrics{\chord{Em}}{My daddy }\chordslyrics{\chord{D}}{was }\chordslyricshyphen{\chord{Bm}}{astro}\chordslyrics{\chord{Em}}{naut,}}
+\sbline{\chordslyrics{\chord{Em}}{that's what }\chordslyrics{\chord{D}}{I was }\chordslyrics{\chord{Bm}}{often }\chordslyrics{\chord{Em}}{taught,}}
+\sbline{\chordslyrics{\chord{Em}}{my daddy }\chordslyricshyphen{\chord{D}}{went a}\chordslyrics{\chord{Bm}}{way too }\chordslyrics{\chord{C}}{soon,}}
+\sbline{\chordslyrics{\chord{Em}}{now he's }\chordslyrics{\chord{D}}{living }\chordslyrics{\chord{Bm}}{on the }\chordslyrics{\chord{Em}}{moon.}}
+}
+
+\verse{\sbline{Hang on to me people, we're going down,}
+\sbline{down among the fishes in an absence of \chordslyrics{\chord{C}}{sound,}}
+\sbline{the presence of distance and it's floating in \chordslyrics{\chord{C}}{time,}}
+\sbline{it's lack and it's longing and it's not very kind.}
+}
+
+\verse{\sbline{Sitting here scratching in this rented room,}
+\sbline{scratching and a-tapping to the man in the \chordslyrics{\chord{C}}{moon,}}
+\sbline{'bout all the things that I've been \chordslyrics{\chord{C}}{told,}}
+\sbline{my daddy was an astronaut.}
+}
+
+
+
+\song{Marnivá sestřenice}{Jiří Suchý / Jiří Šlitr}{1960}
+
+\verse{\sbline{\chordslyricshyphen{\chord{C\msharp }}{Měla vlasy samou loknu, jé-}\chordslyrics{\chord{G\msharp 7}}{je-je,}}
+\sbline{ráno přistoupila k oknu, jé-\chordslyrics{\chord{C\msharp }}{je-je,}}
+\sbline{vlasy samou \chordslyrics{\chord{C\msharp 7}}{loknu měla }\chordslyrics{\chord{F\msharp }}{a na nic víc }\chordslyrics{\chord{F\msharp m}}{nemyslela,}}
+\sbline{\chordslyrics{\chord{C\msharp }}{a na nic víc }\chordslyrics{\chord{A\msharp 7}}{nemyslela, }\chordslyricshyphen{\chord{D\msharp 7}}{jé}\chordslyricshyphen{\chord{G\msharp 7}}{jé}\chordslyrics{\chord{C\msharp }}{jé.}}
+}
+
+\verse{\sbline{\chordslyricshyphen{\chord{D}}{Nutno ještě podotknouti, jé-}\chordslyrics{\chord{A7}}{je-je,}}
+\sbline{že si vlasy kulmou kroutí, jé-\chordslyrics{\chord{D}}{je-je,}}
+\sbline{a nesuší si \chordslyrics{\chord{D7}}{vlasy fénem, }\chordslyrics{\chord{G}}{nýbrž jen tak }\chordslyrics{\chord{Gm}}{nad plamenem,}}
+\sbline{\chordslyrics{\chord{D}}{nýbrž jen tak }\chordslyrics{\chord{B7}}{nad plamenem, }\chordslyricshyphen{\chord{E7}}{jé}\chordslyricshyphen{\chord{A7}}{jé}\chordslyrics{\chord{D}}{jé.}}
+}
+
+\verse{\sbline{\chordslyricshyphen{\chord{D\msharp }}{Jednou vlasy sežehla si, jé-}\chordslyrics{\chord{A\msharp 7}}{je-je,}}
+\sbline{tím pádem je konec krásy, jé-\chordslyrics{\chord{D\msharp }}{je-je,}}
+\sbline{a když přistoupí \chordslyrics{\chord{D\msharp 7}}{ráno k oknu, }\chordslyrics{\chord{G\msharp }}{nemá vlasy }\chordslyrics{\chord{G\msharp m}}{samou loknu,}}
+\sbline{\chordslyrics{\chord{D\msharp }}{nemá vlasy }\chordslyrics{\chord{C7}}{samou loknu, }\chordslyricshyphen{\chord{F7}}{jé}\chordslyricshyphen{\chord{A\msharp 7}}{jé}\chordslyrics{\chord{D\msharp }}{jé.}}
+}
+
+\verse{\sbline{\chordslyricshyphen{\chord{E}}{O vlasy už nestará se, jé-}\chordslyrics{\chord{B7}}{je-je,}}
+\sbline{a diví se světa kráse, jé-\chordslyrics{\chord{E}}{je-je,}}
+\sbline{a vidí plno \chordslyrics{\chord{E7}}{jinejch věci, }\chordslyrics{\chord{A}}{a to za to }\chordslyrics{\chord{Am}}{stojí přeci,}}
+\sbline{\chordslyrics{\chord{E}}{a to za to }\chordslyrics{\chord{C\msharp 7}}{stojí přeci, }\chordslyricshyphen{\chord{F\msharp 7}}{jé}\chordslyricshyphen{\chord{B7}}{jé}\chordslyrics{\chord{E}}{jé.}}
+}
+
+
+
+\song{Mávátka}{Jaromír Nohavica}{}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Už dvacet devět roků chodím po světě}}
+\sbline{\chordslyrics{\chord{Dm}}{a ten }\chordslyrics{\chord{G}}{svět furt a }\chordslyrics{\chord{C}}{furt se stejně }\chordslyrics{\chord{E}}{točí.}}
+\sbline{\chordslyrics{\chord{Am}}{Já budu klidně smát se, budu veselý, }\chordslyrics{\chord{E}}{jenom mi vydloubněte }\chordslyrics{\chord{Am}}{oči. }\chordslyrics{\chord{E}}{}}
+\sbline{Neviděl bych vypasené páprdy, }
+\sbline{tisíce let a stále titíž. }
+\sbline{Když něco prohnilého v státě zasmrdí, }
+\sbline{říkají: \quotedblbase Ty snad něco cítíš?\textquotedblleft }
+\sbline{\chordslyricshyphen{\chord{Dm}}{Říkají mi}\chordslyrics{\chord{G}\chord{C}}{dobráci }\chordslyrics{\chord{E}}{v Rudém právu:}}
+\sbline{\chordslyrics{\chord{Dm}}{\quotedblbase Není tak }\chordslyrics{\chord{G}}{zle, }\chordslyrics{\chord{C}}{jen chlapče }\chordslyrics{\chord{E}}{zvedni hlavu!\textquotedblleft }}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Am}}{Dejte mi do ruky }\chordslyrics{\chord{Dm}}{mávátko a }\chordslyrics{\chord{Am}}{řekněte, }\chordslyrics{\chord{E}}{jak volat }\chordslyrics{\chord{Am}}{\quotedblbase Sláva!\textquotedblleft ,}\chordslyrics{\chord{E}}{}}
+\sbline{\chordslyrics{\chord{Am}}{já už si najdu ten }\chordslyrics{\chord{Dm}}{správný směr a budu }\chordslyrics{\chord{Am}}{mávat, }\chordslyrics{\chord{E}}{mávat, }\chordslyrics{\chord{Am}}{mávat.}}
+}
+
+\verse{\sbline{Můj soused odvedle je farář v kostele, }
+\sbline{moc príma kluk, jenže často hledí k nebi. }
+\sbline{Já jaksi nemám v nebi žádné přátele }
+\sbline{a bůh, ten pro mě nikdy nebyl. }
+\sbline{Čtu jenom básně těch, kteří už zemřeli }
+\sbline{a ten svět furt a furt se stejně točí. }
+\sbline{Já budu klidně smát se, budu veselý, }
+\sbline{jenom mi vydloubněte oči. }
+\sbline{Říkají mi dobráci u koryta: }
+\sbline{\quotedblbase Není tak zle, jen doba je složitá!\textquotedblleft }
+}
+
+\chorus{}
+
+\verse{\sbline{Okresní inspektor Vlček má vilu, dům a byt, }
+\sbline{takové nic, a jak si krásně žije. }
+\sbline{Já musel sedm roků bez koupelny žít, }
+\sbline{proto ať žije anarchie. }
+\sbline{Když tátu vyhodili, máma brečela, }
+\sbline{že nedokázal převléct vlastní kabát, }
+\sbline{to já mám někde na dně duše docela, }
+\sbline{třeste se, trůny knížat, hrabat. }
+\sbline{Říkají mi dobráci za koryty: }
+\sbline{\quotedblbase Není tak zle, ovšem musíte pochopiti\ldots \textquotedblleft , já zpívám: }
+}
+
+\chorus{}
+
+
+
+\song{Moje malá válka}{Jaromír Nohavica}{Osmá barva duhy (1989)}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Do klopy }\chordslyrics{\chord{Bm7b5}}{jsem si vetkl }\chordslyrics{\chord{E7}}{rekrutské }\chordslyrics{\chord{Am}}{třepetálky}}
+\sbline{a odchá\chordslyrics{\chord{Bm7b5}}{zím dnes večer }\chordslyrics{\chord{Cmaj7}}{do svojí }\chordslyrics{\chord{B7}}{malé }\chordslyrics{\chord{B$\flat$maj7}}{války,}}
+\sbline{\chordslyrics{\chord{Fmaj7}}{ne, není }\chordslyricshyphen{\chord{E7}}{vyhlášena pa}\chordslyricshyphen{\chord{Am}}{tentem císař}\chordslyrics{\chord{Fmaj7}}{pána,}}
+\sbline{\chordslyricshyphen{\chord{Cmaj7}}{jen ustou}\chordslyrics{\chord{Bm7}}{pit už nelze, }\chordslyricshyphen{\chord{Dm7}}{jen ustou}\chordslyrics{\chord{E7}}{pit už nelze,}}
+\sbline{\chordslyricshyphen{\chord{Am}}{jen ustou}\chordslyrics{\chord{F}}{pit už nelze, }\chordslyricshyphen{\chord{E7}}{když padne první rá}\chordslyrics{\chord{Am}}{na.}}
+}
+
+\verse{\sbline{Tamboři mého srdce do oslích kůží bijí }
+\sbline{a ve mně šikují se korouhve kompanií, }
+\sbline{já, pacifista lásky a věčný mírotvorce, }
+\sbline{kreslím teď lebku s hnáty, kreslím teď lebku s hnáty, }
+\sbline{kreslím teď lebku s hnáty pastelkou na praporce. }
+}
+
+\verse{\sbline{Velice moc se bojím, držte mi, prosím, palce, }
+\sbline{poteče hodně krve v té mojí malé válce, }
+\sbline{vzpomeňte na mě v dobrém, až přijdou zprávy z fronty, }
+\sbline{já prostě odcházím jen, já prostě odcházím jen, }
+\sbline{já prostě odcházím jen bránit své horizonty. }
+}
+
+\verse{\sbline{Bránit svůj kousek země, čtvrt čtverečního metru, }
+\sbline{víc místa nezabírám v botách, čapce a svetru, }
+\sbline{berou mi moje, moje, a proto dneska večer }
+\sbline{jdu do své malé války, jdu do své malé války, }
+\sbline{jdu do své malé války, jdu proti mečům s mečem. }
+}
+
+
+
+\song{Montér blues}{Vlasta Redl}{}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Taky jsem hrával tyhle }\chordslyrics{\chord{D7}}{výškové práce, }}
+\sbline{\chordslyrics{\chord{C}}{to není }\chordslyricshyphen{\chord{E7}}{žádná ope}\chordslyrics{\chord{Am}}{ra.}\chordslyrics{\chord{E7}}{}}
+\sbline{\chordslyrics{\chord{Am}}{Celý den viset }\chordslyrics{\chord{D}}{jak na oprátce, }}
+\sbline{\chordslyricshyphen{\chord{C}}{tak voní chleba monté}\chordslyrics{\chord{E7}}{ra.}}
+}
+
+\chorus{\sbline{Montuju \chordslyrics{\chord{F}}{potrubí, }\chordslyrics{\chord{F/E}}{mosty a }\chordslyrics{\chord{Dm}}{přehrady,}\chordslyrics{\chord{G}}{}}
+\sbline{málokdy \chordslyrics{\chord{C}}{upadám }\chordslyrics{\chord{C/B}}{do téhle }\chordslyrics{\chord{C/B$\flat$}}{nálady,}\chordslyrics{\chord{A7}}{}}
+\sbline{když nepo\chordslyrics{\chord{Dm}}{máhá }\chordslyrics{\chord{Fm}}{vodka ani }\chordslyrics{\chord{G7}}{džus.}}
+}
+
+\verse{\sbline{Jsem velký hříšník, proto mě měla tolik ráda, }
+\sbline{a zestárla dřív, než dospěla, }
+\sbline{a tak nejvýš, jak umím, vážu si padák, }
+\sbline{i kolem křížů kostela. }
+}
+
+\chorus{}
+
+\verse{\sbline{Řek' jsem jí: holka, všechno ti vydrží tak dlouho, }
+\sbline{jak dlouho to k tobě putuje, }
+\sbline{ale to, co je navždy, to nepřijde nikdy, }
+\sbline{protože prostě to tu je. }
+}
+
+\chorus{}
+
+\verse{\sbline{Tak dobře, dobře, dobře, dej to sem, já zahraju blues. }
+\sbline{Nedělej na mě ty psí oči, já znám tu Stairway do nebe, }
+\sbline{mě už dnes těžko přeochočíš, tohle fakt není pro tebe. }
+}
+
+\chorus{\sbline{Znám taky blues, pána, co se toulá světem sám, }
+\sbline{blues čtyř stěn, žen, prázdna, které objímám, }
+\sbline{blues, které dávno už musím umět hrát. }
+}
+
+\verse{\sbline{Když zavřu oči, vidím zas holky z první řady }
+\sbline{a kolem nich místní šumaře, }
+\sbline{od sloupu k sloupu jim natahuju struny }
+\sbline{na krásné modré kytaře. }
+}
+
+\chorus{\sbline{Montuju potrubí\ldots  }
+\sbline{když nepomáhá vodka ani džus\ldots  }
+}
+
+
+
+\song{Moon River}{Johnny Mercer / Henry Mancini}{1961}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Moon }\chordslyrics{\chord{Am}}{river, }\chordslyrics{\chord{Fmaj7}}{wider than a }\chordslyrics{\chord{C}}{mile,}}
+\sbline{I'm \chordslyrics{\chord{Fmaj7}}{crossing you in }\chordslyrics{\chord{C}}{style some }\chordslyrics{\chord{Bm7b5}}{day.}\chordslyrics{\chord{E7}}{}}
+}
+
+\verse{\sbline{You \chordslyrics{\chord{Am}}{dream }\chordslyrics{\chord{C7/G}}{maker,}}
+\sbline{you \chordslyricshyphen{\chord{F}}{heart}\chordslyrics{\chord{Fm}}{breaker,}}
+\sbline{wher\chordslyrics{\chord{Am7}}{ever you're }\chordslyrics{\chord{D7}}{going}}
+\sbline{I'm \chordslyrics{\chord{Dm7}}{going your }\chordslyrics{\chord{G7}}{way.}}
+}
+
+\verse{\sbline{Two drifters off to see the world,}
+\sbline{there's such a lot of world to see.}
+}
+
+\verse{\sbline{We're \chordslyricshyphen{\chord{Am}}{af}\chordslyrics{\chord{Am7/G}}{ter the }\chordslyrics{\chord{D7/F\msharp }}{same rainbow's }\chordslyrics{\chord{C}}{end}}
+\sbline{\chordslyrics{\chord{F}}{waiting round the }\chordslyrics{\chord{C}}{bend}}
+\sbline{my \chordslyrics{\chord{F}}{Huckleberry }\chordslyrics{\chord{C}}{friend}}
+\sbline{\chordslyrics{\chord{Am}}{Moon }\chordslyrics{\chord{Dm7}}{River }\chordslyrics{\chord{G7}}{and }\chordslyrics{\chord{C}}{me.}}
+}
+
+
+
+\song{Na jednu notečku}{Karel Kryl}{Jedůfky (1996)}
+
+\verse{\sbline{Jdu k vodě \chordslyrics{\chord{Am}}{líčit na jelce, mám Škvoreckého Zbabělce}}
+\sbline{a chléb a buřty v kabelce s kořalou \chordslyrics{\chord{Dm}}{sladkou. }}
+\sbline{když slunce \chordslyrics{\chord{E}}{vstává v rumělce, zahlédnu metat kozelce }}
+\sbline{zasloužilého umělce s plesnivou \chordslyrics{\chord{Am}}{bradkou.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Když v tváři rumem zruměním, tu spokojím se s domněním: }
+\sbline{'Kozelce ladí s uměním jak šroubek s matkou!' }
+\sbline{Zní z láhve nota za notou, kabela zeje prázdnotou }
+\sbline{a já mám půdu pod botou poněkud vratkou, }
+\sbline{pada\chordslyricshyphen{\chord{E}}{dadam pada}\chordslyrics{\chord{Am}\chord{E}\chord{Am}}{dam.}}
+}
+
+\verse{\sbline{Keď ide vlna za loďou, pijeme vodku s Voloďou }
+\sbline{a bratstvo našich nároďov sa takto tuží, }
+\sbline{Voloďa býval barónom, teraz je z neho agronóm, }
+\sbline{má salaš hore nad Hronom a záhon ruží. }
+}
+
+\verse{\sbline{Keď spieva sláčik primáša a čašník fľašu prináša, }
+\sbline{môj zrak s víziou sobáša zvlhne mi plačom, }
+\sbline{keď vraví:'Koniec košiarom! Predáme ovce mäsiarom! }
+\sbline{Je lepšie dať sa k žandárom, ako byť bačom!', }
+\sbline{padadadam padadam. }
+}
+
+\verse{\sbline{Když pluje loďka za loďkou, chutná mi voďka s Voloďkou, }
+\sbline{on rotným je, já piloťkou, bydlíme v tanku, }
+\sbline{když měsíc svítí na Něvu jak cibulička v nálevu, }
+\sbline{jdem v maskovacím oděvu udělat banku. }
+}
+
+\verse{\sbline{Plá nocí šarlat uhlíků, zní tlukot ran a slavíků }
+\sbline{a v bance ani rublíku, to kvůli manku, }
+\sbline{tu vezmem zavděk nálevnou vypijem vodku nelevnou }
+\sbline{a půjdem nocí barevnou užíti spánku, }
+\sbline{padadadam padadam. }
+}
+
+
+
+\song{Na jezeře bez zlatých ryb}{Vlasta Redl}{Na výletě (1990)}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Nehledám }\chordslyrics{\chord{F}}{oheň, co }\chordslyrics{\chord{C}}{nepálí,}}
+\sbline{\chordslyrics{\chord{F}}{víš mě sny o tobě }\chordslyrics{\chord{Am7}}{zahřejí,}}
+\sbline{\chordslyrics{\chord{F}}{jen když vedle mě }\chordslyrics{\chord{Dm7}}{spíš }\chordslyrics{\chord{F}\chord{G}}{}}
+}
+
+\verse{\sbline{A nehlídám tvé kroky z povzdálí,}
+\sbline{usínám s nadějí,}
+\sbline{že se neztratíš.}
+}
+
+\verse{\sbline{Nečekám zázraky na zemi,}
+\sbline{ne že bych pohádkám nevěřil,}
+\sbline{prostě nechci v nich hrát.}
+}
+
+\verse{\sbline{A tak nespěchám, jdu krokem a zdá se mi,}
+\sbline{že žádné hodiny nezměří můj čas,}
+\sbline{co \chordslyrics{\chord{Dm7}}{s tebou }\chordslyrics{\chord{G}}{zůstal }\chordslyrics{\chord{Fmaj7}}{stát. }}
+}
+
+\verse{\sbline{So, you fish,}
+\sbline{no, another wish,}
+\sbline{game's over,}
+\sbline{rozumíš?}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Dm7}}{Proč vlastně měl bych po tobě }\chordslyrics{\chord{Am7}}{chtít}}
+\sbline{další společná vítěz\chordslyrics{\chord{Fmaj7}}{ství,}}
+\sbline{když můžu prohrát všechno \chordslyrics{\chord{Dm7}}{sám.}\chordslyrics{\chord{Dm7/C}}{}}
+}
+
+
+
+\song{Na jezeře zlatých ryb}{Vlasta Redl}{Na výletě (1990)}
+
+\verse{\sbline{Už mi \chordslyrics{\chord{C}}{malý byl svět,}}
+\sbline{tak jsem \chordslyrics{\chord{F(maj7)}}{chtěl na výlet,}}
+\sbline{doma jsem řek,}
+\sbline{že budu \chordslyrics{\chord{C}}{zpátky co nevidět.}}
+}
+
+\verse{\sbline{Byl jsem chytrý kluk,}
+\sbline{ale to už je nejspíš fuk,}
+\sbline{mám pocit, že}
+\sbline{stejně jsem, co se dalo splet.}
+}
+
+\verse{\sbline{A ty jsi \chordslyrics{\chord{F}}{měla o mě strach,}}
+\sbline{už když mi šlo \chordslyrics{\chord{B$\flat$}}{nač jsem sáh,}}
+\sbline{tak \chordslyrics{\chord{Gm}}{nač teď brát}}
+\sbline{\chordslyrics{\chord{C}}{jak žebrák }\chordslyrics{\chord{F}}{na dluh rybí slib.}}
+}
+
+\verse{\sbline{Nemám víc si co přát,}
+\sbline{než že se dál budeš bát,}
+\sbline{že chytím i poslední}
+\sbline{ze zlatých ryb.}
+}
+
+
+
+\song{Надпись на камне}{Bulat Okudžava}{1982}
+
+\verse{\sbline{Пус\chordslyricshyphen{\chord{Cm}}{кай моя лю}\chordslyricshyphen{\chord{B$\flat$7}}{бовь, как мир, ста}\chordslyrics{\chord{E$\flat$}}{ра, --}}
+\sbline{лишь \chordslyricshyphen{\chord{A$\flat$}}{ей одной слу}\chordslyricshyphen{\chord{B$\flat$7}}{жил и дове}\chordslyrics{\chord{E$\flat$}}{рялся.}\chordslyrics{\chord{G7}}{}}
+\sbline{Я -- \chordslyricshyphen{\chord{Cm}}{дворянин с арбатского дво}\chordslyrics{\chord{Fm}}{ра,}}
+\sbline{своим дво\chordslyricshyphen{\chord{B$\flat$7}}{ром введенный во дво}\chordslyrics{\chord{E$\flat$}}{рянство.}}
+\sbline{Я -- \chordslyricshyphen{\chord{Cm}}{дворянин с арбатского дво}\chordslyrics{\chord{Fm}}{ра,}}
+\sbline{своим дво\chordslyricshyphen{\chord{Cm/G}}{ром вве}\chordslyricshyphen{\chord{G7}}{денный во дво}\chordslyrics{\chord{Cm}}{рянство.}}
+}
+
+\verse{\sbline{За праведность и преданность двору}
+\sbline{пожалован я кровью голубою.}
+\sbline{Когда его не станет, я умру, }
+\sbline{пока он есть -- я властен над судьбою. }
+}
+
+\verse{\sbline{Молва за гробом чище серебра}
+\sbline{и вслед звучит музыкою прекрасной\ldots }
+\sbline{Но не спеши, фортуна, будь добра, }
+\sbline{не выпускай моей руки несчастной. }
+}
+
+\verse{\sbline{Не плачь, Мария, радуйся, живи,}
+\sbline{по-прежнему встречай гостей у входа.}
+\sbline{Арбатство, растворенное в крови, }
+\sbline{неистребимо, как сама природа. }
+}
+
+\verse{\sbline{Когда кирка, бульдозер и топор}
+\sbline{сподобятся к Арбату подобраться}
+\sbline{и правнуки забудут слово \quotedblbase двор\textquotedblleft ~-- }
+\sbline{согрей нас всех и собери, арбатство. }
+}
+
+
+
+\song{Nagasaki Hirošima}{Mňága a Žďorp}{Chceš mě? Chci Tě! (1999)}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Tramvají }\chordslyrics{\chord{G}}{dvojkou }\chordslyrics{\chord{F}}{jezdíval jsem }\chordslyricshyphen{\chord{G}}{do Žide}\chordslyrics{\chord{C}}{nic,}\chordslyrics{\chord{G}\chord{F}\chord{G}}{}}
+\sbline{\chordslyrics{\chord{C}}{z tak velký }\chordslyrics{\chord{G}}{lásky }\chordslyrics{\chord{F}}{většinou }\chordslyrics{\chord{G}}{nezbyde }\chordslyrics{\chord{Am}}{nic,}}
+\sbline{\chordslyrics{\chord{F}}{z takový }\chordslyrics{\chord{C}}{lásky }\chordslyrics{\chord{F}}{jsou kruhy }\chordslyricshyphen{\chord{C}}{pod oči}\chordslyrics{\chord{G}}{ma}}
+\sbline{a dvě \chordslyrics{\chord{C}}{spálený }\chordslyrics{\chord{G}}{srdce -- }\chordslyrics{\chord{F}}{Nagasaki }\chordslyricshyphen{\chord{G}}{Hiroši}\chordslyrics{\chord{C}}{ma.}\chordslyrics{\chord{G}\chord{F}\chord{G}}{}}
+}
+
+\verse{\sbline{Jsou jistý věci, co bych tesal do kamene, }
+\sbline{tam, kde je láska, tam je všechno dovolené,}
+\sbline{a tam, kde není, tam mě to nezajímá, }
+\sbline{jó dvě spálený srdce -- Nagasaki Hirošima.}
+}
+
+\verse{\sbline{Já nejsem svatej, ani ty nejsi svatá, }
+\sbline{ale jablka z ráje bejvala jedovatá, }
+\sbline{jenže hezky jsi hřála, když mi někdy bylo zima, }
+\sbline{jó dvě spálený srdce -- Nagasaki Hirošima. }
+}
+
+\verse{\sbline{Tramvají dvojkou jezdíval jsem do Židenic, }
+\sbline{z tak velký lásky většinou nezbyde nic, }
+\sbline{z takový lásky jsou kruhy pod očima, }
+\sbline{a dvě spálený srdce -- Nagasaki Hirošima, }
+\sbline{a dvě spálený srdce -- Nagasaki Hirošima, }
+\sbline{a dvě spálený srdce -- Nagasaki Hirošima, }
+\sbline{a dvě spálený srdce -- Nagasaki Hirošima. }
+}
+
+
+
+\song{Nebeská brána}{Bob Dylan / Petr Kalandra}{}
+
+\verse{\sbline{\chordslyrics{\chord{G}}{Tak mámo, }\chordslyrics{\chord{D}}{sundej kytku }\chordslyrics{\chord{Am7}}{z kabátu,}}
+\sbline{\chordslyrics{\chord{G}}{za chvíli }\chordslyrics{\chord{D}}{mi bude }\chordslyrics{\chord{C}}{k ničemu.}}
+\sbline{\chordslyrics{\chord{G}}{Můj kabát }\chordslyrics{\chord{D}}{a kudlu vem }\chordslyrics{\chord{Am7}}{pro tátu,}}
+\sbline{\chordslyrics{\chord{G}}{já už stojím }\chordslyrics{\chord{D}}{před bránou }\chordslyrics{\chord{C}}{s klíčem.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{G}}{Cejtim, jak }\chordslyrics{\chord{D}}{klepu na nebeskou }\chordslyrics{\chord{Am7}}{bránu,}}
+\sbline{\chordslyrics{\chord{G}}{cejtim, jak }\chordslyrics{\chord{D}}{klepu na nebeskou }\chordslyrics{\chord{C}}{bránu,}}
+\sbline{\chordslyrics{\chord{G}}{cejtim, jak }\chordslyrics{\chord{D}}{klepu na nebeskou }\chordslyrics{\chord{Am7}}{bránu.}}
+}
+
+\verse{\sbline{Tak mámo zahrab moje pistole,}
+\sbline{ať už z nich nikdy nikdo nemůže střílet.}
+\sbline{Ještě se sejdem za sto let,}
+\sbline{až se vydáš na poslední výlet.}
+}
+
+\chorus{}
+
+\verse{\sbline{Neberu s sebou milý tváře,}
+\sbline{žijte spolu, co se do vás vejde.}
+\sbline{Až popíšem všechny diáře,}
+\sbline{všichni se tam za tou bránou sejdem.}
+}
+
+\chorus{\sbline{Všichni jednou zaklepem na nebeskou bránu\ldots }
+}
+
+
+
+\song{Nejlíp jim bylo}{Mňága a Žďorp}{Nejlíp jim bylo (1995)}
+
+\verse{\sbline{Nejlíp jim \chordslyrics{\chord{C}}{bylo,}\chordslyrics{\chord{Fmaj7}}{}}
+\sbline{\chordslyrics{\chord{C}}{když }\chordslyrics{\chord{Fmaj7}}{nevěděli, co }\chordslyrics{\chord{C}}{dělají,}\chordslyrics{\chord{Fmaj7}\chord{C}\chord{Fmaj7}}{}}
+\sbline{jenom se \chordslyrics{\chord{G}}{potkali}}
+\sbline{\chordslyrics{\chord{F}}{a neznělo to }\chordslyrics{\chord{C}}{špatně.}\chordslyrics{\chord{Fmaj7}}{}}
+}
+
+\verse{\sbline{Tak se snažili }
+\sbline{a opravdu si užívali, }
+\sbline{jenom existovali }
+\sbline{a čas běžel skvěle. }
+}
+
+\chorus{\sbline{\chordslyrics{\chord{F}}{Nechám si projít }\chordslyrics{\chord{C}}{hlavou,}}
+\sbline{\chordslyrics{\chord{G}}{kam všechny věci }\chordslyrics{\chord{Am}}{plavou,}}
+\sbline{\chordslyrics{\chord{F}}{jestli je všechno jen }\chordslyrics{\chord{C}}{dech,}}
+\sbline{\chordslyrics{\chord{G}}{tak jako kdysi v noci}}
+\sbline{\chordslyricshyphen{\chord{Am}}{spolu potmě na scho}\chordslyrics{\chord{C}}{dech.}\chordslyrics{\chord{Fmaj7}}{}}
+}
+
+\verse{\sbline{Pak se ztratili }
+\sbline{a chvílema se neviděli, }
+\sbline{jenom si telefonovali }
+\sbline{a byli na tom bledě. }
+}
+
+\verse{\sbline{A když se vrátili, }
+\sbline{už dávno nehořeli, }
+\sbline{jenom dál usínali, }
+\sbline{chvíli spolu -- chvíli vedle sebe.}
+}
+
+\chorus{}
+
+\chorus{\sbline{Nechej si projít hlavou\ldots }
+}
+
+
+
+\song{Někdy se jdu opít}{ASPM}{}
+
+\verse{\sbline{\chordslyrics{\chord{E7}}{Pokaždý, když se jdu opít, }\chordslyrics{\chord{A7}}{tak moje milá }\chordslyrics{\chord{E7}}{naříká,}}
+\sbline{\chordslyrics{\chord{A7}}{pokaždý, když se jdu opít, }\chordslyricshyphen{\chord{C}}{tak i moje manželka naří}\chordslyrics{\chord{E7}}{ká }\chordslyrics{\chord{F\msharp m}\chord{G\msharp m}\chord{Gm}}{}}
+\sbline{\chordslyrics{\chord{F\msharp m}}{a myslí si, že je šťastnej ten blázen, }\chordslyrics{\chord{C7}\chord{H7}}{kterej si pití }\chordslyrics{\chord{E7}}{odříká.}\chordslyrics{\chord{A}\chord{E}\chord{H7}}{}}
+}
+
+\verse{\sbline{Někdy se jdu opít, jen ty víš, že piju každej den,}
+\sbline{někdy se jdu opít, ty víš, že piju každej den,}
+\sbline{já znám jednu krásnou báseň, a ta je napsaná na dně džbánku jen.}
+}
+
+\verse{\sbline{Ale když se pane bože ráno vracím domů nadranej jednou za rok, tak se mi svět v pořádku bejt zdá,}
+\sbline{když se pak ráno vracím domů, tak se mi svět v pořádku bejt zdá}
+\sbline{a lidi se maj rádi a zima není vůbec zlá.}
+}
+
+
+
+\song{Nobody Home}{Pink Floyd}{The Wall (1973)}
+
+\verse{\sbline{\chord{Am}\chord{C+}\chord{C}\chord{D7}\chord{F}\chord{Fm}}
+}
+
+\verse{\sbline{I've got a \chordslyrics{\chord{C}}{little black book with my poems in,}}
+\sbline{got a \chordslyrics{\chord{E}}{bag with a toothbrush and a comb in}}
+\sbline{when \chordslyrics{\chord{F}}{I'm a good dog they sometimes throw me a }\chordslyrics{\chord{C}}{bone in.}\chordslyrics{\chord{F}}{}}
+\sbline{I've got e\chordslyrics{\chord{C}}{lastic bands keeping my shoes on,}}
+\sbline{got those \chordslyrics{\chord{E}}{swollen hand }\chordslyrics{\chord{E7}}{blues,}}
+\sbline{I got \chordslyrics{\chord{F}}{thirteen channels of shit on the TV to }\chordslyrics{\chord{C}}{choose from.}}
+\sbline{I got electric light \chordslyrics{\chord{C7}}{and I got second sight,}}
+\sbline{I got a\chordslyrics{\chord{F}}{mazing }\chordslyricshyphen{\chord{Fm}}{powers of obser}\chordslyrics{\chord{C}}{vation}\chordslyrics{\chord{E7}\chord{Am}\chord{D7}\chord{G}}{}}
+\sbline{and that is how I \chordslyrics{\chord{E7}}{know:}}
+\sbline{\chordslyrics{\chord{Am}}{when I try to get through }\chordslyrics{\chord{C6}}{on telephone to you}\chordslyrics{\chord{C}\chord{D}}{}}
+\sbline{\chordslyrics{\chord{Fm6}}{there'll be nobody }\chordslyrics{\chord{C}}{home.}\chordslyrics{\chord{F}\chord{C}}{}}
+}
+
+\verse{\sbline{I've got the obligatory Hendrix perm}
+\sbline{and the inevitable pinhole burns,}
+\sbline{all down the front of my favourite satin shirt.}
+\sbline{I've got nicotine stains on my fingers,}
+\sbline{I got a silver spoon on a chain,}
+\sbline{got a grand piano to prop up my mortal remains.}
+\sbline{I've got wild staring eyes}
+\sbline{and I've got a strong urge to fly}
+\sbline{but I've got nowhere to fly to. }
+\sbline{Ooooh babe, when I pick up the phone}
+\sbline{there's still nobody home.}
+}
+
+\verse{\sbline{I've got a pair of Gohill's boots}
+\sbline{but I got fading roots\ldots }
+}
+
+
+
+\song{Noc}{Robert Křesťan}{Pohlednice (1997)}
+
+\verse{\sbline{\chordslyrics{\chord{Em}}{Ozvěna od svatého }\chordslyrics{\chord{Am7}}{Pavla}}
+\sbline{\chordslyricshyphen{\chord{H7}}{zalétla i k nám do poko}\chordslyrics{\chord{Em}}{je,}}
+\sbline{z příšeří jsi na mě mávla }
+\sbline{s úsměvem lorda Fauntleroye. }
+\sbline{Zpod toho prastarého gesta }
+\sbline{ti ve tváři vykvetl sad }
+\sbline{a po střechách věčného města }
+\sbline{kráčela noc jako aristokrat.}
+}
+
+\verse{\sbline{V podkroví starého domu }
+\sbline{s blaženou nevinností,}
+\sbline{palčivou chuť kardamomu }
+\sbline{chutnali jsme si do sytosti.}
+\sbline{Až dvojhlasem zavřískly žestě }
+\sbline{a v nesvatém slunci Hirošimy }
+\sbline{smíření ve svatém městě }
+\sbline{jsme nakonec dospěli i my. }
+}
+
+\verse{\sbline{Ráno jsi vypila kávu }
+\sbline{a odešla dřív než jsem vstal,}
+\sbline{ani jsem nezdvihl hlavu, }
+\sbline{ani jsem nezamával. }
+\sbline{To jen zvoníci zmámili mě }
+\sbline{prvními tóny Velikonoc,}
+\sbline{to nás jen v hotelu v Římě }
+\sbline{na pár chvil spojila noc.}
+}
+
+
+
+\song{O Children}{Nick Cave \& the Bad Seeds}{The Lyre of Orpheus (2004)}
+
+\verse{\sbline{\chord{Em}\chord{C}\chord{Am}\chord{G}\chord{D}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Em}}{Pass me that lovely little gun,}}
+\sbline{\chordslyrics{\chord{C}}{my dear my darling one,}}
+\sbline{\chordslyrics{\chord{Am}}{the cleaners are coming one by one,}}
+\sbline{\chordslyrics{\chord{G}}{you don't even     }\chordslyrics{\chord{D}}{wanna let them     }\chordslyrics{\chord{Em}}{start.}}
+}
+
+\begin{multicols}{2}\raggedcolumns
+\verse{\sbline{They're knocking now upon your door,}
+\sbline{they measure the room they know the score,}
+\sbline{they're mopping up the butcher's floor}
+\sbline{of your broken little hearts.}
+}
+
+\verse{\sbline{O children}
+}
+
+\verse{\sbline{Forgive us now for what we've done,}
+\sbline{it started out as a bit of fun,}
+\sbline{here take these before we run away,}
+\sbline{the keys to the gulag.}
+}
+
+\chorus{\sbline{O \chordslyrics{\chord{Cmaj7}}{children,}}
+\sbline{\chordslyricshyphen{\chord{G}}{lift up your voi}\chordslyrics{\chord{D}}{ce, lift up your }\chordslyrics{\chord{Em}}{voice.}}
+\sbline{\chordslyrics{\chord{Cmaj7}}{Children,}}
+\sbline{\chordslyricshyphen{\chord{G}}{re}\chordslyricshyphen{\chord{D}}{joice, re}\chordslyrics{\chord{Em}}{joice.}}
+}
+
+\verse{\sbline{Here comes Frank and poor old Jim,}
+\sbline{they're gathering round with all my friends,}
+\sbline{we're older now, the light is dim}
+\sbline{and you're only just beginning.}
+}
+
+\verse{\sbline{O children}
+}
+
+\verse{\sbline{We have the answer to all your fears,}
+\sbline{it's short, it's simple, it's crystal clear,}
+\sbline{it's round about, it's somewhere here}
+\sbline{lost amongst our winnings.}
+}
+
+\chorus{}
+
+\verse{\sbline{The cleaners have done their job on you,}
+\sbline{they're hip to it man they're in the groove,}
+\sbline{they've hosed you down, you're good as new,}
+\sbline{they're lining up to inspect you.}
+}
+
+\verse{\sbline{O children}
+}
+
+\columnbreak
+\verse{\sbline{Poor old Jim's white as a ghost,}
+\sbline{he's found the answer that was lost,}
+\sbline{we're all weeping now weeping because}
+\sbline{there ain't nothing we can do to protect you.}
+}
+
+\chorus{}
+
+\verse{\sbline{Hey little train we're jumping on}
+\sbline{the train that goes to the kingdom,}
+\sbline{we're happy ma we're having fun}
+\sbline{and the train ain't even left the station.}
+}
+
+\verse{\sbline{Hey little train wait for me,}
+\sbline{I once was blind but now I see,}
+\sbline{have you left a seat for me, }
+\sbline{is that such a stretch of imagination?}
+}
+
+\verse{\sbline{Hey little train wait for me,}
+\sbline{I was held in chains but now I'm free,}
+\sbline{I'm hanging in there don't you see}
+\sbline{in this process of elimination.}
+}
+
+\verse{\sbline{Hey little train we're jumping on}
+\sbline{the train that goes to the kingdom,}
+\sbline{we're happy ma we're having fun}
+\sbline{and it's beyond my wildest expectation.}
+}
+
+\verse{\sbline{Hey little train we're jumping on}
+\sbline{the train that goes to the kingdom,}
+\sbline{we're happy ma we're having fun}
+\sbline{and the train ain't even left the station\ldots }
+}
+
+\end{multicols}
+
+
+\song{Obelisk}{Vladimír Mišík}{}
+
+\verse{\sbline{\chordslyrics{\chord{Asus2}}{Milovali se, jen když se }\chordslyrics{\chord{Em7}}{měli rádi,}}
+\sbline{\chordslyrics{\chord{Asus2}}{kávu pili, když jim bylo }\chordslyrics{\chord{Em7}}{černo,}}
+\sbline{\chordslyrics{\chord{Asus2}}{neptali se, kdo je druhá -- }\chordslyrics{\chord{Em7}}{druhý,}}
+\sbline{\chordslyrics{\chord{Asus2}}{platili dluhy bez antických }\chordslyrics{\chord{Em7}}{gest.}}
+}
+
+\verse{\sbline{\chord{Am}\chord{G}\chord{C}\chord{Em}}
+}
+
+\verse{\sbline{Utopili se a šli pak spolu domů }
+\sbline{koupili si Tuttiho, medvídka s duší v plyši,}
+\sbline{a také několik osobních nepřátel,}
+\sbline{jenže pak nevěděli, pro pána co s nimi.}
+}
+
+\verse{\sbline{\chord{Am}\chord{G}\chord{C}\chord{Em}}
+}
+
+\verse{\sbline{Náruživostem svým rozorali meze,}
+\sbline{v parku hudba hrála, ona plakala,}
+\sbline{šetřili si, podívat se chtěli do Pompejí }
+\sbline{dříve než nějací piloti z pitomých rozkazů.}
+}
+
+\verse{\sbline{\chord{Am}\chord{G}\chord{C}\chord{Em}}
+}
+
+\verse{\sbline{Kvetly jim růže a tvářičky na mrazu,}
+\sbline{naplňovali údivem cukřenky, svět a sebe,}
+\sbline{byli nezaručení, ale též neodvysílaní,}
+\sbline{léčili kočku, která spolkla nit.}
+\sbline{Uprostřed té niti světlo odejít,}
+\sbline{umřeli v horoucím a přesvědčivém stisku,}
+\sbline{toto je pravda, pravda, samá pravda, }
+\sbline{KONEC OBELISKU. }
+}
+
+
+
+\song{One of My Turns}{Pink Floyd}{The Wall (1973)}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Day after day, }\chordslyrics{\chord{Em}}{love turns gray}}
+\sbline{like the \chordslyrics{\chord{F}}{skin of a dying }\chordslyrics{\chord{C}}{man.}}
+\sbline{\chordslyricshyphen{\chord{C}}{And night after night, we pre}\chordslyrics{\chord{Em}}{tend it's all right}}
+\sbline{but \chordslyrics{\chord{Dm}}{I have grown older and}}
+\sbline{you have grown colder and}
+\sbline{nothing is very much \chordslyrics{\chord{G7}}{fun anymore.}}
+}
+
+\verse{\sbline{And I can feel one of my turns coming on.}
+\sbline{I feel cold as a razor blade,}
+\sbline{tight as a tourniquet,}
+\sbline{dry as a funeral drum.}
+}
+
+\verse{\sbline{\chordslyrics{\chord{E$\flat$}}{Run to the }\chordslyrics{\chord{B$\flat$}}{bedroom,}}
+\sbline{in the \chordslyrics{\chord{E$\flat$}}{suitcase on the }\chordslyrics{\chord{B$\flat$}}{left}}
+\sbline{you'll \chordslyrics{\chord{C7}}{find my }\chordslyrics{\chord{Dm}}{favourite axe.}\chordslyrics{\chord{Am}\chord{Dm}\chord{Am}}{}}
+}
+
+\verse{\sbline{Don't look so frightened,}
+\sbline{this is just a passing phase,}
+\sbline{one of my bad days.}
+}
+
+\verse{\sbline{Would you like to watch T.V.?}
+\sbline{Or get between the sheets?}
+\sbline{Or contemplate the silent freeway?}
+\sbline{Would you like something to eat?}
+}
+
+\verse{\sbline{Would you like to learn to fly?  Would you?}
+\sbline{Would you like to see me try?}
+}
+
+\verse{\sbline{\chord{D}\chord{D}\chord{G}\chord{C}\chord{E$\flat$}\chord{B$\flat$}\chord{E$\flat$}\chord{B$\flat$}\chord{Dm}\chord{E$\flat$}\chord{B$\flat$}\chord{E$\flat$}\chord{B$\flat$}\chord{Dm}\chord{Am7}\chord{Dm7}\chord{C}}
+}
+
+\verse{\sbline{Would you like to call the cops?}
+\sbline{Do you think it's time I stopped?}
+\sbline{\chordslyrics{\chord{Gm9}}{Why are you running away?}}
+}
+
+
+
+\song{Opět na výletě}{Vlasta Redl}{Na výletě (1990)}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Říkali, }\chordslyrics{\chord{Dm}\chord{Am}}{že už tě }\chordslyrics{\chord{G}}{neuvidím,}}
+\sbline{\chordslyrics{\chord{Am}}{a chtěli slyšet }\chordslyrics{\chord{Dm}}{jména }\chordslyrics{\chord{Am}}{nějakých }\chordslyrics{\chord{G}}{dalších lidí.}}
+\sbline{\chordslyrics{\chord{Dm}}{Ale já nikoho }\chordslyrics{\chord{C}}{neznám, ani }\chordslyrics{\chord{F}}{tebe milá,}}
+\sbline{\chordslyrics{\chord{Dm}}{vím jen, že jsi }\chordslyrics{\chord{C}}{pryč, žes mě }\chordslyrics{\chord{F}}{opustila}}
+}
+
+\verse{\sbline{Říkali, že to mám pustit z hlavy,}
+\sbline{a chodit víc ven, že mám jen jedno zdraví.}
+\sbline{Ale já nemám zájem o žádné uzdravení!}
+\sbline{\chordslyrics{\chord{Am}}{Říkali, }\chordslyrics{\chord{Dm}\chord{Am}}{že čas }\chordslyrics{\chord{G}}{všechno spraví\ldots }}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{A}}{Tak konečně }\chordslyrics{\chord{D}}{mám zas aspoň }\chordslyrics{\chord{E}}{po starostech,}}
+\sbline{\chordslyrics{\chord{A}}{co bude }\chordslyrics{\chord{D}}{zítra a co }\chordslyrics{\chord{E}}{potom a jak je to prosté.}}
+\sbline{\chordslyrics{\chord{Hm7}}{Zas můžu }\chordslyrics{\chord{A}}{lhát a chodit si, }\chordslyrics{\chord{D}}{kam chci domů,}}
+\sbline{\chordslyrics{\chord{Hm7}}{a do rána }\chordslyrics{\chord{A}}{psát, o tom že }\chordslyrics{\chord{D}}{není komu.}}
+}
+
+\verse{\sbline{\chord{F\msharp m}\chord{A}\chord{D}\chord{E(6)}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{C}}{Hrajte mi }\chordslyrics{\chord{F}}{blues, za to že }\chordslyrics{\chord{G}}{se mnou byla,}}
+\sbline{\chordslyrics{\chord{C}}{za každou mou }\chordslyrics{\chord{F}}{půlnoc, v které mě }\chordslyrics{\chord{G}}{probudila,}}
+\sbline{\chordslyrics{\chord{Dm7}}{hrajte mi }\chordslyrics{\chord{C}}{blues, že aspoň }\chordslyrics{\chord{F}}{našli jsme se}}
+\sbline{\chordslyrics{\chord{Dm7}}{a že mám }\chordslyrics{\chord{C}}{rozum, který }\chordslyrics{\chord{F}}{všechno snese.}}
+}
+
+\chorus{\sbline{Hrajte mi blues za moje skvělé plány,}
+\sbline{že už budu hodný a na prstě omotaný,}
+\sbline{hrajte mi blues, ať si s ním zacpu uši,}
+\sbline{ať neslyším ticho, co mi zbylo v duši.}
+}
+
+\verse{\sbline{\chord{2$\times$}\chord{A}\chord{D}\chord{A}\chord{E}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Hm}}{Hrajte mi }\chordslyrics{\chord{A}}{blues za tu, co }\chordslyrics{\chord{D}}{o mě stála,}}
+\sbline{\chordslyrics{\chord{Hm}}{hrajte mi }\chordslyrics{\chord{A}}{blues, i kdyby }\chordslyrics{\chord{D}}{jenom lhala,}}
+\sbline{\chordslyrics{\chord{Hm}}{hrajte mi }\chordslyrics{\chord{A}}{blues, že na tomhle }\chordslyrics{\chord{D}}{krásném světě}}
+\sbline{už se mi \chordslyrics{\chord{Hm}}{nechce být }\chordslyrics{\chord{A}}{jinak, než jen }\chordslyrics{\chord{D}}{na výletě\ldots }}
+}
+
+\verse{\sbline{\chord{Am}\chord{Dm}\chord{Am}\chord{G}}
+}
+
+
+
+\song{Ostrov pokladů}{Karel Kryl}{Monology (1992)}
+
+\verse{\sbline{\chord{C}\chord{Am}\chord{F}\chord{G}\chord{C}\chord{Am}\chord{F}\chord{G}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Jsem zřejmě }\chordslyrics{\chord{Am}}{na hlavu, když }\chordslyrics{\chord{F}}{o pocty se }\chordslyrics{\chord{G}}{nervu,}}
+\sbline{\chordslyrics{\chord{C}}{když s proudem }\chordslyrics{\chord{Am}}{neplavu a }\chordslyricshyphen{\chord{F}}{raději pro Mi}\chordslyrics{\chord{G}}{nervu}}
+\sbline{přepřahám \chordslyrics{\chord{C}}{Pegasy, }\chordslyrics{\chord{Am}\chord{F}\chord{G}}{přepřahám }\chordslyrics{\chord{C}}{Pegasy}\chordslyrics{\chord{Am}\chord{F}\chord{G}\chord{(C7)}}{}}
+}
+
+\verse{\sbline{Jsem zřejmě na mozek, když hledám před vzlétnutím }
+\sbline{k přistání podvozek a do vztyku se nutím }
+\sbline{s rizikem pro vlasy, s rizikem pro vlasy. }
+}
+
+\chorus{\sbline{\chordslyrics{\chord{F}}{Když místo po Hradu sám chodím po ulici, }}
+\sbline{\chordslyrics{\chord{C}}{když smím a nekradu, }\chordslyrics{\chord{D7}}{jsem zřejmě }\chordslyrics{\chord{G}}{na palici,}}
+\sbline{\chordslyrics{\chord{C}}{já zůstal }\chordslyrics{\chord{Am}}{pozadu, }\chordslyrics{\chord{F}}{hniju si }\chordslyrics{\chord{G}}{na vesnici }\chordslyrics{\chord{C}}{rád.}\chordslyrics{\chord{Am}\chord{F}\chord{G}}{}}
+}
+
+\verse{\sbline{Jsem zřejmě na lebku, když nechci nové bohy }
+\sbline{či pestrou nálepku a preferuji nohy }
+\sbline{k pohybu po zemi, k pohybu po zemi. }
+}
+
+\verse{\sbline{Jsem zřejmě na bednu, když nevím, kolik za to, }
+\sbline{když strachem neblednu a píšu pro Erató, }
+\sbline{byť zase v podzemí, byť zase v podzemí. }
+}
+
+\chorus{\sbline{Spláchl jsem dozadu výhodnou investici: }
+\sbline{lépe žít o hladu, než zdobit šibenici! }
+\sbline{Svůj ostrov pokladů v domečku na vesnici, }
+\sbline{svůj ostrov pokladů v domečku na hranici, }
+\sbline{svůj ostrov pokladů v exilu za hranicí mám\ldots   }
+}
+
+
+
+\song{Palaces of Montezuma}{Nick Cave / Grinderman}{Idiot Prayer (2020)}
+
+\verse{\sbline{\chord{F}\chord{A}\chord{B$\flat$}\chord{C}\chord{B$\flat$}\chord{F}\chord{C}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{F}}{Psychedelic invocations,}}
+\sbline{\chordslyrics{\chord{F}}{Mata Hari }\chordslyrics{\chord{B$\flat$}}{at the station}}
+\sbline{\chordslyrics{\chord{C}}{I give to you,}}
+\sbline{\chordslyrics{\chord{B$\flat$}}{a Java princess of Hindu birth,}}
+\sbline{\chordslyrics{\chord{F}}{a woman of flesh, a child of earth}}
+\sbline{\chordslyrics{\chord{C}}{I give to you.}}
+}
+
+\verse{\sbline{The hanging gardens of Babylon,}
+\sbline{Miles Davis, the black unicorn}
+\sbline{I give to you,}
+\sbline{the Palaces of Montezuma,}
+\sbline{the Gardens of Akbar's tomb}
+\sbline{I give to you.}
+}
+
+\verse{\sbline{The spider Goddess and the Needle Boy,}
+\sbline{the slave-dwarves that they employ}
+\sbline{I give to you,}
+\sbline{a custard-coloured super-dream}
+\sbline{of Ali McGraw and Steve McQueen}
+\sbline{I give to you.}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{B$\flat$}}{C'mon }\chordslyrics{\chord{F}}{baby, get me out of the }\chordslyrics{\chord{C}}{cold}}
+\sbline{and \chordslyrics{\chord{B$\flat$}}{give me, give me, give me your }\chordslyrics{\chord{F}}{precious love for }\chordslyrics{\chord{C}}{me to hold.}}
+}
+
+\chorus{}
+
+\verse{\sbline{The epic of Gilgamesh,}
+\sbline{a pretty little black A-line dress}
+\sbline{I'll buy it for you,}
+\sbline{the spinal cord of JFK,}
+\sbline{wrapped in Marilyn Monroe's negligee}
+\sbline{I give to you.}
+}
+
+\verse{\sbline{I want nothing in return,}
+\sbline{just the softest little breathless word}
+\sbline{I ask of you,}
+\sbline{a word contained in a grain of sand}
+\sbline{can barely walk, can't even stand}
+\sbline{I ask of you.}
+}
+
+\chorus{}
+
+\chorus{}
+
+
+
+\song{Paranoid Eyes}{Pink Floyd}{The Final Cut (1983)}
+
+\verse{\sbline{\chordslyrics{\chord{G}}{Button your lip and }\chordslyrics{\chord{C}}{don't let shield }\chordslyrics{\chord{G}}{slip,}}
+\sbline{take a fresh grip on your \chordslyrics{\chord{C}}{bullet-proof }\chordslyrics{\chord{G}}{mask,}}
+\sbline{\chordslyrics{\chord{C}}{and if they try to break down your disguise with their }\chordslyrics{\chord{G}}{questions,}\chordslyrics{\chord{D}\chord{C}}{}}
+\sbline{you can \chordslyrics{\chord{G}}{hide, }\chordslyrics{\chord{D}}{hide, }\chordslyrics{\chord{C}}{hide, }\chordslyrics{\chord{G/B}\chord{Am}}{}}
+\sbline{behind paranoid \chordslyrics{\chord{G}}{eyes.}}
+}
+
+\verse{\sbline{You put on our brave face and slip over the road for a jar,}
+\sbline{fixing your grin as you casually lean on the bar,}
+\sbline{laughing too loud at the rest of the world}
+\sbline{with the boys in the crowd,}
+\sbline{you hide, hide, hide,}
+\sbline{behind petrified eyes.}
+}
+
+\verse{\sbline{\chord{C}\chord{G}\chord{C}\chord{G}\chord{C}\chord{G}\chord{Em}\chord{D}\chord{Am}\chord{G}}
+}
+
+\verse{\sbline{You believed in their stories of fame, fortune and glory,}
+\sbline{now you're lost in a haze of alchohol soft middle age,}
+\sbline{the pie in the sky turned out to be miles too high,}
+\sbline{and you hide, hide, hide,}
+\sbline{behind brown and mild eyes.}
+}
+
+
+
+\song{Pole, tráva a činžáky}{Květy}{Bílé včely (2012)}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{A zdá se mi, že hadi ovíjejí }\chordslyrics{\chord{Em}}{zem,}}
+\sbline{\chordslyrics{\chord{Am7}}{měsíc bude ti v patách, }\chordslyrics{\chord{Em(7)}}{kameny hlídají cestu.}}
+\sbline{V tak nízkém obilí není kde se skrýt,}
+\sbline{hoří\ldots ~ a kolem oken sune se dým.}
+}
+
+\verse{\sbline{Ptám se paní v metru, kudy mám jít,}
+\sbline{říká, že Ježíš mě vidí, protože vidí všechny.}
+\sbline{Právě se vrací zpátky, o stanici dřív}
+\sbline{nechala ležet svůj batoh, přiletěla z USA.}
+}
+
+\verse{\sbline{Pole tráva a činžáky jsou tady stejný,}
+\sbline{postavy Špejbla s Hurvínkem na lavici v přízemí.}
+}
+
+\verse{\sbline{[: A zdává se mi o ní sen,}
+\sbline{zdává se mi, zdává se mi o ní sen :]}
+\sbline{(A jako duhová křída)}
+\sbline{Zdává se mi o ní sen,}
+\sbline{zdává se mi, že hadi ovíjejí zem.}
+}
+
+
+
+\song{Possible Pasts}{Pink Floyd}{The Final Cut (1983)}
+
+\verse{\sbline{They \chordslyrics{\chord{G}}{flutter behind you your possible }\chordslyrics{\chord{Am}}{pasts,}}
+\sbline{some \chordslyrics{\chord{C}}{brighteyed and crazy, some }\chordslyrics{\chord{D}}{frightened and }\chordslyrics{\chord{G}}{lost.}}
+\sbline{A \chordslyricshyphen{\chord{G}}{warning to anyone still in com}\chordslyrics{\chord{Am}}{mand}}
+\sbline{\chordslyrics{\chord{C}}{of their possible }\chordslyrics{\chord{D}}{future, to take }\chordslyrics{\chord{G}}{care.}}
+\sbline{In \chordslyricshyphen{\chord{G}}{derelict sidings the poppies en}\chordslyrics{\chord{Am}}{twine}}
+\sbline{with \chordslyrics{\chord{C}}{cattle trucks lying in }\chordslyrics{\chord{D}}{wait for the next }\chordslyrics{\chord{G}}{time.}}
+\sbline{\chordslyrics{\chord{Em}}{Do you remember me, how we used to be,}}
+\sbline{do you think we should be \chordslyrics{\chord{D}}{closer?}}
+}
+
+\verse{\sbline{She stood in the doorway, the ghost of a smile,}
+\sbline{haunting her face like a cheap hotel sign.}
+\sbline{Her cold eyes imploring the men in their macs}
+\sbline{for the gold in their bags or the knives in their backs.}
+\sbline{Stepping up boldly one put out his hand,}
+\sbline{he said, ``I was just a child then, now I'm only a man.''}
+\sbline{Do you remember me,  how we used to be,}
+\sbline{do you think we should be closer?}
+}
+
+\verse{\sbline{\chord{Em}\chord{C}\chord{Em}\chord{C}\chord{Em}\chord{D}\chord{C}\chord{D}\chord{Cmaj9}}
+}
+
+\verse{\sbline{By the cold and religious we were taken in hand,}
+\sbline{shown how to feel good and told to feel bad.}
+\sbline{Strung out behind us the banners and flags}
+\sbline{of our possible pasts lie in tatters and rags.}
+\sbline{Do you remember me, how we used to be,}
+\sbline{do you think we should be closer?}
+}
+
+
+
+\song{Přijdu hned}{Vlasta Redl}{O kolo zpět (1997)}
+
+\verse{\sbline{Tady je \chordslyrics{\chord{D}}{kruh, tady je }\chordslyrics{\chord{A/C\msharp }}{dvůr, tady }\chordslyrics{\chord{G}}{bydlí}\chordslyrics{\chord{Em}}{}}
+\sbline{moje \chordslyrics{\chord{Hm}}{pýcha a }\chordslyricshyphen{\chord{G}}{štěstí napo}\chordslyrics{\chord{A}}{sled,}}
+\sbline{tady jsou \chordslyrics{\chord{G}}{knížky, tady }\chordslyrics{\chord{Hm}}{svíce, tady }\chordslyrics{\chord{Em}}{hrnky, tady }\chordslyrics{\chord{A}}{lžíce,}}
+\sbline{kdybys šel \chordslyrics{\chord{D}}{pryč, tady je }\chordslyrics{\chord{A}}{klíč, přijdu }\chordslyrics{\chord{D}}{hned.}}
+}
+
+\verse{\sbline{To vpravo je les, tohle je vřes a tudy sever,}
+\sbline{téhle cesty už je konec nadohled,}
+\sbline{tohle je Zlín a támhle blízko, to už je Melbourne, San Francisco,}
+\sbline{sedni si sem, někde tu jsem, přijdu hned.}
+}
+
+\verse{\sbline{Támhleto je pták, to velké je mrak, tím se prší,}
+\sbline{a tímhle přivoláš si slunce zase zpět,}
+\sbline{tohle je výhled na Kokořín a tahle okna vedou k moři,}
+\sbline{tady je gin, tady led, já přijdu hned.}
+}
+
+\verse{\sbline{Tohle je stůl, tohle čaj a tohle papír,}
+\sbline{mávni tužkou a tvoji mrtví ožijí,}
+\sbline{je to tak snadné, až to mrzí, že nejde chtít být tak drzý}
+\sbline{a stvořit si svět jenom z vět a melodií.}
+}
+
+\verse{\sbline{\ldots a tam právě jsem a snad se vrátím,}
+\sbline{kdyby ne včas, nech jí tu vzkaz, že jsi tu byl.}
+}
+
+
+
+\song{Příteli}{Vlasta Redl}{O kolo zpět (1997)}
+
+\verse{\sbline{\chord{E}\chord{E4/B}\chord{E}\chord{B}\chord{(A)}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{E}}{Příteli }\chordslyrics{\chord{E4/B}}{z dávných }\chordslyrics{\chord{E}}{válek, }\chordslyrics{\chord{B}}{píšu to }\chordslyrics{\chord{E}}{psaní,}\chordslyrics{\chord{E4/B}\chord{E}\chord{B}}{}}
+\sbline{\chordslyrics{\chord{E}}{jak jsem }\chordslyrics{\chord{E4/B}}{před lety }\chordslyrics{\chord{E}}{slíbil }\chordslyricshyphen{\chord{B}}{na trnko}\chordslyrics{\chord{E}}{braní.}\chordslyrics{\chord{E4/B}\chord{E}\chord{B}}{}}
+\sbline{Stále \chordslyrics{\chord{F\msharp m}}{mířím }\chordslyricshyphen{\chord{B}}{na jiho}\chordslyrics{\chord{E}}{západ,}}
+\sbline{jsem už \chordslyrics{\chord{F\msharp m}}{za horama, }\chordslyrics{\chord{B}}{za vodou, }\chordslyrics{\chord{G}}{což rač }\chordslyrics{\chord{A}}{chápat,}}
+\sbline{můj \chordslyrics{\chord{E}}{rytíři }\chordslyrics{\chord{E4/B}}{bez lázně a }\chordslyrics{\chord{E}}{vany }\chordslyrics{\chord{B}}{z hotelu }\chordslyrics{\chord{E}}{Blaník.}\chordslyrics{\chord{E4/B}\chord{E}\chord{B}}{}}
+}
+
+\verse{\sbline{Tady je zima už za námi a ledy tají,}
+\sbline{kdo zasil v prosinci banány, tomu už zrají.}
+\sbline{A ze všech koutů život zas vstává,}
+\sbline{všude pupeny, lupeny, květiny, tráva,}
+\sbline{na nebi kometa s vlečkou a Hanka se vdává.}
+}
+
+\verse{\sbline{\chordslyrics{\chord{3$\times$}}{~ }\chordslyrics{\chord{E}\chord{E4/B}\chord{E}\chord{B}}{}}
+\sbline{\chordslyrics{\chord{C\msharp m}}{~ }\chordslyrics{\chord{A}\chord{B}\chord{C\msharp m}}{}}
+\sbline{\chordslyrics{\chord{C\msharp m/G\msharp }}{~ }\chordslyrics{\chord{A}\chord{B}\chord{E}}{}}
+\sbline{\chordslyrics{\chord{2$\times$}}{~ }\chordslyrics{\chord{E}\chord{E4/B}\chord{E}\chord{B}\chord{(A)}}{}}
+}
+
+\verse{\sbline{Válka skončila, zdá se, a vojsko se vrací,}
+\sbline{i tažní ptáci a nástroje do restaurací.}
+\sbline{A všem to pípá v Motorolách,}
+\sbline{hlavně Jarmilám a Hynkům jaro volá.}
+\sbline{Je tu veselo, jak dřív jen o demonstracích.}
+}
+
+\verse{\sbline{\chord{B}}
+}
+
+\verse{\sbline{Můj milý příteli kdesi tam, do časů pravých,}
+\sbline{posílám kousek Tvé písně a všichni Tě zdraví.}
+\sbline{Mrkací panenku, kuličku skleněnku,}
+\sbline{papuče, čelenku, neplatnou vstupenku,}
+\sbline{raketu, míček a kačenku na klíček. (ať jsi třeba trochu nemocný, jen když jsi pravý)}
+\sbline{\chordslyrics{\chord{C\msharp m}}{A možná  }\chordslyrics{\chord{A}}{ještě víc  }\chordslyrics{\chord{B}}{dáme to }\chordslyrics{\chord{C\msharp m}}{mu, }}
+\sbline{kdo si nás, \chordslyrics{\chord{A}}{kdo si nás  }\chordslyrics{\chord{B}}{vezme do }\chordslyrics{\chord{E}}{mů. }}
+}
+
+\verse{\sbline{mezihra}
+}
+
+\verse{\sbline{Příteli z dávných válek, píšu to psaní,}
+\sbline{jak jsem před léty slíbil na trnkobraní\ldots }
+}
+
+
+
+\song{Rozeznávám}{Michal Horáček / Petr Hapka}{V penziónu Svět (1988)}
+
+\verse{\sbline{\chordslyrics{\chord{Dm7}}{Máš tucty }\chordslyrics{\chord{G7}}{známých, ale }\chordslyrics{\chord{C}}{kdo tě zná?}}
+\sbline{Máš \chordslyrics{\chord{Dm7}}{vlastní píseň, }\chordslyrics{\chord{G7}}{kdo však ví, jak }\chordslyrics{\chord{C}}{zní?}}
+\sbline{\chordslyrics{\chord{Dm7}}{Máš }\chordslyricshyphen{\chord{G7}}{pocit, že jsi zaku}\chordslyrics{\chord{Am}}{tálená,}}
+\sbline{jak \chordslyrics{\chord{Dm7}}{drobná mince }\chordslyrics{\chord{F}}{pod rohožkou }\chordslyrics{\chord{G}}{dní.}}
+}
+
+\chorus{\sbline{Já však \chordslyrics{\chord{Dm7}}{rozeznávám, }\chordslyrics{\chord{G7}}{zvuk chůze, co se }\chordslyrics{\chord{C}}{odráží}}
+\sbline{od výloh hlučných \chordslyrics{\chord{Dm7}}{pasáží, }\chordslyricshyphen{\chord{G7}}{tvou samotu, tvé záva}\chordslyrics{\chord{C}}{ží.}}
+\sbline{Já vždy \chordslyrics{\chord{Dm7}}{rozeznávám }\chordslyrics{\chord{G7}}{tvé boky, když jdeš }\chordslyrics{\chord{C}}{ulicí, }}
+\sbline{tvé vlasy mezi \chordslyrics{\chord{Dm7}}{pšenicí, }\chordslyricshyphen{\chord{G7}}{tvou vůni mezi tisí}\chordslyrics{\chord{C}}{ci.}}
+\sbline{Já vždy \chordslyrics{\chord{Dm7}}{rozeznávám, }\chordslyrics{\chord{G7}}{hravě rozeznávám.}\chordslyrics{\chord{Dm7}}{}}
+}
+
+\verse{\sbline{Máš pravdu, ale kdo ti za ni dá?}
+\sbline{Máš hlavu plnou utajených snů.}
+\sbline{Máš podezření, že jsi vlastně zbytečná,}
+\sbline{jak malá piha skrytá pohledům.}
+}
+
+\chorus{}
+
+\verse{\sbline{\chordslyrics{\chord{Gm7}}{Máš svoje }\chordslyrics{\chord{C7}}{léta, právě }\chordslyrics{\chord{F}}{jako já,}}
+\sbline{máš \chordslyrics{\chord{Gm7}}{načase jít už }\chordslyrics{\chord{C7}}{vlastním barvám }\chordslyrics{\chord{F}}{vstříc.}}
+\sbline{\chordslyrics{\chord{Gm7}}{Má lásko, }\chordslyricshyphen{\chord{C7}}{nejsi, nejsi nevi}\chordslyrics{\chord{Dm}}{ditelná,}}
+\sbline{já \chordslyrics{\chord{Gm7}}{věřím, že ti }\chordslyrics{\chord{B$\flat$}}{budu moci }\chordslyrics{\chord{C}}{říct:}}
+}
+
+\chorus{\sbline{Já vždy \chordslyrics{\chord{Gm7}}{rozeznávám }\chordslyrics{\chord{C7}}{tvé boky, když jdeš }\chordslyrics{\chord{F}}{ulicí, }}
+\sbline{tvé vlasy mezi \chordslyrics{\chord{Gm7}}{pšenicí, }\chordslyricshyphen{\chord{C7}}{tvou vůni mezi tisí}\chordslyrics{\chord{F}}{ci.}}
+\sbline{Já tě \chordslyrics{\chord{Gm7}}{rozeznávám, }\chordslyrics{\chord{C7}}{jak vlčí máky }\chordslyrics{\chord{F}}{v osení, }}
+\sbline{jak ostrov mezi  \chordslyrics{\chord{Gm7}}{dlážděním, }\chordslyricshyphen{\chord{C7}}{tvá grácie se nemě}\chordslyrics{\chord{F}}{ní.}}
+\sbline{Já tu \chordslyrics{\chord{Gm7}}{rozeznávám\ldots  }\chordslyrics{\chord{C7}\chord{F}}{}}
+}
+
+
+
+\song{Setkání s Puškinem}{Bulat Okudžava / Jaromír Nohavica}{V tom roce pitomém (1990)}
+
+\verse{\sbline{\chordslyrics{\chord{E7}}{Co bylo, je }\chordslyrics{\chord{Am}}{pryč jednou }\chordslyrics{\chord{E7}}{provždy a stesky jsou }\chordslyrics{\chord{Am}}{k ničemu,}}
+\sbline{každá epocha \chordslyrics{\chord{C}}{má vlastní }\chordslyrics{\chord{G}}{kulisy herce i }\chordslyrics{\chord{Am}}{kus}}
+\sbline{\chordslyrics{\chord{A7}}{a líto mi }\chordslyrics{\chord{Dm}}{je, že už }\chordslyrics{\chord{G}}{nikdy se nesetkám }\chordslyrics{\chord{Am}}{s Puškinem,}}
+\sbline{nezajdu si \chordslyrics{\chord{E7}}{s ním na čaj do bistra U sedmi }\chordslyrics{\chord{Am}}{hus.}\chordslyrics{\chord{E7}}{}}
+}
+
+\verse{\sbline{Dnes už nechodíme jak zastara bosáci naboso,}
+\sbline{řvou motory aut, my z oken sčítáme galaxie,}
+\sbline{a líto mi je, že už po Moskvě nejezdí drožkáři}
+\sbline{a nebudou víc, nebudou a to líto mi je.}
+}
+
+\verse{\sbline{Před tebou se skláním, má bezbřehá epocho poznání,}
+\sbline{a vzdávám ti hold, lidský rozume nad rozumem,}
+\sbline{a líto mi je, že jak dřív se i dnes bůžkům klaníme}
+\sbline{a na kolenou bijem hlavami o tvrdou zem.}
+}
+
+\verse{\sbline{Podél našich cest dlouhé aleje vítězných praporů,}
+\sbline{náš boj za to stál, my máme vše, za co šli jsme se bít,}
+\sbline{a líto mi je, že se stavějí pomníky z mramoru}
+\sbline{a vyšší než my, vyšší než veškerá vítězství.}
+}
+
+\verse{\sbline{Co bylo, je pryč, vyjdu ven na špacír, koukám, noc je tu,}
+\sbline{vtom z ničeho nic vedle arbatských vrat u vody}
+\sbline{stojí drožkář a kůň a pan Puškin jde po prázdném prospektu,}
+\sbline{já krk za to dám, zítra že se něco přihodí\ldots }
+}
+
+
+
+\song{Si je perds}{ZAZ}{Recto verso (2013)}
+
+\verse{\sbline{\chordslyrics{\chord{Hm}}{J’me sens }\chordslyrics{\chord{G}}{brocante, }\chordslyrics{\chord{A}}{j’suis la }\chordslyrics{\chord{G}\chord{F\msharp m}}{méchante,}}
+\sbline{\chordslyricshyphen{\chord{Hm}}{si mes en}\chordslyrics{\chord{G}}{fants m’invitent, }\chordslyrics{\chord{A}}{je fais la }\chordslyrics{\chord{G}\chord{F\msharp m}}{pas contente,}}
+\sbline{\chordslyrics{\chord{G}}{et quand ils me visitent, }\chordslyrics{\chord{F\msharp m}}{je suis la transparente.}}
+}
+
+\verse{\sbline{J’me sens pâlotte, je me sanglote,}
+\sbline{mes enfants me nettoient, des inconnus me sortent,}
+\sbline{à croire quand je me vois, \chordslyrics{\chord{A}}{que je suis déjà morte.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Hm}}{Si je perds la mémoire, faudrait pas s’inquiéter,}}
+\sbline{\chordslyrics{\chord{A}}{c’est qu’ma vie est au soir d’une triste journée,}}
+\sbline{\chordslyrics{\chord{Em}}{si je perds la raison, faudrait pas s’en vouloir,}}
+\sbline{\chordslyrics{\chord{G}}{si c’est plus ma maison, }\chordslyrics{\chord{F\msharp m}}{laissez-moi dans l’couloir.}}
+\sbline{Si je perds les pédales, et si ça vous inquiète,}
+\sbline{si ça vous fait trop mal, je n’sais plus qui vous êtes,}
+\sbline{et si je perds la boule, n’ayez pas trop pitié,}
+\sbline{ma tête est une foule de visages oubliés.}
+}
+
+\verse{\sbline{J’me sens friperie, j’me fais momie,}
+\sbline{mes enfants me déplacent, comme un vieux manuscrit,}
+\sbline{et j’ai les feuilles qui cassent, et je suis mal écrit.}
+}
+
+\verse{\sbline{J’me sens bizarre, j’me vis trop tard,}
+\sbline{si je repense aux instants, où j’ai fait sans savoir,}
+\sbline{la course avec le temps, sans me dire au revoir.}
+}
+
+\chorus{}
+
+\verse{\sbline{\chord{Hm}\chord{A}\chord{Em}\chord{G}\chord{F\msharp m}}
+}
+
+\chorus{\sbline{\ldots }
+\sbline{et si je perds la tête, n’ayez pas trop pitié,}
+\sbline{bientôt je serai bête et vous aurez oublié.}
+}
+
+
+
+\song{Sladké je žít}{Vladimír Mišík}{}
+
+\verse{\sbline{Šel jsem si sednout k řece a koukal, jak vlny jdou,}
+\sbline{šel jsem si sednout k řece a koukal, jak vlny jdou,}
+\sbline{a potom jsem tam skočil, byl jsem hned pod vodou. }
+}
+
+\verse{\sbline{Vyplul jsem a začal vzlykat, vyplul jsem a spustil křik,}
+\sbline{vyplul jsem a začal vzlykat, vyplul jsem a spustil křik, }
+\sbline{kdyby voda nebyla tak chladná, byl bych už nebožtík. }
+}
+
+\verse{\sbline{Jel jsem šestnáct pater a koukal Bohu do oken, }
+\sbline{jel jsem šestnáct pater a koukal Bohu do oken, }
+\sbline{myslel jsem na svý děvče a dlouho váhal se skokem.}
+}
+
+\verse{\sbline{Stál jsem tam a začal vzlykat, stál jsem a spustil křik, }
+\sbline{stál jsem tam a začal vzlykat, stál jsem a spustil křik, }
+\sbline{kdybych nebyl tak vysoko, byl bych už nebožtík. }
+}
+
+\verse{\sbline{Tak asi budu žít dále, nezbýva, než abych žil, }
+\sbline{tak asi budu žít dále, nezbýva, než abych žil, }
+\sbline{pro lásku bych třeba umřel, ale pro život jsem se narodil. }
+}
+
+\verse{\sbline{Můžete mě vidět vzlykat, slyšet mě jak spustím křik, }
+\sbline{můžete mě vidět vzlykat, slyšet mě jak spustím křik, }
+\sbline{má milá třeba se vztekni, nebude ze mě nebožtík.}
+}
+
+
+
+\song{Smíchov}{Severní nástupiště}{O krysách a vlcích (2018)}
+
+\verse{\sbline{\chordslyrics{\chord{Em}}{Smíchov je zamračenej, přeplněný tramvaje,}}
+\sbline{lidi \chordslyrics{\chord{F*}}{koukaj na boty nebo na čůrky, co po sklech jedou.}}
+\sbline{\chordslyrics{\chord{Em}}{Před nádražím vdechnou pizzu a nechaj okraje}}
+\sbline{a \chordslyrics{\chord{F*}}{na obloze nevidět nic jinýho než šedou.}}
+}
+
+\chorus{\sbline{Vono to \chordslyrics{\chord{G}}{schne a }\chordslyrics{\chord{D}}{padá a }\chordslyrics{\chord{Em}}{v restauraci }\chordslyrics{\chord{C}}{Oáza}}
+\sbline{\chordslyrics{\chord{G}}{z rádia }\chordslyrics{\chord{H7}}{dohrává }\chordslyrics{\chord{Em}}{páteční }\chordslyrics{\chord{C}}{hitparáda}}
+\sbline{\chordslyrics{\chord{G}}{nádražní }\chordslyricshyphen{\chord{D}}{rozhlas ztich}\chordslyrics{\chord{Em}}{nul a tebou }\chordslyrics{\chord{C}}{projede,}}
+\sbline{že vlak ze \chordslyrics{\chord{G}}{severního }\chordslyrics{\chord{D}}{nástupiště }\chordslyrics{\chord{Em}}{odjíždí zas }\chordslyricshyphen{\chord{C}}{bez te}\chordslyrics{\chord{G}}{be.}\chordslyrics{\chord{D}\chord{Em}\chord{C}\chord{G}\chord{D}\chord{Em}\chord{C}}{}}
+}
+
+\verse{\sbline{Smíchovu zmrzl úsměv, vypliv vajgl do sněhový břečky,}
+\sbline{vzala ho žena bez domova a dala do krabičky.}
+\sbline{Vosum dní starej ježíš bloudí ránem novoroční kocoviny,}
+\sbline{nikdo nenabízí šumák, prej každej ze včerejška nese si dost svojí špíny.}
+}
+
+\chorus{\sbline{Vono to mrzne a studí a v restaruaci Oáza}
+\sbline{klapnutí dalšího grogu ho svůdně budí (?),}
+\sbline{nádražní rozhlas ztichnul a tebou projede,}
+\sbline{že vlak ze severního nástupiště odjíždí zas bez tebe.}
+}
+
+\verse{\sbline{Smíchov se tiše culí, ví to, co je jen v náznacích vidět,}
+\sbline{že nacucaný pupeny na stromech se vmáčknout zpátky nedaj.}
+\sbline{Nikdo moc nevěří, maj pocit, že bylo to jenom kdysi dávno v kině,}
+\sbline{jak ptáci vrací se a do větví a na troleje sedaj.}
+}
+
+\chorus{\sbline{Vono to voní a kvete a v restaruaci Oáza}
+\sbline{ti tělem něco novýho najednou tepe,}
+\sbline{dopíjíme pivo a nádražní rozhlas zapřede,}
+\sbline{že na severní nástupiště přijíždí vlak pro mě i pro tebe,}
+\sbline{pro mě i pro tebe.}
+}
+
+\chorus{}
+
+\verse{\sbline{F* = 033200}
+}
+
+
+
+\song{Somrkrálka blues}{Nerez}{}
+
+\verse{\sbline{\chord{Cmaj7}\chord{Dm7}\chord{Em7}\chord{Dm7}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{Cmaj7}}{Vlasy až na paty, }\chordslyrics{\chord{H7}}{třepivý záplaty, }}
+\sbline{\chordslyrics{\chord{Cmaj7}}{má řeči nahatý, }\chordslyrics{\chord{A7}}{somrkrálka blues,}}
+\sbline{\chordslyrics{\chord{Dm7}}{v kapse jako }\chordslyrics{\chord{G}}{proprietu }\chordslyrics{\chord{Dm7}}{jabko, jednu }\chordslyrics{\chord{G}}{cigaretu,}}
+\sbline{\chordslyrics{\chord{Cmaj7}}{vločky sbírá }\chordslyrics{\chord{A7}}{do baretu, }\chordslyrics{\chord{Dm7}}{když má léto }\chordslyrics{\chord{G}}{půst.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Cmaj7}}{Kantýny, čekárny, }\chordslyrics{\chord{A7}}{básničky na koleně,}}
+\sbline{\chordslyrics{\chord{Dm7}}{o paní }\chordslyrics{\chord{G}}{z pekárny, }\chordslyrics{\chord{Dm7}}{co má se }\chordslyrics{\chord{G}}{čím dál stejně,}}
+\sbline{\chordslyrics{\chord{Cmaj7}}{uprostřed pohádky }\chordslyrics{\chord{A7}}{nevíme, jak to bylo,}}
+\sbline{\chordslyrics{\chord{Dm7}}{cukrovkář }\chordslyrics{\chord{Em7}}{nedopil }\chordslyrics{\chord{Fmaj7}}{třetinkový }\chordslyrics{\chord{G}}{pivo.}\chordslyrics{\chord{G+}}{}}
+}
+
+\verse{\sbline{Koflíkům od fíkusu, zastávkám autobusu }
+\sbline{v zeleným hubertusu zpívá somrblues, }
+\sbline{vlasy až na paty, třepivý záplaty, }
+\sbline{má řeči nahatý, ta somrkrálka blues.}
+}
+
+\chorus{}
+
+\verse{\sbline{\chord{Cmaj7}\chord{Dm7}\chord{Em7}\chord{Dm7}}
+}
+
+
+
+\song{Stagger Lee}{Nick Cave \& the Bad Seeds}{Murder Ballads (1996)}
+
+\verse{\sbline{It was \chordslyrics{\chord{Dm}}{back in '32 when times were hard,}}
+\sbline{he had a Colt .45 and a deck of cards, \chordslyrics{\chord{Am}}{Stagger Lee.}}
+}
+
+\verse{\sbline{He wore rat-drawn shoes and an old stetson hat,}
+\sbline{had a '28 Ford, had payments on that, Stagger Lee.}
+}
+
+\verse{\sbline{His woman threw him out in the ice and snow}
+\sbline{and she told him, ``Never ever come back no more, Stagger Lee.''}
+}
+
+\verse{\sbline{So he walked through the rain and he walked through the mud}
+\sbline{till he came to a place called The Bucket Of Blood, Stagger Lee.}
+}
+
+\verse{\sbline{He said ``Mr Motherfucker, you know who I am,''}
+\sbline{and the barkeep said, ``No, and I don't give a good goddamn,'' to Stagger Lee.}
+}
+
+\verse{\sbline{He said, ``Well bartender, it's plain to see}
+\sbline{I'm that bad motherfucker called Stagger Lee, Mr. Stagger Lee.''}
+}
+
+\verse{\sbline{Well, the barkeep said, ``Yeah, I've heard your name down the way}
+\sbline{and I kick motherfucking asses like you every day, Mr. Stagger Lee.''}
+}
+
+\verse{\sbline{Well those were the last words that the barkeep said}
+\sbline{'cause Stag put four holes in his motherfucking head.}
+}
+
+\verse{\sbline{Just then in came a broad called Nellie Brown}
+\sbline{known to make more money than any bitch in town.}
+}
+
+\verse{\sbline{She struts across the bar, hitching up her skirt,}
+\sbline{over to Stagger Lee, she's starting to flirt with Stagger Lee.}
+}
+
+\verse{\sbline{She saw the barkeep, said, ``O God, he can't be dead!''}
+\sbline{Stag said, ``Well, just count the holes in the motherfucker's head.''}
+}
+
+\verse{\sbline{She said, ``You ain't look like you scored in quite a time,}
+\sbline{why not come to my pad? It won't cost you a dime, Mr. Stagger Lee.''}
+}
+
+\verse{\sbline{``But there's something that I have to say before you begin:}
+\sbline{You'll have to be gone before my man Billy Dilly comes in, Mr. Stagger Lee.''}
+}
+
+\verse{\sbline{``I'll stay here till Billy comes in, till time comes to pass}
+\sbline{and furthermore I'll fuck Billy in his motherfucking ass,'' Said Stagger Lee.}
+}
+
+\verse{\sbline{``I'm a bad motherfucker, don't you know}
+\sbline{and I'll crawl over fifty good pussies just to get one fat boy's asshole,'' said Stagger Lee.}
+}
+
+\verse{\sbline{Just then Billy Dilly rolls in and he says, ``You must be}
+\sbline{that bad motherfucker called Stagger Lee.''}
+}
+
+\verse{\sbline{``Yeah, I'm Stagger Lee and you better get down on your knees}
+\sbline{and suck my dick, because If you don't you're gonna be dead,'' said Stagger Lee.}
+}
+
+\verse{\sbline{Well, Billy Dilly dropped down and slobbered on his head}
+\sbline{and Stag filled him full of lead\ldots }
+}
+
+
+
+\song{Starej pán}{Petr Skoumal}{}
+
+\verse{\sbline{\chordslyrics{\chord{E$\flat$}}{Starej pán sedí a }\chordslyrics{\chord{G7}}{poslouchá jazz}}
+\sbline{a \chordslyrics{\chord{B$\flat$m6}}{zdá se mu, jako by to }\chordslyrics{\chord{C7}}{bylo }\chordslyrics{\chord{Fm}}{dnes,}}
+\sbline{\chordslyrics{\chord{A$\flat$m6}}{jako by zase u }\chordslyrics{\chord{E$\flat$}}{baru stál}}
+\sbline{a \chordslyrics{\chord{Cm/A}}{na pódiu }\chordslyrics{\chord{A$\flat$maj7}}{Django }\chordslyrics{\chord{G7}}{hrál.}}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{E$\flat$}}{Starej pán sedí a }\chordslyrics{\chord{G7}}{poslouchá jazz}}
+\sbline{a \chordslyrics{\chord{B$\flat$m6}}{zdá se mu, jako by to }\chordslyrics{\chord{C7}}{bylo }\chordslyrics{\chord{Fm}}{dnes,}}
+\sbline{\chordslyrics{\chord{A$\flat$m6}}{starej pán sedí a }\chordslyrics{\chord{E$\flat$}}{poslouchá }\chordslyrics{\chord{C7}}{jazz}}
+\sbline{a \chordslyrics{\chord{F7}}{na desce se }\chordslyrics{\chord{B$\flat$7}}{točí }\chordslyrics{\chord{E$\flat$}}{pes.}}
+}
+
+\verse{\sbline{Jó, \chordslyrics{\chord{G7}}{ráno si vzal čistý }\chordslyrics{\chord{Cm}}{ponožky}}
+\sbline{a \chordslyrics{\chord{G7}}{zajel si do Paříže bez }\chordslyrics{\chord{Cm}}{doložky,}}
+\sbline{\chordslyrics{\chord{G7}}{jezdilo se z Wilsonova }\chordslyrics{\chord{Cm}}{nádraží}}
+\sbline{a \chordslyrics{\chord{A$\flat$m6}}{neměli jsme v kufru žádný }\chordslyrics{\chord{B$\flat$7}}{závaží, jé.}}
+}
+
+\chorus{}
+
+\verse{\sbline{Jó, to tenkrát ještě žila naštěstí }
+\sbline{ta slečna z Fügnerova náměstí, }
+\sbline{v sobotu kupoval jí pralinky }
+\sbline{a komunisti byli takhle malinký, jé. }
+}
+
+\chorus{}
+
+\verse{\sbline{Vlaky byly čistý a dochvilný }
+\sbline{a názory a strany rozdílný, }
+\sbline{jenže za starejma časy spadla opona, }
+\sbline{teď máme mírnej pokrok v mezích zákona, jé. }
+}
+
+\chorus{\sbline{Tak sedí u starýho přístroje }
+\sbline{a místo whisky láhev Prazdroje, }
+\sbline{starej pán sedí a poslouchá jazz }
+\sbline{a na desce se točí pes. }
+}
+
+
+
+\song{Stříhali dohola malého chlapečka}{Josef Kainar / Vladimír Mišík}{}
+
+\verse{\sbline{\chordslyricshyphen{\chord{G}}{Stříhali dohola malé}\chordslyrics{\chord{C}}{ho chlapečka,}}
+\sbline{\chordslyricshyphen{\chord{Am}}{kadeře padaly k ze}\chordslyrics{\chord{D}}{mi a zmíraly,}}
+\sbline{\chordslyrics{\chord{G}}{kadeře padaly }\chordslyrics{\chord{C}}{jak růže do hrobu,}}
+\sbline{\chordslyrics{\chord{D}}{železná židle se }\chordslyrics{\chord{Am}}{otáčela.}\chordslyrics{\chord{Em}}{}}
+}
+
+\verse{\sbline{Šedaví pánové v zrcadlech kolem stěn }
+\sbline{jenom se dívali, jenom se dívali, }
+\sbline{že už je chlapeček chycen a obelstěn }
+\sbline{v té bílé zástěře kolem krku. }
+}
+
+\verse{\sbline{Jeden z nich, kulhavý učitel na čelo, }
+\sbline{zasmál se nahlas a všichni se pohnuli, }
+\sbline{zasmál se nahlas a ono to zaznělo }
+\sbline{jako kus masa když pleskne o zem. }
+}
+
+\verse{\sbline{\chord{C}\chord{Am7}\chord{D}\chord{G}}
+}
+
+\verse{\sbline{Učeň se dívá na malého chlapečka, }
+\sbline{jak malé zvíře se dívává na jiné, }
+\sbline{ještě ne chytit a rváti si z cizího, }
+\sbline{a už přeci\ldots  }
+}
+
+\verse{\sbline{Ráno si staví svou růžovou bandasku }
+\sbline{na malá kamínka, na Vincka chcípáčka,}
+\sbline{a proto učňovy všelijaké myšlenky }
+\sbline{jsou vždycky stranou a trochu vlažné. }
+}
+
+\verse{\sbline{Toužení svědící jak uhry pod mýdlem, }
+\sbline{toužení svědící po malé šatnářce, }
+\sbline{sedává v kavárně pod svými kabáty }
+\sbline{jako pod mladými oběšenci. }
+}
+
+\verse{\sbline{Stříhali dohola malého chlapečka, }
+\sbline{dívat se na sebe, nesmět se pohnouti, }
+\sbline{nesmět se pohnouti na židli z železa, }
+\sbline{už mu to začlo\ldots  }
+}
+
+
+
+\song{Šaškové počmáraní}{Michal Horáček / Petr Hapka}{}
+
+\begin{multicols}{2}\raggedcolumns
+\verse{\sbline{\chordslyrics{\chord{C}}{Koukněte na toho }\chordslyrics{\chord{H7}}{fintila,}}
+\sbline{\chordslyrics{\chord{Dm}}{pod krkem žlutého }\chordslyrics{\chord{G7}}{motýla,}}
+\sbline{\chordslyrics{\chord{Dm}}{zelený klobouček }\chordslyrics{\chord{G7}}{do týla,}}
+\sbline{\chordslyrics{\chord{D7}}{šoupne si }\chordslyrics{\chord{G7}}{na bílou }\chordslyrics{\chord{C}}{pleš.}\chordslyrics{\chord{G}}{}}
+}
+
+\verse{\sbline{I když ten tralalák padá mi,}
+\sbline{hlavně že vyhrávám barvami,}
+\sbline{hlavně že vyhrávám barvami,}
+\sbline{zase jsem šťastnej jak veš. }
+}
+
+\chorus{\sbline{Co po mně \chordslyrics{\chord{F}}{chceš, pravdu či }\chordslyrics{\chord{Fm}}{lež,}}
+\sbline{zkus ty dvě \chordslyrics{\chord{C}}{rozeznat, a pak se }\chordslyrics{\chord{C7}}{směj,}}
+\sbline{barevný \chordslyrics{\chord{F}}{svět láme mi }\chordslyrics{\chord{Fm}}{hřbet,}}
+\sbline{\chordslyrics{\chord{Em7}}{přesto chci být }\chordslyrics{\chord{Am7}}{šašek }\chordslyricshyphen{\chord{Dm7}}{počmára}\chordslyrics{\chord{G7}}{nej.}}
+}
+
+\verse{\sbline{Ucho mu hryžou jak oplatku,}
+\sbline{s rozběhem kopou ho do zadku,}
+\sbline{tvrděj, že všechno je v pořádku,}
+\sbline{když mu daj mizernej plat. }
+}
+
+\verse{\sbline{Když ale koukám se na lidi, }
+\sbline{všechno tak černě zas nevidím, }
+\sbline{všechno tak černě zas nevidím, }
+\sbline{ještě se dovedem smát. }
+}
+
+\columnbreak
+\chorus{\sbline{Ne že se snad není co bát,}
+\sbline{úzkost má tlapy jak Cassius Clay,}
+\sbline{ten věčný strach na miskách vah,}
+\sbline{převážit chce šašek počmáranej. }
+}
+
+\verse{\sbline{Kampak chcem ve věku rozumu}
+\sbline{strkat prý své nosy na gumu, }
+\sbline{určitě od rumu z konzumu }
+\sbline{tak strašně červené jsou. }
+}
+
+\verse{\sbline{Ptám se však tebe náš osude, }
+\sbline{co bude, až tady nebude, }
+\sbline{co bude, až tady nebude, }
+\sbline{dojemně pitomá show. }
+}
+
+\chorus{\sbline{Bláhová show, šaškové jdou }
+\sbline{barevnou naději vytřískat z ní,}
+\sbline{hledáme brod uprostřed vod,}
+\sbline{my věční šaškové počmáraní. }
+}
+
+\verse{\sbline{Ptám se však tebe náš osude, }
+\sbline{co bude, až tady nebude,}
+\sbline{co bude, až tady nebude, }
+\sbline{dojemně pitomá show. }
+}
+
+\end{multicols}
+
+
+\song{Špejchar blues}{Vladimír Mišík}{}
+
+\verse{\sbline{\chordslyrics{\chord{E7}}{Noc už končí }\chordslyrics{\chord{A7}}{a nad Špejcharem }\chordslyrics{\chord{E7}}{svítá}}
+\sbline{\chordslyricshyphen{\chord{A7}}{a mně začíná bejt zas do zpě}\chordslyrics{\chord{E7}}{vu,}}
+\sbline{\chordslyrics{\chord{C9}}{to je ta pravá chvíle}}
+\sbline{\chordslyrics{\chord{F\msharp m7b5}}{pro moje }\chordslyrics{\chord{H7alt}}{ranní }\chordslyrics{\chord{E7}}{blues.}\chordslyrics{\chord{H7}}{}}
+}
+
+\verse{\sbline{Vypil jsem víc, než mý nohy snesou, }
+\sbline{ale hlavu pořád jasnou mám, }
+\sbline{ruce se trochu třesou }
+\sbline{jak tolik jinejch rán. }
+}
+
+\verse{\sbline{Jo, až se budu ranní mlhou vracet, }
+\sbline{na cestu si načnu další lahvový, }
+\sbline{uvidím bílý myši }
+\sbline{a možná i klobouk ve křoví. }
+}
+
+\verse{\sbline{Já vám věřím, že sem dávno měl bejt jinej, }
+\sbline{za ty prachy měl jsem si koupit vůz, }
+\sbline{já radši zpívám }
+\sbline{svoje ranní Špejchar blues. }
+}
+
+
+
+\song{Špitál u sv. Jakuba}{Zdeněk Rytíř / ASPM / traditional}{}
+
+\verse{\sbline{\chordslyrics{\chord{Em}}{Vstoupil jsem }\chordslyrics{\chord{H7}}{do baru jako }\chordslyrics{\chord{Em}}{obvykle}\chordslyrics{\chord{H7}}{}}
+\sbline{\chordslyrics{\chord{Em}}{a na první }\chordslyrics{\chord{H7}}{pohled poznal jsem }\chordslyrics{\chord{Em}}{hned,}\chordslyrics{\chord{H7}}{}}
+\sbline{\chordslyrics{\chord{Em}}{že něco }\chordslyrics{\chord{H7}}{podivnýho visí tady }\chordslyrics{\chord{Em}}{v ovzduší }\chordslyrics{\chord{H7}}{}}
+\sbline{jako když \chordslyrics{\chord{C(maj)}}{ve whisky }\chordslyrics{\chord{H7}}{rozpouští se }\chordslyrics{\chord{Em}}{led.}\chordslyrics{\chord{H7}\chord{Em}\chord{H7}}{}}
+}
+
+\verse{\sbline{Po mý levici stál Joe McQueeny }
+\sbline{a kalným zrakem prohlížel si nás,}
+\sbline{když dopil, všichni v baru naráz ztichli }
+\sbline{a ticho proříz jeho roztřesenej hlas.}
+}
+
+\verse{\sbline{Jak vám příjdu do St. James Infirmary, }
+\sbline{uvidím hned ženu svou }
+\sbline{ležet přikrytou bílou plachtou, }
+\sbline{jak by se zdálo na pohled blaženou.}
+}
+
+\verse{\sbline{Chyt jsem hned na chodbě doktora,}
+\sbline{povídá, že je to s ní fakt hodně zlý,}
+\sbline{a tak běžím zpátky, ale už jsem přišel pozdě,}
+\sbline{mrtvá leží na stole.}
+}
+
+\verse{\sbline{Šestnáct černejch koní }
+\sbline{a jeden z nich má obtěžkanej hřbet,}
+\sbline{šestnáct žen jde za nima }
+\sbline{a jen jedna z nich už nevrátí se zpět.}
+}
+
+\verse{\sbline{Až jednou umřu chci slyšet holky zpívat }
+\sbline{a nechci slyšet už vůbec žádnej pláč }
+\sbline{a jen jazzband ať Pánu Bohu poví,}
+\sbline{kdo k němu přichází a co jsem zač.}
+}
+
+\verse{\sbline{Tak jste teda slyšeli celej můj příběh }
+\sbline{a nevím už, co dál bych měl říct vám, }
+\sbline{jen až se vás zeptaj, proč tolik piju,}
+\sbline{tak řekněte, že jsem v kartách prohrál vše, co mám, }
+\sbline{že v kartách jsem prohrál vše, co mám.}
+}
+
+
+
+\song{The Final Cut}{Pink Floyd}{The Final Cut (1983)}
+
+\verse{\sbline{\chordslyrics{\chord{F}}{Through the fish eyed lens of tear stained }\chordslyrics{\chord{C}}{eyes}}
+\sbline{I can \chordslyrics{\chord{B$\flat$}}{barely define the shape of this moment in }\chordslyrics{\chord{F}}{time.}}
+\sbline{And \chordslyricshyphen{\chord{F}}{far from flying high in clear blue ski}\chordslyrics{\chord{C}}{es}}
+\sbline{I'm \chordslyrics{\chord{B$\flat$}}{spiraling down, to the hole in the ground where I }\chordslyrics{\chord{F}}{hide.}\chordslyrics{\chord{G}}{}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{B$\flat$}}{If you negotiate the }\chordslyrics{\chord{F}}{minefield in the drive,}}
+\sbline{\chordslyrics{\chord{B$\flat$}}{and beat the dogs, and cheat the cold }\chordslyrics{\chord{F}}{electronic eyes,}}
+\sbline{\chordslyrics{\chord{B$\flat$}}{and if you }\chordslyrics{\chord{C}}{make it past the }\chordslyrics{\chord{Dm}}{shotguns in the hall,}}
+\sbline{\chordslyrics{\chord{Gm7}}{dial the combination, open the priesthole}}
+\sbline{And if I'm in, I'll \chordslyrics{\chord{C}}{tell you\ldots  }\chordslyrics{\chord{F}}{}}
+}
+
+\verse{\sbline{\chordslyricshyphen{\chord{Am}}{There's a kid who had a big halluci}\chordslyrics{\chord{F}}{nation,}}
+\sbline{\chordslyricshyphen{\chord{Am}}{making love to girls in maga}\chordslyrics{\chord{C}}{zines,}}
+\sbline{he \chordslyrics{\chord{B$\flat$}}{wonders if you're sleeping with your }\chordslyrics{\chord{Dm}}{new found faith\ldots }}
+\sbline{\chordslyrics{\chord{Gm7}}{could anybody love him?}}
+\sbline{Or \chordslyrics{\chord{C}}{is it just a crazy }\chordslyrics{\chord{F}}{dream?}}
+}
+
+\verse{\sbline{\chord{C}\chord{B$\flat$}\chord{F}}
+}
+
+\verse{\sbline{And if I show you my dark side,}
+\sbline{will you still hold me tonight?}
+\sbline{And if I open my heart to you,}
+\sbline{show you my weak side,}
+\sbline{what would you do?}
+}
+
+\verse{\sbline{Would you sell your story to Rolling Stone?}
+\sbline{Would you take the children away, and leave me alone?}
+\sbline{And smile in reassurance as you whisper down the phone,}
+\sbline{would you send me packing?}
+\sbline{Or would you take me home?}
+}
+
+\verse{\sbline{\chord{Am}\chord{F}\chord{Am}\chord{C}\chord{B$\flat$}\chord{Dm}\chord{Gm7}\chord{F}}
+}
+
+\verse{\sbline{Thought I oughta bare my naked feelings,}
+\sbline{thought I oughta tear the curtain down,}
+\sbline{I held the blade in trembling hands,}
+\sbline{prepared to make it but\ldots }
+\sbline{just then the phone rang.}
+\sbline{I never had the nerve to make The Final Cut}
+}
+
+
+
+\song{The Gunner's Dream}{Pink Floyd}{The Final Cut (1983)}
+
+\verse{\sbline{\chord{G}\chord{G+}\chord{Em}\chord{C}\chord{G}\chord{D}\chord{Em}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{G}}{Floating down }\chordslyrics{\chord{G+}}{through the clouds,}}
+\sbline{\chordslyrics{\chord{Em/G}}{memories come rushing }\chordslyrics{\chord{C}}{up to meet me now.}}
+\sbline{In the \chordslyrics{\chord{G}}{space between the heavens and in the }\chordslyrics{\chord{D}}{corner of some foreign field}}
+\sbline{\chordslyrics{\chord{C}}{I had a }\chordslyrics{\chord{G}}{dream,}\chordslyrics{\chord{Em}\chord{C}}{}}
+\sbline{I had a \chordslyrics{\chord{G}}{dream.}}
+}
+
+\verse{\sbline{Goodbye Max, goodbye Ma,}
+\sbline{after this service when you're walking slowly to the car}
+\sbline{and the silver in her hair shines in the cold November air,}
+\sbline{\chordslyrics{\chord{Em}}{you hear the tolling bell and }\chordslyrics{\chord{Cmaj7}}{touch the silk in }\chordslyrics{\chord{D/C}}{your lapel.}\chordslyrics{\chord{C}}{}}
+\sbline{And \chordslyrics{\chord{G}}{as the tear drops rise to meet the }\chordslyrics{\chord{D}}{comfort of the band,}\chordslyrics{\chord{Em}}{}}
+\sbline{\chordslyrics{\chord{C}}{you take her frail }\chordslyrics{\chord{D}}{hand and hold on to the dream.}}
+}
+
+\verse{\sbline{\chord{G}\chord{G+}\chord{Em}\chord{C}\chord{D}\chord{G}\chord{D}\chord{Em}\chord{D}\chord{C}\chord{D/C}\chord{G}\chord{D}\chord{C}\chord{G}\chord{Em}\chord{C}\chord{Em}}
+}
+
+\verse{\sbline{A place to stay, enough to eat,}
+\sbline{Somewhere old heroes shuffle safely down the street.}
+\sbline{Where you can speak out loud about your doubts and fears,}
+\sbline{And what's more no-one ever disappears,}
+\sbline{You never hear their standard issue kicking in your door.}
+\sbline{You can relax on both sides of the tracks,}
+\sbline{and mani\chordslyrics{\chord{Em}}{acs don't blow holes in }\chordslyricshyphen{\chord{C}}{bandsmen by re}\chordslyrics{\chord{D7/C}}{mote control,}}
+\sbline{and \chordslyrics{\chord{G}}{everyone has recourse to the }\chordslyrics{\chord{D}}{law,}}
+\sbline{and \chordslyricshyphen{\chord{C}}{no-one kills the children any}\chordslyrics{\chord{G}}{more,}\chordslyrics{\chord{Em}}{}}
+\sbline{\chordslyricshyphen{\chord{C}}{no-one kills the children any}\chordslyrics{\chord{G}}{more.}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Night after }\chordslyrics{\chord{D}}{night, going }\chordslyrics{\chord{G}}{round and }\chordslyrics{\chord{D}}{round my }\chordslyrics{\chord{Em}}{brain,}\chordslyrics{\chord{D}}{}}
+\sbline{his \chordslyrics{\chord{C}}{dream is }\chordslyricshyphen{\chord{D}}{driving me in}\chordslyrics{\chord{G}}{sane.}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{G}}{In the corner of some foreign field, the }\chordslyrics{\chord{D}}{gunner sleeps tonight,}}
+\sbline{\chordslyrics{\chord{Em}}{what's done is done.}\chordslyrics{\chord{C}\chord{D/C}}{}}
+\sbline{We \chordslyrics{\chord{G}}{cannot just write off his final }\chordslyrics{\chord{D}}{scene,}}
+\sbline{\chordslyrics{\chord{C}}{take heed of his }\chordslyricshyphen{\chord{G}}{dream,}\chordslyrics{\chord{Em}\chord{C}}{take }\chordslyrics{\chord{Em}}{heed.}}
+}
+
+
+
+\song{The Ship Song}{Nick Cave \& the Bad Seeds}{The Good Son (1990)}
+
+\chorus{\sbline{\chordslyrics{\chord{G}}{Come sail your }\chordslyrics{\chord{D}}{ships around me,}}
+\sbline{\chordslyrics{\chord{C}}{and burn your }\chordslyrics{\chord{G}}{bridges }\chordslyrics{\chord{D}}{down,}}
+\sbline{\chordslyrics{\chord{G}}{we make a little }\chordslyrics{\chord{D}}{history, baby,}}
+\sbline{\chordslyrics{\chord{C}}{every time you }\chordslyricshyphen{\chord{G}}{come a}\chordslyrics{\chord{D}}{round.}}
+}
+
+\chorus{\sbline{Come loose your dogs upon me,}
+\sbline{and let your hair hang down,}
+\sbline{you are a little mystery to me}
+\sbline{every time you come around.}
+}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{We talk about it }\chordslyrics{\chord{G}}{all night }\chordslyrics{\chord{D}}{long,}}
+\sbline{\chordslyrics{\chord{C}}{we define our }\chordslyrics{\chord{G}}{moral }\chordslyrics{\chord{D}}{ground,}}
+\sbline{\chordslyricshyphen{\chord{Em}}{but when I crawl in}\chordslyrics{\chord{G}}{to your arms,}}
+\sbline{\chordslyrics{\chord{C}}{everything, it comes }\chordslyrics{\chord{G}}{tumbling }\chordslyrics{\chord{D}}{down.}}
+}
+
+\chorus{\sbline{Come sail your ships around me\ldots }
+}
+
+\verse{\sbline{Your face has fallen sad now}
+\sbline{for you know the time is nigh,}
+\sbline{when I must remove your wings}
+\sbline{and you, you must try to fly.}
+}
+
+\chorus{\sbline{Come sail your ships around me\ldots }
+}
+
+\chorus{\sbline{Come loose your dogs upon me\ldots }
+}
+
+\chorus{\sbline{Come sail your ships around me\ldots }
+}
+
+
+
+\song{Topol}{Vlasta Redl}{}
+
+\verse{\sbline{\chordslyrics{\chord{D}}{Stojí topol v širém }\chordslyricshyphen{\chord{G}}{po}\chordslyrics{\chord{D}}{lu,}}
+\sbline{připo\chordslyricshyphen{\chord{A}}{mí}\chordslyrics{\chord{D}}{ná.}}
+\sbline{\chordslyrics{\chord{D}}{Že sme my dva byli }\chordslyricshyphen{\chord{G}}{spo}\chordslyrics{\chord{D}}{lu,}}
+\sbline{moja \chordslyricshyphen{\chord{G}}{mi}\chordslyrics{\chord{D}}{lá.}}
+\sbline{\chordslyrics{\chord{Hm}}{Že tam kdysi stromy stály,}}
+\sbline{\chordslyrics{\chord{Em}}{než jich ludé }\chordslyrics{\chord{A}}{vyrúbali.}}
+\sbline{\chordslyrics{\chord{D}}{Aby sa jim }\chordslyricshyphen{\chord{G}}{pšeni}\chordslyrics{\chord{D}}{čka}}
+\sbline{\chordslyricshyphen{\chord{A}}{zrodi}\chordslyrics{\chord{D}}{la.}}
+}
+
+\verse{\sbline{\chord{D}\chord{A}\chord{G}\chord{Em}\chord{D}\chord{A}\chord{D}}
+}
+
+\verse{\sbline{Šumí pšenka v širém polu}
+\sbline{jak dlúhý den.}
+\sbline{Že sme my dva byli spolu}
+\sbline{a nebudem.}
+\sbline{Já tu pšenku půjdem kosit}
+\sbline{a za tebe boha prosit.}
+\sbline{Aby si sa třeba s iným}
+\sbline{dobře měla.}
+}
+
+
+
+\song{Trochu v hlavě mám}{ASPM}{}
+
+\verse{\sbline{\chordslyrics{\chord{E}}{Trochu }\chordslyrics{\chord{F\msharp m}}{v hlavě mám,}\chordslyrics{\chord{B7}}{}}
+\sbline{chodím \chordslyrics{\chord{F\msharp m}}{sem a tam,}\chordslyrics{\chord{B7}}{}}
+\sbline{blou\chordslyrics{\chord{E}}{mám, }\chordslyricshyphen{\chord{E6}}{cou}\chordslyrics{\chord{E}}{rám.}\chordslyrics{\chord{E6}}{}}
+}
+
+\verse{\sbline{Chodím po Zlíně,}
+\sbline{páchnu po víně,}
+\sbline{bloumám líně.}
+}
+
+\chorus{\sbline{Pane \chordslyrics{\chord{E}}{strážníku, }}
+\sbline{vždyť ta \chordslyrics{\chord{E7}}{trocha povyku,}}
+\sbline{to nic není, to nic \chordslyrics{\chord{A}}{neznamená,}}
+\sbline{to já \chordslyrics{\chord{Am}}{mívám ve zvyku.}}
+}
+
+\verse{\sbline{Vždyť sám Alláh ví,}
+\sbline{že svět bez láhví}
+\sbline{je zlý, prázdný\ldots }
+}
+
+
+
+\song{V pořádku}{Vlasta Redl}{}
+
+\begin{multicols}{2}\raggedcolumns
+\verse{\sbline{Zase \chordslyrics{\chord{D}}{střílejí do lidí,}}
+\sbline{naštěstí \chordslyrics{\chord{A}}{v cizích krajích,}}
+\sbline{u nás \chordslyrics{\chord{Asus4}}{všechno je v pořádku,}}
+\sbline{chlapi \chordslyrics{\chord{A}}{v hospodě, děti si hrají.}}
+\sbline{A tam \chordslyrics{\chord{Em}}{rodina u stolu}}
+\sbline{dostane úřední zprávu:}
+\sbline{Váš syn byl \chordslyrics{\chord{D}}{zastřelen,}}
+\sbline{zaplaťte za popravu.}
+}
+
+\columnbreak
+\verse{\sbline{Zas mám špatnou náladu,}
+\sbline{to asi z pití špatně mi tráví,}
+\sbline{už taky nejsem v pořádku}
+\sbline{a možná už se neuzdravím.}
+\sbline{Ale nejsem z toho nervózní,}
+\sbline{jedna jistota mi zbyla:}
+\sbline{Není písnička tak dlouhá,}
+\sbline{aby neskončila,}
+\sbline{není písnička tak dlouhá,}
+\sbline{aby neskončila,}
+\sbline{není písnička tak dlouhá\ldots }
+}
+
+\end{multicols}
+\chorus{\sbline{\chordslyrics{\chord{G}}{Ale táto, zas jsem tě deset roků }\chordslyrics{\chord{Hm}}{neviděl,}}
+\sbline{já nechci \chordslyricshyphen{\chord{Em}}{motorku, co jsi mi slíbil za vysvěd}\chordslyrics{\chord{D}}{čení.}}
+\sbline{Ale \chordslyrics{\chord{G}}{táto, jak to mám udělat, abych se }\chordslyrics{\chord{Hm}}{nestyděl,}}
+\sbline{\chordslyricshyphen{\chord{Em}}{že jsem ještě naživu, že taky nejsem zastře}\chordslyrics{\chord{D}}{lený.}}
+}
+
+\verse{\sbline{Zase střílejí do vzduchu}
+\sbline{a do špatných lidí.}
+\sbline{Tak všechno je v pořádku,}
+\sbline{když Pán Bůh to řídí.}
+\sbline{Všichni se sejdeme po smrti}
+\sbline{kolem velkýho piána}
+\sbline{a budem hrát samý veselý}
+\sbline{až do rána.}
+}
+
+\chorus{\sbline{Jenže příteli, mně tohle dávno už nestačí,}
+\sbline{jak mám uvěřit, že tam nahoře bude všechno, jak to tady dole chceme?}
+\sbline{Jak mám uvěřit že budem všichni úplně jinačí,}
+\sbline{že se cestou do nebe samým štěstím pomátneme?}
+}
+
+\verse{\sbline{Zase žena mi vyčítá,}
+\sbline{že jsem málo doma,}
+\sbline{už dávno není to v pořádku,}
+\sbline{láska se nedá dělit dvěma.}
+\sbline{A naše rodina u stolu}
+\sbline{čeká úřední zprávu,}
+\sbline{ale střílet se nebude,}
+\sbline{ani šampaňským na oslavu.}
+}
+
+\chorus{\sbline{Ale paní, jak mám žít bez otce a bez syna}
+\sbline{a bez ducha se motat, po hospodách čekat na zavření?}
+\sbline{Jak mám pořád jen dokola začínat, začínat, začínat,}
+\sbline{jak mám věřit, že se to vůbec někdy změní?}
+}
+
+
+
+\song{V ulicích je déšť}{Randy Newman / Pavel Kácha / ASPM}{}
+
+\verse{\sbline{V ulicích je \chordslyrics{\chord{F}}{déšť}\chordslyrics{\chord{F7/E$\flat$}}{}}
+\sbline{a do mraků se \chordslyrics{\chord{B$\flat$6}}{nevrátí,}\chordslyrics{\chord{B$\flat$m6}}{}}
+\sbline{ta voda tu chce \chordslyrics{\chord{F}}{zůstati}\chordslyrics{\chord{Dm7}}{}}
+\sbline{a nemá žádný \chordslyrics{\chord{G7}}{spěch.}\chordslyrics{\chord{C7}\chord{(F)}\chord{(F7/E$\flat$)}}{}}
+}
+
+\verse{\sbline{V ulicích je déšť}
+\sbline{a město bude hladinou}
+\sbline{a lodi po ní poplynou}
+\sbline{a marně hledat břeh.}
+}
+
+\verse{\sbline{V ulicích je déšť,}
+\sbline{prší i v tomhle podkroví,}
+\sbline{jsme jak vzdálené ostrovy,}
+\sbline{skály, co už se nesejdou.}
+\sbline{V ulicích je déšť\ldots }
+}
+
+\chorus{\sbline{\chordslyrics{\chord{B$\flat$}}{Vím, jsem jen směšnej }\chordslyrics{\chord{C7}}{chlap,}}
+\sbline{\chordslyricshyphen{\chord{Am7}}{nepřizná}\chordslyrics{\chord{D7sus4}\chord{D7}}{vám,}}
+\sbline{\chordslyrics{\chord{Gm7}}{že bych si }\chordslyrics{\chord{C7sus4}\chord{C7}}{přál tě tu }\chordslyrics{\chord{F}}{mít,}\chordslyrics{\chord{E$\flat$/F}}{}}
+\sbline{\chordslyrics{\chord{B$\flat$}}{v ulicích je }\chordslyrics{\chord{C7}}{déšť}}
+\sbline{\chordslyrics{\chord{Am7}}{a já jsem s ním }\chordslyrics{\chord{D7sus4}\chord{D7}}{sám,}}
+\sbline{\chordslyrics{\chord{Gm7}}{už dýl než }\chordslyrics{\chord{C7sus4}\chord{C7}}{měl bych snad }\chordslyrics{\chord{F}}{být.}\chordslyrics{\chord{C7}}{}}
+}
+
+\chorus{}
+
+\verse{\sbline{V ulicích je déšť}
+\sbline{a já poslouchám to šumění,}
+\sbline{divnej tón zvenčí, co se nemění,}
+\sbline{už by měl.}
+}
+
+\verse{\sbline{V ulicích je déšť,}
+\sbline{ty litry vody jsou už zbytečný,}
+\sbline{tys byla teplo a dny slunečný,}
+\sbline{ty jsem chtěl.}
+}
+
+\verse{\sbline{V ulicích je déšť\ldots }
+}
+
+
+
+\song{Variace na renesanční téma}{Václav Hrabě / Vladimír Mišík}{}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Láska je jako }\chordslyrics{\chord{F}}{večernice }\chordslyrics{\chord{G}}{plující černou }\chordslyrics{\chord{Am}}{oblohou,}}
+\sbline{zavřete dveře \chordslyrics{\chord{F}}{na petlice, }\chordslyrics{\chord{G}}{zhasněte v domě všechny }\chordslyrics{\chord{Am}}{svíce}}
+\sbline{a opevněte svoje \chordslyrics{\chord{F}}{těla, }\chordslyrics{\chord{G}}{vy, kterým srdce }\chordslyrics{\chord{Am}}{zkameněla.}}
+}
+
+\verse{\sbline{\chord{C}\chord{G/B}\chord{Am}\chord{F}\chord{D}\chord{D}\chord{Dm}\chord{Em7}\chord{Am(6/7)}}
+}
+
+\verse{\sbline{Láska je jako krásná loď, která ztratila kapitána, }
+\sbline{námořníkům se třesou ruce a bojí se, co bude zrána, }
+\sbline{láska je jako bolest z probuzení a horké ruce hvězd, }
+\sbline{které ti oknem do vězení květiny sypou ze svatebních cest, }
+\sbline{které ti oknem do vězení květiny sypou ze svatebních cest. }
+}
+
+\verse{\sbline{\chord{C}\chord{G/B}\chord{Am}\chord{F}\chord{D}\chord{D}\chord{Dm}\chord{Em7}\chord{Am(6/7)}}
+}
+
+\verse{\sbline{Láska je jako večernice plující černou oblohou, }
+\sbline{náš život hoří jako svíce a mrtví milovat nemohou, }
+\sbline{náš život hoří jako svíce a mrtví milovat nemohou\ldots  }
+}
+
+
+
+\song{Věřím v nás}{ASPM}{}
+
+\begin{multicols}{2}\raggedcolumns
+\verse{\sbline{\chordslyrics{\chord{D}}{Hej, ptej se, jak se mám}}
+\sbline{a kdo z nás bolest zná}
+\sbline{a jestli jsem tě \chordslyrics{\chord{G}}{správně }\chordslyrics{\chord{D}}{vzal.}}
+\sbline{Jen se na ně podívej,}
+\sbline{jak si přejou, abych \chordslyrics{\chord{C}}{šel,}}
+\sbline{abych \chordslyrics{\chord{G}}{zmizel do pekel,}}
+\sbline{protože \chordslyrics{\chord{D}}{věřím v nás.}}
+}
+
+\verse{\sbline{Táhni, odkud jsi sem vlít,}
+\sbline{ty nám ji nesmíš vzít,}
+\sbline{ty jsi jinej, než my chcem.}
+\sbline{Já se jistě nezměním,}
+\sbline{jsem od svejch dveří tisíc mil,}
+\sbline{najednou je necítím,}
+\sbline{protože věřím v nás.}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{C}}{Věřím v nás }\chordslyrics{\chord{G}}{na houpačce úsměvů a }\chordslyrics{\chord{D}}{pláčů,}}
+\sbline{\chordslyrics{\chord{C}}{věřím v nás }\chordslyrics{\chord{G}}{i v to, že umíš }\chordslyrics{\chord{D}}{lítat,}}
+\sbline{\chordslyrics{\chord{C}}{věřím v nás }\chordslyrics{\chord{G}}{i následující }\chordslyrics{\chord{D}}{ráno.}}
+\sbline{\chordslyrics{\chord{G}}{Všechno zlý je }\chordslyrics{\chord{A}}{pryč, co bolí,}}
+\sbline{\chordslyrics{\chord{G}}{když se noc }\chordslyrics{\chord{A}}{ztrácí a jasní,}}
+\sbline{\chordslyrics{\chord{G}}{a já ji }\chordslyrics{\chord{A}}{cejtím ve svým srdci dál.}}
+}
+
+\verse{\sbline{Hej, nech mě tam, kde jsem}
+\sbline{a já pootočím Zem,}
+\sbline{dáváš mi víc než můžu snést.}
+\sbline{Ať si říkají, co chtěj,}
+\sbline{naděj nebo beznaděj,}
+\sbline{vpád moře do pouští}
+\sbline{a já tě opouštím.}
+}
+
+\chorus{\sbline{Věřím v nás jako v žízeň na letních toulkách,}
+\sbline{věřím v nás, i když jsme každej jenom část,}
+\sbline{věřím v nás, i když se bílá mění v~černou.}
+\sbline{Všechno zlý je pryč, co bolí,}
+\sbline{když se noc ztrácí a jasní,}
+\sbline{a já ji cejtím ve svým srdci dál.}
+}
+
+\columnbreak
+\verse{\sbline{Nech mě dozpívat můj part}
+\sbline{díků sekund, snů a kvart,}
+\sbline{vzdor plánům, který se mnou maj.}
+\sbline{Žádnou hořkost necítím,}
+\sbline{kluzký silnice se nebojím,}
+\sbline{vím, že zůstanu,}
+\sbline{protože věřím v nás.}
+}
+
+\end{multicols}
+
+
+\song{Víla}{Robert Křesťan \& Druhá tráva}{Starodávný svět (1994)}
+
+\verse{\sbline{\chordslyrics{\chord{C}}{Jde po skosený }\chordslyricshyphen{\chord{F}}{trá}\chordslyrics{\chord{C}}{vě a jde tak, jak se to }\chordslyricshyphen{\chord{F}}{pí}\chordslyrics{\chord{C}}{še:}}
+\sbline{s větrem \chordslyrics{\chord{Dm}}{v zádech, s kytkou }\chordslyricshyphen{\chord{Gm}}{v hla}\chordslyrics{\chord{Dm}}{vě, }\chordslyrics{\chord{A}\chord{Dm}}{důstojně a }\chordslyricshyphen{\chord{Gm}}{ti}\chordslyrics{\chord{Dm}}{še,}}
+\sbline{a z polí \chordslyrics{\chord{C}}{slítají se }\chordslyricshyphen{\chord{F}}{ptá}\chordslyrics{\chord{C}}{ci a }\chordslyrics{\chord{G}}{každej z nich jí }\chordslyricshyphen{\chord{C}}{vě}\chordslyrics{\chord{G}}{ří}}
+\sbline{a \chordslyrics{\chord{F}}{ona se pak }\chordslyricshyphen{\chord{B$\flat$}}{vra}\chordslyrics{\chord{F}}{cí a má }\chordslyrics{\chord{C}}{v rukou jejich }\chordslyricshyphen{\chord{F}}{pe}\chordslyrics{\chord{C}}{ří.}}
+}
+
+\verse{\sbline{Je to můj člověk s hlavou v kříži, umírající v horku, }
+\sbline{můj plakát na refýži i má socha u New Yorku, }
+\sbline{je to můj voják beze jména, i ten parník v ústí Něvy, }
+\sbline{je to jediná má žena, jenže ta, která to neví. }
+}
+
+\verse{\sbline{Místo \chordslyrics{\chord{Am}}{k ní však mířím }\chordslyricshyphen{\chord{Dm}}{ně}\chordslyrics{\chord{Am}}{kam, kde je ten, co se tak }\chordslyricshyphen{\chord{Dm}}{vzte}\chordslyrics{\chord{Am}}{ká,}}
+\sbline{že ta \chordslyrics{\chord{B$\flat$}}{hrůza, kterou }\chordslyricshyphen{\chord{E$\flat$}}{če}\chordslyrics{\chord{B$\flat$}}{kám, není }\chordslyrics{\chord{F}}{ta, která mě }\chordslyricshyphen{\chord{B$\flat$}}{če}\chordslyrics{\chord{F}}{ká}}
+}
+
+\verse{\sbline{Ten můj pocit nemá hranic, ta má víra bez rezervy, }
+\sbline{že už nezmůžu se na nic, ani na pevný nervy, }
+\sbline{natož na nějakou vílu, a že už nevím, o co kráčí, }
+\sbline{třeba nemám sílu, a třeba mi to stačí. }
+}
+
+
+
+\song{Všechno co chci}{Vlasta Redl}{1998}
+
+\verse{\sbline{Jsem tvoje \chordslyrics{\chord{D}}{malá}\chordslyrics{\chord{D/F\msharp }}{}}
+\sbline{\chordslyrics{\chord{G}}{nešťastná }\chordslyrics{\chord{Hm}}{hvězda,}\chordslyrics{\chord{E9}}{}}
+\sbline{pluju si \chordslyrics{\chord{Gm}}{oblohou,}}
+\sbline{ať \chordslyrics{\chord{C6sus2}}{spíš}}
+\sbline{nebo jsi \chordslyrics{\chord{D}}{na nohou.}\chordslyrics{\chord{A7sus4}\chord{D}}{}}
+}
+
+\verse{\sbline{A tvoje štěstí,}
+\sbline{bláznivá, }
+\sbline{věř,}
+\sbline{mě uhasit nemohou.}
+}
+
+\verse{\sbline{Jsem ten malý }
+\sbline{ohýnek v dálce,}
+\sbline{kde světlo pramení }
+\sbline{ze slz }
+\sbline{a trápení.}
+}
+
+\verse{\sbline{A slyším }
+\sbline{na všechna jména }
+\sbline{tvých šťastných hvězd }
+\sbline{a znamení.}
+}
+
+\chorus{\sbline{\chordslyrics{\chord{Dsus2}}{Všechno co chci je tě }\chordslyrics{\chord{D/G}}{nenechat }\chordslyrics{\chord{(G6/9)}}{jít,}}
+\sbline{\chordslyrics{\chord{Dsus2}}{kam se ti }\chordslyrics{\chord{Em7}}{zlíbí,}}
+\sbline{\chordslyrics{\chord{Dsus2}}{všechno co chci je vzít ti }\chordslyrics{\chord{D/G}}{slunce a }\chordslyrics{\chord{(G6/9)}}{klid,}}
+\sbline{cos mi \chordslyrics{\chord{Hm}}{slíbil.}\chordslyrics{\chord{Hsus2/A}\chord{Hm/A$\flat$}\chord{Hm/G}\chord{Gm7}}{}}
+}
+
+\verse{\sbline{Jsem tvoje malá }
+\sbline{nešťastná hvězda,}
+\sbline{pluju si po mořích }
+\sbline{a pohořích.}
+}
+
+\verse{\sbline{A slyším }
+\sbline{v hlubinách,}
+\sbline{když o mně hovoříš.}
+}
+
+\chorus{}
+
+\verse{\sbline{Jsem tvoje malá }
+\sbline{velryba, blázne,}
+\sbline{občas se vynořím. }
+}
+
+
+
+\song{Znamení doby}{Karel Kryl}{Bratříčku, zavírej vrátka (1969)}
+
+\verse{\sbline{\chord{A}\chord{D}\chord{E}}
+}
+
+\verse{\sbline{\chordslyrics{\chord{D}}{Před okny }\chordslyrics{\chord{A}}{sloup -- }\chordslyrics{\chord{D}}{znamení }\chordslyrics{\chord{A}}{moru,}}
+\sbline{\chordslyrics{\chord{F\msharp m}}{předpověď }\chordslyrics{\chord{A}}{provazů a divných }\chordslyrics{\chord{E}}{mravů,}}
+\sbline{klesáme \chordslyricshyphen{\chord{A}}{hlo}\chordslyrics{\chord{A7}}{ub se strachem }\chordslyrics{\chord{D}}{tvorů}}
+\sbline{\chordslyrics{\chord{F\msharp m}}{před ranou do vazu, }\chordslyrics{\chord{C\msharp m}}{před zlobou }\chordslyrics{\chord{F\msharp m}}{davu.}\chordslyrics{\chord{E}}{}}
+}
+
+\verse{\sbline{Na stěně mříž -- znamení doby, }
+\sbline{děsím se obrázků, děsím se šachu, }
+\sbline{zbyl jenom kříž, zůstaly skoby }
+\sbline{a myšlenka na lásku v zajetí strachu. }
+}
+
+\verse{\sbline{\chordslyrics{\chord{E}}{Zástupy lidí jdou pozpátku vpřed, }\chordslyrics{\chord{F\msharp m}}{tak jako raci,}}
+\sbline{\chordslyrics{\chord{E}}{zbabělost -- hostii každý si pozvedá, }\chordslyrics{\chord{F\msharp m}}{pálí ho dlaň,}}
+\sbline{\chordslyrics{\chord{E}}{mnozí se stydí, že stavěli svět, }\chordslyrics{\chord{F\msharp m}}{některý zvrací,}}
+\sbline{\chordslyrics{\chord{E}}{dávaje bestii }\chordslyrics{\chord{F\msharp m}}{ze svého oběda }\chordslyrics{\chord{C\msharp m}}{povinnou daň.}}
+}
+
+\verse{\sbline{K výkazu ztrát připište sebe, }
+\sbline{že jste jen couvali mlčky a kvapně, }
+\sbline{zato když brát chtěli vám nebe, }
+\sbline{že jste jim kývali, Bože, tak trapně! }
+}
+
+\verse{\sbline{Přes čelo stín -- znamení studu, }
+\sbline{znamení malého lidského strachu, }
+\sbline{na pití blín, k zábavě nudu, }
+\sbline{k důvěře podlého a nasypat hrachu! }
+}
+
+
+
+\song{Žalm 71.}{Karel Kryl}{}
+
+\verse{\sbline{\chordslyrics{\chord{Am}}{Tři černí mravenci topí se v slze }\chordslyrics{\chord{E7}}{srny,}}
+\sbline{nápisy na věnci a na koruně tr\chordslyrics{\chord{Am}}{ny,}}
+\sbline{padáme pod tíží a snažíme se \chordslyrics{\chord{E7}}{dolézt,}}
+\sbline{vlekouce na kříži svou samotu a bolest.}
+}
+
+\chorus{\sbline{Nebe je \chordslyrics{\chord{Dm}}{růžové, po cestě }\chordslyrics{\chord{Am}}{křížové}}
+\sbline{snad konečně \chordslyrics{\chord{G}}{spočinem jak pšenice }\chordslyrics{\chord{Am}}{v klásku,}}
+\sbline{spočinem \chordslyrics{\chord{Dm}}{bez hněvu, přirostli }\chordslyrics{\chord{Am}}{ke dřevu,}}
+\sbline{vždyť nejtěžším \chordslyrics{\chord{G}}{zločinem }\chordslyrics{\chord{E}}{je hlásati }\chordslyrics{\chord{Am}}{lásku.}\chordslyrics{\chord{E7}}{}}
+}
+
+\verse{\sbline{Vezem se v kočáře, ve kterém přežijeme, }
+\sbline{s obrazem mocnáře, kterého milujeme, }
+\sbline{plačíce pro mladost jsme staří, bohudíky, }
+\sbline{řvem Ódu na radost, že nejsme mučedníky. }
+}
+
+\chorus{}
+
+\verse{\sbline{Dozněla Devátá a končí komedie, }
+\sbline{namísto Piláta svět si dnes ruce myje, }
+\sbline{sám kříž si zhotoví a sám si hřeby ková }
+\sbline{a král je křížový, hraje se Osudová. }
+}
+
+\chorus{}
+
+
+
+\end{document}

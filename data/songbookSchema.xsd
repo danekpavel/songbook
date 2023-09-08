@@ -1,0 +1,127 @@
+<!-- This is a copy of the schema used internally by the "songbook" program. 
+It was generated during program build and changes to it will have no effect 
+on XML validation performed by the program. -->
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="songbook">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="settings" type="settingsType" minOccurs="0"/>
+      <xs:element name="song" type="songType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="settingsType">
+  <xs:all>
+    <xs:element name="language" type="xs:language" minOccurs="0"/>
+    <xs:element name="chorusLabel" type="xs:string" minOccurs="0"/>
+    <xs:element name="tocTitle" type="xs:string" minOccurs="0"/>
+    <xs:element name="mainFont" type="xs:string" minOccurs="0"/>
+    <xs:element name="sansFont" type="xs:string" minOccurs="0"/>
+    <xs:element ref="entities" minOccurs="0"/>
+  </xs:all>
+</xs:complexType>
+
+<xs:element name="entities">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="entity" type="entityType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="entityType">
+  <xs:all>
+    <xs:element name="name" type="xs:Name"/>
+    <xs:element name="value" type="xs:string"/>
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="songType">
+  <xs:sequence>
+    <xs:element name="header" type="songHeaderType"/>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="lineVerse"/>
+      <xs:element name="multicols" type="multicolsType"/>
+    </xs:choice>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="songHeaderType">
+  <xs:all>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="sortingName" type="xs:string" minOccurs="0"/>
+    <xs:element ref="authorGroup" minOccurs="0"/>
+    <xs:element name="album" type="xs:string" minOccurs="0"/>
+    <xs:element name="year" type="xs:gYear" minOccurs="0"/>
+  </xs:all>
+</xs:complexType>
+
+<xs:element name="authorGroup" abstract="true"/>
+<xs:element name="author" substitutionGroup="authorGroup" type="xs:string"/>
+<xs:element name="authors" substitutionGroup="authorGroup">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="author" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="multicolsType">
+  <xs:choice minOccurs="0" maxOccurs="unbounded">
+    <xs:element ref="lineVerse"/>
+  </xs:choice>
+  <xs:attribute name="number" type="numberColumnsType" default="2"/>
+</xs:complexType>
+
+<xs:simpleType name="numberColumnsType">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1"/>
+    <xs:maxInclusive value="5"/> 
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- elements (<line>, <verse>, <chorus>, <columnbreak/>) which can be inside <song> or <multicols> -->
+<xs:element name="lineVerse" abstract="true"/>
+<xs:element name="verse" type="verseType" substitutionGroup="lineVerse"/>
+<xs:element name="chorus" type="verseType" substitutionGroup="lineVerse"/>
+<xs:element name="line" type="lineType" substitutionGroup="lineVerse"/>
+<xs:element name="columnbreak" substitutionGroup="lineVerse">
+  <xs:complexType/>
+</xs:element>
+
+<!-- used for <verse> and <chorus/> -->
+<xs:complexType name="verseType">
+  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+    <xs:element ref="line"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lineType" mixed="true">
+  <xs:choice minOccurs="0" maxOccurs="unbounded">
+    <xs:element name="chord" type="chordType"/>
+  </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="chordType">
+  <xs:attribute name="root" type="noteType" use="required"/>
+  <xs:attribute name="bass" type="noteType"/>
+  <xs:attribute name="type" type="xs:string"/>
+  <xs:attribute name="optional" type="yesNoType" default="no"/>
+</xs:complexType>
+
+<xs:simpleType name="noteType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[a-hA-H][b#]?|special"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="yesNoType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="yes"/>
+    <xs:enumeration value="no"/>
+  </xs:restriction>
+</xs:simpleType>
+</xs:schema> 
