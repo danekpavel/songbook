@@ -5,7 +5,7 @@ namespace songbook {
     SongbookPrinterLatex::SongbookPrinterLatex() {
 
         parameters.emplace("mainFont", "Linux Libertine O");
-        parameters.emplace("sansFont", "Calibri");
+        parameters.emplace("chordFont", "Calibri");
 
         // redefine entities
         TagValueMap ent{

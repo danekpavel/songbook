@@ -6,10 +6,7 @@
 #include <fstream>
 #include <exception>
 #include <algorithm>
-//#include <windows.h>
-//#include <locale>
 #include <clocale>
-//#include <cstdlib>
 
 /**
  * Used for storing parameters from command line arguments.
@@ -28,7 +25,7 @@ void print_usage() {
 Options:
   -l <file>     Save LaTeX source code to <file>. Standard output is used when 
                 output file is not specified and '-pdf[2]' is not used.
-  -pdf          Run XeLaTeX to produce a PDF. xelatex must be installed and 
+  -pdf          Run xelatex to produce a PDF. XeTeX must be installed and 
                 available to the program. PDF file name is based on the LaTeX 
                 file name. If '-l' was not used, LaTeX file name is derived
                 from the XML file name by removing the '.xml' extension (when 
@@ -49,7 +46,6 @@ Options:
 StartupArgs process_args(int argc, char* argv[]) {
 
     using namespace std::literals;
-
     StartupArgs args;
 
     int i{1};
@@ -66,7 +62,7 @@ StartupArgs process_args(int argc, char* argv[]) {
                 throw std::runtime_error("more than one usage of '-pdf' or '-pdf2'");
             args.pdf = (argv[i] == "-pdf"s) ? 1 : 2;
             ++i;
-        } else if (i == argc-1) {  // last argument left -> input file
+        } else if (i == argc-1) {  // last argument left -> input file name
             args.xml_file = argv[i];
             ++i;
         } else {
@@ -93,8 +89,6 @@ StartupArgs process_args(int argc, char* argv[]) {
         args.latex_file = latex_file;
     }
 
-    std::cerr << args.xml_file << "\n" << args.latex_file;
-
     return args;
 }
 
@@ -120,19 +114,18 @@ int main(int argc, char* argv[]) {
     }
 
     try {
-        std::setlocale(LC_ALL, "cs-CZ.utf8");
-
         SongbookConverter converter = init_converter<SongbookPrinterLatex>();
         converter.parse_songbook(args.xml_file);
 
+        // send output to a file when name was or to std::cout otherwise
         std::ofstream ofs;
         if (!args.latex_file.empty()) {
             ofs.open(args.latex_file);
             if (!ofs.is_open())
                 throw std::runtime_error("Output file " + args.latex_file + " cannot be opened");
         }
-
         std::ostream& output = (ofs.is_open() ? ofs : std::cout);
+
         output << converter.convert();
 
         // run XeLaTeX once or twice

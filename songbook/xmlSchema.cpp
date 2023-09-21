@@ -6,26 +6,27 @@
 #include <string>
 
 namespace songbook {
-    std::string xml_schema{R"(
-<?xml version="1.0"?>
+    std::string xml_schema{
+R"(<?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="songbook">
   <xs:complexType>
     <xs:sequence>
       <xs:element name="settings" type="settingsType" minOccurs="0"/>
-      <xs:element name="song" type="songType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="songs" type="songsType" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
 
 <xs:complexType name="settingsType">
   <xs:all>
-    <xs:element name="language" type="xs:language" minOccurs="0"/>
+    <xs:element name="language" type="xs:string" minOccurs="0"/>
+    <xs:element name="sortSongs" type="yesNoType" minOccurs="0"/>
     <xs:element name="chorusLabel" type="xs:string" minOccurs="0"/>
     <xs:element name="tocTitle" type="xs:string" minOccurs="0"/>
     <xs:element name="mainFont" type="xs:string" minOccurs="0"/>
-    <xs:element name="sansFont" type="xs:string" minOccurs="0"/>
+    <xs:element name="chordFont" type="xs:string" minOccurs="0"/>
     <xs:element ref="entities" minOccurs="0"/>
   </xs:all>
 </xs:complexType>
@@ -43,6 +44,12 @@ namespace songbook {
     <xs:element name="name" type="xs:Name"/>
     <xs:element name="value" type="xs:string"/>
   </xs:all>
+</xs:complexType>
+
+<xs:complexType name="songsType">
+  <xs:sequence>
+    <xs:element name="song" type="songType" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="songType">

@@ -79,12 +79,9 @@ namespace songbook {
         /**
          * Converts parsed XML into final format using the `printer`.
          * 
-         * 
-         * 
-         * @param sort_songs Should songs be sorted alphabetically?
          * @return converted songbook
          */
-        std::string convert(bool sort_songs = true);
+        std::string convert();
 
         /**
          * Parses a songbook XML read from a file. 
@@ -120,7 +117,7 @@ namespace songbook {
          * 
          * @param settings `<settings>` XML element
          */
-        void process_settings(const xercesc::DOMElement* settings) const;
+        void process_settings(const xercesc::DOMElement* settings);
 
         /**
          * Reads information from a song header.
@@ -191,6 +188,11 @@ namespace songbook {
          * Printer used for creating the final document.
          */
         std::unique_ptr<SongbookPrinter> printer;
+
+        /**
+         * Should songs be sorted by name?
+         */
+        bool sort_songs = true;
     };
 
 
@@ -279,6 +281,17 @@ namespace songbook {
      * its content cannot be parsed
      */
     ExtractedEntities extract_entities_element(const std::string& xml);
+
+    /**
+     * Sets locale (LC_ALL) to the given language/language-location combination.
+     * 
+     * Tries all semicolon-separated possibilities from `langs` until first 
+     * success. In case of no succes, a message including current locale is 
+     * written to std::cerr.
+     * 
+     * @param langs semicolon-separated list of locale candidates
+     */
+    void set_language(const std::string& langs);
 
     
     template <typename T>

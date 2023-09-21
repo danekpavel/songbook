@@ -37,6 +37,6 @@ namespace songbook {
 
     bool operator <(const Song &lhs, const Song &rhs) {
 
-        return strcoll(lhs.get_sorting_name().c_str(), rhs.get_sorting_name().c_str()) == -1;
+        return strcoll(lhs.get_sorting_name().c_str(), rhs.get_sorting_name().c_str()) < 0;
     }
 }

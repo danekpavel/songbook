@@ -8,7 +8,7 @@ namespace songbook {
     SongbookPrinter::SongbookPrinter() {
         // default parameters
         parameters.emplace("chorusLabel", "Ref");
-        parameters.emplace("language", "czech");
+        parameters.emplace("language", "cs");
         parameters.emplace("tocTitle", "Obsah");
 
         // default entity values

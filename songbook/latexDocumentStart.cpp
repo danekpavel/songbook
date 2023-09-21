@@ -8,7 +8,7 @@ namespace songbook {
 \usepackage{polyglossia}
 \setmainlanguage{czech}
 \setmainfont[Mapping=tex-text]{@@@mainFont@@@}
-\setsansfont{@@@sansFont@@@}
+\setsansfont{@@@chordFont@@@}
 \usepackage[width=18cm, height=26.5cm, top=1.5cm]{geometry}
 \usepackage{multicol}
 \usepackage[unicode, hidelinks]{hyperref}

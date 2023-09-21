@@ -1,9 +1,7 @@
 #include "SongbookConverter.hpp"
 #include "SongbookPrinter.hpp"
 #include "SongbookException.hpp"
-//#include "Song.hpp"
 
-//#include <sstream>
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -61,6 +59,27 @@ namespace songbook {
             static_cast<int>(std::count(cbegin(xml), cbegin(xml)+start, '\n'))};
     }
 
+    void set_language(const std::string& langs) {
+        std::string lang;
+        const char* loc;
+
+        std::istringstream iss{langs};
+        while (getline(iss, lang, ';')) {
+            loc = std::setlocale(LC_ALL, (lang + ".utf8").c_str());
+            // stop when locale succesfully set ('loc' is not nullptr)
+            if (loc) 
+                return;
+        }
+
+        // when setting locale was not sucessful set at least UTF-8 encoding...
+        loc = std::setlocale(LC_ALL, ".utf8");
+        // ...or not - when even that is not possible
+        if (!loc)
+            loc = std::setlocale(LC_ALL, nullptr);
+        std::cerr << "Locale could not be set based on supplied language(s): \"" <<
+            langs << "\". Using default locale: " << loc << std::endl;
+    }
+
     TagValueMap SongbookConverter::read_entities() const {
         DOMElement* elem = parser->getDocument()->getDocumentElement();
         // first `<entity>` element
@@ -112,7 +131,7 @@ namespace songbook {
         XMLPlatformUtils::Terminate();
     }
 
-    std::string SongbookConverter::convert(bool sort_songs) {
+    std::string SongbookConverter::convert() {
 
         DOMElement* root = parser->getDocument()->getDocumentElement();
         DOMElement* elem = root->getFirstElementChild();
@@ -120,14 +139,20 @@ namespace songbook {
         // process settings when present
         if (get_node_name(elem) == "settings") {
             process_settings(elem);
+            // proceed to <songs> element
             elem = elem->getNextElementSibling();
         }
 
         // store converted songs in a vector
         std::vector<Song> songs;
-        while (elem) {
-            songs.push_back(convert_song(elem));
-            elem = elem->getNextElementSibling();
+        if (elem) {
+            // proceed to first <song> element
+            elem = elem->getFirstElementChild();
+
+            while (elem) {
+                songs.push_back(convert_song(elem));
+                elem = elem->getNextElementSibling();
+            }
         }
 
         if (sort_songs)
@@ -136,11 +161,16 @@ namespace songbook {
         return printer->print_document(songs);
     }
 
-    void SongbookConverter::process_settings(const DOMElement* settings) const {
+    void SongbookConverter::process_settings(const DOMElement* settings) {
         DOMElement* elem = settings->getFirstElementChild();
         while (elem) {
-            if (get_node_name(elem) != "entities") 
-                printer->set_parameter(get_node_name(elem), get_text_value(elem));
+            std::string e_name = get_node_name(elem);
+            if (e_name == "language")
+                set_language(get_text_value(elem));
+            if (e_name == "sortSongs")
+                sort_songs = (get_text_value(elem) == "yes");
+            else if (e_name != "entities") 
+                printer->set_parameter(e_name, get_text_value(elem));
 
             elem = elem->getNextElementSibling();
             
@@ -279,17 +309,26 @@ namespace songbook {
         TagValueMap attr_values;
         DOMNamedNodeMap* attrs = chord->getAttributes();
         
+        // store all attribute values
         for (XMLSize_t i=0; i < attrs->getLength(); ++i) {
             DOMAttr* attr = dynamic_cast<DOMAttr*>(attrs->item(i));
-            std::string name = get_node_name(attr);
-            std::string value = get_value(attr);
+            std::string a_name = get_node_name(attr);
+            std::string a_value = get_value(attr);
 
-            // delete "special" root value
-            if (name == "root" && value == "special")
-                value = "";
+            // delete value when "root" is "special"
+            if (a_name == "root" && a_value == "special")
+                a_value = "";
 
-            attr_values.emplace(std::move(name), std::move(value));
+            attr_values.emplace(std::move(a_name), std::move(a_value));
         }
+
+        // remove "bass" when this chord is "special"
+        if (attr_values["root"].empty()) {
+            auto bass = attr_values.find("bass");
+            if (bass != attr_values.end())
+                attr_values.erase(bass);
+        }
+
         return attr_values;
     }
 

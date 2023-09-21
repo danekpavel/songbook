@@ -13,14 +13,15 @@ with (open(sys.argv[1], 'r') as cpp,
     schema = cpp.readlines()
     # index of schema's first line
     start = next((i for i in range(len(schema)) if
-                  re.match(r'<\?xml ', schema[i]) is not None), 0)
+                  re.match(r'R"\(<\?xml ', schema[i]) is not None), 0)
+    # remove 'R"(' from the first line
+    schema[start] = schema[start][3:]
+
     # index of schema's last line
     end = next((i for i in reversed(range(len(schema))) if
                   re.match(r'</xs:schema>', schema[i]) is not None), 0)
-    # comment goes before the XML declaration so technically the resulting
-    #   schema is not a valid XML
-    xsd.write('''<!-- This is a copy of the schema used internally by the "songbook" program. 
-It was generated during program build and changes to it will have no effect 
-on XML validation performed by the program. -->
-''')
+    # (comment goes before the XML declaration so technically the resulting
+    #   schema is not a valid XML)
+    xsd.write('<!-- This is a copy of the schema used internally by the "songbook" program. It was generated during program build and changes to it will have no effect on XML validation performed by the program. This comment invalidates the schema so remove it if you want to have a valid XML Schema -->')
+
     xsd.writelines(schema[start:(end + 1)])
