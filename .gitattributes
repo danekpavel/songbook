@@ -1,0 +1,2 @@
+# Don't count files in /data into stats
+data/* linguist-documentation
