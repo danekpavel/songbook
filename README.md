@@ -5,11 +5,17 @@ A simple command line tool for transforming a songbook from XML to PDF.
 - [Getting started](#getting-started)
   - [Building Songbook](#building-songbook)
   - [Usage](#usage)
+- [Songbook XML](#specifying-the-songbooks-content-in-xml)
+  - [Global settings](#global-settings)
+  - [Songs](#songs)
+    - [Header](#song-header)
+    - [Content](#song-content): [chords](#chords), [lines](#lines), [verses](#verse-chorus), [multiple columns](#multiple-columns)
+    - [Entities](#entities)
   
 
 ## Getting started
 ### Prerequisities
-This app is implemented in C++20 and can be build using [CMake](https://cmake.org/) and a build system and C++ compiler of your choice. [Xerces-C++](https://xerces.apache.org/xerces-c/) is used for XML parsing and has to be installed separately. To produce the final PDF, [XeTeX](https://xetex.sourceforge.net/) has to be installed.
+This app is implemented in C++ and can be build using [CMake](https://cmake.org/) and a build system and C++ compiler of your choice. [Xerces-C++](https://xerces.apache.org/xerces-c/) is used for XML parsing and has to be installed separately. To produce the final PDF, [XeTeX](https://xetex.sourceforge.net/) has to be installed.
 
 ### Building Songbook
 To build using e.g. the [Ninja](https://ninja-build.org/) build system you can run:
@@ -19,6 +25,7 @@ cd build
 cmake -GNinja ..
 cmake --build .
 ```
+C++ documentation can be found [here](doc/html/index.html).
 
 #### Troubleshooting
 If Xerces is installed and still isn't located by CMake, its installation path has to be specified in the first `cmake` command, e.g.:
@@ -27,12 +34,12 @@ cmake -DCMAKE_PREFIX_PATH=C\:/Program\ Files\ \(x86\)/xerces-c/ -GNinja ..
 ```
 
 ### Usage
-To produce a PDF from the provided [sb.xml](data/sb.xml) file, use:
+To produce a PDF ([sb.pdf](data/sb.pdf)) from the provided [sb.xml](data/sb.xml) file, use:
 ```bash
 cd data
 ../build/songbook/songbook.exe -pdf2 sb.xml
 ```
-The Songbook program will first translate the XML file to a LaTeX source file ([sb.tex](data/sb.tex)) and then call `xelatex` to produce the final PDF songbook ([sb.pdf](data/sb.pdf)). For this to work, `xelatex` has to be available to the Songbook program.
+The Songbook program will first translate the XML file to a LaTeX source file ([sb.tex](data/sb.tex)) and then call `xelatex` to produce the final PDF songbook ([sb.pdf](data/sb.pdf)). For this to work, `xelatex` has to be available to Songbook.
 
 #### Full usage
 ```
@@ -54,7 +61,7 @@ Options:
 On Windows, the `libxerces-c.dll` library has to be available to the program either through the PATH environment variable or by copying it from Xerces installation to the location of `songbook.exe`.
 
 ## Specifying the songbook's content in XML
-Songbook XML starts with optional [global settings](#global-settings) followed by the [songs](#songs):
+See [sb.xml](data/sb.xml) for an example Sonbgook XML. It starts with optional [global settings](#global-settings) followed by the [songs](#songs):
 ```xml
 <songbook>
   <settings>
@@ -71,7 +78,7 @@ Songbook XML starts with optional [global settings](#global-settings) followed b
 Detailed description of the songbook XML structure can be found in its [XML Schema](data/songbookSchema.xsd).
 
 ### Global settings
-Several properties of the resulting document can be specified here.
+Several properties of the resulting document can be specified:
 
 Element name|Content type|Description|Default
 ---|---|---|---
@@ -129,7 +136,7 @@ Individual authors from `<authors>` will be separated by slashes in the final so
   <year>2020</year>
 </header>
 ```
-will result in this header:
+will result in a header like this:
 ![song header example](doc/img/header.png)
 
 #### Song content
@@ -143,7 +150,7 @@ The main building block of a song is a [line](#line). It can contain lyrics, [ch
 ```
 ![lines forming a verse](doc/img/lines.png)
 
-#### Chord
+#### Chords
 `<chord>` represents one chord and is an attribute-only element with three possible attributes (root is mandatory):
 Attribute|Description|Value
 ---|---|---
@@ -154,7 +161,7 @@ optional|specifies if the chord is optional|`yes`/`no`
 
 Chord root and type are put together, bass note is added after a slash and if the chord is marked as optional, the result is surrounded with parentheses. So e.g., `<chord root="C#" type="maj7" bass="G#" optional="yes"/>` will result in `(C#maj7/G#)`.
 
-#### Line
+#### Lines
 When both chords and lyrics are present, chords are placed above lyrics and each chord (or a group of chords with no lyrics between them) is left-aligned with the lyrics that immediately follow it. Note that **some spaces matter**. When a chord is not separated from the preceding lyrics by a space, the chord change is considered to appear inside a word and if the chord's width exceeds that of the preceding lyrics, a hyphen will be inserted in the resulting gap in lyrics:
 
 ```xml
@@ -251,4 +258,3 @@ Additional XML entities can be defined inside the `<settings>` element, e.g.
 
 defines an entity `&threetimes;` which translates to "×××". Note that while default entities can be used to define user entities (with the exception of `&ampersand;`), user entities cannot.
  
-## C++ implementation details
