@@ -25,7 +25,7 @@ cd build
 cmake -GNinja ..
 cmake --build .
 ```
-C++ documentation can be found [here](doc/html/index.html).
+C++ documentation can be found [here](https://danekpavel.github.io/songbook/index.html).
 
 #### Troubleshooting
 If Xerces is installed and still isn't located by CMake, its installation path has to be specified in the first `cmake` command, e.g.:
