@@ -1,11 +1,11 @@
 # Songbook
-A simple command line tool for transforming a songbook from XML to PDF.
+A simple command line tool for creating PDF songbooks from XML documents.
 
 ## Contents
 - [Getting started](#getting-started)
   - [Building Songbook](#building-songbook)
   - [Usage](#usage)
-- [Songbook XML](#specifying-the-songbooks-content-in-xml)
+- [Songbook XML specification](#specifying-the-songbooks-content-in-xml)
   - [Global settings](#global-settings)
   - [Songs](#songs)
     - [Header](#song-header)
