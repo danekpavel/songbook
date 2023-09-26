@@ -6213,12 +6213,6 @@ u<chord root="D"/>licí na ko
   </header>
 
 <verse>
-  <line><chord root="C"/>Lyrics longer <chord root="F"/>than chords</line>
-  <line>Lyrics <chord root="C"/><chord root="C#"/><chord root="D"/><chord root="D#"/>shorter <chord root="E"/>than chords</line>
-  <line>Chord <chord root="G"/>chan<chord root="C"/>ges <chord root="G" type="-long"/>in<chord root="C"/>side words</line>
-</verse>
-
-<verse>
 <line>
 <chord root="A"/>Nemůžu uvěřit, 
 <chord root="D"/>bráško, 
