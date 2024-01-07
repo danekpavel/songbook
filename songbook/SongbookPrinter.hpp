@@ -23,6 +23,11 @@ namespace songbook {
         SongbookPrinter();
 
         /**
+         * Default virtual destructor.
+         */
+        virtual ~SongbookPrinter() = default;
+
+        /**
          * Sets parameter value. Overwrites an existing one or creates a new one.
          * 
          * @param name parameter name

@@ -154,7 +154,7 @@ The main building block of a song is a [line](#line). It can contain lyrics, [ch
 `<chord>` represents one chord and is an attribute-only element with three possible attributes (root is mandatory):
 Attribute|Description|Value
 ---|---|---
-root|root note of the chord|letters `A`&ndash;`H` in uoper or lower case, optionally followed by a pitch modifier (`#` or `b`); alternatively, `special` can be used in which case only the `type` attribute of the chord is used
+root|root note of the chord|letters `A`&ndash;`H` in upper or lower case, optionally followed by a pitch modifier (`#` or `b`); alternatively, `special` can be used in which case only the `type` attribute of the chord is displayed
 type|chord type|any string indicating chord type, e.g., `m`, `maj7` or `dim`
 bass|bass note of the chord|same as root
 optional|specifies if the chord is optional|`yes`/`no`
