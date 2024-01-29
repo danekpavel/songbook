@@ -6585,7 +6585,7 @@ u<chord root="D"/>licí na ko
 <chord root="F"/>Psychedelic invocations,
 </line>
 <line>
-<chord root="F"/>Mata Hari 
+<chord root="A"/>Mata Hari 
 <chord root="Bb"/>at the station
 </line>
 <line>
@@ -7173,7 +7173,145 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 <line>Možná je to tím, že to mám rád</line>
 <line>a možná že jsem jen malej darebák.</line>
 </chorus>
+</song>
 
+
+<song>
+  <header>
+    <name>Motýlí hra</name>
+    <authors>
+      <author>Folk Team</author>
+      <author>Jakub Noha</author>
+    </authors>
+    <album>Otevřte, jsou tady lidé</album>
+    <year>1993</year>
+  </header>
+
+<verse>
+<line>Motýlí 
+<chord root="E" type="m"/>hra, při níž se tančí 
+<chord root="A"/>valčík,
+</line>
+<line>já tě 
+<chord root="D"/>chci a 
+<chord root="G"/>ty mě 
+<chord root="F#"/>taky 
+<chord root="B" type="m"/>chceš.
+</line>
+<line>Motýlí 
+<chord root="E" type="m"/>hra, při níž se tančí 
+<chord root="A"/>valčík,
+</line>
+<line>hudba 
+<chord root="D"/>hraje a 
+<chord root="G"/>tanec 
+<chord root="F#"/>začí
+<chord root="B" type="m"/>ná.
+</line>
+</verse>
+
+<verse>
+<line>Pálili smrtku a vesele se smáli,</line>
+<line>chválili život a bylo jim do tance.</line>
+<line>Hřáli si lože a s životem si hráli,</line>
+<line>brázdili moře, aby měli šťastný klid.</line>
+</verse>
+
+<verse>
+<line>My jsme motýlí hra, při níž se tančí valčík,</line>
+<line>já tě chci a ty mě taky chceš.</line>
+<line>My jsme motýlí hra, při níž se tančí valčík,</line>
+<line>hudba hraje a tanec začíná.</line>
+</verse>
+
+<verse>
+<line>Chtěli se vznést, tak říkali si &quoteCzechOpen;Láska&quoteCzechClose;,</line>
+<line>nechtěli se splést, tak říkali si &quoteCzechOpen;Nenávist&quoteCzechClose;.</line>
+<line>A bez víry se hbitě proplétali,</line>
+<line>jenže nad tím vším &ndash; stříbrný obláček.</line>
+</verse>
+
+<verse>
+<line>My jsme motýlí hra, při níž se tančí valčík,</line>
+<line>já tě chci a ty mě taky chceš.</line>
+<line>Jenže co bude dál, to nikdo z nás už neví,</line>
+<line>budem se chtít a budeme se opouštět&hellip;</line>
+<line>budem se chtít a budeme si odpouštět.</line>
+</verse>
+</song>
+
+<song>
+  <header>
+    <name>Clandestino</name>
+    <author>Manu Chao</author>
+    <album>Clandestino</album>
+    <year>1998</year>
+  </header>
+
+<verse>
+<line>
+<chord root="F#" type="m"/>Solo voy con mi pena, sola va mi con
+<chord root="B" type="m"/>dena,
+</line>
+<line>correr es mi des
+<chord root="C#"/>tino para burlar la 
+<chord root="F#" type="m"/>ley.
+</line>
+<line>Perdido en el corazón de la grande Baby
+<chord root="B" type="m"/>lon,
+</line>
+<line>me dicen &quoteEnglishOpen;el clande
+<chord root="C#"/>stino&quoteEnglishClose; por no llevar pa
+<chord root="F#" type="m"/>pel.
+</line>
+</verse>
+
+<verse>
+<line>Pa una ciudad del norte yo me fui a trabajar,</line>
+<line>mi vida la dejé entre Ceuta y Gibraltar.</line>
+<line>Soy una raya en el mar, fantasma en la ciudad,</line>
+<line>mi vida va prohibida, dice la autoridad.</line>
+</verse>
+
+<verse>
+<line>Solo voy con mi pena, sola va mi condena,</line>
+<line>correr es mi destino por no llevar papel.</line>
+<line>Perdido en el corazón de la grande Babylon,</line>
+<line>me dicen &quoteEnglishOpen;el clandestino&quoteEnglishClose;, yo soy el quiebra ley.</line>
+</verse>
+
+<chorus>
+<line>Mano 
+<chord root="C#"/>negra, clande
+<chord root="F#" type="m"/>stina,
+</line>
+<line>Peru
+<chord root="C#"/>ano, clande
+<chord root="F#" type="m"/>stino,
+</line>
+<line>Afri
+<chord root="C#"/>cano, clande
+<chord root="F#" type="m"/>stino,
+</line>
+<line>Mari
+<chord root="C#"/>huana, ile
+<chord root="F#" type="m"/>gal.
+</line>
+</chorus>
+
+<verse>
+<line>Solo voy con mi pena, sola va mi condena,</line>
+<line>correr es mi destino para burlar la ley.</line>
+<line>Perdido en el corazón de la grande Babylon,</line>
+<line>me dicen &quoteEnglishOpen;el clandestino&quoteEnglishClose;, por no llevar papel.</line>
+</verse>
+
+<chorus>
+<line>Argelino, clandestino,</line>
+<line>Nigeriano, clandestino,</line>
+<line>Boliviano, clandestino,</line>
+<line>Mano Negra, ilegal.</line>
+</chorus>
 </song>
 <!--
 
