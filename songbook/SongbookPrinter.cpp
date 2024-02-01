@@ -42,7 +42,7 @@ namespace songbook {
     }
 
     void SongbookPrinter::update_entities(TagValueMap ent_update) {
-        for (auto [value, name]: ent_update)
+        for (const auto& [value, name]: ent_update)
             entities[value] = name;
     }
 
@@ -87,12 +87,12 @@ namespace songbook {
 
         // start with [name] and then put all other [tag]: [value] pairs
         std::string header_content{song_name};
-        header_content += "\n";
-        for (auto [tag, value]: tag_values) {
+        header_content += '\n';
+        for (const auto& [tag, value] : tag_values) {
             if (tag != "name")
-                header_content += tag + ": " + value + "\n";
+                header_content.append(tag + ": " + value + '\n');
         }
-        header_content.append("\n");
+        header_content += '\n';
 
         return header_content;
     }
@@ -101,7 +101,7 @@ namespace songbook {
         
         std::string line;
 
-        for (auto lc: line_content) {
+        for (const auto& lc : line_content) {
             if (lc.type==LineItemType::lyrics) 
                 line.append(lc.value);
             else  // chord
@@ -115,7 +115,7 @@ namespace songbook {
 
         std::string result = print_document_start();
 
-        for (auto song: songs) 
+        for (const auto& song : songs) 
             result.append(song.get_content());
 
         result.append(print_document_end());
@@ -152,18 +152,4 @@ namespace songbook {
         
         return result;
     }
-    /*
-    std::string SongbookPrinter::chord(const TagValueMap& chord) const {
-
-        auto root = chord.find("root");
-        std::string result{root->second};
-        
-        if (auto type = chord.find("type"); type != chord.end())
-            result.append(type->second);
-        if (auto bass = chord.find("bass"); bass != chord.end())
-            result.append("/" + bass->second);
-        
-        return result;
-    }
-*/
 }

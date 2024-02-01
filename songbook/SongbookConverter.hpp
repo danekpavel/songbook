@@ -233,12 +233,27 @@ namespace songbook {
     /**
      * Retrieves text content from an XML node.
      * 
-     * @param node 
-     * @return 
+     * Returns empty string if `node` is not a `DOMNode::NodeType::TEXT_NODE`.
+     * 
+     * @param node XML node
+     * @return node text content
      */
     std::string get_text_value(const xercesc::DOMNode* node);
+
+    /**
+     * Retrieves text content from XML element's first child node.
+     * 
+     * @param elem XML element
+     * @return element text content
+     */
     std::string get_text_value(const xercesc::DOMElement* elem);
 
+    /**
+     * Retrieves the value of an XML attribute.
+     * 
+     * @param attr XML attribute
+     * @return attribute value
+     */
     std::string get_value(const xercesc::DOMAttr* attr);
 
     /**

@@ -27,7 +27,7 @@ namespace songbook {
     std::string SongbookPrinterLatex::print_document_start() const {
         std::string doc_start{latex_document_start};
 
-        for (auto [name, value]: parameters)
+        for (const auto& [name, value]: parameters)
             replace_parameter(doc_start, name, value);
 
         return doc_start;
@@ -65,7 +65,7 @@ namespace songbook {
         std::string left;      // left-aligned header content
         std::string right;     // right-aligned ...
 
-        for (auto [tag, value]: tag_values) {
+        for (const auto& [tag, value] : tag_values) {
             if (tag == "name")
                 song_name = value;
             else if (tag == "author")  // separate authors with " / "
@@ -87,14 +87,14 @@ namespace songbook {
         std::string chords;
         int n_lyrics{0};
 
-        // count the number of lyrics items to later know if a lyrics item is
-        //   the last one
+        // count the number of lyrics items to know later whether a lyrics item 
+        //   is the last one
         for (auto lc: line_content) 
             if (lc.type==LineItemType::lyrics) 
                 ++n_lyrics;
 
         int i_lyrics{0};
-        for (auto lc: line_content) {
+        for (const auto& lc : line_content) {
             if (lc.type==LineItemType::lyrics) {
                 ++i_lyrics;
                 // put together with previously read chord(s)
@@ -113,7 +113,7 @@ namespace songbook {
                 chords.append(lc.value); 
         }
 
-        // when trailing chords (without associated lyrics) present
+        // when trailing chords (without associated lyrics) are present
         if (!chords.empty())   
             if (n_lyrics > 0)  // mixed content line
                 line.append("\\chordslyrics{" + chords + "}{}");

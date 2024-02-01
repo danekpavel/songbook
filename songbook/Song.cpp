@@ -14,8 +14,7 @@ namespace songbook {
         name = n;
     }
 
-    std::string Song::get_name() const
-    {
+    std::string Song::get_name() const {
         return name;
     }
 
@@ -28,7 +27,6 @@ namespace songbook {
     }
 
     std::string Song::get_sorting_name() const {
-
         if (sorting_name == "")
             return name;
         else 
@@ -36,7 +34,6 @@ namespace songbook {
     }
 
     bool operator <(const Song &lhs, const Song &rhs) {
-
         return strcoll(lhs.get_sorting_name().c_str(), rhs.get_sorting_name().c_str()) < 0;
     }
 }

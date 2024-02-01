@@ -39,8 +39,7 @@ namespace songbook {
 
     /**
      * This is just a string-level extraction of the `<entities>` element
-     * at a moment when the document can contain undefined entities
-     * and parsing would be difficult. ,
+     * at a moment when the document can contain undefined entities.
      */
     ExtractedEntities extract_entities_element(const std::string& xml) {
 
@@ -55,8 +54,9 @@ namespace songbook {
             throw SongbookException("Error </entities> closing tag not found in XML.");
         
         // return the `<entities>` element and the number of newlines before it
-        return ExtractedEntities{xml.substr(start, end - start + end_tag.size()),
-            static_cast<int>(std::count(cbegin(xml), cbegin(xml)+start, '\n'))};
+        return ExtractedEntities{
+            xml.substr(start, end - start + end_tag.size()),
+            static_cast<int>(std::count(cbegin(xml), cbegin(xml) + start, '\n'))};
     }
 
     void set_language(const std::string& langs) {
@@ -126,7 +126,7 @@ namespace songbook {
     }
 
     SongbookConverter::~SongbookConverter() {
-        // pointer must be deleted before calling Terminate()
+        // the pointer must be deleted before calling Terminate()
         parser.reset(nullptr);
         XMLPlatformUtils::Terminate();
     }
@@ -139,14 +139,14 @@ namespace songbook {
         // process settings when present
         if (get_node_name(elem) == "settings") {
             process_settings(elem);
-            // proceed to <songs> element
+            // proceed to the `<songs>` element
             elem = elem->getNextElementSibling();
         }
 
-        // store converted songs in a vector
+        // for storing converted songs
         std::vector<Song> songs;
         if (elem) {
-            // proceed to first <song> element
+            // proceed to the first `<song>` element
             elem = elem->getFirstElementChild();
 
             while (elem) {
@@ -260,6 +260,7 @@ namespace songbook {
     
         std::string number = get_attr_value(multicols, "number");
 
+        // start multicols, add content, end multicols
         std::string result = printer->print_multicols_start(number);
         result.append(convert_song_content(multicols->getFirstElementChild()));
         result.append(printer->print_multicols_end());
@@ -269,6 +270,7 @@ namespace songbook {
     std::string SongbookConverter::convert_verse(const DOMElement* verse,
         VerseType type) const {
     
+        // start verse, add content, end verse
         std::string result = printer->print_verse_start(type);
         result.append(convert_song_content(verse->getFirstElementChild()));
         result.append(printer->print_verse_end(type));
@@ -299,7 +301,7 @@ namespace songbook {
             node = node->getNextSibling();
         }
 
-        // now put print the final line
+        // now print the final line
         std::string result = printer->print_line(line_content);
         
         return result;
@@ -407,7 +409,7 @@ namespace songbook {
 
     std::string generate_dtd(const TagValueMap& entities, const std::string& root) {
         std::string dtd{"<!DOCTYPE " + root + " ["};
-        for (auto [name, value]: entities) 
+        for (const auto& [name, value]: entities) 
             dtd.append("<!ENTITY " + name + " \"" + value + "\">");
         dtd.append("]>");
 
