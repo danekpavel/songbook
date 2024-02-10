@@ -7313,6 +7313,84 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 <line>Mano Negra, ilegal.</line>
 </chorus>
 </song>
+
+
+<song>
+  <header>
+    <name>The Flesh Failures (Let the Sunshine In)</name>
+    <authors>
+      <author>Galt MacDermot</author>
+      <author>Gerome Ragni</author>
+      <author>James Rado</author>
+    </authors>
+    <album>Hair</album>
+    <year>1967</year>
+  </header>
+
+<verse>
+<line>We 
+<chord root="B" type="m"/>starve, look at one another, short of breath,
+</line>
+<line>walking proudly in our winter <chord root="A"/>coats,</line>
+<line>wearing smells from laboratories,</line>
+<line>
+<chord root="B" type="m"/>facing a dying 
+<chord root="D"/>nation of 
+<chord root="B" type="m"/>moving paper 
+<chord root="F#"/>fantasy,
+</line>
+<line>listening for the new told <chord root="B" type="m"/>lies</line>
+<line>with su<chord root="G"/>preme visions of <chord root="D"/>lonely tunes.</line>
+</verse>
+
+<verse>
+<line>Somewhere, inside something there is a rush of</line>
+<line>greatness, who knows what stands in front of</line>
+<line>our lives, I fashion my future on films in space,</line>
+<line>silence tells me secretly</line>
+<line>everything,</line>
+<line>everything.</line>
+</verse> 
+
+<verse>
+<line><chord root="B" type="m"/>Manchester, England, England,</line>
+<line>Manchester, England, England, across the Atlantic Sea,</line>
+<line>and 
+<chord root="E" type="m"/><chord root="A" bass="E" optional="yes"/>I'm a genius, genius, 
+</line>
+<line>I be<chord root="F#"/><chord root="B" type="m" bass="F#" optional="yes"/>lieve in God</line>
+<line>and I believe that God believes in Claude,</line>
+<line>that's me, that's me, that's <chord root="B" type="m"/>me.</line>
+</verse>
+
+<verse>
+<line><chord root="B" type="m"/>(The rest is silence)</line>
+</verse>
+
+<verse>
+<line>We starve, look at one another, short of breath,</line>
+<line>walking proudly in our winter coats,</line>
+<line>wearing smells from laboratories,</line>
+<line>facing a dying nation of moving paper fantasy,</line>
+<line>listening for the new told lies</line>
+<line>with supreme visions of lonely tunes.</line>
+</verse>
+
+<verse>
+<line>Singing our space songs on a spider web sitar,</line>
+<line>life is around you and in you</line>
+<line>answer for Timothy Leary, dearie.</line>
+</verse>
+ 
+<chorus>
+<line><chord root="B" type="m"/>Let the sun<chord root="F#"/>shine, let the <chord root="B" type="m"/>sunshine in, the <chord root="G"/>sunshine <chord root="D"/>in,</line>
+<line>let the sunshine, let the sunshine in, the sunshine in,</line>
+<line>let the sunshine, let the sunshine in, the sunshine in,</line>
+<line>let the sunshine, let the sunshine in, the sunshine in.</line>
+</chorus>
+
+</song>
+
 <!--
 
 <song>

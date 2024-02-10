@@ -145,7 +145,7 @@ namespace songbook {
 
         /**
          * Converts content of (a part of) a song. Starts with the given XML 
-         * element and continues with all its subsequent siblings. Typically
+         * element and continues with all its subsequent siblings. Typically, it
          * will be called recursively, not directly though.
          * 
          * @param content song content element to start from
