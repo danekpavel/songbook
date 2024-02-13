@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extractedentities_0',['ExtractedEntities',['../structsongbook_1_1_extracted_entities.html',1,'songbook']]]
+  ['startupargs_0',['StartupArgs',['../struct_startup_args.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fatalerror_0',['fatalError',['../classsongbook_1_1_songbook_error_handler.html#ae32a53306f1b362d9482172459d35e2e',1,'songbook::SongbookErrorHandler']]]
+  ['xml_5ffile_0',['xml_file',['../struct_startup_args.html#a43ae9b6d48947e17b0f687b79209c7e2',1,'StartupArgs']]]
 ];

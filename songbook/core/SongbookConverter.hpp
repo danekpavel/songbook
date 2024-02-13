@@ -7,10 +7,7 @@
 #include "Song.hpp"
 
 #include <string>
-#include <sstream>
-#include <vector>
 #include <memory>
-#include <map>
 #include <xercesc/parsers/XercesDOMParser.hpp>
 #include <xercesc/dom/DOM.hpp>
 
@@ -90,7 +87,8 @@ namespace songbook {
          * is inserted.
          * 
          * @param filename path to the songbook XML file
-         * @throws ConvertorException a problem during XML parsing
+         * @throws std::runtime_error when the file can't be opened
+         * @throws SongbookException a problem during XML parsing
          */
         void parse_songbook(const std::string& filename);
 

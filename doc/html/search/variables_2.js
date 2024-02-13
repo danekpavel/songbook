@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['offset_0',['offset',['../structsongbook_1_1_extracted_entities.html#ad121d5b628a68b499e50a622b1d2876e',1,'songbook::ExtractedEntities']]]
+  ['xml_5ffile_0',['xml_file',['../struct_startup_args.html#a43ae9b6d48947e17b0f687b79209c7e2',1,'StartupArgs']]]
 ];

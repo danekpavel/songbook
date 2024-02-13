@@ -1,7 +1,6 @@
 #include "SongbookPrinter.hpp"
 
 #include <string>
-#include <iostream>
 
 namespace songbook {
 
