@@ -79,7 +79,7 @@ MainWindow::MainWindow(QWidget *parent): QWidget{parent} {
     main_layout->addWidget(output_text);
     main_layout->addWidget(clear_button);
 
-    setWindowTitle(tr("Songbook Convertor"));
+    setWindowTitle(tr("Songbook Converter"));
 }
 
 
