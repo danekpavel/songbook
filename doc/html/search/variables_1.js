@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['latex_5ffile_0',['latex_file',['../struct_startup_args.html#a2d25294d8e7f2f223870d7e09873e49d',1,'StartupArgs']]]
+  ['pdf_0',['pdf',['../struct_startup_args.html#a82f4f1b94b79a1618a2ac3517ff8af53',1,'StartupArgs']]]
 ];

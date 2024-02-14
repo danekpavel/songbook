@@ -48,28 +48,28 @@ namespace songbook {
             parse(xml_buf);
 
             if (error_handler->get_error_occurred()) {
-                throw SongbookException("Error(s) occurred during XML parsing:\n", 
+                throw SongbookException(//"Error(s) occurred during XML parsing:\n",
                     error_handler->get_errors());
             }
         }
-        catch (const SongbookException& ce) {
+        catch (const SongbookException& se) {
             throw;
         }
         catch (const XMLException& e) {
             char* message = XMLString::transcode(e.getMessage());
-            SongbookException ce{"Error during XML parsing: ", message};
+            SongbookException se{"Error during XML parsing: ", message};
             XMLString::release(&message);
-            throw ce;
+            throw se;
         }
         catch (const DOMException& e) {
             char* message = XMLString::transcode(e.msg);
-            SongbookException ce{"Error during XML parsing: ", message};
+            SongbookException se{"Error during XML parsing: ", message};
             XMLString::release(&message);
-            throw ce;
+            throw se;
         }
         catch (...) {
-            SongbookException ce{"Unexpected error during XML parsing!"};
-            throw ce;
+            SongbookException se{"Unexpected error during XML parsing!"};
+            throw se;
         }
     }
 }

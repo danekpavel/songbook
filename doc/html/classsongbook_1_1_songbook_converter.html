@@ -80,7 +80,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Converts a XML songbook file into other format, depending on the specified <code><a class="el" href="classsongbook_1_1_songbook_printer.html" title="Base class for a printer used by SongbookConverter.">SongbookPrinter</a></code>-derived class.  
+<p>Converts a XML songbook file into other format, depending on the specified <code>SongbookPrinter</code>-derived class.  
  <a href="classsongbook_1_1_songbook_converter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_songbook_converter_8hpp_source.html">SongbookConverter.hpp</a>&gt;</code></p>
@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed97016c2c733c56c5673e7128c6b2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts a XML songbook file into other format, depending on the specified <code><a class="el" href="classsongbook_1_1_songbook_printer.html" title="Base class for a printer used by SongbookConverter.">SongbookPrinter</a></code>-derived class. </p>
-<p>An example usecase may look like this: initialize a new <code>SongbookConvertor</code> using a subclass of <code><a class="el" href="classsongbook_1_1_songbook_printer.html" title="Base class for a printer used by SongbookConverter.">SongbookPrinter</a></code>, use it to parse an XML file and than to convert it to the desired format: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsongbook_1_1_songbook_converter.html">SongbookConverter</a> converter = init_converter&lt;SongbookPrinterLatex&gt;();</div>
+<div class="textblock"><p>Converts a XML songbook file into other format, depending on the specified <code>SongbookPrinter</code>-derived class. </p>
+<p>An example usecase may look like this: initialize a new <code>SongbookConvertor</code> using a subclass of <code>SongbookPrinter</code>, use it to parse an XML file and than to convert it to the desired format: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsongbook_1_1_songbook_converter.html">SongbookConverter</a> converter = init_converter&lt;SongbookPrinterLatex&gt;();</div>
 <div class="line">converter.<a class="code hl_function" href="classsongbook_1_1_songbook_converter.html#a630d9dc2fe6c63ca3d2bca39ce8a512c">parse_songbook</a>(<span class="stringliteral">&quot;sb.xml&quot;</span>);</div>
 <div class="line">std::string output = converter.<a class="code hl_function" href="classsongbook_1_1_songbook_converter.html#a870722e4191d12fc5f0490f39f6dd6ef">convert</a>();</div>
 <div class="ttc" id="aclasssongbook_1_1_songbook_converter_html"><div class="ttname"><a href="classsongbook_1_1_songbook_converter.html">songbook::SongbookConverter</a></div><div class="ttdoc">Converts a XML songbook file into other format, depending on the specified SongbookPrinter-derived cl...</div><div class="ttdef"><b>Definition</b> SongbookConverter.hpp:32</div></div>
@@ -361,7 +361,7 @@ template&lt;typename T &gt; </div>
 <p>Constructs and sets the <code>printer</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>printer class derived from <code><a class="el" href="classsongbook_1_1_songbook_printer.html" title="Base class for a printer used by SongbookConverter.">SongbookPrinter</a></code> </td></tr>
+    <tr><td class="paramname">T</td><td>printer class derived from <code>SongbookPrinter</code> </td></tr>
   </table>
   </dd>
 </dl>

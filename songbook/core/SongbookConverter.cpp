@@ -65,7 +65,9 @@ namespace songbook {
 
         std::istringstream iss{langs};
         while (getline(iss, lang, ';')) {
-            loc = std::setlocale(LC_ALL, (lang + ".utf8").c_str());
+            //  partly BROKEN after switching to Qt; UTF-8 not recognized
+            //loc = std::setlocale(LC_ALL, (lang + ".utf8").c_str());
+            loc = std::setlocale(LC_ALL, lang.c_str());
             // stop when locale succesfully set ('loc' is not nullptr)
             if (loc) 
                 return;
@@ -87,7 +89,6 @@ namespace songbook {
 
         TagValueMap entities;
         while (elem) {
-
             // `<name>` and `<value>` elements (not necessarily in this order)
             DOMElement* first = elem->getFirstElementChild();
             DOMElement* second = first->getNextElementSibling();

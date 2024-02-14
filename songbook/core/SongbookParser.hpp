@@ -34,7 +34,7 @@ namespace songbook {
          * 
          * @param xml an XML
          * @param offset line on which `xml` started in the original document
-         * @throws ConvertorException a problem during XML parsing
+         * @throws SongbookException a problem during XML parsing
          */
         void parse_string(std::string xml, int offset = 0);
 

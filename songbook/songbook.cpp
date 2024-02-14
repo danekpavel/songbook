@@ -1,12 +1,14 @@
 #include "SongbookConverter.hpp"
 #include "SongbookPrinterLatex.hpp"
 #include "SongbookException.hpp"
+#include "mainwindow.hpp"
 
+#include <QApplication>
 #include <iostream>
 #include <fstream>
 #include <exception>
 #include <algorithm>
-#include <clocale>
+
 
 /**
  * Used for storing parameters from command line arguments.
@@ -21,7 +23,9 @@ struct StartupArgs {
  * Prints program usage to `std::cerr`.
  */
 void print_usage() {
-    std::cerr << R"(Usage:  songbook [options] <input_xml_file>
+    std::cerr << R"(GUI version runs when no command line arguments are given.
+
+Command line usage:   songbook [options] <input_xml_file>
 Options:
   -l <file>     Save LaTeX source code to <file>. Standard output is used when 
                 output file is not specified and '-pdf[2]' is not used.
@@ -92,15 +96,20 @@ StartupArgs process_args(int argc, char* argv[]) {
     return args;
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
 
-    using namespace songbook;
-
-    // with no command line arguments print usage and exit 
+    // no command line arguments -- run GUI version
     if (argc == 1) {
-        print_usage();
-        return 0;
+        QApplication app(argc, argv);
+
+        MainWindow window;
+        window.show();
+
+        return app.exec();
     }
+
+    // console version otherwise
+    using namespace songbook;
 
     // parse command line arguments
     StartupArgs args;
@@ -117,7 +126,7 @@ int main(int argc, char* argv[]) {
         SongbookConverter converter = init_converter<SongbookPrinterLatex>();
         converter.parse_songbook(args.xml_file);
 
-        // send output to a file when name was or to std::cout otherwise
+        // send output to a file when name was given or to std::cout otherwise
         std::ofstream ofs;
         if (!args.latex_file.empty()) {
             ofs.open(args.latex_file);
@@ -139,7 +148,7 @@ int main(int argc, char* argv[]) {
         }
     } 
     catch (SongbookException& ce) {
-        std::cerr << ce.what();
+        std::cerr << "Error(s) during XML parsing:\n" << ce.what();
         return 1;
     } 
     catch (std::exception& e) {
@@ -150,4 +159,7 @@ int main(int argc, char* argv[]) {
         std::cerr << "Unknown error";
         return 1;
     }
+
+    return 0;
 }
+

@@ -1,0 +1,41 @@
+<songbook>
+<settings>
+  <language>cs</language>
+  <chorusLabel>Ref</chorusLabel>
+  <tocTitle>Obsah</tocTitle>
+</settings>
+
+<songs>
+<song>
+  <header>
+    <name>Bludný Holanďan</name>
+    <author>Karel Kryl</author>
+    <album>Maškary</album>
+    <year>1970</year>
+  </header>
+
+<verse>
+<line>Pod branou 
+<chord root="A" type="m"/>vítězů, co nikdy 
+<chord root="E"/>nevyhráli,
+</line>
+<line>bez zlatých řetězů a zvonů 
+<chord root="A" type="m"/>z katedrály,
+<chord root="E"/>
+</line>
+<line>zelení 
+<chord root="A" type="m"/>molodci z romance 
+<chord root="D" type="m"/>iluzorní,
+</line>
+<line>po matce 
+<chord root="A" type="m"/>sirotci, po otci 
+<chord root="E"/>bezprizorní,
+</line>
+<kline>hrajeme 
+<chord root="A" type="m"/>v karty.
+<chord root="E"/>
+</line>
+</verse>
+</song>
+</songs>
+</songbook>
