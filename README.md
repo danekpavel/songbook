@@ -1,10 +1,12 @@
-# Songbook
-A simple command line tool for creating PDF songbooks from XML documents.
+# Songbook Converter
+An application for creating PDF songbooks from XML documents.
 
 ## Contents
 - [Getting started](#getting-started)
-  - [Building Songbook](#building-songbook)
+  - [Building *Songbook Converter*](#building-songbook)
   - [Usage](#usage)
+    - [GUI version](#gui-version)
+    - [Command line](#command-line)
 - [Songbook XML specification](#specifying-the-songbooks-content-in-xml)
   - [Global settings](#global-settings)
   - [Songs](#songs)
@@ -15,9 +17,9 @@ A simple command line tool for creating PDF songbooks from XML documents.
 
 ## Getting started
 ### Prerequisities
-This app is implemented in C++ and can be build using [CMake](https://cmake.org/) and a build system and C++ compiler of your choice. [Xerces-C++](https://xerces.apache.org/xerces-c/) is used for XML parsing and has to be installed separately. To produce the final PDF, [XeTeX](https://xetex.sourceforge.net/) has to be installed.
+This app is implemented in C++ and can be build using [CMake](https://cmake.org/) and a build system and C++ compiler of your choice. [Qt6](https://www.qt.io/product/qt6) is used for GUI and [Xerces-C++](https://xerces.apache.org/xerces-c/) for XML parsing, and both have to be installed before building *Songbook Converter*. To produce the final PDF, [XeTeX](https://xetex.sourceforge.net/) has to be installed.
 
-### Building Songbook
+### Building *Songbook Converter*
 To build using e.g. the [Ninja](https://ninja-build.org/) build system you can run:
 ```bash
 mkdir build
@@ -30,18 +32,32 @@ C++ documentation can be found [here](https://danekpavel.github.io/songbook/inde
 #### Troubleshooting
 If Xerces is installed and still isn't located by CMake, its installation path has to be specified in the first `cmake` command, e.g.:
 ```bash
-cmake -DCMAKE_PREFIX_PATH=C\:/Program\ Files\ \(x86\)/xerces-c/ -GNinja ..
+cmake -DCMAKE_PREFIX_PATH="C:/Program Files (x86)/xerces-c/" -GNinja ..
+```
+The same goes for Qt and both locations can be specified e.g. like this:
+```bash
+cmake -DCMAKE_PREFIX_PATH="C:/Program Files (x86)/xerces-c/;C:/Qt/6.6.1/mingw_64" -GNinja ..
 ```
 
 ### Usage
+#### GUI version
+*Songbook Converter* starts as a GUI application when no command line arguments are supplied.
+
+The user can select the input XML and the output PDF file and produce the PDF directly or just parse the XML to see if it contains no errors. Since the PDF is created by XeLaTeX, the program must be able to run the `xelatex` command.
+
+![app GUI](doc/img/gui.png)
+
+#### Command line
+If any command line arguments are supplied, *Songbook Converter* runs as a console application.
+
 To produce a PDF ([sb.pdf](data/sb.pdf)) from the provided [sb.xml](data/sb.xml) file, use:
 ```bash
 cd data
 ../build/songbook/songbook.exe -pdf2 sb.xml
 ```
-The Songbook program will first translate the XML file to a LaTeX source file ([sb.tex](data/sb.tex)) and then call `xelatex` to produce the final PDF songbook ([sb.pdf](data/sb.pdf)). For this to work, `xelatex` has to be available to Songbook.
+The program will first translate the XML file to a LaTeX source file ([sb.tex](data/sb.tex)) and then call `xelatex` to produce the final PDF songbook ([sb.pdf](data/sb.pdf)). For this to work, `xelatex` has to be available to *Songbook Converter*.
 
-#### Full usage
+##### Full usage
 ```
 songbook [options] <input_xml_file>
 Options:
@@ -57,7 +73,7 @@ Options:
                 used.
 ```
 
-#### Troubleshooting
+##### Troubleshooting
 On Windows, the `libxerces-c.dll` library has to be available to the program either through the PATH environment variable or by copying it from Xerces installation to the location of `songbook.exe`.
 
 ## Specifying the songbook's content in XML
