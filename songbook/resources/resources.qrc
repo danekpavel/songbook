@@ -1,0 +1,6 @@
+<RCC version="1.0">
+  <qresource>
+    <!-- Application -->
+    <file>sc_icon.ico</file>
+  </qresource>
+</RCC>

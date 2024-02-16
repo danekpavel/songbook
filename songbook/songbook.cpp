@@ -101,6 +101,7 @@ int main(int argc, char *argv[]) {
     // no command line arguments -- run GUI version
     if (argc == 1) {
         QApplication app(argc, argv);
+        app.setWindowIcon(QIcon(":/sc_icon.ico"));
 
         MainWindow window;
         window.show();
