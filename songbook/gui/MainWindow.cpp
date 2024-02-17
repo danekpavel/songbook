@@ -195,7 +195,11 @@ QString MainWindow::add_latex_run_suffix(QString message) {
 void MainWindow::run_latex() {
 
     display_status(add_latex_run_suffix("Running XeLaTeX") + "...");
-    latex_process->start("xelatex", {"-interaction=nonstopmode", latex_file});
+    QFileInfo fi{latex_file};
+    latex_process->start("xelatex", {"-interaction=nonstopmode",
+                                     "-output-directory=" + fi.canonicalPath(),
+                                     latex_file
+                                    });
 }
 
 void MainWindow::latex_finished(int exitCode, QProcess::ExitStatus exitStatus) {
