@@ -151,12 +151,14 @@ namespace songbook {
             elem = elem->getFirstElementChild();
 
             while (elem) {
-                songs.push_back(convert_song(elem));
+                try {
+                    songs.push_back(convert_song(elem));
+                } catch (SongbookException se) {};
                 elem = elem->getNextElementSibling();
             }
         }
 
-        if (sort_songs)
+        if (sort_songs_by != SortSongsBy::none)
             std::sort(begin(songs), end(songs));
 
         return printer->print_document(songs);
@@ -168,9 +170,15 @@ namespace songbook {
             std::string e_name = get_node_name(elem);
             if (e_name == "language")
                 set_language(get_text_value(elem));
-            if (e_name == "sortSongs")
-                sort_songs = (get_text_value(elem) == "yes");
-            else if (e_name != "entities") 
+            if (e_name == "sortSongsBy") {
+                std::string sort_by{get_text_value(elem)};
+                sort_songs_by = (sort_by == "name") ?
+                    SortSongsBy::name : (sort_by == "dateAdded" ?
+                        SortSongsBy::dateAdded : SortSongsBy::none);
+            } if (e_name == "convertAddedSince") {
+                std::string since{get_text_value(elem)};
+                convert_added_since = (since == "all") ? "0001-01-01" : since;
+            } else if (e_name != "entities")
                 printer->set_parameter(e_name, get_text_value(elem));
 
             elem = elem->getNextElementSibling();
@@ -185,6 +193,12 @@ namespace songbook {
         DOMElement* header_e = song_e->getFirstElementChild();
         TagValueMultiMap header_tags = read_song_header(header_e);
 
+        // abort song processing when it was added before `convert_added_since`
+        auto search = header_tags.find("dateAdded");  // must be present
+        std::string date_added = search->second;
+        if (date_added < convert_added_since)
+            throw SongbookException("song added before convertAddedSince");
+
         // convert song content
         DOMElement* elem = header_e->getNextElementSibling();
         std::string content = convert_song_content(elem);
@@ -192,9 +206,13 @@ namespace songbook {
         std::string song = printer->print_song(header_tags, content);
 
         std::string sorting_name;
-        auto search = header_tags.find("sortingName");
-        if (search != header_tags.end())
-            sorting_name = search->second;
+        if (sort_songs_by == SortSongsBy::dateAdded)
+            sorting_name = date_added;
+        else {
+            search = header_tags.find("sortingName");
+            if (search != header_tags.end())
+                sorting_name = search->second;
+        }
 
         // name must be present
         search = header_tags.find("name");
@@ -219,6 +237,9 @@ namespace songbook {
                     tag_values.emplace("author", get_text_value(author));
                     author = author->getNextElementSibling();
                 }
+            } else if (name == "dateAdded") {
+                std::string date = get_text_value(elem);
+                tag_values.emplace(std::move(name), date == "NA" ? "0001-01-01" : date);
             } else { // non-author elements
                 tag_values.emplace(std::move(name), get_text_value(elem));
             }

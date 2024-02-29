@@ -99,11 +99,12 @@ Several properties of the resulting document can be specified:
 Element name|Content type|Description|Default
 ---|---|---|---
 language|text|language which will determine the way songs are sorted by name; it should be a locale recognized on the current system (e.g., *en* or *cs_CZ*) and, generally, [IETF language tags](https://en.wikipedia.org/wiki/IETF_language_tag) should work; can also be a semicolon-separated list of locales of which the first one available on the system will be used|cs
-sortSongs|`yes`/`no`|should songs be sorted by their name?|yes
+sortSongsBy|text\*|\*one of: `name` for sorting by song names, `dateAdded` for date of addition, `none` for leaving them in the order they appear in in the XML file|name
 chorusLabel|text|label used for chorus|Ref
 tocTitle|text|title for the table of contents (list of songs) page|Obsah
 mainFont|text|font used for everything except chord names|Linux Libertine O
 chordFont|text|font used for chord names|Calibri
+convertAddedSince|date/`all`|date of addition (`YYYY-MM-DD`) of the oldest (in terms of their `dateAdded`) songs to convert; all songs are converted when `all` is used|all
 entities|[see here](#user-defined-entities)|user-defined entities|*none*
 
 To produce an English songbook, the defaults can be modified like this:
@@ -130,15 +131,16 @@ A song consists of its header, directly followed by the elements of its content:
 ```
 
 #### Song header
-Several elements can appear inside song header (`<name>` is mandatory):
+Several elements can appear inside song header (`<name>` and `<dateAdded>` are mandatory):
 
 Element|Description
 ---|---
 name|song name
 sortingName|song name used for sorting
-author/authors|either single `<author>` element or several `<author>` elements inside an `<authors>` element
+(authors/)author|either single `<author>` element or several `<author>` elements inside an `<authors>` element
 album|album name
 year|release year
+dateAdded|date of the song's addition to the songbook; either a date in the `YYYY-MM-DD` format or `NA` which will be taken as `0001-01-01`; `<convertAddedSince>` in [global settings](#global-settings) can be used to convert only songs added starting with a specified date
 
 Individual authors from `<authors>` will be separated by slashes in the final songbook PDF. For example, this header specification
 ```xml
@@ -150,6 +152,7 @@ Individual authors from `<authors>` will be separated by slashes in the final so
   </authors>
   <album>Idiot Prayer</album>
   <year>2020</year>
+  <dateAdded>2023-08-05</dateAdded>
 </header>
 ```
 will result in a header like this:

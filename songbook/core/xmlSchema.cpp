@@ -22,14 +22,36 @@ R"(<?xml version="1.0"?>
 <xs:complexType name="settingsType">
   <xs:all>
     <xs:element name="language" type="xs:string" minOccurs="0"/>
-    <xs:element name="sortSongs" type="yesNoType" minOccurs="0"/>
+    <xs:element name="sortSongsBy" type="sortSongsByType" minOccurs="0"/>
     <xs:element name="chorusLabel" type="xs:string" minOccurs="0"/>
     <xs:element name="tocTitle" type="xs:string" minOccurs="0"/>
     <xs:element name="mainFont" type="xs:string" minOccurs="0"/>
     <xs:element name="chordFont" type="xs:string" minOccurs="0"/>
+    <xs:element name="convertAddedSince" type="convertAddedSinceType" minOccurs="0"/>
     <xs:element ref="entities" minOccurs="0"/>
   </xs:all>
 </xs:complexType>
+
+<xs:simpleType name="sortSongsByType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="name"/>
+    <xs:enumeration value="dateAdded"/>
+    <xs:enumeration value="none"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="convertAddedSinceType">
+  <xs:union>
+    <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="all"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:union>
+</xs:simpleType>
 
 <xs:element name="entities">
   <xs:complexType>
@@ -69,6 +91,7 @@ R"(<?xml version="1.0"?>
     <xs:element ref="authorGroup" minOccurs="0"/>
     <xs:element name="album" type="xs:string" minOccurs="0"/>
     <xs:element name="year" type="xs:gYear" minOccurs="0"/>
+    <xs:element name="dateAdded" type="dateAddedType"/>
   </xs:all>
 </xs:complexType>
 
@@ -81,6 +104,19 @@ R"(<?xml version="1.0"?>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
+
+<xs:simpleType name="dateAddedType">
+  <xs:union>
+    <xs:simpleType>
+      <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+    <xs:simpleType>
+      <xs:restriction base="xs:token">
+        <xs:enumeration value="NA"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:union>
+</xs:simpleType>
 
 <xs:complexType name="multicolsType">
   <xs:choice minOccurs="0" maxOccurs="unbounded">

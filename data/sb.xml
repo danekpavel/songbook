@@ -1,8 +1,10 @@
 <songbook>
 <settings>
   <language>cs;Czech</language>
+  <sortSongsBy>name</sortSongsBy>
   <chorusLabel>Ref</chorusLabel>
   <tocTitle>Obsah</tocTitle>
+  <convertAddedSince>all</convertAddedSince>
 </settings>
 
 <songs>
@@ -12,6 +14,7 @@
     <author>Karel Kryl</author>
     <album>Maškary</album>
     <year>1970</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -99,6 +102,7 @@
     <author>Pink Floyd</author>
     <album>The Wall</album>
     <year>1973</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -207,6 +211,7 @@
       <author>Pavel Kácha</author>
       <author>ASPM</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -302,6 +307,7 @@
   <header>
     <name>Dáma s čápem</name>
     <author>Sto zvířat</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -371,6 +377,7 @@
   <header>
     <name>Někdy se jdu opít</name>
     <author>ASPM</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -419,6 +426,7 @@
     <author>Robert Křesťan &ampersand; Druhá tráva</author>
     <album>Starodávný svět</album>
     <year>1994</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -497,6 +505,7 @@
     <author>Pink Floyd</author>
     <album>The Final Cut</album>
     <year>1983</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -567,6 +576,7 @@
     <author>Pink Floyd</author>
     <album>The Final Cut</album>
     <year>1983</year>
+    <dateAdded>NA</dateAdded>
   </header>
  
 <verse>
@@ -684,6 +694,7 @@
     <author>Mňága a Žďorp</author>
     <album>Nejlíp jim bylo</album>
     <year>1995</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -767,6 +778,7 @@
     <author>Mňága a Žďorp</author>
     <album>Chceš mě? Chci Tě!</album>
     <year>1999</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -838,6 +850,7 @@
     <author>Mňága a Žďorp</author>
     <album>Made in Valmez</album>
     <year>1991</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -886,6 +899,7 @@
       <author>Josef Kainar</author>
       <author>Vladimír Mišík</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -966,6 +980,7 @@
   <header>
     <name>Sladké je žít</name>
     <author>Vladimír Mišík</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1011,6 +1026,7 @@
   <header>
     <name>Špejchar blues</name>
     <author>Vladimír Mišík</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1062,6 +1078,7 @@
   <header>
     <name>Co jsem si vzal</name>
     <author>Vladimír Mišík</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1134,6 +1151,7 @@
   <header>
     <name>Obelisk</name>
     <author>Vladimír Mišík</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1214,6 +1232,7 @@
   <header>
     <name>Jednohubky</name>
     <author>Vladimír Mišík</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1285,6 +1304,7 @@
       <author>Václav Hrabě</author>
       <author>Vladimír Mišík</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1357,6 +1377,7 @@
       <author>Jiří Suchý</author>
       <author>Jiří Šlitr</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1399,6 +1420,7 @@
     <author>Jaromír Nohavica</author>
     <album>Osmá barva duhy</album>
     <year>1989</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1465,6 +1487,7 @@
     <name>Jarní kurýr</name>
     <author>Miki Ryvola</author>
     <year>1967</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1535,6 +1558,7 @@
       <author>Bob Dylan</author>
       <author>Petr Kalandra</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1604,6 +1628,7 @@
   <header>
     <name>Mávátka</name>
     <author>Jaromír Nohavica</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1696,6 +1721,7 @@
   <header>
     <name>Aceton blues</name>
     <author>ASPM</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1722,6 +1748,7 @@
   <header>
     <name>Jantarová země</name>
     <author>Žalman</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1775,6 +1802,7 @@
   <header>
     <name>Věřím v nás</name>
     <author>ASPM</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <multicols>
@@ -1876,6 +1904,7 @@
   <header>
     <name>Trochu v hlavě mám</name>
     <author>ASPM</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -1931,6 +1960,7 @@
     <author>Karel Kryl</author>
     <album>Monology</album>
     <year>1992</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2025,6 +2055,7 @@
     <author>Karel Kryl</author>
     <album>Bratříčku, zavírej vrátka</album>
     <year>1969</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2109,6 +2140,7 @@
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>The Boatman's Call</album>
     <year>1997</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2203,6 +2235,7 @@
   <header>
     <name>Žalm 71.</name>
     <author>Karel Kryl</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2265,6 +2298,7 @@
     <author>Pink Floyd</author>
     <album>The Final Cut</album>
     <year>1983</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2414,12 +2448,14 @@
 </song>
 
 
+<!--
 <song>
   <header>
     <name>High Hopes</name>
     <author>Pink Floyd</author>
     <album>The Division Bell</album>
     <year>1994</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2518,6 +2554,7 @@
 </chorus>
 
 </song>
+-->
 
 
 <song>
@@ -2526,6 +2563,7 @@
     <author>Zaz</author>
     <album>Zaz</album>
     <year>2010</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2590,6 +2628,7 @@
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>Murder Ballads</album>
     <year>1996</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2697,6 +2736,7 @@
     </authors>
     <album>Wheels of Fire</album>
     <year>1968</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2737,6 +2777,7 @@
     <author>Karel Kryl</author>
     <album>Tekuté písky</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2808,6 +2849,7 @@
       <author>Jiří Šlitr</author>
     </authors>
     <year>1960</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -2905,6 +2947,7 @@
     </authors>
     <album>Jonáš a tingl-tangl</album>
     <year>1962</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3020,6 +3063,7 @@
     <author>Pink Floyd</author>
     <album>The Final Cut</album>
     <year>1983</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3100,6 +3144,7 @@
     <author>Pink Floyd</author>
     <album>The Wall</album>
     <year>1973</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3192,6 +3237,7 @@
       <author>Henry Mancini</author>
     </authors>
     <year>1961</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3261,6 +3307,7 @@
   <header>
     <name>Cukrářská bossa-nova</name>
     <author>Jaromír Nohavica</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3355,6 +3402,7 @@
   <header>
     <name>Čarodějova píseň</name>
     <author>Vlasta Redl</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <multicols>
@@ -3469,6 +3517,7 @@
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>The Lyre of Orpheus</album>
     <year>2004</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3585,6 +3634,7 @@ rain until you got nothing left to give<chord root="E" type="m"/>
   <header>
     <name>Montér blues</name>
     <author>Vlasta Redl</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3679,6 +3729,7 @@ když nepo<chord root="D" type="m"/>máhá
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>The Lyre of Orpheus</album>
     <year>2004</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3823,6 +3874,7 @@ když nepo<chord root="D" type="m"/>máhá
     <author>The Doors</author>
     <album>Waiting for the Sun</album>
     <year>1968</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -3926,6 +3978,7 @@ když nepo<chord root="D" type="m"/>máhá
   <header>
     <name>Starej pán</name>
     <author>Petr Skoumal</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4023,6 +4076,7 @@ když nepo<chord root="D" type="m"/>máhá
     <name>Blues na cestu poslední</name>
     <author>Jiří Suchý</author>
     <year>1958</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse><line><chord root="C"/></line></verse>
@@ -4068,6 +4122,7 @@ když nepo<chord root="D" type="m"/>máhá
     <author>Robert Křesťan</author>
     <album>Pohlednice</album>
     <year>1997</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4118,6 +4173,7 @@ když nepo<chord root="D" type="m"/>máhá
     <author>Jamiroquai</author>
     <album>A Funk Odyssey</album>
     <year>2001</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse><line><chord root="A" type="m7/9"/><chord root="A" type="m6/9"/></line></verse>
@@ -4195,6 +4251,7 @@ když nepo<chord root="D" type="m"/>máhá
   <header>
     <name>Byla vojna</name>
     <author>Čechomor</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4248,6 +4305,7 @@ když nepo<chord root="D" type="m"/>máhá
     </authors>
     <album>V penziónu Svět</album>
     <year>1988</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4366,6 +4424,7 @@ když nepo<chord root="D" type="m"/>máhá
   <header>
     <name>Somrkrálka blues</name>
     <author>Nerez</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse><line><chord root="C" type="maj7"/><chord root="D" type="m7"/><chord root="E" type="m7"/><chord root="D" type="m7"/></line></verse>
@@ -4440,6 +4499,7 @@ když nepo<chord root="D" type="m"/>máhá
     <author>ZAZ</author>
     <album>Recto verso</album>
     <year>2013</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4524,6 +4584,7 @@ když nepo<chord root="D" type="m"/>máhá
     <name>Všechno co chci</name>
     <author>Vlasta Redl</author>
     <year>1998</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4622,6 +4683,7 @@ když nepo<chord root="D" type="m"/>máhá
     <name>Co když</name>
     <author>Vlasta Redl</author>
     <year>1998</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4715,6 +4777,7 @@ je jen <chord root="A"/>hloupá.
     <author>Záviš</author>
     <album>Záviš, syn vojáka</album>
     <year>2001</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4822,6 +4885,7 @@ je jen <chord root="A"/>hloupá.
     <author>Karel Kryl</author>
     <album>Jedůfky</album>
     <year>1996</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4884,6 +4948,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     <name>Ах не вините меня в том</name>
     <sortingName>Ach ně vinitě meňa v tom</sortingName>
     <author>Alexander Rosenbaum</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -4938,6 +5003,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     <sortingName>Nadpis na kamně</sortingName>
     <author>Bulat Okudžava</author>
     <year>1982</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5004,6 +5070,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     <author>Pink Floyd</author>
     <album>Atom Heart Mother</album>
     <year>1970</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5056,6 +5123,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
       <author>Jiří Suchý</author>
       <author>Jiří Šlitr</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5119,6 +5187,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
   <header>
     <name>Černá kára</name>
     <author>Josef Kainar</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5181,6 +5250,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
       <author>Michal Horáček</author>
       <author>Petr Hapka</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <multicols>
@@ -5290,6 +5360,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
   <header>
     <name>Topol</name>
     <author>Vlasta Redl</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5361,6 +5432,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     <author>Vlasta Redl</author>
     <album>O kolo zpět</album>
     <year>1997</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5423,6 +5495,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     <author>Květy</author>
     <album>Bílé včely</album>
     <year>2012</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5466,6 +5539,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     <author>Severní nástupiště</author>
     <album>O krysách a vlcích</album>
     <year>2018</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5559,6 +5633,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
   <header>
     <name>V pořádku</name>
     <author>Vlasta Redl</author>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <multicols>
@@ -5667,6 +5742,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
       <author>ASPM</author>
       <author>traditional</author>
     </authors>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5752,6 +5828,7 @@ zasloužilého umělce s plesnivou <chord root="A" type="m"/>bradkou.<chord root
     </authors>
     <album>Kolej Yesterday</album>
     <year>1984</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -5857,6 +5934,7 @@ u<chord root="D"/>licí na ko
     <author>Vlasta Redl</author>
     <album>Na výletě</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6008,6 +6086,7 @@ u<chord root="D"/>licí na ko
     <author>Vlasta Redl</author>
     <album>Na výletě</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6062,6 +6141,7 @@ u<chord root="D"/>licí na ko
     <author>Vlasta Redl</author>
     <album>Na výletě</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6132,6 +6212,7 @@ u<chord root="D"/>licí na ko
     <author>Vlasta Redl</author>
     <album>Na výletě</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6210,6 +6291,7 @@ u<chord root="D"/>licí na ko
     <author>Vlasta Redl</author>
     <album>O kolo zpět</album>
     <year>1997</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6316,6 +6398,7 @@ u<chord root="D"/>licí na ko
     <author>Vlasta Redl</author>
     <album>O kolo zpět</album>
     <year>1997</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6459,6 +6542,7 @@ u<chord root="D"/>licí na ko
     </authors>
     <album>Dohrála hudba</album>
     <year>1989</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6566,6 +6650,7 @@ u<chord root="D"/>licí na ko
     </authors>
     <album>Idiot Prayer</album>
     <year>2020</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6668,6 +6753,7 @@ u<chord root="D"/>licí na ko
     </authors>
     <album>Grinderman</album>
     <year>2007</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6728,6 +6814,7 @@ u<chord root="D"/>licí na ko
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>The Good Son</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <chorus>
@@ -6786,6 +6873,7 @@ u<chord root="D"/>licí na ko
     </authors>
     <album>V tom roce pitomém</album>
     <year>1990</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6850,6 +6938,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     <author>Dire Straits</author>
     <album>Sultans of Swing</album>
     <year>1978</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6918,6 +7007,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>Ghosteen</album>
     <year>2019</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -6989,6 +7079,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     <author>T. Rex</author>
     <album>Electric Warrior</album>
     <year>1971</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -7046,6 +7137,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     <author>Robert Křesťan &ampersand; Druhá tráva</author>
     <album>Robert Křesťan &ampersand; Druhá tráva</album>
     <year>1991</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -7185,6 +7277,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     </authors>
     <album>Otevřte, jsou tady lidé</album>
     <year>1993</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -7246,6 +7339,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     <author>Manu Chao</author>
     <album>Clandestino</album>
     <year>1998</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -7325,6 +7419,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     </authors>
     <album>Hair</album>
     <year>1967</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -7400,6 +7495,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     </authors>
     <album>Na II. programe sna</album>
     <year>1973</year>
+    <dateAdded>NA</dateAdded>
   </header>
 
 <verse>
@@ -7487,6 +7583,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
     <author></author>
     <album></album>
     <year></year>
+    <dateAdded></dateAdded>
   </header>
 
 <verse>

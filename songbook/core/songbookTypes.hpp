@@ -32,6 +32,11 @@ namespace songbook {
     enum VerseType {verse, chorus};
 
     /**
+     * Specifies how to sort songs.
+     */
+    enum SortSongsBy {name, dateAdded, none};
+
+    /**
      * Lyrics or chord line item structure.
      */
     struct LineItem {

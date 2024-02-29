@@ -138,6 +138,7 @@ namespace songbook {
          * 
          * @param song_n `<song>` XML element
          * @return converted song
+         * @throws SongbookException when a song's `dateAdded` is older than `convert_added_since`
          */
         Song convert_song(const xercesc::DOMNode* song_n) const;
 
@@ -190,7 +191,12 @@ namespace songbook {
         /**
          * Should songs be sorted by name?
          */
-        bool sort_songs = true;
+        int sort_songs_by = SortSongsBy::name;
+
+        /**
+         * Oldest addition date for a song to be converted
+         */
+        std::string convert_added_since = "0001-01-01";
     };
 
 
