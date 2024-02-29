@@ -7391,6 +7391,94 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 </song>
 
+<song>
+  <header>
+    <name>Náhle</name>
+    <authors>
+      <author>Kamil Peteraj</author>
+      <author>Marián Varga</author>
+    </authors>
+    <album>Na II. programe sna</album>
+    <year>1973</year>
+  </header>
+
+<verse>
+<line>
+<chord root="special" type="[:"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="special" type=":]"/>
+</line>
+</verse>
+
+<verse>
+<line><chord root="G"/>Nehľadal som <chord root="D"/>veľa, iba <chord root="G"/>teba,<chord root="D"/></line>
+<line><chord root="G"/>trocha lásky, <chord root="D"/>ktorá padá z <chord root="G"/>neba.<chord root="D"/></line>
+<line><chord root="G"/>Ako ranná <chord root="E" type="m"/>rosa <chord root="C"/>na biele sny <chord root="D"/>kvetín,</line>
+<line><chord root="G"/>ktorú vrabec <chord root="E" type="m"/>svetu, <chord root="C"/>svetu vykle<chord root="D"/>betí.</line>
+</verse>
+
+<verse>
+<line>Preto som rád hľadel do neznáma,</line>
+<line>čakal som, že prídeš ku mne sama.</line>
+<line>Jedného dňa z rána, pod halúzkou višne,</line>
+<line>že budem mať trému a ty srdce pyšné.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="D"/>
+</line>
+</verse>
+
+<verse>
+<line>Nehľadal som veľa, som už taký,</line>
+<line>pred nosom mi ušli mnohé vlaky.</line>
+<line>Keď som ťa chcel objať, primrzli mi dlane</line>
+<line>a ty si mi zmizla, navždy zmizla v bráne.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="D"/>
+</line>
+<line>
+<chord root="Ab"/>
+<chord root="Eb"/>
+<chord root="Ab"/>
+<chord root="Eb"/>
+</line>
+</verse>
+
+<verse>
+<line><chord root="Ab"/>Odvtedy ťa <chord root="Eb"/>hľadám medzi <chord root="Ab"/>ľuďmi,<chord root="Eb"/></line>
+<line><chord root="Ab"/>takou láskou <chord root="Eb"/>ako vtedy <chord root="Ab"/>buď mi.<chord root="Eb"/></line>
+<line><chord root="Ab"/>Pod halúzkou <chord root="F" type="m"/>višne, <chord root="Db"/>ktorú vánok <chord root="Eb"/>mýli,</line>
+<line><chord root="Ab"/>aby o nej <chord root="F" type="m"/>vrabce, <chord root="Db"/>vrabce klebe<chord root="Eb"/>tili.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="G"/>
+<chord root="D"/>
+<chord root="G"/>
+</line>
+</verse>
+
+</song>
+
 <!--
 
 <song>
