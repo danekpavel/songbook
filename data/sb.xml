@@ -7575,6 +7575,283 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 </song>
 
+<song>
+  <header>
+    <name>Martině v sedmi pádech</name>
+      <author>Karel Kryl</author>
+    <album>Dopisy</album>
+    <year>1988</year>
+    <dateAdded>2024-05-18</dateAdded>
+  </header>
+
+<multicols>
+<verse>
+<line>
+<chord root="F"/>V obálce 
+<chord root="C"/>džbán a květina a list, v němž 
+<chord root="A" type="m"/>ptá se Martina,
+</line>
+<line>jak chutná 
+<chord root="G"/>chleba,
+</line>
+<line>co jím, když země vymetám, a proč jsem 
+<chord root="F" optional="yes"/>tady &ndash; a ne 
+<chord root="G" optional="yes"/>tam,
+</line>
+<line>kde je mne 
+<chord root="C"/>třeba?
+<chord root="G"/>
+<chord root="F"/>
+</line>
+</verse>
+
+<verse>
+<line>Smažím si vejce na špeku a ač je očím do breku, </line>
+<line>ústa se smějí, </line>
+<line>když nad otázkou přemítám, proč nejsem tady ani tam, </line>
+<line>kde prý mne chtějí. </line>
+</verse>
+
+<verse>
+<line>Smět sedět vedle Martiny a píti suché Martini </line>
+<line>k mokrému masu, </line>
+<line>sotva bych asi uznával to, co jsem doma zpívával </line>
+<line>za starých časů. </line>
+</verse>
+
+<verse>
+<line>Ošlehán vichry větráků, měl bych už kolem metráku </line>
+<line>tak, jak se sluší, </line>
+<line>a kromě piva v žejdlíku měl bych i bachor z knedlíků </line>
+<line>a tučnou duši. </line>
+</verse>
+
+<chorus>
+<line>
+<chord root="C" type="7"/>Ač je to 
+<chord root="F"/>jenom dvě stě 
+<chord root="G"/>kilometrů 
+<chord root="C"/>nebo ještě 
+<chord root="A" type="m"/>blíže
+</line>
+<line>a 
+<chord root="F"/>zbývá už jen 
+<chord root="G"/>duše k procle
+<chord root="C"/>ní,
+<chord root="C" type="7"/>
+</line>
+<line>na 
+<chord root="F"/>politickém 
+<chord root="G"/>barometru 
+<chord root="C"/>setrvalá 
+<chord root="A" type="m"/>níže
+</line>
+<line>a 
+<chord root="F"/>dokud trvá, 
+<chord root="G"/>svět se nezmě
+<chord root="C"/>ní.
+<chord root="G"/>
+<chord root="F"/>
+</line>
+</chorus>
+
+<verse>
+<line>Kdybych chtěl zajet k Martině, snad bych pak dělal v Martině </line>
+<line>holoubky míru, </line>
+<line>nebo bych bydlel v Záluží a doma z vody z kaluží </line>
+<line>vyráběl síru. </line>
+</verse>
+
+<verse>
+<line>A snad bych, věru, na to dbal a chodil řváti na fotbal </line>
+<line>&ndash; to kvůli hlasu, </line>
+<line>v putyce zpíval s čundráky a rumem léčil mindráky </line>
+<line>z absence pasu. </line>
+</verse>
+
+<verse>
+<line>Kdybych chtěl líbat Martinu, dal bych svou páteř za třtinu, </line>
+<line>ohnutou větrem, </line>
+<line>trávil si život schůzemi a večer brblal v přízemí </line>
+<line>nad Černým Petrem. </line>
+</verse>
+
+<verse>
+<line>Nosil bych hesla v zástupu a třeba stavěl chalupu </line>
+<line>a kradl cihly, </line>
+<line>koupil bych láhev stoličné a z jedné sklínky hořčičné </line>
+<line>bychom si přihli. </line>
+</verse>
+
+<chorus/>
+<columnbreak/>
+
+<verse>
+<line>Kdybych chtěl mluvit s Martinou, plet' bych si bukvy s latinou </line>
+<line>a knutu s žezlem, </line>
+<line>měnil bych pravdu ve lhaní, v častušku hudbu varhanní, </line>
+<line>plet' dobro se zlem. </line>
+</verse>
+
+<verse>
+<line>Dbal místo snění konzumu, nabádal děti k rozumu, </line>
+<line>z prospěchu podlý, </line>
+<line>žil pěkně vprostřed ohrady a zdobil okna, výklady </line>
+<line>a vzýval modly. </line>
+</verse>
+
+<verse>
+<line>Snad moh' bych najít v Martině přítele ve zlé hodině, </line>
+<line>kdy člověk zoufá, </line>
+<line>jenž uspí v stínu borovic a ví, že chlap chce skoro víc, </line>
+<line>nežli si troufá. </line>
+</verse>
+
+<verse>
+<line>Obalí trny sametem, v náruči skryje před světem, </line>
+<line>horečku zchladí, </line>
+<line>má cit i rozum člověčí a dá ti pocit bezpečí, </line>
+<line>když všichni zradí. </line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Svět dává nerad, Martino, zadarmo nebo lacino, </line>
+<line>však poznáš s lety, </line>
+<line>že čas i kámen rozhlodá a poušť když jednou zřídlo dá, </line>
+<line>rozkvetou květy. </line>
+</verse>
+
+<verse>
+<line>Až svět mne steskem obklopí, dám si tvou kytku do klopy, </line>
+<line>jak kážou mravy, </line>
+<line>po vzoru starých Habánů připiji vínem ze džbánu </line>
+<line>na tvoje zdraví. </line>
+</verse>
+
+<chorus/>
+<chorus/>
+<chorus/>
+</multicols>
+</song>
+
+<song>
+  <header>
+    <name>Buřty, pivo a nenávist</name>
+    <authors>
+      <author>Michal Horáček</author>
+      <author>Petr Hapka</author>
+    </authors>
+    <album>V penziónu svět</album>
+    <year>1989</year>
+    <dateAdded>2024-04-19</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="G"/>Hospůdka páté cenové skupiny,
+</line>
+<line>
+<chord root="C" type="m"/>na zemi bláto, ve stěnách pukliny,
+</line>
+<line>
+<chord root="G"/>no není bůhvíja
+<chord root="H" type="m"/>ká, 
+<chord root="A" type="m7"/>no není bůhvíja
+<chord root="D"/>ká,
+</line>
+<line>no není bůhvíja
+<chord root="G"/>ká.
+</line>
+</verse>
+
+<verse>
+<line>Jenže mně stačí, jen žádný obavy,</line>
+<line>s borcema pivo leju si do hlavy,</line>
+<line>pijeme na stojáka, pijeme na stojáka, </line>
+<line>pijeme na stojáka.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="G"/>Na jídelním lístku co bych asi měl tak číst,
+</line>
+<line>měl tak číst, 
+<chord root="D"/>měl tak číst,
+</line>
+<line>
+<chord root="G"/>dávno vím co na něm stojí, jenom buřty a pivo a 
+<chord root="D"/>nenávist.
+</line>
+</chorus>
+
+<multicols>
+<verse>
+<line>V hospůdce páté cenové skupiny, </line>
+<line>v hlavě mám pivo, ale ne piliny,</line>
+<line>tam venku zmeškal jsem start, </line>
+<line>tam venku zmeškal jsem start,</line>
+<line>zmeškal jsem start.</line>
+</verse>
+
+<verse>
+<line>Co mi svět dává, nespletu do věnce,</line>
+<line>to všechno vzal by bezrukej z kredence,</line>
+<line>čmárám si na umakart, čmárám si na umakart, </line>
+<line>čmárám si na umakart.</line>
+</verse>
+
+<chorus>
+<line>Na jídelním lístku co bych asi měl tak číst, </line>
+<line>měl tak číst, měl tak číst,</line>
+<line>nabídka je pořád stejná, jenom buřty a pivo a nenávist.</line>
+</chorus>
+
+<verse>
+<line>V hospůdce páté cenové skupiny, </line>
+<line>ať hodí šutrem, ten kdo je bez viny,</line>
+<line>šéfíku ty to nejsi, šéfíku ty to nejsi, </line>
+<line>ty to nejsi.</line>
+</verse>
+
+<verse>
+<line>Jen si svý řeči nabouchej do kecek,</line>
+<line>nezkoušej na mě, že nikdy nemáš vztek</line>
+<line>a na ten připijem si, a na ten připijem si, </line>
+<line>a na ten připijem si.</line>
+</verse>
+
+<chorus>
+<line>Z jídelního lístku tady nemá smysl číst, ani jíst, </line>
+<line>ani nic,</line>
+<line>koukni kolem a co vidíš, jenom buřty a pivo a nenávist.</line>
+</chorus>
+<columnbreak/>
+
+<verse>
+<line>V hospůdce páté cenové skupiny, </line>
+<line>nemám svou starou, jen od ní modřiny,</line>
+<line>jinak mi nedává nic, jinak mi nedává nic,</line>
+<line>nedává nic.</line>
+</verse>
+
+<verse>
+<line>Pojďte se bavit, nebudem zdeptaný, </line>
+<line>ruce té sochy z růžové fontány</line>
+<line>narveme do popelnic, narveme do popelnic, </line>
+<line>narveme do popelnic,</line>
+<line>&hellip;a ty nóbl kabáty</line>
+<line>narveme do popelnic, narveme do popelnic,</line>
+<line>&hellip;a ty nóbl autíčka</line>
+<line>narveme do popelnic, narveme do popelnic,</line>
+<line>&hellip;a lásku a všecko hezké</line>
+<line>narveme do popelnic, narveme do popelnic,</line>
+<line>do popelnic.</line>
+</verse>
+</multicols>
+</song>
+
 <!--
 
 <song>
