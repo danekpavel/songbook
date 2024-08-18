@@ -7775,13 +7775,13 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 <chorus>
 <line>
-<chord root="G"/>Na jídelním lístku co bych asi měl tak číst,
+<chord root="G"/>Na jídelním lístku, co bych asi měl tak číst,
 </line>
 <line>měl tak číst, 
 <chord root="D"/>měl tak číst,
 </line>
 <line>
-<chord root="G"/>dávno vím co na něm stojí, jenom buřty a pivo a 
+<chord root="G"/>dávno vím, co na něm stojí, jenom buřty a pivo a 
 <chord root="D"/>nenávist.
 </line>
 </chorus>
@@ -7803,7 +7803,7 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 </verse>
 
 <chorus>
-<line>Na jídelním lístku co bych asi měl tak číst, </line>
+<line>Na jídelním lístku, co bych asi měl tak číst, </line>
 <line>měl tak číst, měl tak číst,</line>
 <line>nabídka je pořád stejná, jenom buřty a pivo a nenávist.</line>
 </chorus>
@@ -7841,15 +7841,189 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 <line>ruce té sochy z růžové fontány</line>
 <line>narveme do popelnic, narveme do popelnic, </line>
 <line>narveme do popelnic,</line>
-<line>&hellip;a ty nóbl kabáty</line>
+<line>&hellip;a ty nóbl kabáty taky</line>
 <line>narveme do popelnic, narveme do popelnic,</line>
 <line>&hellip;a ty nóbl autíčka</line>
 <line>narveme do popelnic, narveme do popelnic,</line>
-<line>&hellip;a lásku a všecko hezké</line>
-<line>narveme do popelnic, narveme do popelnic,</line>
-<line>do popelnic.</line>
+<line>&hellip;a lásku a všecko hezký</line>
+<line>narveme do popelnic, do popelnic!</line>
 </verse>
 </multicols>
+</song>
+
+<song>
+  <header>
+    <name>And No More Shall We Part</name>
+    <author>Nick Cave &ampersand; the Bad Seeds</author>
+    <album>No More Shall We Part</album>
+    <year>2001</year>
+    <dateAdded>2024-05-27</dateAdded>
+  </header>
+
+<verse>
+<line>And no more shall we 
+<chord root="Bb" type="7"/>part,
+<chord root="A" type="7"/>
+<chord root="D" type="m"/>
+</line>
+<line>it will no longer be neces
+<chord root="Bb" type="7"/>sary.
+<chord root="A" type="7"/>
+<chord root="D" type="m"/>
+</line>
+<line>And no more will I 
+<chord root="F"/>say, 
+<chord root="G" type="m"/>dear 
+<chord root="C"/>heart,
+</line>
+<line>I am a
+<chord root="Bb" type="maj7"/>lone and 
+<chord root="A" type="7"/>she 
+<chord root="D" type="m"/>has left me.
+</line>
+</verse>
+
+<verse>
+<line>And no more shall we part,</line>
+<line>the contracts are drawn up, the ring is locked upon the finger.</line>
+<line>And never again will my letters start</line>
+<line>sadly, or in the depths of winter.</line>
+</verse>
+
+<verse>
+<line>And no more shall we part,</line>
+<line>all the hatchets have been buried now.</line>
+<line>And all of the birds will sing to your beautiful heart</line>
+<line>upon the bough.</line>
+</verse>
+
+<verse>
+<line>And no more shall we part,</line>
+<line>your chain of command has been silenced now.</line>
+<line>And all of those birds would've sung to your beautiful heart</line>
+<line>Anyhow</line>
+</verse>
+
+<verse>
+<line>Lord, 
+<chord root="F"/>stay by me,
+<chord root="C" bass="G"/>
+<chord root="G" type="m"/>
+</line>
+<line>don't go 
+<chord root="C" bass="G"/>down
+<chord root="F"/>
+</line>
+<line>I'll never be fr
+<chord root="C" bass="G"/>ee
+<chord root="G" type="m"/>
+</line>
+<line>if I'm not free 
+<chord root="C" bass="G"/>now.
+<chord root="F"/>
+</line>
+<line>Lord, stay by me</line>
+<line>and don't go down,</line>
+<line>I never was free,</line>
+<line>what are you talking about?</line>
+</verse>
+
+<verse>
+<line>For no more shall we part</line>
+<line>And no more shall we part</line>
+</verse>
+
+</song>
+
+<song>
+  <header>
+    <name>Na smrteľnej posteli</name>
+    <author>Richar Müller</author>
+    <album>55</album>
+    <year>2016</year>
+    <dateAdded>2024-08-18</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="D"/>Bude to možno 
+<chord root="G"/>v piatok večer,
+</line>
+<line>
+<chord root="A"/>týždeň bude šťastne 
+<chord root="D"/>pri cieli
+</line>
+<line>
+<chord root="B" type="m"/>vylihovať v spolo
+<chord root="C#"/>čnosti slečien
+</line>
+<line>
+<chord root="F#" type="7"/>a ja na smrtelnej 
+<chord root="B" type="m"/>posteli,
+<chord root="A"/>
+</line>
+<line>a 
+<chord root="G"/>ja 
+<chord root="A"/>na smrtelnej 
+<chord root="D"/>posteli.
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="D" type="maj"/>
+<chord root="G"/>
+<chord root="D" type="maj"/>
+<chord root="G"/>
+</line>
+</verse>
+
+<verse>
+<line>V tom už mám prax, aj keď sa nezdám,</line>
+<line>veď aj také fámy leteli:</line>
+<line>Tomu už zapadá jeho hviezda!</line>
+<line>Ten je na smrteľnej posteli!</line>
+</verse>
+
+<verse>
+<line>Poviem vám drahí pozostalí,</line>
+<line>čo je smutné na poslednej posteli.</line>
+<line>Nie, že je člověk zrazu malý,</line>
+<line>ale že sa o ňu s nikým nedelí.</line>
+</verse>
+
+<verse>
+<line>
+<chord root="Eb"/>Niekto si pýta 
+<chord root="Ab"/>kríž a kahan,
+</line>
+<line>
+<chord root="Bb"/>iný zas Bacha či 
+<chord root="Eb"/>slastný šluk.
+</line>
+<line>
+<chord root="C" type="m"/>Mňa bude škriet, keď 
+<chord root="D" type="m7b5"/>nenahmatám
+</line>
+<line>
+<chord root="G" type="7"/>naslepo dotyk 
+<chord root="C" type="m"/>tvojich rúk.
+<chord root="Bb"/>
+</line>
+<line>na 
+<chord root="Ab"/>slepo 
+<chord root="Bb"/>dotyk tvojich 
+<chord root="Eb"/>rúk.
+</line>
+</verse>
+
+<verse>
+<line>Môže to prísť už o rok o dva,</line>
+<line>ten hore mi skrátka vypne prúd.</line>
+<line>Namiesto Styxu len tmnavá chodba,</line>
+<line>vtedy drahá prosím so mnou buď! </line>
+</verse>
+
 </song>
 
 <!--
