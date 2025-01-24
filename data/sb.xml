@@ -8026,6 +8026,91 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 </song>
 
+<song>
+  <header>
+    <name>Štěstí je krásná věc</name>
+    <authors>
+      <author>Michal Horáček</author>
+      <author>Petr Hapka</author>
+    </authors>
+    <album>V penzionu Svět</album>
+    <year>1988</year>
+    <dateAdded>2025-01-05</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="C"/>Například východ slunce 
+<chord root="E" type="m7"/>a vítr ve vět
+<chord root="F"/>vích,
+</line>
+<line>
+<chord root="C"/>anebo píseň tichou 
+<chord root="E" type="m7"/>jak padající 
+<chord root="F"/>sníh,
+<chord root="E" type="m"/>
+</line>
+<line>
+<chord root="D" type="m7"/>tak to prý nelze 
+<chord root="G" type="7"/>koupit za 
+<chord root="C" bass="E"/>žádný pení
+<chord root="F"/>ze,
+</line>
+<line>jenže 
+<chord root="C" bass="E"/>zbejvá spousta 
+<chord root="F"/>vě
+<chord root="C"/>cí, 
+<chord root="D" type="7"/>a ty koupit 
+<chord root="G"/>lze.
+</line>
+</verse>
+
+<chorus>
+<line>Jó, vždyť 
+<chord root="C"/>víš, 
+<chord root="E" type="m7"/>štěstí je krásná 
+<chord root="F"/>věc,
+</line>
+<line>vždyť 
+<chord root="C"/>víš, 
+<chord root="E" type="m7"/>štěstí je krásná 
+<chord root="F"/>věc,
+<chord root="E" type="m"/>
+</line>
+<line>
+<chord root="D" type="m7"/>štěstí je tak 
+<chord root="G" type="7"/>krásná a 
+<chord root="C" bass="E"/>přepychová 
+<chord root="F"/>věc,
+</line>
+<line>ale 
+<chord root="C" bass="G"/>prachy si 
+<chord root="G" type="7"/>za něj nekou
+<chord root="C"/>píš.
+<chord root="G"/>
+</line>
+</chorus>
+
+<verse>
+<line>Jó kartón marlborek a taky porcelán,</line>
+<line>s modrejma cibulkama, tapety, parmazán,</line>
+<line>pět kilo uheráku nebo džínsy Calvin Klein,</line>
+<line>tak možná že to není štěstí, ale je to fajn.</line>
+</verse>
+
+<chorus/>
+
+<verse>
+<line>Takovej východ slunce je celkem v pořádku,</line>
+<line>peníze mám ale radši, ty stojej za hádku,</line>
+<line>a proto když se dočtu o zemětřesení,</line>
+<line>nebo o bouračce, no tak řeknu: k neuvěření!</line>
+</verse>
+
+<chorus/>
+
+</song>
+
 <!--
 
 <song>
