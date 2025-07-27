@@ -8111,6 +8111,88 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 </song>
 
+<song>
+  <header>
+    <name>Nedělní ráno</name>
+    <authors>
+      <author>Kris Kristofferson</author>
+      <author>Vladimír Poštulka</author>
+      <author>Pavel Bobek</author>
+    </authors>
+    <album>Veď mě dál, cesto má</album>
+    <year>1975</year>
+    <dateAdded>2025-07-26</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="H"/>Zvonil budík, bylo ráno, v hlavě 
+<chord root="E"/>mé byl kámen 
+<chord root="F#"/>snad a pod ním 
+<chord root="H"/>tma,
+</line>
+<line>když jsem snídal džbánek piva, ještě 
+<chord root="G#" type="m"/>zdálo se, že divnou příchuť 
+<chord root="F#"/>má.
+</line>
+<line>Když jsem 
+<chord root="H"/>spláchl chladnou vodou z očí 
+<chord root="E"/>sny a z tváře závoj šedi
+<chord root="H"/>vý,
+<chord root="G#" type="m"/>
+</line>
+<line>řek mi 
+<chord root="E"/>pohled pouhý 
+<chord root="F#"/>z okna ven, že 
+<chord root="C#" type="m"/>nedělní je 
+<chord root="F#"/>den a lenivý.
+</line>
+</verse>
+
+<verse>
+<line>Já cítil dál, že v ústech mám chuť cigaret a písní prošlé noci,</line>
+<line>tak jsem vyšel ven a díval se, jak slunce nový den má ve své moci.</line>
+<line>A pak mi vánek poslal vstříc tu vůni nedělní, co z horkých ploten voní,</line>
+<line>a náhle chtěl jsem být zas s tebou někde za městem ve stínu jabloní.</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="H" type="7"/>Chtěl bych být v nedělní 
+<chord root="E"/>ráno v chodníku kvádrem žulo
+<chord root="H"/>vým
+</line>
+<line>a proč divný smutek 
+<chord root="F#"/>mívám, to snad se nikdy nedo
+<chord root="H"/>vím.
+</line>
+<line>
+<chord root="H" type="7"/>A snad i smrt je méně 
+<chord root="E"/>vážná než tyhle chvíle neděl
+<chord root="H"/>ní,
+</line>
+<line>kéž mi zvony ranní 
+<chord root="F#"/>písní na prášek srdce rozměl
+<chord root="H"/>ní. 
+</line>
+</chorus>
+
+<verse>
+<line>Šel jsem dál tou vůní ranní kolem bílých kočárků a dětských mašlí.</line>
+<line>Pak jsem dlouho stál a díval se na věci, které svět občas krášlí.</line>
+<line>Snad vrátil se mi zrak a já se najednou zas díval na svět zpříma,</line>
+<line>teď už možná tvému štěstí lépe rozumím, ač vím, že nejsi má.</line>
+</verse>
+
+<chorus>
+<line>Já chtěl bych být v nedělní ráno v chodníku kvádrem žulovým</line>
+<line>a proč divný smutek mívám, to snad se nikdy nedovím.</line>
+<line>Vždyť snad i smrt je méně vážná než tyhle chvíle nedělní,</line>
+<line>kéž mi zvony ranní písní na prášek srdce rozmělní.</line>
+</chorus>
+
+</song>
+
 <!--
 
 <song>
