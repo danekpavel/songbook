@@ -8193,6 +8193,95 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 </song>
 
+<song>
+  <header>
+    <name>Vrať se</name>
+    <author>Janek Běťák</author>
+    <album>Jazykem květin</album>
+    <year>2025</year>
+    <dateAdded>2026-01-30</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="G" type="maj7"/>Vrať se chlapče, vrať, 
+<chord root="F#" type="7"/>než se větve skloní,
+</line>
+<line>
+<chord root="H" type="maj7"/>než popelář měsíc pozametá 
+<chord root="E" type="maj7"/>dvůr.
+</line>
+<line>
+<chord root="G" type="maj7"/>Než tažný koník 
+<chord root="F#" type="7"/>pozbyde síly
+</line>
+<line>
+<chord root="H" type="maj7"/>a mráz ti zlomí poutnickou 
+<chord root="E" type="maj7"/>hůl.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="E"/>Vrať se chlapče, 
+<chord root="F#" type="7"/>vrať, 
+<chord root="H"/>vrať se zpátky domů,
+</line>
+<line>
+<chord root="E"/>umyju ti 
+<chord root="F#" type="7"/>tvář, přichystám 
+<chord root="H"/>stín,
+</line>
+<line>
+<chord root="E"/>střechu místo 
+<chord root="F#" type="7"/>stromů, jestli bude 
+<chord root="H"/>komu,
+</line>
+<line>
+<chord root="E"/>vrať se chlapče, 
+<chord root="F#" type="7"/>dřív než zneji
+<chord root="H"/>stím.
+<chord root="E" type="maj7"/>
+<chord root="H" type="maj7"/>
+<chord root="E" type="maj7"/>
+</line>
+</chorus>
+
+<verse>
+<line>
+<chord root="G" type="maj7"/>Tak se chlapče vrať, 
+<chord root="F#" type="7"/>zpátky na náměstí,
+</line>
+<line>
+<chord root="H" type="maj7"/>tady máš všechno, co sis přál,
+<chord root="E" type="maj7"/>
+</line>
+<line>Ať si 
+<chord root="G" type="maj7"/>volají žestě 
+<chord root="F#" type="7"/>z uliček štěstí,
+</line>
+<line>ať se i 
+<chord root="H" type="maj7"/>ruské kolo točí 
+<chord root="E" type="maj7"/>dál.
+</line>
+</verse>
+
+<chorus>
+<line>Vrať se chlapče vrať, vrať se zpátky domů,</line>
+<line>umyju ti tvář, přichystám stín.</line>
+<line>Střechu místo stromů, jestli bude komu,</line>
+<line>vrať se chlapče, dřív než znejistím.</line>
+</chorus>
+
+<chorus>
+<line>[: Než ti zůstanou z očí dvě vejce ve skle,</line>
+<line>navěky lesklé, navěky pro smích,</line>
+<line>navěky k pláči, navěky slepé,</line>
+<line>než ti zůstane jenom stesk. :]</line>
+</chorus>
+
+</song>
+
 <!--
 
 <song>
