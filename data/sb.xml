@@ -8249,22 +8249,10 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 </chorus>
 
 <verse>
-<line>
-<chord root="G" type="maj7"/>Tak se chlapče vrať, 
-<chord root="F#" type="7"/>zpátky na náměstí,
-</line>
-<line>
-<chord root="H" type="maj7"/>tady máš všechno, co sis přál,
-<chord root="E" type="maj7"/>
-</line>
-<line>Ať si 
-<chord root="G" type="maj7"/>volají žestě 
-<chord root="F#" type="7"/>z uliček štěstí,
-</line>
-<line>ať se i 
-<chord root="H" type="maj7"/>ruské kolo točí 
-<chord root="E" type="maj7"/>dál.
-</line>
+<line>Tak se chlapče vrať, zpátky na náměstí,</line>
+<line>tady máš všechno, co sis přál.</line>
+<line>Ať si volají žestě z uliček štěstí,</line>
+<line>ať se i ruské kolo točí dál.</line>
 </verse>
 
 <chorus>
