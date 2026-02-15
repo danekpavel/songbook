@@ -3510,15 +3510,53 @@
 </multicols>
 </song>
 
-<!--
 <song>
   <header>
     <name>Easy Money</name>
     <author>Nick Cave &ampersand; the Bad Seeds</author>
     <album>The Lyre of Orpheus</album>
     <year>2004</year>
-    <dateAdded>NA</dateAdded>
+    <dateAdded>2026-02-15</dateAdded>
   </header>
+
+<multicols number="2">
+
+<verse>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
+</line>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
+</line>
+<line>
+<chord root="A" type="m"/>
+<chord root="A" type="m" bass="B"/>
+<chord root="C"/>
+</line>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
+</line>
+<line>
+<chord root="A" type="m"/>
+<chord root="A" type="m" bass="B"/>
+<chord root="C"/>
+</line>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
+</line>
+</verse>
 
 <verse>
 <line>
@@ -3526,13 +3564,13 @@
 <chord root="E" type="m" bass="D"/>very tough
 <chord root="E" type="m" bass="C"/><chord root="E" type="m" bass="B"/>
 </line>
-<line>
-<chord root="E" type="m"/>I said to the man who'd been 
+<line>I 
+<chord root="E" type="m"/>said to the man who'd been 
 <chord root="E" type="m" bass="D"/>sleeping rough
 <chord root="E" type="m" bass="C"/>
 </line>
-<line>to sit <chord root="E" type="m" bass="B"/>within the 
-<chord root="A" type="m"/>fragrant breeze
+<line>to sit with<chord root="E" type="m" bass="B"/>in the fragrant 
+<chord root="A" type="m"/>breeze
 </line>
 <line>
 <chord root="C"/>all among the nodding trees
@@ -3544,91 +3582,146 @@
 </verse>
 
 <verse>
-<line>He threw his arms around my neck,          </line>
-<line>he brushed the tear from my cheek         </line>
-<line>and held my soft white hand,                       </line>
-<line>he was an understanding man                       </line>
-<line>and he did not even barely hardly speak.               </line>
+<line>He threw his arms around my neck,</line>
+<line>he brushed the tear from my cheek</line>
+<line>and held my soft white hand,</line>
+<line>he was an understanding man</line>
+<line>and he did not even barely hardly speak.</line>
 </verse>
 
-<verse>
-<line>Easy 
-<chord root="D"/>money,
+<chorus>
+<line>Easy mo
+<chord root="D"/>ney,
 <chord root="D"/><chord root="D" bass="C"/><chord root="D" bass="B"/><chord root="D" bass="A"/>
 </line>
 <line>
-rain it down on the wife and the kids,<chord root="C"/>
+<chord root="C"/>rain it down on the wife and the kids,
 </line>
 <line>
-rain it down on the house where we live,<chord root="D"/>
+<chord root="D"/>rain it down on the house where we live,
 </line>
 <line>
-rain until you got nothing left to give<chord root="E" type="m"/>
+<chord root="E" type="m"/>rain until you got nothing left to give
 </line>
 <line>and 
 <chord root="C"/>rain that ever-lo
 <chord root="D"/>ving stuff down on 
-<chord root="E" type="m"/><chord root="E" type="m" bass="D"/><chord root="E" type="m" bass="C"/><chord root="E" type="m" bass="B"/>me.
+<chord root="E" type="m"/>me.
+</line>
+<line>
+<chord root="E" type="m" bass="D"/><chord root="E" type="m" bass="C"/><chord root="E" type="m" bass="B"/>
+</line>
+</chorus>
+
+<verse>
+<line>
+<chord root="A" type="m"/>
+<chord root="A" type="m" bass="B"/>
+<chord root="C"/>
+</line>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
 </line>
 </verse>
 
 <verse>
-<line>All the things for which my heart yearns  </line>
-<line>gives joy in diminishing returns,          </line>
-<line>he kissed me on the mouth,                 </line>
-<line>his hands they headed south                       </line>
-<line>and my cheek it burned.                            </line>
+<line>All the things for which my heart yearns</line>
+<line>gives joy in diminishing returns,</line>
+<line>he kissed me on the mouth,</line>
+<line>his hands they headed south</line>
+<line>and my cheek it burned.</line>
 </verse>
 
 <verse>
-<line>Money, man, it is a bitch,                 </line>
-<line>the poor, they spoil it for the rich              </line>
-<line>with my face pressed in the clover                </line>
-<line>I wondered when this would be over                </line>
-<line>and at home we are all so guilty-sad.             </line>
+<line>Money, man, it is a bitch,</line>
+<line>the poor, they spoil it for the rich</line>
+<line>with my face pressed in the clover</line>
+<line>I wondered when this would be over</line>
+<line>and at home we are all so guilty-sad.</line>
 </verse>
 
+<columnbreak/>
 
+<chorus>
+<line>Easy money,</line>
+<line>pour it down on the open drain,</line>
+<line>pour it all through my veins,</line>
+<line>pour it down, yeah, let it rain</line>
+<line>and pour that ever-loving stuff down on me.</line>
+</chorus>
 <verse>
-<line>Easy money,                                        </line>
-<line>pour it down on the open drain,                    </line>
-<line>pour it all through my veins,                      </line>
-<line>pour it down, yeah, let it rain                   </line>
-<line>and pour that ever-loving stuff down on me.        </line>
+<line>
+<chord root="A" type="m"/>
+<chord root="A" type="m" bass="B"/>
+<chord root="C"/>
+</line>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
+</line>
+<line>
+<chord root="A" type="m"/>
+<chord root="A" type="m" bass="B"/>
+<chord root="C"/>
+</line>
+<line>
+<chord root="E" type="m"/>
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/>
+<chord root="E" type="m" bass="B"/>
+</line>
 </verse>
 
 <verse>
-<line>Now, I'm sitting pretty down on the bank,  </line>
+<line>Now, I'm sitting pretty down on the bank,</line>
 <line>life shuffles past at a low interest rate </line>
-<line>in the money-coloured meadows                     </line>
-<line>and all the interesting shadows                   </line>
-<line>they leap up, then dissipate.                      </line>
+<line>in the money-coloured meadows</line>
+<line>and all the interesting shadows</line>
+<line>they leap up, then dissipate.</line>
 </verse>
+
+<chorus>
+<line>Easy mo
+<chord root="D"/>ney,
+<chord root="D" bass="C"/><chord root="D" bass="B"/><chord root="D" bass="A"/>
+</line>
+<line>easy mo
+<chord root="E" type="m"/>ney 
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/> 
+<chord root="E" type="m" bass="B"/> 
+</line>
+<line>Easy mo
+<chord root="D"/>ney,
+<chord root="D" bass="C"/>
+</line>
+<line>rain it down on the wife and the kids,</line>
+<line>rain it down on the house where we live,</line>
+<line>rain until you got nothing left to give</line>
+<line>and rain that ever-loving stuff down on me.</line>
+</chorus>
 
 <verse>
-<line>Easy money,                                        </line>
-<line>easy money,                                        </line>
-<line>easy money,                                        </line>
-<line>rain it down on the wife and the kids,             </line>
-<line>rain it down on the house where we live,           </line>
-<line>rain until you got nothing left to give           </line>
-<line>and rain that ever-loving stuff down on me.        </line>
+<line>[: Easy mo
+<chord root="C"/>ney,
+<chord root="D"/>
+</line>
+<line>easy mo
+<chord root="E" type="m"/>ney 
+<chord root="E" type="m" bass="D"/>
+<chord root="E" type="m" bass="C"/> 
+<chord root="E" type="m" bass="B"/> 
+<chord root="special"/>:]  <!-- hack to end repetition after the last chord in sequence -->
+</line>
 </verse>
 
-<verse>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-<line>(Easy money)                                      </line>
-</verse>
-
-
+</multicols>
 </song>
--->
 
 <song>
   <header>
