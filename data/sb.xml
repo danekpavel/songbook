@@ -8364,6 +8364,222 @@ nezajdu si <chord root="E" type="7"/>s ním na čaj do bistra U sedmi
 
 </song>
 
+<song>
+  <header>
+    <name>Secret World</name>
+    <author>Peter Gabriel</author>
+    <album>Secret World Live</album>
+    <year>1994</year>
+    <dateAdded>2026-08-26</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="D"/>I stood in this unsheltered 
+<chord root="B" type="m"/>place
+</line>
+<line>
+<chord root="G"/>till I could see the face behind the face,
+<chord root="D"/>
+</line>
+<line>
+<chord root="D"/>all that had gone before had left no 
+<chord root="B" type="m"/>trace.
+</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="G"/>Down by the 
+<chord root="A"/>railway siding
+</line>
+<line>in our 
+<chord root="G"/>secret world we 
+<chord root="A"/>were colliding
+</line>
+<line>
+<chord root="G"/>in all the places 
+<chord root="A"/>we were hiding 
+<chord root="B" type="m"/>love
+</line>
+<line>
+<chord root="G"/>what was it 
+<chord root="A"/>we were thinking 
+<chord root="D"/>of.
+</line>
+</chorus>
+
+<verse>
+<line>So I watch you wash your hair</line>
+<line>underwater, unaware,</line>
+<line>and the plane flies through the air.</line>
+</verse>
+
+<chorus>
+<line>Did you think you didn't have to choose it</line>
+<line>that I alone could win or lose it</line>
+<line>in all the places we were hiding love,</line>
+<line>what was it we were thinking of?</line>
+</chorus>
+
+<verse>
+<line>In this house of make believe</line>
+<line>divided in two, like Adam and Eve,</line>
+<line>you put out and I receive.</line>
+</verse>
+
+<chorus>
+<line>Did you think&hellip;</line>
+</chorus>
+
+<verse>
+<line>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="D"/>
+</line>
+<line>
+<chord root="D"/>Oh the wheel it is turning spinning round and round
+</line>
+<line>
+<chord root="D"/>and the house it is crumbling but the stairways stand.
+<chord root="C"/>
+<chord root="D"/>
+</line>
+<line>
+<chord root="D"/>With no guilt and no shame, no sorrow or blame
+</line>
+<line>
+<chord root="D"/>whatever it is, we are all the same.
+<chord root="C"/>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="D"/>
+<chord root="C"/>
+<chord root="D"/>
+</line>
+</verse>
+
+<verse>
+<line>
+<chord root="C"/>Breaking it up,
+<chord root="G"/>
+</line>
+<line>
+<chord root="C"/>shaking it up,
+<chord root="G"/>
+</line>
+<line>
+<chord root="C"/>making it up 
+<chord root="G"/>in our 
+<chord root="D"/>secret world.
+</line>
+</verse>
+
+<!-- A-D riff -->
+
+<verse>
+<line>Seeing things that were not there</line>
+<line>on a wing on a prayer</line>
+<line>in this state of disrepair.</line>
+</verse>
+
+<chorus>
+<line>Did you think&hellip;</line>
+</chorus>
+
+</song>
+
+<song>
+  <header>
+    <name>Nouzový východ</name>
+    <author>post-hudba</author>
+    <album>my všichni tadz a teď</album>
+    <year>2023</year>
+    <dateAdded>2026-08-26</dateAdded>
+  </header>
+
+<verse>
+<line>
+<chord root="C" type="maj7"/>Dnešní zprávy přečet Elsí dole v přízemí,
+</line>
+<line>
+ještě den to kočky na kapsičkách vydrží,
+</line>
+<line>
+<chord root="Bb" type="maj7"/>prací prášek sice má, ale jen na černý,
+</line>
+<line>
+<chord root="C" type="maj7"/>skočí tam klidně ještě jednou, až se rozední.
+</line>
+</verse>
+
+<verse>
+<line>A zbytek věcí asi vyřeší až v pondělí,</line>
+<line>týden už v Praze není slunce, to jsme nadšení,</line>
+<line>dnes bude spát asi na gauči s jejím svolením,</line>
+<line>nevyhrál nikdo</line>
+</verse>
+
+<chorus>
+<line>
+<chord root="A" type="m"/>Mám tě pořád strašně rád,
+</line>
+<line>budeš mi 
+<chord root="C" type="maj7"/>chybět, až odjedeš domů za tátou,
+</line>
+<line>a 
+<chord root="A" type="m"/>vím, že dřív to bylo jiný,
+</line>
+<line>teď se to 
+<chord root="C" type="maj7"/>drolí jak písek a táhne jak bláto
+</line>
+<line>a 
+<chord root="G"/>hej, co chceš ještě říct?
+</line>
+<line>Prostě jsme 
+<chord root="F"/>konstantně v píči a padáme dolů,
+</line>
+<line> 
+<chord root="G"/>všechno nás ničí a my jsme furt spolu,
+</line>
+<line>
+<chord root="F"/>nouzový východ, co svítí, když nevíš, jak 
+<chord root="C" type="maj7"/>dál.
+<chord root="Bb" type="maj7"/>
+<chord root="C" type="maj7"/>
+</line>
+</chorus>
+
+<verse>
+<line>Tomovi řek jsem, že se uvidíme po sedmý,</line>
+<line>můžu i o něco dýl, to je to poslední,</line>
+<line>on teda čekal, že se zastavím už v úterý,</line>
+<line>nemám moc času, to je dobrý, to se rozdělí.</line>
+</verse>
+<verse>
+<line>Jo, ráno v zahradnictví nekoukal jsem na ceny,</line>
+<line>máme teď novej postřik na ty mšice zkurvený,</line>
+<line>třeba to zabere teď, třeba to poleví,</line>
+<line>teď už snad.</line>
+</verse>
+
+<chorus/>
+
+<chorus>
+<line>Je takovejch věcí, co pořád si kradem,</line>
+<line>a vím, že dřív to bylo jiný.</line>
+<line>Dřív jsme si pořád jen psali, tak tisíckrát za den</line>
+<line>a hej, co chceš ještě říct?</line>
+<line>Prostě jsme konstantně v píči a padáme dolů</line>
+<line>a všechno nás ničí a my jsme furt spolu,</line>
+<line>nouzový východ, co svítí, když nevíš, jak dál.</line>
+</chorus>
+
+</song>
+
 <!--
 
 <song>
